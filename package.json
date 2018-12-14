@@ -1,0 +1,28 @@
+{
+  "name": "melosys-kodeverk",
+  "version": "0.1.0",
+  "description": "Dictionary of kode/term objects for use with associated melosys projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "kodeverk": "node $NODE_DEBUG_OPTION index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navikt/melosys-kodeverk.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "kodeverk",
+    "NAV"
+  ],
+  "author": "Are Bjølseth <abjolseth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navikt/melosys-kodeverk/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/navikt/melosys-kodeverk#readme"
+}
