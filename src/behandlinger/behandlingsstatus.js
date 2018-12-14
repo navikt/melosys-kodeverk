@@ -37,11 +37,11 @@ const behandlingsstatus = [
     term: 'Tidsfristen er utløpt på etterspurte opplysninger',
   },
   {
-    kode: 'FORELOEPIG_LOVVALG ',
+    kode: 'FORELOEPIG_LOVVALG',
     term: 'Avventer svar på foreløpig lovvalg',
   },
   {
-    kode: 'IVERKSETTER_VEDTAK ',
+    kode: 'IVERKSETTER_VEDTAK',
     term: 'Vedtak iverksettes',
   }
 ];
