@@ -50,3 +50,30 @@ module.exports.kodeverk = kodeverk;
 module.exports.hent = (req, res) => {
   res.json(kodeverk);
 };
+
+const arrayToObject = (array) => {
+  return array.reduce((obj, item) => {
+    obj[item.kode] = item.kode;
+    return obj;
+  }, {})
+};
+
+module.exports.kodeSet = () => {
+  let codes = {};
+  for (const verk in kodeverk) {
+    const node = kodeverk[verk];
+    if (Array.isArray(node)) {
+      const obj = arrayToObject(node);
+      codes[verk] = { ...obj };
+    }
+    else {
+      codes[verk] = {};
+      for(const prop in node) {
+        const obj = {};
+        obj[prop] = {...arrayToObject(node[prop])};
+        codes[verk] = {...codes[verk], ...obj}
+      }
+    }
+  }
+  return codes;
+};
