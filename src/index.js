@@ -2,6 +2,8 @@
  * Kodeverk.
  * @module
  */
+const memoize = require('lodash/memoize');
+
 const { aktoerroller } = require('./aktoerroller');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
@@ -39,26 +41,19 @@ const kodeverk = {
   vedleggstitler,
   yrker,
 };
-
-module.exports.kodeverk = kodeverk;
-
-/**
- * Hent kodeverk
- * @param req
- * @param res
- */
-module.exports.hent = (req, res) => {
-  res.json(kodeverk);
-};
+const kodeVerk =  memoize(function () {
+  return kodeverk;
+});
+module.exports.kodeverk = kodeVerk();
 
 const arrayToObject = (array) => {
   return array.reduce((obj, item) => {
-    obj[item.kode] = item.kode;
+    obj[item.kode] = item.term;
     return obj;
-  }, {})
+  }, {});
 };
 
-module.exports.kodeSet = () => {
+const transformKodeverk2KodeSet = () => {
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
@@ -71,9 +66,14 @@ module.exports.kodeSet = () => {
       for(const prop in node) {
         const obj = {};
         obj[prop] = {...arrayToObject(node[prop])};
-        codes[verk] = {...codes[verk], ...obj}
+        codes[verk] = {...codes[verk], ...obj};
       }
     }
   }
   return codes;
 };
+
+const kodeSet = memoize(function () {
+  return transformKodeverk2KodeSet();
+});
+module.exports.kodeset = kodeSet();
