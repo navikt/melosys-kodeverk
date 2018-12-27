@@ -4,7 +4,7 @@
 #
 version: 2 # use CircleCI 2.0
 defaults: &defaults
-  working_directory: .
+  working_directory: ~
   docker:
     # specify the version you desire here
     - image: circleci/node:latest
