@@ -30,7 +30,7 @@ jobs: # a collection of steps
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - persist_to_workspace:
-          root: ~/repo
+          root: ~/melosys-kodeverk
           paths: .
   build:
     <<: *defaults
@@ -41,7 +41,7 @@ jobs: # a collection of steps
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/melosys-kodeverk
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
