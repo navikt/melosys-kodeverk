@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-const schema = require('../scripts/schem');
+const schema = require('../scripts/schema');
 
 describe('Schema', () => {
   it('Validate kodveverk skjema', ()=> {
