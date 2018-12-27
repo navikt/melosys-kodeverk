@@ -35,7 +35,7 @@ jobs: # a collection of steps
   build:
     <<: *defaults
     steps:
-      - run: npm run build
+      - run: npm run-script build
 
   deploy:
     <<: *defaults
