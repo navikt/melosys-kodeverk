@@ -5,16 +5,16 @@
  */
 const representerer = [
   {
-    "kode": "BRUKER",
-    "term": "Representerer bruker"
+    kode: 'BRUKER',
+    term: 'Representerer bruker'
   },
   {
-    "kode": "ARBEIDSGIVER",
-    "term": "Representerer arbeidsgiver"
+    kode: 'ARBEIDSGIVER',
+    term: 'Representerer arbeidsgiver'
   },
   {
-    "kode": "BEGGE",
-    "term": "Representerer bruker og arbeidsgiver"
+    kode: 'BEGGE',
+    term: 'Representerer bruker og arbeidsgiver'
   }
 ];
 module.exports.representerer = representerer;

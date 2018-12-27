@@ -5,20 +5,20 @@
  */
 const aktoerroller = [
   {
-    "kode": "BRUKER",
-    "term": "Bruker"
+    kode: 'BRUKER',
+    term: 'Bruker'
   },
   {
-    "kode": "ARBEIDSGIVER",
-    "term": "Arbeidsgiver"
+    kode: 'ARBEIDSGIVER',
+    term: 'Arbeidsgiver'
   },
   {
-    "kode": "REPRESENTANT",
-    "term": "Fullmektig"
+    kode: 'REPRESENTANT',
+    term: 'Fullmektig'
   },
   {
-    "kode": "MYNDIGHET",
-    "term": "Trygdemyndighet"
+    kode: 'MYNDIGHET',
+    term: 'Trygdemyndighet'
   }
 ];
 module.exports.aktoerroller = aktoerroller;
