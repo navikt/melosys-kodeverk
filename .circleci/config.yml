@@ -35,8 +35,6 @@ jobs: # a collection of steps
   build:
     <<: *defaults
     steps:
-      - attach_workspace:
-          - at: ~/repo
       - run: npm run build
 
   deploy:
