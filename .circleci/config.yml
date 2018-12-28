@@ -33,7 +33,9 @@ jobs: # a collection of steps
           root: ~/repo
           paths: .
   build:
-    - run: npm run build
+    <<: *defaults
+    steps:
+      - run: npm run build
   deploy:
     <<: *defaults
     steps:
