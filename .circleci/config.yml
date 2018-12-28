@@ -59,10 +59,10 @@ jobs: # a collection of steps
               filters:
                 tags:
                   only: /^v.*/
-          - build:
           - deploy:
               requires:
                 - test
+                - build
               filters:
                 tags:
                   only: /^v.*/
