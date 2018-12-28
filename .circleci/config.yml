@@ -35,6 +35,9 @@ jobs: # a collection of steps
   build:
     <<: *defaults
     steps:
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
       - run: npm run build
 
   deploy:
