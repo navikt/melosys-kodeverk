@@ -32,13 +32,6 @@ jobs: # a collection of steps
       - persist_to_workspace:
           root: ~/repo
           paths: .
-  build:
-    <<: *defaults
-    steps:
-      - persist_to_workspace:
-          root: ~/repo
-          paths: .
-      - run: npm run build
 
   deploy:
     <<: *defaults
@@ -63,7 +56,6 @@ jobs: # a collection of steps
           - deploy:
               requires:
                 - test
-                - build
               filters:
                 tags:
                   only: /^v.*/
