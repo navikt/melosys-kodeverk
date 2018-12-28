@@ -4,7 +4,6 @@
 #
 version: 2 # use CircleCI 2.0
 defaults: &defaults
-  working_directory: ~/melosys-kodeverk
   docker:
     # specify the version you desire here
     - image: circleci/node:latest
@@ -30,18 +29,18 @@ jobs: # a collection of steps
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - persist_to_workspace:
-          root: ~/melosys-kodeverk
+          root: ~/repo
           paths: .
   build:
     <<: *defaults
     steps:
-      - run: npm run-script build
+      - run: npm run build
 
   deploy:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/melosys-kodeverk
+          at: ~/repo
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
