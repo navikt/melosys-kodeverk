@@ -1,0 +1,65 @@
+{
+  "name": "melosys-kodeverk",
+  "version": "0.3.0",
+  "description": "Dictionary of kode/term objects for use with associated melosys projects",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib dist",
+    "eslint": "eslint src/**",
+    "kodeverk": "node $NODE_DEBUG_OPTION index.js",
+    "test": "mocha --reporter spec",
+    "semver": "node scripts/semver",
+    "yaml": "node scripts/js2yml"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navikt/melosys-kodeverk.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "kodeverk",
+    "NAV"
+  ],
+  "author": {
+    "name": "Are Bjølseth",
+    "email": "are.bjolseth@nav.no"
+  },
+  "publishConfig": {
+    "acccess": "public"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navikt/melosys-kodeverk/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/navikt/melosys-kodeverk#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "ajv": "^6.6.2",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "js-yaml": "^3.12.0",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
