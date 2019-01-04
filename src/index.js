@@ -20,6 +20,7 @@ const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { trygdedekninger } = require('./trygdedekninger');
 const { vedleggstitler } = require('./vedleggstitler');
+const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
 const kodeverk = {
@@ -39,6 +40,7 @@ const kodeverk = {
   sakstyper,
   trygdedekninger,
   vedleggstitler,
+  vilkaar,
   yrker,
 };
 const kodeVerk =  memoize(function () {
