@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+scripts:
+  npm build
+deploy:
+  provider: npm
+  email: abjolseth@gmail.com
+  api_key:
+    secure: uJCtVfs4EVcvM9krwjNoNu3XdPIDfACOUTcxna1uz/8oF/Vd6kxA4ejQjs1tsungaecRtYXl9zvlOQD/GMp3P5Yrs3AQC4p/Zr1+i55MpRMABc2c3SVWeRh6qW15CVCPObPidCQepHf+x2yJ9ApRHkmHQ3T/wAw+F1oHDaXbtW+1PDNMmvxHoio8dzSJl8zLR+M8vN8wEsza6v8T1FIS2iiP50UcYG1O42yVkHG7ewd42DcQK+ZhNjGd9X2XlHZbaPdnMEJtJxIgMtjfzOvsKxbKkX0Br8YlhqjB7m+d98VD313iCDs1XuBGq+UscFXQ4194MW7gLVvNkCL46hYAKn1VkVKkhr4guFXQMifDppw/DAAAXtGODSfI9JrcFnOC/Fh74dgkHPLJudRP3ZlJ6aBuexhi5o7uRE5KN52z+HqrYTGKDqExB7MwBk1KknbH3XYp/WtYgiFh4ZDjTOXIVVgFUMoYoDdWcx/7yMr/66EyNJv4jSbY996xChgqc41LC7Xb6VB7DFPviny2UewGryvGeKTJbIgDFsxG1RX3SrdPXvZ67rhjTLQung34lKMCLJ9F6Qvkoc6wN6MwD9EMJFcIQyuiKEM3viocl0uyjDN/PdT9Y2NE/zdD7MY3ThEc6z2k770/XDtIn4wfbgu/Jm5EQv+hb8nMpviC+PXH5L0=
+  on:
+    tags: next
+    repo: abjolseth/melosys-kodeverk
