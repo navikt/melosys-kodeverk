@@ -1,4 +1,7 @@
-
+/**
+ * @see https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys#KodeverkiMelosys-Vilk%C3%A5rene
+ * @type {*[]}
+ */
 const vilkaar = [
   {
     kode: 'FO_883_2004_INNGANGSVILKAAR',
@@ -37,7 +40,7 @@ const vilkaar = [
     term: 'BOSATT_I_NORGE',
   },
   {
-    kode: 'BOSATFTRL_2_12_UNNTAK_TURISTSKIPT_I_NORGE',
+    kode: 'FTRL_2_12_UNNTAK_TURISTSKIP',
     term: 'FTRL_2_12_UNNTAK_TURISTSKIP',
   }
 ];
