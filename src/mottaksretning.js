@@ -4,16 +4,16 @@
  */
 const mottaksretning = [
   {
-    kode:'INN',
+    kode: 'INN',
     term:'Inngående dokument'
   },
   {
-    kode:'UT',
-    term:'Utgående dokument'
+    kode: 'UT',
+    term: 'Utgående dokument'
   },
   {
-    kode:'NOTAT',
-    term:' Internt notat'
+    kode: 'NOTAT',
+    term: 'Internt notat'
   }
 ];
 module.exports.mottaksretning = mottaksretning;
