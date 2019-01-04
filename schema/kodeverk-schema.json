@@ -52,6 +52,7 @@
     "sakstyper",
     "trygdedekninger",
     "vedleggstitler",
+    "vilkaar",
     "yrker"
   ],
   "properties": {
@@ -385,6 +386,16 @@
       "uniqueItems": true,
       "items": {
         "$id": "#/properties/vedleggstitler/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "vilkaar": {
+      "$id": "#/properties/vilkaar",
+      "type": "array",
+      "title": "Vilkårene",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/vilkaar/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
