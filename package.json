@@ -7,8 +7,9 @@
     "build": "babel src --out-dir lib",
     "clean": "rimraf lib dist",
     "eslint": "eslint src/**",
-    "test": "mocha --reporter spec",
     "kodeverk": "node $NODE_DEBUG_OPTION index.js",
+    "test": "mocha --reporter spec",
+    "semver": "node scripts/semver",
     "yaml": "node scripts/js2yml"
   },
   "files": [
