@@ -10,6 +10,7 @@ const { behandlinger } = require('./behandlinger');
 const { dokumenttitler } = require('./dokumenttitler');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
+const { henleggelsesgrunner} = require('./henleggelsesgrunner');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { medlemskapstyper } = require('./medlemskapstyper');
@@ -30,6 +31,7 @@ const kodeverk = {
   begrunnelser,
   brev,
   finansiering,
+  henleggelsesgrunner,
   landkoder,
   lovvalgsbestemmelser,
   medlemskapstyper,
