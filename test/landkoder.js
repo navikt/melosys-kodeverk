@@ -1,12 +1,7 @@
-describe('Kodeverk', () => {
-  describe('Kode/Term', () => {
-    it('landkoder', () => {
-      assert.equal(kodeverk.landkoder[0].kode,'CH');
-    });
-  });
-  describe('kodeset', () => {
-    it('landkoder', () => {
-      assert.equal(kodeset.landkoder.CH, 'Sveits');
-    });
+describe('Landkoder', () => {
+  const gruppe = 'landkoder';
+  describe('Sveits', () => {
+    testKodeset('CH', 'Sveits', gruppe);
+    testKodeverk('CH', 'Sveits', gruppe, 0);
   });
 });
