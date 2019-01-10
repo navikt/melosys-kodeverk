@@ -37,6 +37,7 @@
   "additionalProperties": false,
   "required": [
     "aktoerroller",
+    "avklartefakta",
     "behandlinger",
     "begrunnelser",
     "brev",
@@ -66,6 +67,16 @@
         "$ref": "#/definitions/kodeverk"
       }
     },
+      "avklartefakta": {
+        "$id": "#/properties/avklartefakta",
+        "type": "array",
+        "title": "The avklartefakta Schema",
+        "uniqueItems": true,
+        "items": {
+          "$id": "#/properties/avklartefakta/items",
+          "$ref": "#/definitions/kodeverk"
+        }
+      },
     "behandlinger": {
       "$id": "#/properties/behandlinger",
       "type": "object",
