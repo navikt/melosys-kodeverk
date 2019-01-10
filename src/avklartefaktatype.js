@@ -1,9 +1,9 @@
 /**
- * Kodeverk/avklartefakta
+ * Kodeverk/avklartefaktatype
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const avklartefakta = [
+const avklartefaktatype = [
   {
     kode: 'AVKLARTE_ARBEIDSGIVER',
     term: 'Avklarte Arbeidsgiver'
@@ -25,4 +25,4 @@ const avklartefakta = [
     term: 'Yrkesgruppe'
   }
 ];
-module.exports.avklartefakta = avklartefakta;
+module.exports.avklartefaktatype = avklartefaktatype;

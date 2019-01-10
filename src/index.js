@@ -5,7 +5,7 @@
 const memoize = require('lodash/memoize');
 
 const { aktoerroller } = require('./aktoerroller');
-const { avklartefakta } = require('./avklartefakta');
+const { avklartefaktatype } = require('./avklartefaktatype');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
 const { dokumenttitler } = require('./dokumenttitler');
@@ -26,7 +26,7 @@ const { yrker } = require('./yrker');
 
 const kodeverk = {
   aktoerroller,
-  avklartefakta,
+  avklartefaktatype,
   dokumenttitler,
   behandlinger,
   begrunnelser,
