@@ -6,7 +6,7 @@ before_install:
 install:
   - npm install
 scripts:
-  npm build
+  - npm run build
 
 before_deploy:
   - git config --global user.email "abjolseth@gmail.com"
