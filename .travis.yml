@@ -1,11 +1,16 @@
 language: node_js
 node_js:
   - stable
+cache:
+  directories:
+    - node_modules
+
 before_install:
   - export TZ=Europe/Oslo
 install:
   - npm install
-before_script:
+script:
+  - npm run test
   - npm run build
 
 before_deploy:
