@@ -1,6 +1,5 @@
 /**
- * Kodeverk/henleggelsergrunner
- * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
+ * Kodeverk/henleggelsesgrunner
  * @module
  */
 const henleggelsesgrunner = [
@@ -9,8 +8,8 @@ const henleggelsesgrunner = [
     term: 'Søknaden er trukket'
   },
   {
-    kode: 'OPPHOLD_UTL_AVLYST',
-    term: 'Utenlandsoppholdet er avlyst'
+    kode:'OPPHOLD_UTL_AVLYST',
+    term: 'Oppholdet i utlandet er avlyst før avreise'
   },
   {
     kode: 'ANNET',

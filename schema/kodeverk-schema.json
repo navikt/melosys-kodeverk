@@ -43,6 +43,7 @@
     "brev",
     "dokumenttitler",
     "finansiering",
+    "henleggelsesgrunner",
     "landkoder",
     "lovvalgsbestemmelser",
     "medlemskapstyper",
@@ -266,6 +267,16 @@
       "uniqueItems": true,
       "items": {
         "$id": "#/properties/finansiering/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "henleggelsesgrunner": {
+      "$id": "#/properties/henleggelsesgrunner",
+      "type": "array",
+      "title": "The henleggelsesgrunner Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/henleggelsesgrunner/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
