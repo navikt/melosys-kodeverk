@@ -9,11 +9,11 @@ const henleggelsesgrunner = [
   },
   {
     kode:'OPPHOLD_UTL_AVLYST',
-    term: 'Oppholdet i utlandet er avlyst før avreise'
+    term: 'Utenlandsoppholdet er avlyst'
   },
   {
     kode: 'ANNET',
-    term: 'Begrunnelse oppgis i fritekst'
+    term: 'Fritekstfelt'
   }
 ];
 module.exports.henleggelsesgrunner = henleggelsesgrunner;

@@ -1,5 +1,5 @@
 
-const tillegg = [
+const TilleggsBestemmelser_883_2004 = [
   {
     kode: 'FO_883_2004_ART11_2',
     term: 'Fo 883/2004 Artikkel 11 nr. 2',
@@ -25,4 +25,4 @@ const tillegg = [
     term: 'Fo 883/2004 Artikkel 87a',
   }
 ];
-module.exports.tillegg = tillegg;
+module.exports.TilleggsBestemmelser_883_2004 = TilleggsBestemmelser_883_2004;

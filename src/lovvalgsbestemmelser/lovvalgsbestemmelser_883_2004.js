@@ -1,5 +1,5 @@
 
-const forordning_883_2004 = [
+const lovvalgsbestemmelser_883_2004 = [
   {
     kode: 'FO_883_2004_ART11_1',
     term: 'Fo 883/2004 Artikkel 11 nr. 1',
@@ -81,4 +81,4 @@ const forordning_883_2004 = [
     term: 'Fo 883/2004 Artikkel 16 nr. 2',
   }
 ];
-module.exports.forordning_883_2004 = forordning_883_2004;
+module.exports.lovvalgsbestemmelser_883_2004 = lovvalgsbestemmelser_883_2004;

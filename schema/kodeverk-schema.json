@@ -296,38 +296,38 @@
       "title": "The lovvalgsbestemmelser object",
       "additionalProperties": false,
       "required": [
-        "forordning_883_2004",
-        "forordning_987_2009",
-        "tillegg"
+        "lovvalgsbestemmelser_883_2004",
+        "LovvalgBestemmelser_987_2009",
+        "TilleggsBestemmelser_883_2004"
       ],
       "properties": {
-        "forordning_883_2004": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_883_2004/",
+        "lovvalgsbestemmelser_883_2004": {
+          "$id": "#/properties/lovvalgsbestemmelser/properties/lovvalgsbestemmelser_883_2004/",
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
+          "title": "The lovvalgsbestemmelser_883_2004 Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_883_2004/items",
+            "$id": "#/properties/lovvalgsbestemmelser/properties/lovvalgsbestemmelser_883_2004/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "forordning_987_2009": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_987_2009",
+        "LovvalgBestemmelser_987_2009": {
+          "$id": "#/properties/lovvalgsbestemmelser/properties/LovvalgBestemmelser_987_2009",
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
+          "title": "The LovvalgBestemmelser_987_2009 Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_987_2009/items",
+            "$id": "#/properties/lovvalgsbestemmelser/properties/LovvalgBestemmelser_987_2009/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "tillegg": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/tillegg",
+        "TilleggsBestemmelser_883_2004": {
+          "$id": "#/properties/lovvalgsbestemmelser/properties/TilleggsBestemmelser_883_2004",
           "type": "array",
-          "title": "The tillegg Schema",
+          "title": "The TilleggsBestemmelser_883_2004 Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/tillegg/items",
+            "$id": "#/properties/lovvalgsbestemmelser/properties/TilleggsBestemmelser_883_2004/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
