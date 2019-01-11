@@ -3,7 +3,8 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -27,5 +28,12 @@ module.exports = {
             "error",
             "always"
         ]
+    },
+    "globals": {
+      "assert": true,
+      "kodeverk": true,
+      "kodeset": true,
+      "testKodeset": true,
+      "testKodeverk": true
     }
 };
