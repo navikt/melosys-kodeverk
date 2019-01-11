@@ -1,12 +1,17 @@
 language: node_js
 node_js:
   - stable
+cache:
+  directories:
+    - node_modules
+
 before_install:
   - export TZ=Europe/Oslo
 install:
   - npm install
-scripts:
-  npm build
+script:
+  - npm run test
+  - npm run build
 
 before_deploy:
   - git config --global user.email "abjolseth@gmail.com"
