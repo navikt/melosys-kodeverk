@@ -16,6 +16,10 @@ const landkoder = [
     term: 'Bulgaria',
   },
   {
+    kode: 'CZ',
+    term: 'Tsjekkia',
+  },
+  {
     kode: 'DK',
     term: 'Danmark',
   },
