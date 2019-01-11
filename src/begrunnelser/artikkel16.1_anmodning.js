@@ -5,11 +5,11 @@
  */
 const artikkel16_1_anmodning = [
   {
-    kode: 'UTSENDELSE_24_MN_-_5_AAR',
+    kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
     term: 'Utsendelseperioden er mer enn 24 mn og minde enn 5 år.'
   },
   {
-    kode: 'MOTTAR_LOENN_UTL.KONSERN',
+    kode: 'LOENNET_UTL_ENHET_I_KONSERN',
     term: 'Lønnes av utenlandsk foretak som er del av samme konsern.'
   },
   {
