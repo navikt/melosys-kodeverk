@@ -5,7 +5,7 @@ before_install:
   - export TZ=Europe/Oslo
 install:
   - npm install
-scripts:
+before_script:
   - npm run build
 
 before_deploy:
