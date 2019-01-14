@@ -1,9 +1,9 @@
 const Kodeverk = require('../src');
 const testKodeverk = require('./helpers').testKodeverk;
-const testKodeset = require('./helpers').testKodeset;
+const testKodeMap = require('./helpers').testKodeMap;
 
 global.assert = require('chai').assert;
 global.kodeverk = Kodeverk.kodeverk;
-global.kodeset = Kodeverk.kodeset;
+global.kodemap = Kodeverk.kodemap;
 global.testKodeverk = testKodeverk;
-global.testKodeset = testKodeset;
+global.testKodeMap = testKodeMap;

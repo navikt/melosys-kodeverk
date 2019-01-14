@@ -1,7 +1,7 @@
 describe('Landkoder', () => {
   const gruppe = 'landkoder';
   describe('Sveits', () => {
-    testKodeset('CH', 'Sveits', gruppe);
+    testKodeMap('CH', 'Sveits', gruppe);
     testKodeverk('CH', 'Sveits', gruppe, 0);
   });
 });

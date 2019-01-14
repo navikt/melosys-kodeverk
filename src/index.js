@@ -50,9 +50,9 @@ const kodeVerk =  memoize(function () {
 });
 module.exports.kodeverk = kodeVerk();
 
-const arrayToObject = (array) => {
+const arrayToObjectSet = (array) => {
   return array.reduce((obj, item) => {
-    obj[item.kode] = item.term;
+    obj[item.kode] = item.kode;
     return obj;
   }, {});
 };
@@ -62,14 +62,14 @@ const transformKodeverk2KodeSet = () => {
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
     if (Array.isArray(node)) {
-      const obj = arrayToObject(node);
+      const obj = arrayToObjectSet(node);
       codes[verk] = { ...obj };
     }
     else {
       codes[verk] = {};
       for(const prop in node) {
         const obj = {};
-        obj[prop] = {...arrayToObject(node[prop])};
+        obj[prop] = {...arrayToObjectSet(node[prop])};
         codes[verk] = {...codes[verk], ...obj};
       }
     }
@@ -80,4 +80,41 @@ const transformKodeverk2KodeSet = () => {
 const kodeSet = memoize(function () {
   return transformKodeverk2KodeSet();
 });
+
+
 module.exports.kodeset = kodeSet();
+
+const arrayToObjectMap = (array) => {
+  return array.reduce((obj, item) => {
+    obj[item.kode] = item.term;
+    return obj;
+  }, {});
+};
+
+const transformKodeverk2KodeMap = () => {
+  let codes = {};
+  for (const verk in kodeverk) {
+    const node = kodeverk[verk];
+    if (Array.isArray(node)) {
+      const obj = arrayToObjectMap(node);
+      codes[verk] = { ...obj };
+    }
+    else {
+      codes[verk] = {};
+      for(const prop in node) {
+        const obj = {};
+        obj[prop] = {...arrayToObjectMap(node[prop])};
+        codes[verk] = {...codes[verk], ...obj};
+      }
+    }
+  }
+  return codes;
+};
+
+const kodeMap = memoize(function () {
+  return transformKodeverk2KodeMap();
+});
+
+
+module.exports.kodemap = kodeMap();
+
