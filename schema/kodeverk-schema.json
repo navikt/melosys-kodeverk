@@ -123,7 +123,8 @@
         "normaltDriverVirksomhet",
         "artikkel12_1",
         "artikkel12_2",
-        "artikkel16_1_anmodning"
+        "artikkel16_1_anmodning",
+        "sokkelBegrunnelser"
       ],
       "properties": {
         "bosted": {
@@ -213,6 +214,16 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/begrunnelser/properties/artikkel16_1_anmodning/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "sokkelBegrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/sokkelBegrunnelser",
+          "type": "array",
+          "title": "The Sokkelbegrunnelser Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/begrunnelser/properties/sokkelBegrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
