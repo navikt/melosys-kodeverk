@@ -7,6 +7,7 @@ const { normaltDriverVirksomhet } = require('./normaltDriverVirksomhet');
 const { artikkel12_1 } = require('./artikkel12.1');
 const { artikkel12_2 } = require('./artikkel12.2');
 const { artikkel16_1_anmodning } = require('./artikkel16.1_anmodning');
+const { sokkelBegrunnelser } = require('./sokkelBegrunnelser');
 
 const begrunnelser = {
   bosted,
@@ -18,6 +19,7 @@ const begrunnelser = {
   artikkel12_1,
   artikkel12_2,
   artikkel16_1_anmodning,
+  sokkelBegrunnelser
 };
 
 module.exports.begrunnelser = begrunnelser;
