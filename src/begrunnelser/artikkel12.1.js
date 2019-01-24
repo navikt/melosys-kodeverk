@@ -5,16 +5,16 @@
  */
 const artikkel12_1 = [
   {
+    kode: 'UTSENDELSE_OVER_24_MIN',
+    term: ''
+  },
+  {
     kode: 'IKKE_VESENTLIGVIRKSOMHET',
     term: 'Arbeidsgiver har ikke vesentlig virksomhet.'
   },
   {
     kode: 'UTSENDELSE_FOR_LANG',
     term: 'Varighet utsendelse overskrider fastsatt lengden i forordningen.'
-  },
-  {
-    kode: 'ERSTATTER_ANNEN',
-    term: 'Arbeidstaker erstatter en annen utsendt arbeidstaker.'
   },
   {
     kode: 'FORBLI_ANSATT_LOENNET',

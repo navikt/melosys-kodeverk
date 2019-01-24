@@ -4,46 +4,54 @@
  */
 const memoize = require('lodash/memoize');
 
-const { aktoerroller } = require('./aktoerroller');
-const { begrunnelser } = require('./begrunnelser');
-const { behandlinger } = require('./behandlinger');
-const { dokumenttitler } = require('./dokumenttitler');
-const { brev } = require('./brev');
-const { finansiering } = require('./finansiering');
-const { henleggelsesgrunner } = require('./henleggelsesgrunner');
-const { landkoder } = require('./landkoder');
-const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
-const { medlemskapstyper } = require('./medlemskapstyper');
-const { mottaksretning } = require('./mottaksretning');
-const { oppgavetyper } = require('./oppgavetyper');
-const { representerer } = require('./representerer');
-const { saksstatuser } = require('./saksstatuser');
-const { sakstyper } = require('./sakstyper');
-const { trygdedekninger } = require('./trygdedekninger');
-const { vedleggstitler } = require('./vedleggstitler');
-const { vilkaar } = require('./vilkaar');
-const { yrker } = require('./yrker');
+const { AktoersRoller } = require('./aktoerroller');
+const { AvklarteFakta } = require('./avklartefakta');
+const { Begrunnelser } = require('./begrunnelser');
+const { Behandlinger } = require('./behandlinger');
+const { Dokumenttitler } = require('./dokumenttitler');
+const { Dokumenttyper } = require('./dokumenttyper');
+const { Brev } = require('./brev');
+const { Finansiering } = require('./finansiering');
+const { ForespoerselTyper } = require('./forespoerseltyper');
+const { HenleggelsesGrunner } = require('./henleggelsesgrunner');
+const { KontantYtelser_EU_FO } = require('./kontantytelser_EU_FO');
+const { Landkoder } = require('./landkoder');
+const { Lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
+const { MedlemskapsTyper } = require('./medlemskapstyper');
+const { Mottaksretning } = require('./mottaksretning');
+const { Oppgavetyper } = require('./oppgavetyper');
+const { Representerer } = require('./representerer');
+const { Saksstatuser } = require('./saksstatuser');
+const { Sakstyper } = require('./sakstyper');
+const { Trygdedekninger } = require('./trygdedekninger');
+const { Vedleggstitler } = require('./vedleggstitler');
+const { Vilkaar } = require('./vilkaar');
+const { Yrker } = require('./yrker');
 
 const kodeverk = {
-  aktoerroller,
-  dokumenttitler,
-  behandlinger,
-  begrunnelser,
-  brev,
-  finansiering,
-  henleggelsesgrunner,
-  landkoder,
-  lovvalgsbestemmelser,
-  medlemskapstyper,
-  mottaksretning,
-  oppgavetyper,
-  representerer,
-  saksstatuser,
-  sakstyper,
-  trygdedekninger,
-  vedleggstitler,
-  vilkaar,
-  yrker,
+  AktoersRoller,
+  AvklarteFakta,
+  Behandlinger,
+  Begrunnelser,
+  Brev,
+  Dokumenttitler,
+  Dokumenttyper,
+  Finansiering,
+  ForespoerselTyper,
+  HenleggelsesGrunner,
+  KontantYtelser_EU_FO,
+  Landkoder,
+  Lovvalgsbestemmelser,
+  MedlemskapsTyper,
+  Mottaksretning,
+  Oppgavetyper,
+  Representerer,
+  Saksstatuser,
+  Sakstyper,
+  Trygdedekninger,
+  Vedleggstitler,
+  Vilkaar,
+  Yrker,
 };
 const kodeVerk =  memoize(function () {
   return kodeverk;

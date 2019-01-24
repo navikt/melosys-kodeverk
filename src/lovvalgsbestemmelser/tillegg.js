@@ -25,4 +25,4 @@ const tillegg = [
     term: 'Fo 883/2004 Artikkel 87a',
   }
 ];
-module.exports.tillegg = tillegg;
+module.exports.Tillegg = tillegg;

@@ -128,4 +128,4 @@ const landkoder = [
     term: 'Østerrike',
   },
 ];
-module.exports.landkoder = landkoder;
+module.exports.Landkoder = landkoder;

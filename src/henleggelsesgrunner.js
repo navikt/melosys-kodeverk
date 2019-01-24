@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const henleggelsesgrunner = [
+const henleggelsesGrunner = [
   {
     kode: 'SOEKNADEN_TRUKKET',
     term: 'Søknaden er trukket'
@@ -14,7 +14,7 @@ const henleggelsesgrunner = [
   },
   {
     kode: 'ANNET',
-    term: 'Begrunnelse oppgis i fritekst'
+    term: 'Fritekstfelt'
   }
 ];
-module.exports.henleggelsesgrunner = henleggelsesgrunner;
+module.exports.HenleggelsesGrunner = henleggelsesGrunner;

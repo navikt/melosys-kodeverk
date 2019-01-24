@@ -25,4 +25,4 @@ const produserbareDokumenter = [
   }
 ];
 
-module.exports.produserbareDokumenter = produserbareDokumenter;
+module.exports.ProduserbareDokumenter = produserbareDokumenter;

@@ -4,4 +4,4 @@ const forordning_987_2009 = [
     term: 'Fo 987/2009 Artikkel 14 nr. 11',
   }
 ];
-module.exports.forordning_987_2009 = forordning_987_2009;
+module.exports.Forordning_987_2009 = forordning_987_2009;

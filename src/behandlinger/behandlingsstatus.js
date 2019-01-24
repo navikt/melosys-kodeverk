@@ -30,7 +30,7 @@ const behandlingsstatus = [
   },
   {
     kode: 'VURDER_DOKUMENT',
-    term: 'Vurdere dokument',
+    term: 'Vurder dokument',
   },
   {
     kode: 'TIDSFRIST_UTLOEPT',
@@ -45,4 +45,4 @@ const behandlingsstatus = [
     term: 'Vedtak iverksettes',
   }
 ];
-module.exports.behandlingsstatus = behandlingsstatus;
+module.exports.Behandlingsstatus = behandlingsstatus;

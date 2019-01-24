@@ -17,4 +17,4 @@ const yrkesaktivitetstyper = [
   }
 ];
 
-module.exports.yrkesaktivitetstyper = yrkesaktivitetstyper;
+module.exports.Yrkesaktivitetstyper = yrkesaktivitetstyper;

@@ -12,4 +12,4 @@ const oppgavetyper = [
     term: 'Journalføring'
   }
 ];
-module.exports.oppgavetyper = oppgavetyper;
+module.exports.Oppgavetyper = oppgavetyper;

@@ -8,7 +8,7 @@
 const saksstatuser = [
   {
     kode: 'OPPRETTET',
-    term: 'Saken har blitt opprettet'
+    term: 'Saken er opprettet'
   },
   {
     kode: 'LOVVALG_AVKLART',
@@ -23,4 +23,4 @@ const saksstatuser = [
     term: 'Saken er henlagt'
   }
 ];
-module.exports.saksstatuser = saksstatuser;
+module.exports.Saksstatuser = saksstatuser;

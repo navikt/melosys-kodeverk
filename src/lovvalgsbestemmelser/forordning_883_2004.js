@@ -37,10 +37,6 @@ const forordning_883_2004 = [
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav a',
   },
   {
-    kode: 'ART13_1A',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav a',
-  },
-  {
     kode: 'FO_883_2004_ART13_1B1',
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b i)',
   },
@@ -79,6 +75,10 @@ const forordning_883_2004 = [
   {
     kode: 'FO_883_2004_ART16_2',
     term: 'Fo 883/2004 Artikkel 16 nr. 2',
+  },
+  {
+    kode: 'FO_883_2004_ANNET',
+    term: '',
   }
 ];
-module.exports.forordning_883_2004 = forordning_883_2004;
+module.exports.Forordning_883_2004 = forordning_883_2004;

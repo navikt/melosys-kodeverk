@@ -21,4 +21,4 @@ const sokkelBegrunnelser = [
     term: 'Fast installasjon'
   }
 ];
-module.exports.sokkelBegrunnelser = sokkelBegrunnelser;
+module.exports.SOKKEL_BEGRUNNELSER = sokkelBegrunnelser;

@@ -5,16 +5,16 @@
 const yrkesgrupper = [
   {
     kode: 'SOKKEL_ELLER_SKIP',
-    term: 'Arbeider på sokkel eller skip.'
+    term: ''
   },
   {
     kode: 'FLYENDE_PERSONELL',
-    term: 'Arbeider som flyende personell.'
+    term: ''
   },
   {
     kode: 'ORDINAER',
-    term: 'Ordinær arbeid som ikke gjelder flyende personell eller på sokkel eller skip.'
+    term: ''
   }
 ];
 
-module.exports.yrkesgrupper = yrkesgrupper;
+module.exports.Yrkesgrupper = yrkesgrupper;

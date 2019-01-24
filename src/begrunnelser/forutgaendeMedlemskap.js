@@ -13,10 +13,6 @@ const forutgaendeMedlemskap = [
     term: 'Mottok IKKE lønn fra annen arbeidsgiver opptjent i Norge forutgående måned.',
   },
   {
-    kode: 'UNNTATT_MEDLEMSKAP',
-    term: 'Har direkte forutgående medlemskap i MEDL.',
-  },
-  {
     kode: 'MOTTAT_LOENN_UTL',
     term: 'Mottok lønn opptjent i annet land forutgående måned.',
   },
