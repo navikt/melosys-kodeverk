@@ -20,10 +20,6 @@ const dokumenttyper = [
     term: '',
   },
   {
-    kode: 'PAASTAND_UTLMYNDH',
-    term: '',
-  },
-  {
     kode: 'MELDING_AKTOER',
     term: '',
   },
@@ -48,4 +44,4 @@ const dokumenttyper = [
     term: 'Trygderettskjennelse',
   }
 ];
-module.exports.Dokumenttitler = dokumenttyper;
+module.exports.DokumentTyper = dokumenttyper;

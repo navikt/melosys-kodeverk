@@ -9,12 +9,12 @@ const { AvklarteFakta } = require('./avklartefakta');
 const { Begrunnelser } = require('./begrunnelser');
 const { Behandlinger } = require('./behandlinger');
 const { Dokumenttitler } = require('./dokumenttitler');
-const { Dokumenttyper } = require('./dokumenttyper');
+const { DokumentTyper } = require('./dokumenttyper');
 const { Brev } = require('./brev');
 const { Finansiering } = require('./finansiering');
 const { ForespoerselTyper } = require('./forespoerseltyper');
 const { HenleggelsesGrunner } = require('./henleggelsesgrunner');
-const { KontantYtelser_EU_FO } = require('./kontantytelser_EU_FO');
+const { Kontantytelser_EU_FO } = require('./kontantytelser_EU_FO');
 const { Landkoder } = require('./landkoder');
 const { Lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { MedlemskapsTyper } = require('./medlemskapstyper');
@@ -35,11 +35,11 @@ const kodeverk = {
   Begrunnelser,
   Brev,
   Dokumenttitler,
-  Dokumenttyper,
+  DokumentTyper,
   Finansiering,
   ForespoerselTyper,
   HenleggelsesGrunner,
-  KontantYtelser_EU_FO,
+  Kontantytelser_EU_FO,
   Landkoder,
   Lovvalgsbestemmelser,
   MedlemskapsTyper,

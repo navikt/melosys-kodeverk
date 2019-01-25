@@ -36,418 +36,529 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "aktoerroller",
-    "behandlinger",
-    "begrunnelser",
-    "brev",
-    "dokumenttitler",
-    "finansiering",
-    "henleggelsesgrunner",
-    "landkoder",
-    "lovvalgsbestemmelser",
-    "medlemskapstyper",
-    "mottaksretning",
-    "oppgavetyper",
-    "representerer",
-    "saksstatuser",
-    "sakstyper",
-    "trygdedekninger",
-    "vedleggstitler",
-    "vilkaar",
-    "yrker"
+    "AktoersRoller",
+    "AvklarteFakta",
+    "Behandlinger",
+    "Begrunnelser",
+    "Brev",
+    "Dokumenttitler",
+    "DokumentTyper",
+    "Finansiering",
+    "ForespoerselTyper",
+    "HenleggelsesGrunner",
+    "Kontantytelser_EU_FO",
+    "Landkoder",
+    "Lovvalgsbestemmelser",
+    "MedlemskapsTyper",
+    "Mottaksretning",
+    "Oppgavetyper",
+    "Representerer",
+    "Saksstatuser",
+    "Sakstyper",
+    "Trygdedekninger",
+    "Vedleggstitler",
+    "Vilkaar",
+    "Yrker"
   ],
   "properties": {
-    "aktoerroller": {
-      "$id": "#/properties/aktoerroller",
+    "AktoersRoller": {
+      "$id": "#/properties/AktoersRoller",
       "type": "array",
-      "title": "The Aktoerroller Schema",
+      "title": "The AktoersRoller Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/aktoerroller/items",
+        "$id": "#/properties/AktoersRoller/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "behandlinger": {
-      "$id": "#/properties/behandlinger",
+    "AvklarteFakta": {
+      "$id": "#/properties/AvklarteFakta",
+      "type": "array",
+      "title": "The AvklarteFakta Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/AvklarteFakta/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "Behandlinger": {
+      "$id": "#/properties/Behandlinger",
       "type": "object",
       "title": "The Behandlinger object",
       "additionalProperties": false,
       "required": [
-        "behandlingsstatus",
-        "behandlingstyper"
+        "Behandlingsstatus",
+        "Behandlingstyper",
+        "Behandlingsresultattyper"
       ],
       "properties": {
-        "behandlingsstatus": {
-          "$id": "#/properties/behandlinger/behandlingsstatus",
+        "Behandlingsstatus": {
+          "$id": "#/properties/Behandlinger/Behandlingsstatus",
           "type": "array",
           "title": "The Behandlingsstatus Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/behandlinger/behandlingsstatus/items",
+            "$id": "#/properties/Behandlinger/Behandlingsstatus/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "behandlingstyper": {
-          "$id": "#/properties/behandlinger/behandlingstyper",
+        "Behandlingstyper": {
+          "$id": "#/properties/Behandlinger/Behandlingstyper",
           "type": "array",
           "title": "The Behandlingstyper Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/behandlinger/behandlingstyper/items",
+            "$id": "#/properties/Behandlinger/Behandlingstyper/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "behandlingsresultattyper":  {
-          "$id": "#/properties/behandlinger/behandlingsresultattyper",
+        "Behandlingsresultattyper":  {
+          "$id": "#/properties/Behandlinger/Behandlingsresultattyper",
           "type": "array",
           "title": "The BehandlingsResultatTyper Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/behandlinger/behandlingsresultattyper/items",
+            "$id": "#/properties/Behandlinger/Behandlingsresultattyper/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
       }
     },
-    "begrunnelser": {
-      "$id": "#/properties/begrunnelser",
+    "Begrunnelser": {
+      "$id": "#/properties/Begrunnelser",
       "type": "object",
       "title": "The Begrunnelser Schema",
       "additionalProperties": false,
       "required": [
+        "ArbeidslandBegrunnelser",
+        "ART12_1_BEGRUNNELSER",
+        "ART12_2_BEGRUNNELSER",
+        "ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE",
+        "ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER",
+        "ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER",
+        "ART16_1_ANMODNING_BEGRUNNELSER",
+        "Art16_1_AVSLAG_BEGRUNNELSER",
+        "ART11_4_BEGRUNNELSER",
         "bosted",
         "forutgaendeMedlemskap",
         "ikkeSkip",
-        "opphold",
-        "vesentligVirksomhet",
+        "InngangsvilkårBegrunnelser",
+        "OppholdBegrunnelser",
         "normaltDriverVirksomhet",
-        "artikkel12_1",
-        "artikkel12_2",
-        "artikkel16_1_anmodning",
-        "sokkelBegrunnelser"
+        "SOKKEL_BEGRUNNELSER"
       ],
       "properties": {
+        "ArbeidslandBegrunnelser": {
+          "$id": "#/properties/Begrunnelser/properties/ArbeidslandBegrunnelser",
+          "type": "array",
+          "title": "The ArbeidslandBegrunnelser Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ArbeidslandBegrunnelser/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART12_1_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART12_1_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART12_1_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART12_1_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART12_2_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART12_2_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART12_2_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART12_2_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE": {
+          "$id": "#/properties/Begrunnelser/properties/ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE",
+          "type": "array",
+          "title": "The ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART16_1_ANMODNING_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART16_1_ANMODNING_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART16_1_ANMODNING_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART16_1_ANMODNING_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "Art16_1_AVSLAG_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/Art16_1_AVSLAG_BEGRUNNELSER",
+          "type": "array",
+          "title": "The Art16_1_AVSLAG_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/Art16_1_AVSLAG_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ART11_4_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/ART11_4_BEGRUNNELSER",
+          "type": "array",
+          "title": "The ART11_4_BEGRUNNELSER Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/Begrunnelser/properties/ART11_4_BEGRUNNELSER/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
         "bosted": {
-          "$id": "#/properties/begrunnelser/properties/bosted",
+          "$id": "#/properties/Begrunnelser/properties/bosted",
           "type": "array",
           "title": "The Bosted Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/bosted/items",
+            "$id": "#/properties/Begrunnelser/properties/bosted/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
         "forutgaendeMedlemskap": {
-          "$id": "#/properties/begrunnelser/properties/forutgaendeMedlemskap",
+          "$id": "#/properties/Begrunnelser/properties/forutgaendeMedlemskap",
           "type": "array",
           "title": "The Forutgaendemedlemskap Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/forutgaendeMedlemskap/items",
+            "$id": "#/properties/Begrunnelser/properties/forutgaendeMedlemskap/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
         "ikkeSkip": {
-          "$id": "#/properties/begrunnelser/properties/ikkeSkip",
+          "$id": "#/properties/Begrunnelser/properties/ikkeSkip",
           "type": "array",
           "title": "The Ikkeskip Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/ikkeSkip/items",
+            "$id": "#/properties/Begrunnelser/properties/ikkeSkip/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "opphold": {
-          "$id": "#/properties/begrunnelser/properties/opphold",
+        "InngangsvilkårBegrunnelser": {
+          "$id": "#/properties/Begrunnelser/properties/InngangsvilkårBegrunnelser",
           "type": "array",
-          "title": "The Opphold Schema",
+          "title": "The InngangsvilkårBegrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/opphold/items",
+            "$id": "#/properties/Begrunnelser/properties/InngangsvilkårBegrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "vesentligVirksomhet": {
-          "$id": "#/properties/begrunnelser/properties/vesentligVirksomhet",
+        "OppholdBegrunnelser": {
+          "$id": "#/properties/Begrunnelser/properties/OppholdBegrunnelser",
           "type": "array",
-          "title": "The Vesentligvirksomhet Schema",
+          "title": "The OppholdBegrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/vesentligVirksomhet/items",
+            "$id": "#/properties/Begrunnelser/properties/OppholdBegrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
         "normaltDriverVirksomhet": {
-          "$id": "#/properties/begrunnelser/properties/normaltDriverVirksomhet",
+          "$id": "#/properties/Begrunnelser/properties/normaltDriverVirksomhet",
           "type": "array",
           "title": "The NormaltDriverVirksomhet Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/normaltDriverVirksomhet/items",
+            "$id": "#/properties/Begrunnelser/properties/normaltDriverVirksomhet/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "artikkel12_1": {
-          "$id": "#/properties/begrunnelser/properties/artikkel12_1",
-          "type": "array",
-          "title": "The Artikkel 12.1 Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/begrunnelser/properties/artikkel12_1/items",
-            "$ref": "#/definitions/kodeverk"
-          }
-        },
-        "artikkel12_2": {
-          "$id": "#/properties/begrunnelser/properties/artikkel12_2",
-          "type": "array",
-          "title": "The Artikkel 12.2 Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/begrunnelser/properties/artikkel12_2/items",
-            "$ref": "#/definitions/kodeverk"
-          }
-        },
-        "artikkel16_1_anmodning": {
-          "$id": "#/properties/begrunnelser/properties/artikkel16_1_anmodning",
-          "type": "array",
-          "title": "The Artikkel 16.1 anmodning Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/begrunnelser/properties/artikkel16_1_anmodning/items",
-            "$ref": "#/definitions/kodeverk"
-          }
-        },
-        "sokkelBegrunnelser": {
-          "$id": "#/properties/begrunnelser/properties/sokkelBegrunnelser",
+        "SOKKEL_BEGRUNNELSER": {
+          "$id": "#/properties/Begrunnelser/properties/SOKKEL_BEGRUNNELSER",
           "type": "array",
           "title": "The Sokkelbegrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/sokkelBegrunnelser/items",
+            "$id": "#/properties/Begrunnelser/properties/SOKKEL_BEGRUNNELSER/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
       }
     },
-    "brev": {
-      "$id": "#/properties/brev",
+    "Brev": {
+      "$id": "#/properties/Brev",
       "type": "object",
       "title": "The Brev Schema",
       "additionalProperties": false,
       "required": [
-        "produserbareDokumenter"
+        "ProduserbareDokumenter"
       ],
       "properties": {
-        "produserbareDokumenter": {
-          "$id": "#/properties/brev/produserbareDokumenter",
+        "ProduserbareDokumenter": {
+          "$id": "#/properties/Brev/ProduserbareDokumenter",
           "type": "array",
-          "title": "The produserbareDokumenter Schema",
+          "title": "The ProduserbareDokumenter Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/brev/produserbareDokumenter/items",
+            "$id": "#/properties/Brev/ProduserbareDokumenter/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
       }
     },
-    "dokumenttitler": {
-      "$id": "#/properties/dokumenttitler",
+    "Dokumenttitler": {
+      "$id": "#/properties/Dokumenttitler",
       "type": "array",
       "title": "The Dokumenttitler Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/dokumenttitler/items",
+        "$id": "#/properties/Dokumenttitler/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "finansiering": {
-      "$id": "#/properties/finansiering",
+    "DokumentTyper": {
+      "$id": "#/properties/DokumentTyper",
+      "type": "array",
+      "title": "The DokumentTyper Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/DokumentTyper/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "Finansiering": {
+      "$id": "#/properties/Finansiering",
       "type": "array",
       "title": "The Finansiering Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/finansiering/items",
+        "$id": "#/properties/Finansiering/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "henleggelsesgrunner": {
-      "$id": "#/properties/henleggelsesgrunner",
+    "ForespoerselTyper": {
+      "$id": "#/properties/ForespoerselTyper",
+      "type": "array",
+      "title": "The ForespoerselTyper Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/ForespoerselTyper/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "HenleggelsesGrunner": {
+      "$id": "#/properties/HenleggelsesGrunner",
       "type": "array",
       "title": "The Henleggelsesgrunner Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/henleggelsesgrunner/items",
+        "$id": "#/properties/HenleggelsesGrunner/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "landkoder": {
-      "$id": "#/properties/landkoder",
+    "Kontantytelser_EU_FO": {
+      "$id": "#/properties/Kontantytelser_EU_FO",
+      "type": "array",
+      "title": "The Kontantytelser_EU_FO Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/Kontantytelser_EU_FO/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "Landkoder": {
+      "$id": "#/properties/Landkoder",
       "type": "array",
       "title": "The Landkoder Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/landkoder/items",
+        "$id": "#/properties/Landkoder/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "lovvalgsbestemmelser": {
-      "$id": "#/properties/lovvalgsbestemmelser",
+    "Lovvalgsbestemmelser": {
+      "$id": "#/properties/Lovvalgsbestemmelser",
       "type": "object",
-      "title": "The lovvalgsbestemmelser object",
+      "title": "The Lovvalgsbestemmelser object",
       "additionalProperties": false,
       "required": [
-        "forordning_883_2004",
-        "forordning_987_2009",
-        "tillegg"
+        "Forordning_883_2004",
+        "Forordning_987_2009",
+        "Tillegg"
       ],
       "properties": {
-        "forordning_883_2004": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_883_2004/",
+        "Forordning_883_2004": {
+          "$id": "#/properties/Lovvalgsbestemmelser/properties/Forordning_883_2004/",
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
+          "title": "The Forordning_883_2004 Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_883_2004/items",
+            "$id": "#/properties/Lovvalgsbestemmelser/properties/Forordning_883_2004/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "forordning_987_2009": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_987_2009",
+        "Forordning_987_2009": {
+          "$id": "#/properties/Lovvalgsbestemmelser/properties/Forordning_987_2009",
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
+          "title": "The Forordning_883_2004 Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/forordning_987_2009/items",
+            "$id": "#/properties/Lovvalgsbestemmelser/properties/Forordning_987_2009/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "tillegg": {
-          "$id": "#/properties/lovvalgsbestemmelser/properties/tillegg",
+        "Tillegg": {
+          "$id": "#/properties/Lovvalgsbestemmelser/properties/Tillegg",
           "type": "array",
-          "title": "The tillegg Schema",
+          "title": "The Tillegg Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/lovvalgsbestemmelser/properties/tillegg/items",
+            "$id": "#/properties/Lovvalgsbestemmelser/properties/Tillegg/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
       }
     },
-    "medlemskapstyper":   {
-      "$id": "#/properties/medlemskapstyper",
+    "MedlemskapsTyper":   {
+      "$id": "#/properties/MedlemskapsTyper",
       "type": "array",
       "uniqueItems": true,
       "items":  {
-        "$id": "#/properties/medlemskapstyper/items",
+        "$id": "#/properties/MedlemskapsTyper/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "mottaksretning":  {
-      "$id": "#/properties/mottaksretning",
+    "Mottaksretning":  {
+      "$id": "#/properties/Mottaksretning",
       "type": "array",
       "uniqueItems": true,
       "items":  {
-        "$id": "#/properties/mottaksretning/items",
+        "$id": "#/properties/Mottaksretning/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "oppgavetyper": {
-      "$id": "#/properties/oppgavetyper",
+    "Oppgavetyper": {
+      "$id": "#/properties/Oppgavetyper",
       "type": "array",
       "title": "The Oppgavetyper Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/oppgavetyper/items",
+        "$id": "#/properties/Oppgavetyper/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "representerer": {
-      "$id": "#/properties/representerer",
+    "Representerer": {
+      "$id": "#/properties/Representerer",
       "type": "array",
       "title": "The Representerer Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/representerer/items",
+        "$id": "#/properties/Representerer/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "saksstatuser":  {
-      "$id": "#/properties/saksstatuser",
+    "Saksstatuser":  {
+      "$id": "#/properties/Saksstatuser",
       "type": "array",
-      "title": "The SaksStatuser Schema",
+      "title": "The Saksstatuser Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/saksstatuser/items",
+        "$id": "#/properties/Saksstatuser/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "sakstyper": {
-      "$id": "#/properties/sakstyper",
+    "Sakstyper": {
+      "$id": "#/properties/Sakstyper",
       "type": "array",
       "title": "The Sakstyper Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/sakstyper/items",
+        "$id": "#/properties/Sakstyper/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "trygdedekninger": {
-      "$id": "#/properties/trygdedekninger",
+    "Trygdedekninger": {
+      "$id": "#/properties/Trygdedekninger",
       "type": "array",
       "title": "The Trygdedekninger Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/trygdedekninger/items",
+        "$id": "#/properties/Trygdedekninger/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "vedleggstitler": {
-      "$id": "#/properties/vedleggstitler",
+    "Vedleggstitler": {
+      "$id": "#/properties/Vedleggstitler",
       "type": "array",
       "title": "The Vedleggstitler Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/vedleggstitler/items",
+        "$id": "#/properties/Vedleggstitler/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "vilkaar": {
-      "$id": "#/properties/vilkaar",
+    "Vilkaar": {
+      "$id": "#/properties/Vilkaar",
       "type": "array",
       "title": "Vilkårene",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/vilkaar/items",
+        "$id": "#/properties/Vilkaar/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "yrker": {
-      "$id": "#/properties/yrke",
+    "Yrker": {
+      "$id": "#/properties/Yrker",
       "type": "object",
-      "title": "The Yrke Schema",
+      "title": "The Yrker Schema",
       "additionalProperties": false,
       "required": [
-        "yrkesaktivitetstyper",
-        "yrkesgrupper"
+        "Yrkesaktivitetstyper",
+        "Yrkesgrupper"
       ],
       "properties": {
-        "yrkesaktivitetstyper": {
-          "$id": "#/properties/yrke/properties/yrkesaktivitetstyper/",
+        "Yrkesaktivitetstyper": {
+          "$id": "#/properties/Yrker/properties/Yrkesaktivitetstyper/",
           "type": "array",
-          "title": "The YrkesaktivitetsTyper Schema",
+          "title": "The Yrkesaktivitetstyper Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/yrke/properties/yrkesaktivitetstyper/items",
+            "$id": "#/properties/Yrker/properties/Yrkesaktivitetstyper/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "yrkesgrupper": {
-          "$id": "#/properties/yrke/properties/yrkesgrupper/",
+        "Yrkesgrupper": {
+          "$id": "#/properties/Yrker/properties/Yrkesgrupper/",
           "type": "array",
-          "title": "The YrkesGrupper Schema",
+          "title": "The Yrkesgrupper Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/yrke/properties/yrkesgrupper/items",
+            "$id": "#/properties/Yrker/properties/Yrkesgrupper/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
