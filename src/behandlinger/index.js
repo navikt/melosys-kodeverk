@@ -1,11 +1,11 @@
-const { Behandlingsresultattyper } = require('./behandlingsresultattyper');
-const { Behandlingsstatus } = require('./behandlingsstatus');
-const { Behandlingstyper } = require('./behandlingstyper');
+const { behandlingsresultattyper } = require('./behandlingsresultattyper');
+const { behandlingsstatus } = require('./behandlingsstatus');
+const { behandlingstyper } = require('./behandlingstyper');
 
 const behandlinger = {
-  Behandlingsresultattyper,
-  Behandlingsstatus,
-  Behandlingstyper
+  behandlingsresultattyper,
+  behandlingsstatus,
+  behandlingstyper
 };
 
-module.exports.Behandlinger = behandlinger;
+module.exports.behandlinger = behandlinger;

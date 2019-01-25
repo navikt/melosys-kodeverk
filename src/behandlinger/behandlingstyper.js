@@ -36,4 +36,4 @@ const behandlingstyper = [
     term: 'Behandle forkortet periode'
   }
 ];
-module.exports.Behandlingstyper = behandlingstyper;
+module.exports.behandlingstyper = behandlingstyper;

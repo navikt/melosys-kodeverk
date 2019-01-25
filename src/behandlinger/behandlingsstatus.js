@@ -45,4 +45,4 @@ const behandlingsstatus = [
     term: 'Vedtak iverksettes',
   }
 ];
-module.exports.Behandlingsstatus = behandlingsstatus;
+module.exports.behandlingsstatus = behandlingsstatus;

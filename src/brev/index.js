@@ -1,7 +1,7 @@
-const { ProduserbareDokumenter } = require('./produserbareDokumenter');
+const { produserbaredokumenter } = require('./produserbareDokumenter');
 
 const brev = {
-  ProduserbareDokumenter
+  produserbaredokumenter
 };
 
-module.exports.Brev = brev;
+module.exports.brev = brev;

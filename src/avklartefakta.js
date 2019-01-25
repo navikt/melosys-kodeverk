@@ -24,4 +24,4 @@ const avklartefakta = [
     term: '',
   }
 ];
-module.exports.AvklarteFakta = avklartefakta;
+module.exports.avklartefakta = avklartefakta;

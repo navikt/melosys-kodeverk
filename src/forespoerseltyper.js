@@ -16,4 +16,4 @@ const forespoerseltyper = [
     term: '',
   }
 ];
-module.exports.ForespoerselTyper = forespoerseltyper;
+module.exports.forespoerseltyper = forespoerseltyper;

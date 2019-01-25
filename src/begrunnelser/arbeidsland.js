@@ -1,4 +1,4 @@
-const ArbeidslandBegrunnelser = [
+const arbeidsland = [
   {
     kode: 'SKIP_INNENRIKS',
     term: 'Territorialfarvann',
@@ -12,4 +12,4 @@ const ArbeidslandBegrunnelser = [
     term: 'Hjemmebaseland',
   },
 ];
-module.exports.ArbeidslandBegrunnelser = ArbeidslandBegrunnelser;
+module.exports.arbeidsland = arbeidsland;

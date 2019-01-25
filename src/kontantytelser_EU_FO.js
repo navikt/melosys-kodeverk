@@ -21,4 +21,4 @@ const kontantytelser_EU_FO = [
     term: 'Dagpenger',
   }
 ];
-module.exports.Kontantytelser_EU_FO = kontantytelser_EU_FO;
+module.exports.kontantytelser_EU_FO = kontantytelser_EU_FO;

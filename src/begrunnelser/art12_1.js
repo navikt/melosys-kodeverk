@@ -1,4 +1,4 @@
-const artikkel12_1_begrunnelser = [
+const artikkel12_1 = [
   {
     kode: 'UTSENDELSE_OVER_24_MN',
     term: 'Utsendelseperioden overskrider 24 måneder',
@@ -24,4 +24,4 @@ const artikkel12_1_begrunnelser = [
     term: 'Foretaket har ikke vesentlig virksomhet',
   }
 ];
-module.exports.ART12_1_BEGRUNNELSER = artikkel12_1_begrunnelser;
+module.exports.art12_1 = artikkel12_1;

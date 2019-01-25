@@ -12,4 +12,4 @@ const trygdedekninger = [
     term: ''
   }
 ];
-module.exports.Trygdedekninger = trygdedekninger;
+module.exports.trygdedekninger = trygdedekninger;

@@ -17,4 +17,4 @@ const yrkesgrupper = [
   }
 ];
 
-module.exports.Yrkesgrupper = yrkesgrupper;
+module.exports.yrkesgrupper = yrkesgrupper;

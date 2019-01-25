@@ -81,4 +81,4 @@ const forordning_883_2004 = [
     term: '',
   }
 ];
-module.exports.Forordning_883_2004 = forordning_883_2004;
+module.exports.forordning_883_2004 = forordning_883_2004;

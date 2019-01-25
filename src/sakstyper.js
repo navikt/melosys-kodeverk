@@ -18,4 +18,4 @@ const sakstyper = [
     term: 'Folketrygdloven',
   },
 ];
-module.exports.Sakstyper = sakstyper;
+module.exports.sakstyper = sakstyper;

@@ -44,4 +44,4 @@ const vilkaar = [
     term: 'Folketrygdloven § 2-12',
   }
 ];
-module.exports.Vilkaar = vilkaar;
+module.exports.vilkaar = vilkaar;

@@ -17,4 +17,4 @@ const opphold = [
     term: ''
   }
 ];
-module.exports.OppholdBegrunnelser = opphold;
+module.exports.opphold = opphold;

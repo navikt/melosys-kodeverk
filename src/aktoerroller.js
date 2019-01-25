@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const aktoersRoller = [
+const aktoersroller = [
   {
     kode: 'BRUKER',
     term: 'Bruker'
@@ -21,4 +21,4 @@ const aktoersRoller = [
     term: 'Trygdemyndighet'
   }
 ];
-module.exports.AktoersRoller = aktoersRoller;
+module.exports.aktoersroller = aktoersroller;

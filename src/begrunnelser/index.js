@@ -1,38 +1,38 @@
 
-const { ArbeidslandBegrunnelser } = require('./ArbeidslandBegrunnelser');
-const { ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE } = require('./ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE');
-const { ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER } = require('./ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER');
-const { ART12_1_BEGRUNNELSER } = require('./ART12_1_BEGRUNNELSER');
-const { ART12_2_BEGRUNNELSER } = require('./ART12_2_BEGRUNNELSER');
-const { ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER } = require('./ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER');
-const { ART16_1_ANMODNING_BEGRUNNELSER } = require('./ART16_1_ANMODNING_BEGRUNNELSER');
-const { Art16_1_AVSLAG_BEGRUNNELSER } = require('./Art16_1_AVSLAG_BEGRUNNELSER');
-const { ART11_4_BEGRUNNELSER } = require('./ART11_4_BEGRUNNELSER');
+const { arbeidsland } = require('./arbeidsland');
+const { art12_1_forutgaaende_medl } = require('./art12_1_forutgaaende_medl');
+const { art12_1_vesentlig_virksomhet } = require('./art12_1_vesentlig_virksomhet');
+const { art12_1 } = require('./art12_1');
+const { art12_2 } = require('./art12_2');
+const { art12_2_normalt_virksomhet } = require('./art12_2_normalt_virksomhet');
+const { art16_1_anmodning } = require('./art16_1_anmodning');
+const { art16_1_avslag } = require('./art16_1_avslag');
+const { art11_4 } = require('./art11_4');
 const { bosted } = require('./bosted');
 const { forutgaendeMedlemskap } = require('./forutgaendeMedlemskap');
 const { ikkeSkip } = require('./ikkeSkip');
-const { InngangsvilkårBegrunnelser } = require('./InngangsvilkårBegrunnelser');
-const { OppholdBegrunnelser } = require('./opphold');
+const { inngangsvilkår } = require('./Inngangsvilkår');
+const { opphold } = require('./opphold');
 const { normaltDriverVirksomhet } = require('./normaltDriverVirksomhet');
-const { SOKKEL_BEGRUNNELSER } = require('./sokkelBegrunnelser');
+const { sokkel } = require('./sokkel');
 
 const begrunnelser = {
-  ArbeidslandBegrunnelser,
-  ART12_1_BEGRUNNELSER,
-  ART12_2_BEGRUNNELSER,
-  ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE,
-  ART12_1_VESENTLIG_VIRKSOMHET_BEGRUNNELSER,
-  ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER,
-  ART16_1_ANMODNING_BEGRUNNELSER,
-  Art16_1_AVSLAG_BEGRUNNELSER,
-  ART11_4_BEGRUNNELSER,
+  arbeidsland,
+  art12_1,
+  art12_2,
+  art12_1_forutgaaende_medl,
+  art12_1_vesentlig_virksomhet,
+  art12_2_normalt_virksomhet,
+  art16_1_anmodning,
+  art16_1_avslag,
+  art11_4,
   bosted,
   forutgaendeMedlemskap,
   ikkeSkip,
-  InngangsvilkårBegrunnelser,
-  OppholdBegrunnelser,
+  inngangsvilkår,
+  opphold,
   normaltDriverVirksomhet,
-  SOKKEL_BEGRUNNELSER
+  sokkel
 };
 
-module.exports.Begrunnelser = begrunnelser;
+module.exports.begrunnelser = begrunnelser;

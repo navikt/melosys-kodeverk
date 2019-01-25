@@ -16,4 +16,4 @@ const medlemskapstyper = [
     term: 'Unntatt medlemskap'
   }
 ];
-module.exports.MedlemskapsTyper = medlemskapstyper;
+module.exports.medlemskapstyper = medlemskapstyper;

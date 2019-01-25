@@ -1,4 +1,4 @@
-const ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER = [
+const art12_2_normalt_virksomhet = [
   {
     kode: 'IKKE_FORUTGAAENDE_DRIFT',
     term: 'Ikke tilstrekkelig forutgående drift',
@@ -8,4 +8,4 @@ const ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER = [
     term: 'Kan ikke gjenoppta drift',
   },
 ];
-module.exports.ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER = ART12_2_NORMALT_VIRKSOMHET_BEGRUNNELSER;
+module.exports.art12_2_normalt_virksomhet = art12_2_normalt_virksomhet;

@@ -1,4 +1,4 @@
-const ART12_2_BEGRUNNELSER = [
+const art12_2 = [
   {
     kode: 'UTSENDELSE_OVER_24_MN',
     term: 'Utsendelseperioden overskrider 24 måneder',
@@ -12,4 +12,4 @@ const ART12_2_BEGRUNNELSER = [
     term: 'Normalt ikke drift i Norge',
   },
 ];
-module.exports.ART12_2_BEGRUNNELSER = ART12_2_BEGRUNNELSER;
+module.exports.art12_2 = art12_2;

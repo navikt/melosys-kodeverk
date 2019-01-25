@@ -23,4 +23,4 @@ const saksstatuser = [
     term: 'Saken er henlagt'
   }
 ];
-module.exports.Saksstatuser = saksstatuser;
+module.exports.saksstatuser = saksstatuser;

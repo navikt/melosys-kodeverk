@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const sokkelBegrunnelser = [
+const sokkel = [
   {
     kode: 'IKKE_EGEN_FREMDRIFT',
     term: 'Ikke framdrift for egen maskin'
@@ -21,4 +21,4 @@ const sokkelBegrunnelser = [
     term: 'Fast installasjon'
   }
 ];
-module.exports.SOKKEL_BEGRUNNELSER = sokkelBegrunnelser;
+module.exports.sokkel = sokkel;

@@ -17,4 +17,4 @@ const representerer = [
     term: 'Representerer bruker og arbeidsgiver'
   }
 ];
-module.exports.Representerer = representerer;
+module.exports.representerer = representerer;

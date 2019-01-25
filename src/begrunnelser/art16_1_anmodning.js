@@ -1,4 +1,4 @@
-const ART16_1_ANMODNING_BEGRUNNELSER = [
+const art16_1_anmodning = [
   {
     kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
     term: 'Utsendelseperioden er mellom 2 og 5 år',
@@ -32,4 +32,4 @@ const ART16_1_ANMODNING_BEGRUNNELSER = [
     term: 'Fritekstfelt',
   },
 ];
-module.exports.ART16_1_ANMODNING_BEGRUNNELSER = ART16_1_ANMODNING_BEGRUNNELSER;
+module.exports.art16_1_anmodning = art16_1_anmodning;

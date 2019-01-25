@@ -25,4 +25,4 @@ const behandlingsresultattyper = [
     term: 'Ikke fastsatt',
   }
 ];
-module.exports.Behandlingsresultattyper = behandlingsresultattyper;
+module.exports.behandlingsresultattyper = behandlingsresultattyper;

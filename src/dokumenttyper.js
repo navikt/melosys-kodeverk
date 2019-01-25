@@ -44,4 +44,4 @@ const dokumenttyper = [
     term: 'Trygderettskjennelse',
   }
 ];
-module.exports.DokumentTyper = dokumenttyper;
+module.exports.dokumenttyper = dokumenttyper;

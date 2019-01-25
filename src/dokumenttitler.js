@@ -36,4 +36,4 @@ const dokumenttitler = [
     term:'Annet (=fritekst)'
   }
 ];
-module.exports.Dokumenttitler = dokumenttitler;
+module.exports.dokumenttitler = dokumenttitler;

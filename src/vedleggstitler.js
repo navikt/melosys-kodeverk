@@ -16,4 +16,4 @@ const vedleggstitler = [
     term: 'Annet...'
   }
 ];
-module.exports.Vedleggstitler = vedleggstitler;
+module.exports.vedleggstitler = vedleggstitler;

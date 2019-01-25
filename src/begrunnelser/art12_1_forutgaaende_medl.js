@@ -1,4 +1,4 @@
-const ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE	 = [
+const art12_1_forutgaaende_medl	 = [
   {
     kode: 'UNNTATT_MEDLEMSKAP',
     term: 'Unntak i MEDL',
@@ -12,4 +12,4 @@ const ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE	 = [
     term: 'Hverken bor eller arbeidet i Norge',
   },
 ];
-module.exports.ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE = ART12_1_FORUTGAAENDE_MEDL_BEGRUNNELSE;
+module.exports.art12_1_forutgaaende_medl = art12_1_forutgaaende_medl;

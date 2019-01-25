@@ -16,4 +16,4 @@ const mottaksretning = [
     term: 'Internt notat'
   }
 ];
-module.exports.Mottaksretning = mottaksretning;
+module.exports.mottaksretning = mottaksretning;

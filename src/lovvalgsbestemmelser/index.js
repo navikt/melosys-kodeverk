@@ -1,10 +1,10 @@
-const { Forordning_883_2004 } = require('./forordning_883_2004');
-const { Forordning_987_2009 } = require('./forordning_987_2009');
-const { Tillegg } = require('./tillegg');
+const { forordning_883_2004 } = require('./forordning_883_2004');
+const { forordning_987_2009 } = require('./forordning_987_2009');
+const { tillegg } = require('./tillegg');
 
 const lovvalgsbestemmelser = {
-  Forordning_883_2004,
-  Forordning_987_2009,
-  Tillegg,
+  forordning_883_2004,
+  forordning_987_2009,
+  tillegg,
 };
-module.exports.Lovvalgsbestemmelser = lovvalgsbestemmelser;
+module.exports.lovvalgsbestemmelser = lovvalgsbestemmelser;
