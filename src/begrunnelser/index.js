@@ -9,11 +9,11 @@ const { art16_1_anmodning } = require('./art16_1_anmodning');
 const { art16_1_avslag } = require('./art16_1_avslag');
 const { art11_4 } = require('./art11_4');
 const { bosted } = require('./bosted');
-const { forutgaendemedlemskap } = require('./forutgaendeMedlemskap');
-const { ikkeSkip } = require('./ikkeSkip');
-const { inngangsvilkår } = require('./Inngangsvilkår');
+const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
+const { ikkeskip } = require('./ikkeskip');
+const { inngangsvilkaar } = require('./inngangsvilkaar');
 const { opphold } = require('./opphold');
-const { normaltDriverVirksomhet } = require('./normaltDriverVirksomhet');
+const { normaltdrivervirksomhet } = require('./normaltdrivervirksomhet');
 const { sokkel } = require('./sokkel');
 
 const begrunnelser = {
@@ -28,10 +28,10 @@ const begrunnelser = {
   art11_4,
   bosted,
   forutgaendemedlemskap,
-  ikkeSkip,
-  inngangsvilkår,
+  ikkeskip,
+  inngangsvilkaar,
   opphold,
-  normaltDriverVirksomhet,
+  normaltdrivervirksomhet,
   sokkel
 };
 

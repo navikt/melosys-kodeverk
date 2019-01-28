@@ -1,5 +1,5 @@
 
-const inngangsvilkår = [
+const inngangsvilkaar = [
   {
     kode: 'TREDJELANDSBORGER',
     term: '',
@@ -13,5 +13,5 @@ const inngangsvilkår = [
     term: '',
   },
 ];
-module.exports.inngangsvilkår = inngangsvilkår;
+module.exports.inngangsvilkaar = inngangsvilkaar;
 
