@@ -65,7 +65,7 @@ const arrayToObjectSet = (array) => {
   }, {});
 };
 
-const transformKodeverk2KodeSet = () => {
+const transformKodeverk2KodeSet = kodeverk => {
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
@@ -86,7 +86,7 @@ const transformKodeverk2KodeSet = () => {
 };
 
 const kodeSet = memoize(function () {
-  return transformKodeverk2KodeSet();
+  return transformKodeverk2KodeSet(kodeverk);
 });
 
 
@@ -99,7 +99,7 @@ const arrayToObjectMap = (array) => {
   }, {});
 };
 
-const transformKodeverk2KodeMap = () => {
+const transformKodeverk2KodeMap = kodeverk => {
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
@@ -120,9 +120,10 @@ const transformKodeverk2KodeMap = () => {
 };
 
 const kodeMap = memoize(function () {
-  return transformKodeverk2KodeMap();
+  return transformKodeverk2KodeMap(kodeverk);
 });
 
 
 module.exports.kodemap = kodeMap();
-
+module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
+module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;
