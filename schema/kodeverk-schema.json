@@ -28,6 +28,36 @@
           "pattern": "^(.*)$"
         }
       }
+    },
+    "kodeverk_nullable_term": {
+      "type": "object",
+      "title": "The Kodeverk Schema",
+      "additionalProperties": false,
+      "required": [
+        "kode",
+        "term"
+      ],
+      "properties": {
+        "kode": {
+          "type": "string",
+          "title": "The Kode Schema",
+          "default": "",
+          "examples":[
+            "OPPRETTET"
+          ],
+          "pattern": "^(.*)$" },
+        "term": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Term Schema",
+          "default": "",
+          "examples": [
+            "Opprettet"
+          ],
+          "pattern": "^(.*)$" }
+      }
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
