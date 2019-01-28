@@ -5,23 +5,23 @@
 const avklartefakta = [
   {
     kode: 'AVKLARTE_ARBEIDSGIVER',
-    term: '',
+    term: null,
   },
   {
     kode: 'TIDLIGERE_LOVVALGSPERIODE',
-    term: '',
+    term: null,
   },
   {
     kode: 'ARBEIDSLAND',
-    term: '',
+    term: null,
   },
   {
     kode: 'ARBEID_SOKKEL_SKIP',
-    term: '',
+    term: null,
   },
   {
     kode: 'YRKESGRUPPE',
-    term: '',
+    term: null,
   }
 ];
 module.exports.avklartefakta = avklartefakta;

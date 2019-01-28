@@ -2,15 +2,15 @@
 const inngangsvilkaar = [
   {
     kode: 'TREDJELANDSBORGER',
-    term: '',
+    term: null,
   },
   {
     kode: 'NORDISK_UTENFOR_EOS',
-    term: '',
+    term: null,
   },
   {
     kode: 'EOS_BORGER',
-    term: '',
+    term: null,
   },
 ];
 module.exports.inngangsvilkaar = inngangsvilkaar;

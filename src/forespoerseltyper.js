@@ -5,15 +5,15 @@
 const forespoerseltyper = [
   {
     kode: 'PURRING',
-    term: '',
+    term: null,
   },
   {
     kode: 'ENDRING',
-    term: '',
+    term: null,
   },
   {
     kode: 'FOERSTEGANG',
-    term: '',
+    term: null,
   }
 ];
 module.exports.forespoerseltyper = forespoerseltyper;

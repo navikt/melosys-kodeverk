@@ -5,23 +5,23 @@
 const vilkaar = [
   {
     kode: 'FO_883_2004_INNGANGSVILKAAR',
-    term: '',
+    term: null,
   },
   {
     kode: 'FO_883_2004_ART12_1',
-    term: '',
+    term: null,
   },
   {
     kode: 'FO_883_2004_ART12_2',
-    term: '',
+    term: null,
   },
   {
     kode: 'FO_883_2004_ART16_1',
-    term: '',
+    term: null,
   },
   {
     kode: 'ART12_1_VESENTLIG_VIRKSOMHET',
-    term: '',
+    term: null,
   },
   {
     kode: 'ART12_1_FORUTGAAENDE_MEDLEMSKAP',
@@ -29,15 +29,15 @@ const vilkaar = [
   },
   {
     kode: 'ART12_2_NORMALT_DRIVER_VIRKSOMHET',
-    term: '',
+    term: null,
   },
   {
     kode: 'FO_883_2004_ART87A',
-    term: '',
+    term: null,
   },
   {
     kode: 'BOSATT_I_NORGE',
-    term: '',
+    term: null,
   },
   {
     kode: 'FTRL_2_12_UNNTAK_TURISTSKIP',

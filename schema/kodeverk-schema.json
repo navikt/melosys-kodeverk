@@ -10,53 +10,34 @@
       ],
       "properties": {
         "kode": {
-          "type": "string",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 2
+            }
+          ],
           "title": "The Kode Schema",
           "default": "",
           "examples": [
             "OPPRETTET"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "term": {
-          "type": "string",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
           "title": "The Term Schema",
           "default": "",
           "examples": [
             "Opprettet"
-          ],
-          "pattern": "^(.*)$"
+          ]
         }
-      }
-    },
-    "kodeverk_nullable_term": {
-      "type": "object",
-      "title": "The Kodeverk Schema",
-      "additionalProperties": false,
-      "required": [
-        "kode",
-        "term"
-      ],
-      "properties": {
-        "kode": {
-          "type": "string",
-          "title": "The Kode Schema",
-          "default": "",
-          "examples":[
-            "OPPRETTET"
-          ],
-          "pattern": "^(.*)$" },
-        "term": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "The Term Schema",
-          "default": "",
-          "examples": [
-            "Opprettet"
-          ],
-          "pattern": "^(.*)$" }
       }
     }
   },
@@ -76,7 +57,7 @@
     "finansiering",
     "forespoerseltyper",
     "henleggelsesgrunner",
-    "kontantytelser_EU_FO",
+    "kontantytelser_eu_fo",
     "landkoder",
     "lovvalgsbestemmelser",
     "medlemskapstyper",
@@ -170,11 +151,11 @@
         "art16_1_avslag",
         "art11_4",
         "bosted",
-        "forutgaendeMedlemskap",
-        "ikkeSkip",
-        "inngangsvilkår",
+        "forutgaendemedlemskap",
+        "ikkeskip",
+        "inngangsvilkaar",
         "opphold",
-        "normaltDriverVirksomhet",
+        "normaltdrivervirksomhet",
         "sokkel"
       ],
       "properties": {
@@ -278,33 +259,33 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "forutgaendeMedlemskap": {
-          "$id": "#/properties/begrunnelser/properties/forutgaendeMedlemskap",
+        "forutgaendemedlemskap": {
+          "$id": "#/properties/begrunnelser/properties/forutgaendemedlemskap",
           "type": "array",
           "title": "The Forutgaendemedlemskap Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/forutgaendeMedlemskap/items",
+            "$id": "#/properties/begrunnelser/properties/forutgaendemedlemskap/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "ikkeSkip": {
-          "$id": "#/properties/begrunnelser/properties/ikkeSkip",
+        "ikkeskip": {
+          "$id": "#/properties/begrunnelser/properties/ikkeskip",
           "type": "array",
           "title": "The Ikkeskip Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/ikkeSkip/items",
+            "$id": "#/properties/begrunnelser/properties/ikkeskip/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "inngangsvilkår": {
-          "$id": "#/properties/begrunnelser/properties/inngangsvilkår",
+        "inngangsvilkaar": {
+          "$id": "#/properties/begrunnelser/properties/inngangsvilkaar",
           "type": "array",
-          "title": "The inngangsvilkår Schema",
+          "title": "The inngangsvilkaar Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/inngangsvilkår/items",
+            "$id": "#/properties/begrunnelser/properties/inngangsvilkaar/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
@@ -318,13 +299,13 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "normaltDriverVirksomhet": {
-          "$id": "#/properties/begrunnelser/properties/normaltDriverVirksomhet",
+        "normaltdrivervirksomhet": {
+          "$id": "#/properties/begrunnelser/properties/normaltdrivervirksomhet",
           "type": "array",
-          "title": "The NormaltDriverVirksomhet Schema",
+          "title": "The Normaltdrivervirksomhet Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/normaltDriverVirksomhet/items",
+            "$id": "#/properties/begrunnelser/properties/normaltdrivervirksomhet/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
@@ -411,13 +392,13 @@
         "$ref": "#/definitions/kodeverk"
       }
     },
-    "kontantytelser_EU_FO": {
-      "$id": "#/properties/kontantytelser_EU_FO",
+    "kontantytelser_eu_fo": {
+      "$id": "#/properties/kontantytelser_eu_fo",
       "type": "array",
-      "title": "The kontantytelser_EU_FO Schema",
+      "title": "The kontantytelser_eu_fo Schema",
       "uniqueItems": true,
       "items": {
-        "$id": "#/properties/kontantytelser_EU_FO/items",
+        "$id": "#/properties/kontantytelser_eu_fo/items",
         "$ref": "#/definitions/kodeverk"
       }
     },

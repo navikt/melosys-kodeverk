@@ -5,15 +5,15 @@
 const yrkesgrupper = [
   {
     kode: 'SOKKEL_ELLER_SKIP',
-    term: ''
+    term: null,
   },
   {
     kode: 'FLYENDE_PERSONELL',
-    term: ''
+    term: null,
   },
   {
     kode: 'ORDINAER',
-    term: ''
+    term: null,
   }
 ];
 

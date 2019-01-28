@@ -6,15 +6,15 @@
 const opphold = [
   {
     kode: 'FEIL_LAND_JOURNALFOERING',
-    term: ''
+    term: null,
   },
   {
     kode: 'UGYLDIG_TERRITORIUM',
-    term: ''
+    term: null,
   },
   {
     kode: 'NYE_OPPLYSNINGER_LAND',
-    term: ''
+    term: null,
   }
 ];
 module.exports.opphold = opphold;

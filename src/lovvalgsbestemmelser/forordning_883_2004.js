@@ -78,7 +78,7 @@ const forordning_883_2004 = [
   },
   {
     kode: 'FO_883_2004_ANNET',
-    term: '',
+    term: null,
   }
 ];
 module.exports.forordning_883_2004 = forordning_883_2004;

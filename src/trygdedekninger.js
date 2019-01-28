@@ -9,7 +9,7 @@ const trygdedekninger = [
   },
   {
     kode: 'FULL_DEKNING_EOSFO',
-    term: ''
+    term: null
   }
 ];
 module.exports.trygdedekninger = trygdedekninger;

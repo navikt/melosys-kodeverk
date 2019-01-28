@@ -5,23 +5,23 @@
 const dokumenttyper = [
   {
     kode: 'SOEKNAD_AVKL_LOV',
-    term: '',
+    term: null,
   },
   {
     kode: 'SOEKNAD_OVERS_UTLMYNDH',
-    term: '',
+    term: null,
   },
   {
     kode: 'UTPEK_NO_UTLMYNDH',
-    term: '',
+    term: null,
   },
   {
     kode: 'PAASTAND_UTLMYNDH',
-    term: '',
+    term: null,
   },
   {
     kode: 'MELDING_AKTOER',
-    term: '',
+    term: null,
   },
   {
     kode: 'KLAGE',
@@ -33,7 +33,7 @@ const dokumenttyper = [
   },
   {
     kode: 'PSTING_UTLMYNDH',
-    term: '',
+    term: null,
   },
   {
     kode: 'KLAGEVEDTAK',
