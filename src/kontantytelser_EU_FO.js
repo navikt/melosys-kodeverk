@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const kontantytelser_EU_FO = [
+const kontantytelser_eu_fo = [
   {
     kode: 'FP',
     term: 'Foreldrepenger',
@@ -21,4 +21,4 @@ const kontantytelser_EU_FO = [
     term: 'Dagpenger',
   }
 ];
-module.exports.kontantytelser_EU_FO = kontantytelser_EU_FO;
+module.exports.kontantytelser_eu_fo = kontantytelser_eu_fo;

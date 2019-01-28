@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const forutgaendeMedlemskap = [
+const forutgaendemedlemskap = [
   {
     kode: 'IKKE_LOENNET_UTSEND_AG',
     term: 'Mottok IKKE lønn fra utsendende arbeidsgiver opptjent i Norge forutgående måned.',
@@ -25,4 +25,4 @@ const forutgaendeMedlemskap = [
     term: 'Er IKKE registrert i Aa-registeret hos utsendende arbeidsgiver.',
   }
 ];
-module.exports.forutgaendeMedlemskap = forutgaendeMedlemskap;
+module.exports.forutgaendemedlemskap = forutgaendemedlemskap;

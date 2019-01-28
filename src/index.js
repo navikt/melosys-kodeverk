@@ -14,7 +14,7 @@ const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
-const { kontantytelser_EU_FO } = require('./kontantytelser_EU_FO');
+const { kontantytelser_eu_fo } = require('./kontantytelser_EU_FO');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { medlemskapstyper } = require('./medlemskapstyper');
@@ -39,7 +39,7 @@ const kodeverk = {
   finansiering,
   forespoerseltyper,
   henleggelsesgrunner,
-  kontantytelser_EU_FO,
+  kontantytelser_eu_fo,
   landkoder,
   lovvalgsbestemmelser,
   medlemskapstyper,
