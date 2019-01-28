@@ -1,4 +1,4 @@
-const { produserbaredokumenter } = require('./produserbareDokumenter');
+const { produserbaredokumenter } = require('./produserbaredokumenter');
 
 const brev = {
   produserbaredokumenter

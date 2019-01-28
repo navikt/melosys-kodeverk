@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const behandlingsstatus = [
+const status = [
   {
     kode: 'OPPRETTET',
     term: 'Behandlingen er opprettet',
@@ -45,4 +45,4 @@ const behandlingsstatus = [
     term: 'Vedtak iverksettes',
   }
 ];
-module.exports.behandlingsstatus = behandlingsstatus;
+module.exports.status = status;
