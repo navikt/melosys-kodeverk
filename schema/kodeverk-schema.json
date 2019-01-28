@@ -142,14 +142,14 @@
       "additionalProperties": false,
       "required": [
         "arbeidsland",
-        "art12_1",
-        "art12_2",
+        "art12_1_begrunnelser",
+        "art12_2_begrunnelser",
         "art12_1_forutgaaende_medl",
         "art12_1_vesentlig_virksomhet",
         "art12_2_normalt_virksomhet",
         "art16_1_anmodning",
         "art16_1_avslag",
-        "art11_4",
+        "art11_4_begrunnelser",
         "bosted",
         "forutgaendemedlemskap",
         "ikkeskip",
@@ -169,23 +169,23 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "art12_1": {
-          "$id": "#/properties/begrunnelser/properties/art12_1",
+        "art12_1_begrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/art12_1_begrunnelser",
           "type": "array",
-          "title": "The art12_1 Schema",
+          "title": "The art12_1_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/art12_1/items",
+            "$id": "#/properties/begrunnelser/properties/art12_1_begrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "art12_2": {
-          "$id": "#/properties/begrunnelser/properties/art12_2",
+        "art12_2_begrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/art12_2_begrunnelser",
           "type": "array",
-          "title": "The art12_2 Schema",
+          "title": "The art12_2_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/art12_2/items",
+            "$id": "#/properties/begrunnelser/properties/art12_2_begrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
@@ -239,13 +239,13 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
-        "art11_4": {
-          "$id": "#/properties/begrunnelser/properties/Aart11_4",
+        "art11_4_begrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/art11_4_begrunnelser",
           "type": "array",
-          "title": "The art11_4 Schema",
+          "title": "The art11_4_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
-            "$id": "#/properties/begrunnelser/properties/art11_4/items",
+            "$id": "#/properties/begrunnelser/properties/art11_4_begrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
