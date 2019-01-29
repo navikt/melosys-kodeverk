@@ -2,15 +2,17 @@
  * Kodeverk.
  * @module
  */
-const memoize = require('lodash/memoize');
-
-const { aktoerroller } = require('./aktoerroller');
+const { aktoersroller } = require('./aktoerroller');
+const { avklartefakta } = require('./avklartefakta');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
 const { dokumenttitler } = require('./dokumenttitler');
+const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
+const { forespoerseltyper } = require('./forespoerseltyper');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
+const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { medlemskapstyper } = require('./medlemskapstyper');
@@ -25,13 +27,17 @@ const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
 const kodeverk = {
-  aktoerroller,
-  dokumenttitler,
+  aktoersroller,
+  avklartefakta,
   behandlinger,
   begrunnelser,
   brev,
+  dokumenttitler,
+  dokumenttyper,
   finansiering,
+  forespoerseltyper,
   henleggelsesgrunner,
+  kontantytelser_eu_fo,
   landkoder,
   lovvalgsbestemmelser,
   medlemskapstyper,
@@ -45,10 +51,8 @@ const kodeverk = {
   vilkaar,
   yrker,
 };
-const kodeVerk =  memoize(function () {
-  return kodeverk;
-});
-module.exports.kodeverk = kodeVerk();
+
+module.exports.kodeverk = kodeverk;
 
 const arrayToObjectSet = (array) => {
   return array.reduce((obj, item) => {
@@ -57,7 +61,7 @@ const arrayToObjectSet = (array) => {
   }, {});
 };
 
-const transformKodeverk2KodeSet = () => {
+const transformKodeverk2KodeSet = kodeverk => {
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
@@ -77,12 +81,7 @@ const transformKodeverk2KodeSet = () => {
   return codes;
 };
 
-const kodeSet = memoize(function () {
-  return transformKodeverk2KodeSet();
-});
-
-
-module.exports.kodeset = kodeSet();
+module.exports.kodeset = transformKodeverk2KodeSet(kodeverk);
 
 const arrayToObjectMap = (array) => {
   return array.reduce((obj, item) => {
@@ -91,7 +90,7 @@ const arrayToObjectMap = (array) => {
   }, {});
 };
 
-const transformKodeverk2KodeMap = () => {
+const transformKodeverk2KodeMap = kodeverk => {
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
@@ -111,10 +110,7 @@ const transformKodeverk2KodeMap = () => {
   return codes;
 };
 
-const kodeMap = memoize(function () {
-  return transformKodeverk2KodeMap();
-});
+module.exports.kodemap = transformKodeverk2KodeMap(kodeverk);
 
-
-module.exports.kodemap = kodeMap();
-
+module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
+module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;

@@ -6,15 +6,15 @@
 const opphold = [
   {
     kode: 'FEIL_LAND_JOURNALFOERING',
-    term: 'Feil land oppgitt i journalføringen.'
+    term: null,
   },
   {
-    kode: 'UGYLDIG_TERRITORIE',
-    term: 'Søker skal til et territorium som ikke er en del av forordningen.'
+    kode: 'UGYLDIG_TERRITORIUM',
+    term: null,
   },
   {
-    kode: 'NYE_OPPLYSNINGER',
-    term: 'Nye opplysninger om arbeids/oppholdsland.'
+    kode: 'NYE_OPPLYSNINGER_LAND',
+    term: null,
   }
 ];
 module.exports.opphold = opphold;

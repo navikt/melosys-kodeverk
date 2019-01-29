@@ -14,7 +14,7 @@ const henleggelsesgrunner = [
   },
   {
     kode: 'ANNET',
-    term: 'Begrunnelse oppgis i fritekst'
+    term: 'Fritekstfelt'
   }
 ];
 module.exports.henleggelsesgrunner = henleggelsesgrunner;

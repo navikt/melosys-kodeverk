@@ -6,7 +6,7 @@ module.exports = {
         "node": true,
         "mocha": true
     },
-    "extends": "eslint:recommended",
+    "extends": [ "eslint:recommended", "plugin:node/recommended" ],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
@@ -27,13 +27,20 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "node/exports-style": ["error", "module.exports"],
+        "node/prefer-global/buffer": ["error", "always"],
+        "no-console": "off",
+        "node/prefer-global/console": ["error", "always"],
+        "node/no-extraneous-require": "off",
+        "node/prefer-global/process": ["error", "always"],
+        "node/prefer-global/url-search-params": ["error", "always"],
+        "node/prefer-global/url": ["error", "always"],
+        "node/no-unsupported-features/es-syntax": ["error", "always"],
+        "node/no-deprecated-api": ["error", "always"]
     },
     "globals": {
       "assert": true,
-      "kodeverk": true,
-      "kodeset": true,
-      "testKodeset": true,
-      "testKodeverk": true
+      "expect": true
     }
 };

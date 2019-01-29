@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const ikkeSkip = [
+const ikkeskip = [
   {
     'kode': 'IKKE_EGET_FREMDRIFT',
     'term': 'Ikke eget fremdrift'
@@ -13,4 +13,4 @@ const ikkeSkip = [
     'term': 'Ikke ordinært skipsfart'
   }
 ];
-module.exports.ikkeSkip = ikkeSkip;
+module.exports.ikkeskip = ikkeskip;

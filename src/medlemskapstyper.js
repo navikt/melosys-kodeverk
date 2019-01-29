@@ -13,7 +13,7 @@ const medlemskapstyper = [
   },
   {
     kode: 'UNNTATT',
-    term: 'Uten dekning'
+    term: 'Unntatt medlemskap'
   }
 ];
 module.exports.medlemskapstyper = medlemskapstyper;

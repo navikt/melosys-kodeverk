@@ -8,7 +8,7 @@
 const saksstatuser = [
   {
     kode: 'OPPRETTET',
-    term: 'Saken har blitt opprettet'
+    term: 'Saken er opprettet'
   },
   {
     kode: 'LOVVALG_AVKLART',
