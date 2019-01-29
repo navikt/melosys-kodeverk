@@ -1,4 +1,4 @@
-const art12_1_vesentlig_virksomhet	= [
+const art12_1_vesentlig_virksomhet = [
   {
     kode: 'KUN_ADMIN_ANSATTE',
     term: 'Kun administrativt ansatte i Norge',
