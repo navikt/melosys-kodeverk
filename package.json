@@ -42,9 +42,7 @@
     "node": ">=10.0.0"
   },
   "homepage": "https://github.com/navikt/melosys-kodeverk#readme",
-  "dependencies": {
-    "lodash": "^4.17.11"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ajv": "^6.6.2",
     "babel-cli": "^6.26.0",

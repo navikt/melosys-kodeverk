@@ -2,8 +2,6 @@
  * Kodeverk.
  * @module
  */
-const memoize = require('lodash/memoize');
-
 const { aktoersroller } = require('./aktoerroller');
 const { avklartefakta } = require('./avklartefakta');
 const { begrunnelser } = require('./begrunnelser');
@@ -53,10 +51,8 @@ const kodeverk = {
   vilkaar,
   yrker,
 };
-const kodeVerk =  memoize(function () {
-  return kodeverk;
-});
-module.exports.kodeverk = kodeVerk();
+
+module.exports.kodeverk = kodeverk;
 
 const arrayToObjectSet = (array) => {
   return array.reduce((obj, item) => {
@@ -85,12 +81,7 @@ const transformKodeverk2KodeSet = kodeverk => {
   return codes;
 };
 
-const kodeSet = memoize(function () {
-  return transformKodeverk2KodeSet(kodeverk);
-});
-
-
-module.exports.kodeset = kodeSet();
+module.exports.kodeset = transformKodeverk2KodeSet(kodeverk);
 
 const arrayToObjectMap = (array) => {
   return array.reduce((obj, item) => {
@@ -119,11 +110,7 @@ const transformKodeverk2KodeMap = kodeverk => {
   return codes;
 };
 
-const kodeMap = memoize(function () {
-  return transformKodeverk2KodeMap(kodeverk);
-});
+module.exports.kodemap = transformKodeverk2KodeMap(kodeverk);
 
-
-module.exports.kodemap = kodeMap();
 module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
 module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;
