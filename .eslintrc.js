@@ -31,9 +31,6 @@ module.exports = {
     },
     "globals": {
       "assert": true,
-      "kodeverk": true,
-      "kodeset": true,
-      "testKodeset": true,
-      "testKodeverk": true
+      "expect": true
     }
 };
