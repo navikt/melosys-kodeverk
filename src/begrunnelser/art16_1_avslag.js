@@ -4,7 +4,7 @@ const art16_1_avslag = [
     term: 'Søkt mer enn ett år etter perioden startet',
   },
   {
-    kode: 'ERSTATTER_EN _ANNEN_SAMLET_OVER_5_AAR',
+    kode: 'ERSTATTER_EN_ANNEN_SAMLET_OVER_5_AAR',
     term: 'Erstatter en annen utsendt person, samlet periode mer enn 5 år',
   },
   {
