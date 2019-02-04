@@ -14,7 +14,7 @@ script:
 before_deploy:
   - git config --global user.email “abjolseth@gmail.com”
   - git config --global user.name “navikt”
-  cat ~/.npmrc
+  - npm config ls -l
 deploy:
   provider: npm
   email: abjolseth@gmail.com
