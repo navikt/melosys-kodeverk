@@ -12,6 +12,8 @@ script:
   - npm run test
   - npm run build
 before_deploy:
+  - git config --global user.email “abjolseth@gmail.com”
+  - git config --global user.name “navikt”
   cat ~/.npmrc
 deploy:
   provider: npm
