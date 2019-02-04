@@ -14,13 +14,15 @@ script:
 before_deploy:
   - git config --global user.email “abjolseth@gmail.com”
   - git config --global user.name “navikt”
-  - npm config ls -l
+  - npm config ls
 deploy:
   provider: npm
   email: abjolseth@gmail.com
   api_key:
     secure: Nr9aHd7gW8ThLBkpoyxawxm5U3gb+5WxiUE/I5WnnpeqNEaHkP02OFcluAvoaGAYk8mEdeP8OoEjoncNfbt1o+KzzZhdnfO1e0cXr+BjOUXSRmnCnGPT/aPRZEVeE6u80XhlBedEP2LUN8LTkXOcHv+b1MwmRwzneaZxb0VwlVLejMi2VBfe39Nbud/8aecDE1sR/DRUCsr4kTrbpOxFWBjGG1dwt9up/vy1RaCxMr9Co3xGYZb+sOCmktVnzwJ479WIpZoOu072p1016clQSXYsO+m0hDHKaoUMdNEiCZ3bky7zA3HCZRQQ80wYreXvsf2p/U/iRIHFD78RXvj2bKzMq02ONdjov1bjx2+UPAaf7+xXi90ue0kM4Ad2rbDi++cnF1gNEVGE0w9zghQ9ZGeupkno7m7htiT9n3DhYe9Q8NpM0/YOluvJR6Cif3trPWYL6PfddKxh/NuWrHUFMmuEuhUwTBqpIUwdgxEsV5mnAzNIfCUdKM1j/nAPOD7ycucYnUdc43HpLcEbA7xbLhN5YbFU8pWtHK8H4qSBAUI/mfmLkpxfZ2cEG+ohhgrVT41x3pc3QDnz81L8L3iu5aR10CI8dmkAorQ+ITmKm1CXhU6ZnQ0rbQZhxj5xi/PZiNf12gJXJ4EeuvT+b/PoMbE32+dFycGwExRm0qNtruI=
+  skip_cleanup: true
   on:
+    branch: master
     tags: true
     repo: navikt/melosys-kodeverk
 
