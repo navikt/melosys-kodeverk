@@ -1,6 +1,6 @@
 {
   "name": "melosys-kodeverk",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Dictionary of kode/term objects for use with associated melosys projects",
   "main": "./lib/index.js",
   "scripts": {
