@@ -9,7 +9,7 @@ const trygdedekninger = [
   },
   {
     kode: 'FULL_DEKNING_EOSFO',
-    term: 'Full medlemskap i trygden for ytelser omfattet av EU/EØS forordningen.'
+    term: null
   }
 ];
 module.exports.trygdedekninger = trygdedekninger;
