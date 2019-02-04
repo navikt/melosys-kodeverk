@@ -1,26 +1,24 @@
 language: node_js
 node_js:
-- stable
+  - stable
 cache:
   directories:
-  - node_modules
+    - node_modules
 before_install:
-- export TZ=Europe/Oslo
+  - export TZ=Europe/Oslo
 install:
-- npm install
+  - npm install
 script:
-- npm run test
-- npm run build
+  - npm run test
+  - npm run build
 before_deploy:
-- git config --global user.email "abjolseth@gmail.com"
-- git config --global user.name "abjolseth"
+  - git config --global user.email "abjolseth@gmail.com"
+  - git config --global user.name "abjolseth"
 deploy:
   provider: npm
   email: abjolseth@gmail.com
   api_key:
-    secure: l0xOhg2uZSEiUDnBw1Jp4Zh8eKF5Y4wZXN2OrWn7WlQNsmoE8juclFF94D5tWvdgsusSrC1XouMLJ088jaN5VuPo4SBCrGMGxpkLtMchBhijhMEEc3d0/MJndPiSxxLgsQgufQ7xDr2zeDyaM+AZH2te9Do2vPpmxMxR6rlzyJ+5FR84wfom85yvPV2wHnmE14nDY6DMAx45duh2ZI0GjJw3Mfe6jXtUQtxAJnZTgluYU+9fviEjBJv6sl94FLWEhoVqb7mZq2sBYVyduydIH18D3LnZUOHWWvxGS2Br3MOypZaHPr3l3+hNAcHAJz/9C6IK5zUAWoRqgxhj87q0R8KwfZnCzMOT/39lz8m20Ew0a2f99cE77GUHD1VJicFAZpOQMxHErhqlbj1xK3LHDlAnb18qssAw3do5Lb8qVY1fG0EF0l/ZA5rrg9ecXQ1/m8OiHpvLqTc4+fiDPVO+Vuzp/oSseAW2H2iVaa/WVM3oihcdAS3xTWFzgg/vTrwCusxn6aW6q0+Cr3vS07dzUF33R8GR+hqywqs3+BQyWkTLsxiTEMp/r7tioGNgxTANyzM7KmGJDO4s8LsK4V2KB3hwvqqUT8Nq8HiDaZyuW1rsDUtacSHwXlEo52NwUiUlu+rVF3WxtyANmbZSw+ZhecYd4ms9+PszVmffnqX/FeE=
-  skip_cleanup: true
+    secure: rnw2GdgO7KFIL6DYzyNh1SGV+l8eM4H2RNyP5mrumfDL9lW4kpx/J6/1/fugjCTleaUh6sHz0A/Hl/WLyD4DAEg3ggj/A2AFO7PTt9wLK3kWzCesh7xpAyf4MxkzLBCyjvDombXPdiIr1MLdrSQQnd1x0w5HZ+D1F7SogY04sHI/F40bGV2ytbAvnCV9iugzmC1BVWPRZ2cK7AwYlG0WCk3TAbWkbmdP6HN6xAraCEAS6WP7olvQBSQucjSA6wBUUHLYJ3SCXYFXwqOOf2xEWqPX7ROErd7U4o5dk39nev6b4j+Pzrmn04O8jaA+Wic6ovhcwGdMBbnMfpUXk/11zgjU1BKqW76xPamuuw5N3z0POJxIKNdm/RRLZOOi5x9kyZUMosuipszBOsXNe72VqUz0ptKW7ZDSQaXcOJOQN1AhJ1nGJ80Fpsx8/dkk2wd6a4k645Qgofo/5vT++agWDGientb0nAGuGCt9SLDacpsvvdVrMY8NPDQG2Rt2CbKzpCrajJXiD1lXHLPLTM5CTU4u7zaaEHZdTC3sORjkoteJ5YrHCpkbae3b8eLVhsUA8ZnKI6CF2naGsxz/BBcq7UwopFN+P/9N88v7IKT3L1ILtmy85KvVCpqo74D79qhKdraNwUqVTVYhp0brAouVVlzj/3nya5noNdYUFXAgnA4=
   on:
-    branch: master
     tags: true
     repo: navikt/melosys-kodeverk
