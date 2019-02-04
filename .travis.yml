@@ -4,7 +4,6 @@ node_js:
 cache:
   directories:
     - node_modules
-
 before_install:
   - export TZ=Europe/Oslo
 install:
@@ -12,16 +11,14 @@ install:
 script:
   - npm run test
   - npm run build
-
 before_deploy:
   - git config --global user.email "abjolseth@gmail.com"
   - git config --global user.name "navikt"
-
 deploy:
   provider: npm
   email: abjolseth@gmail.com
   api_key:
-    secure: 54046c1c-fd9f-4a45-b08b-0b5f001bbfa6
+    secure: SRR3+5B6M2GTXxUJH0AP3L6rMLlc8Y6xvvWf3o84ufBxuospPEVwIc1MZ5brfOz9+YZ7o/v+8GlgKQy489oyIGGEroOH7RiRNqJbUWvljWKMmB5H5mOCNiqGqTO576XOkGXGEKLd+ci2HZPxW59fcNd+6uH5Damt4lrr9VcrmKRXboDBGVSKbiODyPLldVUadSMvF7B/l56ZKh4tpz+3enYYB9ElnkVEySXql9vbPdo82YZrPEf3XYZWrmhtrf4XPzg9/OZbKB1K3kfyfz2MoOjojJV2RYMLgFvjA8oeFljSb7/v0+mtcovotXH6xY+GV3/6qREM41/6C8uPkBBeOUyYp51xTHRBEYRrqlcznBqE/9ye5/uPTDiehnzJDoB0udilwHWqKVi+qAOR6geudEWpyF3zS1wrbCBnvNWch+nBG8+pSElHeXnzFf4j6n9bnfeQTOXUcmdr8wNgnvp1w/Y9i1EoWzg3MqGj8vc/OZ9uJwOAy1SCJJc/L+y0VpW9obeeU54Nff72KOU4MhaN5XHVBJ82MlNuOJg8J0MvmO0MOgV2kUxRjnM9qDXhyAhmyUk6CIAPgzApHY7pYGTq+8pT1MyXj7bQtSesHBrUMaXaD4lfaUZxzX1/5c+iDeWeYMHghV1wXeI/8Guh8/wwD7rVDfa7Mx7Fx+6yUdW0utc=
   skip_cleanup: true
   on:
     branch: master
