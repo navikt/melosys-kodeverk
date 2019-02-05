@@ -151,6 +151,7 @@
         "art16_1_avslag",
         "art11_4_begrunnelser",
         "bosted",
+        "fartsomrader",
         "forutgaendemedlemskap",
         "ikkeskip",
         "inngangsvilkaar",
@@ -256,6 +257,16 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/begrunnelser/properties/bosted/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "fartsomrader": {
+          "$id": "#/properties/begrunnelser/properties/fartsomrader",
+          "type": "array",
+          "title": "The Fartsomrader Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/begrunnelser/properties/fartsomrader/items",
             "$ref": "#/definitions/kodeverk"
           }
         },

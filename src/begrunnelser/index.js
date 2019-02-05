@@ -9,6 +9,7 @@ const { art16_1_anmodning } = require('./art16_1_anmodning');
 const { art16_1_avslag } = require('./art16_1_avslag');
 const { art11_4_begrunnelser } = require('./art11_4_begrunnelser');
 const { bosted } = require('./bosted');
+const { fartsomrader } = require('./fartsomrader');
 const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
 const { ikkeskip } = require('./ikkeskip');
 const { inngangsvilkaar } = require('./inngangsvilkaar');
@@ -27,6 +28,7 @@ const begrunnelser = {
   art16_1_avslag,
   art11_4_begrunnelser,
   bosted,
+  fartsomrader,
   forutgaendemedlemskap,
   ikkeskip,
   inngangsvilkaar,
