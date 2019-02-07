@@ -22,7 +22,15 @@ const produserbaredokumenter = [
   {
     kode: 'ATTEST_A1',
     term: 'Attest A1'
-  }
+  },
+  {
+    kode: 'AVSLAG_YRKESAKTIV',
+    term: 'Avslag eller orientering om anmodning om unntak'
+  },
+  {
+    kode: 'ANMODNING_UNNTAK',
+    term: 'Anmodning om unntak'
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
