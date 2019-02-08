@@ -12,7 +12,7 @@ const writeYmlFileSync = (navn, ymlText) => {
 const DIST_DIR = `${process.cwd()}/dist`;
 createDirIfnotExists(DIST_DIR);
 
-const ymlKodeMap = yaml.safeDump(Kodeverk.kodemap);
+const ymlKodeMap = yaml.safeDump(Kodeverk.KTObjects);
 writeYmlFileSync('kodemap', ymlKodeMap);
 /*
 const ymlKodeverk = yaml.safeDump(Kodeverk.kodeverk);

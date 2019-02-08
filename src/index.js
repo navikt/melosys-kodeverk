@@ -26,7 +26,7 @@ const { vedleggstitler } = require('./vedleggstitler');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
-const kodeverk = {
+const KodeTermObjects = {
   aktoersroller,
   avklartefakta,
   behandlinger,
@@ -51,8 +51,6 @@ const kodeverk = {
   vilkaar,
   yrker,
 };
-
-module.exports.kodeverk = kodeverk;
 
 const arrayToObjectSet = (array) => {
   return array.reduce((obj, item) => {
@@ -81,7 +79,6 @@ const transformKodeverk2KodeSet = kodeverk => {
   return codes;
 };
 
-module.exports.kodeset = transformKodeverk2KodeSet(kodeverk);
 
 const arrayToObjectMap = (array) => {
   return array.reduce((obj, item) => {
@@ -110,7 +107,9 @@ const transformKodeverk2KodeMap = kodeverk => {
   return codes;
 };
 
-module.exports.kodemap = transformKodeverk2KodeMap(kodeverk);
+const Koder = transformKodeverk2KodeSet(KodeTermObjects);
+const KodeTermValues = transformKodeverk2KodeMap(KodeTermObjects);
 
-module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
-module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;
+module.exports.Koder = Koder;
+module.exports.KTObjects = KodeTermObjects;
+module.exports.KTValues = KodeTermValues;
