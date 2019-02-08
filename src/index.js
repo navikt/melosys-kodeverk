@@ -26,6 +26,8 @@ const { vedleggstitler } = require('./vedleggstitler');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
+const Transform  = require('./transform');
+
 const KodeTermObjects = {
   aktoersroller,
   avklartefakta,
@@ -52,64 +54,8 @@ const KodeTermObjects = {
   yrker,
 };
 
-const arrayToObjectSet = (array) => {
-  return array.reduce((obj, item) => {
-    obj[item.kode] = item.kode;
-    return obj;
-  }, {});
-};
-
-const transformKodeverk2KodeSet = kodeverk => {
-  let codes = {};
-  for (const verk in kodeverk) {
-    const node = kodeverk[verk];
-    if (Array.isArray(node)) {
-      const obj = arrayToObjectSet(node);
-      codes[verk] = { ...obj };
-    }
-    else {
-      codes[verk] = {};
-      for(const prop in node) {
-        const obj = {};
-        obj[prop] = {...arrayToObjectSet(node[prop])};
-        codes[verk] = {...codes[verk], ...obj};
-      }
-    }
-  }
-  return codes;
-};
-module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
-
-const arrayToObjectMap = (array) => {
-  return array.reduce((obj, item) => {
-    obj[item.kode] = item.term;
-    return obj;
-  }, {});
-};
-
-const transformKodeverk2KodeMap = kodeverk => {
-  let codes = {};
-  for (const verk in kodeverk) {
-    const node = kodeverk[verk];
-    if (Array.isArray(node)) {
-      const obj = arrayToObjectMap(node);
-      codes[verk] = { ...obj };
-    }
-    else {
-      codes[verk] = {};
-      for(const prop in node) {
-        const obj = {};
-        obj[prop] = {...arrayToObjectMap(node[prop])};
-        codes[verk] = {...codes[verk], ...obj};
-      }
-    }
-  }
-  return codes;
-};
-module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;
-
-const Koder = transformKodeverk2KodeSet(KodeTermObjects);
-const KodeTermValues = transformKodeverk2KodeMap(KodeTermObjects);
+const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
+const KodeTermValues = Transform.kodeverk2KodeMap(KodeTermObjects);
 
 module.exports.Koder = Koder;
 module.exports.KTObjects = KodeTermObjects;
