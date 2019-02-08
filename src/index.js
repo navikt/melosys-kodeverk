@@ -78,7 +78,7 @@ const transformKodeverk2KodeSet = kodeverk => {
   }
   return codes;
 };
-
+module.exports.transformKodeverk2KodeSet = transformKodeverk2KodeSet;
 
 const arrayToObjectMap = (array) => {
   return array.reduce((obj, item) => {
@@ -106,6 +106,7 @@ const transformKodeverk2KodeMap = kodeverk => {
   }
   return codes;
 };
+module.exports.transformKodeverk2KodeMap = transformKodeverk2KodeMap;
 
 const Koder = transformKodeverk2KodeSet(KodeTermObjects);
 const KodeTermValues = transformKodeverk2KodeMap(KodeTermObjects);
