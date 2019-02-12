@@ -22,6 +22,10 @@ const avklartefakta = [
   {
     kode: 'YRKESGRUPPE',
     term: null,
-  }
+  },
+  {
+    kode: 'BOSTEDSLAND',
+    term: null,
+  },
 ];
 module.exports.avklartefakta = avklartefakta;
