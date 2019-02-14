@@ -31,6 +31,10 @@ const produserbaredokumenter = [
     kode: 'ANMODNING_UNNTAK',
     term: 'Anmodning om unntak'
   },
+  {
+    kode: 'INNVILGELSE_ARBEIDSGIVER',
+    term: 'Innvilgelse Arbeidsgiver'
+  }
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
