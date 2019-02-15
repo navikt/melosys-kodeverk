@@ -37,6 +37,6 @@ const runTest = data => {
 };
 
 const test = () => (
-  runTest(Kodeverk.kodeverk)
+  runTest(Kodeverk.KTObjects)
 );
 module.exports.test = test;
