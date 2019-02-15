@@ -59,4 +59,4 @@ const KodeTermValues = Transform.kodeverk2KodeMap(KodeTermObjects);
 
 module.exports.Koder = Koder;
 module.exports.KTObjects = KodeTermObjects;
-module.exports.KTValues = KodeTermValues;
+module.exports.Terms = KodeTermValues;
