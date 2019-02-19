@@ -151,6 +151,7 @@
         "art16_1_avslag",
         "art11_4_begrunnelser",
         "bosted",
+        "endretperiode",
         "fartsomrader",
         "forutgaendemedlemskap",
         "ikkeskip",
@@ -257,6 +258,16 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/begrunnelser/properties/bosted/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "endretperiode": {
+          "$id": "#/properties/begrunnelser/properties/endretperiode",
+          "type": "array",
+          "title": "The Endretperiode Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/begrunnelser/properties/endretperiode/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
