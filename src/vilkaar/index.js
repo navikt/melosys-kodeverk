@@ -25,7 +25,7 @@ const vilkaar = [
   },
   {
     kode: 'ART12_1_FORUTGAAENDE_MEDLEMSKAP',
-    term: 'FO_',
+    term: null,
   },
   {
     kode: 'ART12_2_NORMALT_DRIVER_VIRKSOMHET',
@@ -41,7 +41,19 @@ const vilkaar = [
   },
   {
     kode: 'FTRL_2_12_UNNTAK_TURISTSKIP',
-    term: 'Folketrygdloven § 2-12',
+    term: null,
+  },
+  {
+    kode: 'FO_883_2004_ART11_3A',
+    term: null,
+  },
+  {
+    kode: 'FO_883_2004_ART11_4_1',
+    term: null,
+  },
+  {
+    kode: 'FO_883_2004_ART11_4_2',
+    term: null,
   }
 ];
 module.exports.vilkaar = vilkaar;

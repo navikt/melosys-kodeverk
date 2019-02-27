@@ -34,6 +34,10 @@ const produserbaredokumenter = [
   {
     kode: 'INNVILGELSE_ARBEIDSGIVER',
     term: 'Innvilgelse Arbeidsgiver'
+  },
+  {
+    kode: 'AVSLAG_ARBEIDSGIVER',
+    term: 'Avslag Arbeidsgiver'
   }
 ];
 
