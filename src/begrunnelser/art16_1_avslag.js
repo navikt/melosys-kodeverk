@@ -4,12 +4,12 @@ const art16_1_avslag = [
     term: 'Søkt mer enn ett år etter perioden startet',
   },
   {
-    kode: 'ERSTATTER_EN_ANNEN_SAMLET_OVER_5_AAR',
-    term: 'Erstatter en annen utsendt person, samlet periode mer enn 5 år',
+    kode: 'OVER_5_AAR',
+    term: 'Søkt om periode mer enn fem år',
   },
   {
-    kode: 'FORLENGELSE_SAMLET_OVER_5_AAR',
-    term: 'Søkt om forlengelse, samlet periode mer enn fem år.',
+    kode: 'OVER_12_MD_UTL_ARBEIDSGIVER',
+    term: 'Søkt om periode mer enn 12 md, har utenlandsk arbeidsgiver',
   },
   {
     kode: 'INGEN_SPESIELLE_FORHOLD',
