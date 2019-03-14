@@ -27,5 +27,9 @@ const avklartefakta = [
     kode: 'BOSTEDSLAND',
     term: null,
   },
+  {
+    kode: 'AARSAK_ENDRING_PERIODE',
+    term: null,
+  },
 ];
 module.exports.avklartefakta = avklartefakta;
