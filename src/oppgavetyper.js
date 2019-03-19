@@ -4,7 +4,7 @@
  */
 const oppgavetyper = [
   {
-    kode: 'BEH_SAK',
+    kode: 'BEH_SAK_MK',
     term: 'Behandling'
   },
   {
