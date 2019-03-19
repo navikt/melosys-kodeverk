@@ -4,8 +4,8 @@
  */
 const oppgavetyper = [
   {
-    kode: 'BEH_SAK',
-    term: 'Behandling'
+    kode: 'BEH_SAK_MK',
+    term: 'Behandle sak (Manuell)'
   },
   {
     kode: 'JFR',
