@@ -5,7 +5,7 @@
 const oppgavetyper = [
   {
     kode: 'BEH_SAK_MK',
-    term: 'Behandling'
+    term: 'Behandle sak (Manuell)'
   },
   {
     kode: 'JFR',
