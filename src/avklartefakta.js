@@ -31,9 +31,5 @@ const avklartefakta = [
     kode: 'AARSAK_ENDRING_PERIODE',
     term: null,
   },
-  {
-    kode: 'FLAGGLAND',
-    term: null,
-  },
 ];
 module.exports.avklartefakta = avklartefakta;
