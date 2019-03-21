@@ -4,7 +4,7 @@
  */
 const avklartefakta = [
   {
-    kode: 'AVKLARTE_ARBEIDSGIVER',
+    kode: 'VIRKSOMHET',
     term: null,
   },
   {
