@@ -4,7 +4,7 @@
  */
 const avklartefakta = [
   {
-    kode: 'AVKLARTE_ARBEIDSGIVER',
+    kode: 'VIRKSOMHET',
     term: null,
   },
   {
@@ -29,10 +29,6 @@ const avklartefakta = [
   },
   {
     kode: 'AARSAK_ENDRING_PERIODE',
-    term: null,
-  },
-  {
-    kode: 'FLAGGLAND',
     term: null,
   },
 ];
