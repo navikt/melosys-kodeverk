@@ -1,4 +1,4 @@
-const behandlingstema = [
+const tema = [
   {
     kode: 'ARB_AA',
     term: 'Arbeidstakere annen avtale',
@@ -13,4 +13,4 @@ const behandlingstema = [
   },
 ];
 
-module.exports.behandlingstema = behandlingstema;
+module.exports.tema = tema;
