@@ -98,11 +98,22 @@
       "title": "The Behandlinger object",
       "additionalProperties": false,
       "required": [
+        "resultattyper",
         "status",
-        "typer",
-        "resultattyper"
+        "tema",
+        "typer"
       ],
       "properties": {
+        "resultattyper":  {
+          "$id": "#/properties/behandlinger/resultattyper",
+          "type": "array",
+          "title": "The Resultattyper Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/behandlinger/resultattyper/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
         "status": {
           "$id": "#/properties/behandlinger/status",
           "type": "array",
@@ -113,6 +124,16 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
+        "tema": {
+          "$id": "#/properties/behandlinger/tema",
+          "type": "array",
+          "title": "The Tema Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/behandlinger/tema/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
         "typer": {
           "$id": "#/properties/behandlinger/typer",
           "type": "array",
@@ -120,16 +141,6 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/behandlinger/typer/items",
-            "$ref": "#/definitions/kodeverk"
-          }
-        },
-        "resultattyper":  {
-          "$id": "#/properties/behandlinger/resultattyper",
-          "type": "array",
-          "title": "The Resultattyper Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/behandlinger/resultattyper/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
