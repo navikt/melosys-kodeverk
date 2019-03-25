@@ -8,7 +8,7 @@ const tema = [
     term: 'Arbeidstakere folketrygdloven',
   },
   {
-    kode: 'ARB_EØS',
+    kode: 'ARB_EOS',
     term: 'Arbeidstakere innen EØS',
   },
 ];
