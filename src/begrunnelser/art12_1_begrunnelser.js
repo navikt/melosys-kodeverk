@@ -13,11 +13,11 @@ const art12_1_begrunnelser = [
   },
   {
     kode: 'IKKE_OMFATTET_LENGE_NOK_I_NORGE_FOER',
-    term: 'Ikke omfattet av norsk trygd 1 mn før utsendelse',
+    term: 'Ikke omfattet av norsk trygd 1 md før utsendelse',
   },
   {
     kode: 'UNDER_2_MN_SIDEN_FORRIGE_UTSENDING_TIL_SAMME_LAND',
-    term: 'Mindre enn 2 mn siden søker var utsendt for å utføre oppdrag i samme land for samme foretak',
+    term: 'Mindre enn 2 md siden søker var utsendt for å utføre oppdrag i samme land for samme foretak',
   },
   {
     kode: 'IKKE_VESENTLIG_VIRKSOMHET',

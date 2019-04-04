@@ -13,7 +13,7 @@ const art16_1_anmodning = [
   },
   {
     kode: 'KORT_OPPDRAG_RETUR_NORSK_AG',
-    term: 'Ikke omfattet 1 mn før, men kun kortvarig oppdrag og skal returnere til norsk arbeidsgiver',
+    term: 'Ikke omfattet 1 md før, men kun kortvarig oppdrag og skal returnere til norsk arbeidsgiver',
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',
