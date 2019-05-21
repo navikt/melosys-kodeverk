@@ -5,6 +5,10 @@
  */
 const sokkel = [
   {
+    kode: 'FAST_INSTALLASJON',
+    term: 'Fast installasjon'
+  },
+  {
     kode: 'IKKE_EGEN_FREMDRIFT',
     term: 'Ikke framdrift for egen maskin'
   },
@@ -15,10 +19,6 @@ const sokkel = [
   {
     kode: 'BORESKIP',
     term: 'Boreskip - Sokkel'
-  },
-  {
-    kode: 'FAST_INSTALLASJON',
-    term: 'Fast installasjon'
   }
 ];
 module.exports.sokkel = sokkel;
