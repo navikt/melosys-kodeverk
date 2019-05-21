@@ -127,5 +127,9 @@ const landkoder = [
     kode: 'AT',
     term: 'Østerrike',
   },
+  {
+    kode: 'CZ',
+    term: 'Tsjekkia',
+  },
 ];
 module.exports.landkoder = landkoder;
