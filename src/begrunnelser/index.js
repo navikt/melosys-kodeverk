@@ -12,11 +12,14 @@ const { bosted } = require('./bosted');
 const { endretperiode } = require('./endretperiode');
 const { fartsomrader } = require('./fartsomrader');
 const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
+const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { ikkeskip } = require('./ikkeskip');
+const { ikke_godkjent_begrunnelser } = require('./ikke_godkjent_begrunnelser');
 const { inngangsvilkaar } = require('./inngangsvilkaar');
 const { opphold } = require('./opphold');
 const { normaltdrivervirksomhet } = require('./normaltdrivervirksomhet');
 const { sokkel } = require('./sokkel');
+const { unntak_periode_begrunnelser } = require('./unntak_periode_begrunnelser');
 
 const begrunnelser = {
   arbeidsland,
@@ -32,11 +35,14 @@ const begrunnelser = {
   endretperiode,
   fartsomrader,
   forutgaendemedlemskap,
+  henleggelsesgrunner,
   ikkeskip,
+  ikke_godkjent_begrunnelser,
   inngangsvilkaar,
   opphold,
   normaltdrivervirksomhet,
-  sokkel
+  sokkel,
+  unntak_periode_begrunnelser
 };
 
 module.exports.begrunnelser = begrunnelser;

@@ -31,5 +31,9 @@ const avklartefakta = [
     kode: 'AARSAK_ENDRING_PERIODE',
     term: null,
   },
+  {
+    kode: 'VURDERING_UNNTAK_PERIODE',
+    term: null,
+  },
 ];
 module.exports.avklartefakta = avklartefakta;

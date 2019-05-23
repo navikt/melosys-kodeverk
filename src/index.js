@@ -11,7 +11,6 @@ const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
-const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
@@ -22,6 +21,7 @@ const { representerer } = require('./representerer');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { trygdedekninger } = require('./trygdedekninger');
+const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
@@ -38,7 +38,6 @@ const KodeTermObjects = {
   dokumenttyper,
   finansiering,
   forespoerseltyper,
-  henleggelsesgrunner,
   kontantytelser_eu_fo,
   landkoder,
   lovvalgsbestemmelser,
@@ -49,6 +48,7 @@ const KodeTermObjects = {
   saksstatuser,
   sakstyper,
   trygdedekninger,
+  utfallregistreringunntak,
   vedleggstitler,
   vilkaar,
   yrker,

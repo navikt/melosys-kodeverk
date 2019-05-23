@@ -56,7 +56,6 @@
     "dokumenttyper",
     "finansiering",
     "forespoerseltyper",
-    "henleggelsesgrunner",
     "kontantytelser_eu_fo",
     "landkoder",
     "lovvalgsbestemmelser",
@@ -67,6 +66,7 @@
     "saksstatuser",
     "sakstyper",
     "trygdedekninger",
+    "utfallregistreringunntak",
     "vedleggstitler",
     "vilkaar",
     "yrker"
@@ -154,11 +154,14 @@
         "endretperiode",
         "fartsomrader",
         "forutgaendemedlemskap",
+        "henleggelsesgrunner",
         "ikkeskip",
+        "ikke_godkjent_begrunnelser",
         "inngangsvilkaar",
         "opphold",
         "normaltdrivervirksomhet",
-        "sokkel"
+        "sokkel",
+        "unntak_periode_begrunnelser"
       ],
       "properties": {
         "arbeidsland": {
@@ -291,6 +294,16 @@
             "$ref": "#/definitions/kodeverk"
           }
         },
+        "henleggelsesgrunner": {
+          "$id": "#/properties/henleggelsesgrunner",
+          "type": "array",
+          "title": "The henleggelsesgrunner Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/henleggelsesgrunner/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
         "ikkeskip": {
           "$id": "#/properties/begrunnelser/properties/ikkeskip",
           "type": "array",
@@ -298,6 +311,16 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/begrunnelser/properties/ikkeskip/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "ikke_godkjent_begrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/ikke_godkjent_begrunnelser",
+          "type": "array",
+          "title": "The ikke_godkjent_begrunnelser Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/begrunnelser/properties/ikke_godkjent_begrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         },
@@ -338,6 +361,16 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/begrunnelser/properties/sokkel/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "unntak_periode_begrunnelser": {
+          "$id": "#/properties/begrunnelser/properties/unntak_periode_begrunnelser",
+          "type": "array",
+          "title": "The unntak_periode_begrunnelser Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/begrunnelser/properties/unntak_periode_begrunnelser/items",
             "$ref": "#/definitions/kodeverk"
           }
         }
@@ -401,16 +434,6 @@
       "uniqueItems": true,
       "items": {
         "$id": "#/properties/forespoerseltyper/items",
-        "$ref": "#/definitions/kodeverk"
-      }
-    },
-    "henleggelsesgrunner": {
-      "$id": "#/properties/henleggelsesgrunner",
-      "type": "array",
-      "title": "The henleggelsesgrunner Schema",
-      "uniqueItems": true,
-      "items": {
-        "$id": "#/properties/henleggelsesgrunner/items",
         "$ref": "#/definitions/kodeverk"
       }
     },
@@ -542,6 +565,16 @@
       "uniqueItems": true,
       "items": {
         "$id": "#/properties/trygdedekninger/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "utfallregistreringunntak": {
+      "$id": "#/properties/utfallregistreringunntak",
+      "type": "array",
+      "title": "The utfallregistreringunntak Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/properties/utfallregistreringunntak/items",
         "$ref": "#/definitions/kodeverk"
       }
     },

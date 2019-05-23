@@ -23,6 +23,10 @@ const resultattyper = [
   {
     kode: 'IKKE_FASTSATT',
     term: 'Ikke fastsatt',
+  },
+  {
+    kode: 'REGISTRERT_UNNTAK',
+    term: 'Om unntaksperioden har blitt godkjent for registrering',
   }
 ];
 module.exports.resultattyper = resultattyper;
