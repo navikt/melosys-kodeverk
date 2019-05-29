@@ -20,6 +20,7 @@ const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
+const { sed } = require('./sed');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
@@ -47,6 +48,7 @@ const KodeTermObjects = {
   representerer,
   saksstatuser,
   sakstyper,
+  sed,
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,
