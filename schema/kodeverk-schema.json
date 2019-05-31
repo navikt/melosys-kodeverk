@@ -65,6 +65,7 @@
     "representerer",
     "saksstatuser",
     "sakstyper",
+    "sed",
     "trygdedekninger",
     "utfallregistreringunntak",
     "vedleggstitler",
@@ -556,6 +557,49 @@
       "items": {
         "$id": "#/properties/sakstyper/items",
         "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "sed": {
+      "$id": "#/properties/sed",
+      "type": "object",
+      "title": "The sed object",
+      "additionalProperties": false,
+      "required": [
+        "bucer",
+        "fagomrader",
+        "seder"
+      ],
+      "properties": {
+        "bucer": {
+          "$id": "#/properties/sed/properties/bucer/",
+          "type": "array",
+          "title": "The bucer Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/sed/properties/bucer/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "fagomrader": {
+          "$id": "#/properties/sed/properties/fagomrader/",
+          "type": "array",
+          "title": "The fagomrader Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/sed/properties/fagomrader/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        },
+        "seder": {
+          "$id": "#/properties/sed/properties/seder/",
+          "type": "array",
+          "title": "The seder Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/sed/properties/seder/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        }
       }
     },
     "trygdedekninger": {
