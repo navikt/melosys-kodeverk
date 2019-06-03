@@ -41,6 +41,10 @@ const unntak_periode_begrunnelser = [
     term: 'Sluttdato mangler'
   },
   {
+    kode: 'PERSON_DOD',
+    term: 'Personen er død'
+  },
+  {
     kode: 'LOVVALGSLAND_NORGE',
     term: 'Norge er oppgitt som lovvalgsland'
   }
