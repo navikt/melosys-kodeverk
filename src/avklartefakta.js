@@ -35,5 +35,9 @@ const avklartefakta = [
     kode: 'VURDERING_UNNTAK_PERIODE',
     term: null,
   },
+  {
+    kode: 'SVAR_ANMODNING_UNNTAK',
+    term: null,
+  },
 ];
 module.exports.avklartefakta = avklartefakta;
