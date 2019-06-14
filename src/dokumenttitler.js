@@ -32,6 +32,14 @@ const dokumenttitler = [
     term:'Unntak'
   },
   {
+    kode:'null',
+    term:'Søknad om A1 - Avklaring av trygdetilhørighet ved yrkesaktivitet innen EØS/Sveits'
+  },
+  {
+    kode:'null',
+    term:'Skjema for arbeidsgiver som sender arbeidstaker eller frilanser på midlertidig oppdrag i EØS/Sveits'
+  },
+  {
     kode:'ANNET',
     term:'Annet (=fritekst)'
   }
