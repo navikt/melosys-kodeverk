@@ -39,6 +39,14 @@ const unntak_periode_begrunnelser = [
   {
     kode: 'INGEN_SLUTTDATO',
     term: 'Sluttdato mangler'
+  },
+  {
+    kode: 'PERSON_DOD',
+    term: 'Personen er død'
+  },
+  {
+    kode: 'LOVVALGSLAND_NORGE',
+    term: 'Norge er oppgitt som lovvalgsland'
   }
 ];
 module.exports.unntak_periode_begrunnelser = unntak_periode_begrunnelser;
