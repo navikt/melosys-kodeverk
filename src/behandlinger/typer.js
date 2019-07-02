@@ -16,16 +16,16 @@ const typer = [
     term: 'Anke'
   },
   {
-    kode: 'UNNTAK_FRA_MEDLEMSKAP',
-    term: 'Registrering av unntak'
+    kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD',
+    term: 'Registrering av unntak norsk trygd (A009,A010)'
   },
   {
-    kode: 'NORGE_UTPEKT',
-    term: 'Behandle at Norge er utpekt'
+    kode: 'UTL_MYND_UTPEKT_NORGE',
+    term: 'Norge er utpekt (A003)'
   },
   {
-    kode: 'PAASTAND_UTL',
-    term: 'Behandle påstand fra utlandet'
+    kode: 'UTL_MYND_UTPEKT_SEG_SELV',
+    term: 'Utl. myndh. har utpekt seg selv (A003)'
   },
   {
     kode: 'NY_VURDERING',
@@ -34,6 +34,14 @@ const typer = [
   {
     kode: 'ENDRET_PERIODE',
     term: 'Behandle forkortet periode'
+  },
+  {
+    kode: 'ANMODNING_OM_UNNTAK_HOVEDREGEL',
+    term: 'Behandling av en mottatt anmodning om unntak hovedregel (A001)'
+  },
+  {
+    kode: 'ØVRIGE_SED',
+    term: 'Behandling av alle øvrige SED'
   }
 ];
 module.exports.typer = typer;
