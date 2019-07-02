@@ -51,6 +51,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "braces": ">=2.3.1",
     "chai": "^4.2.0",
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
