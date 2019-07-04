@@ -1,4 +1,4 @@
-const ftrl_endret_unntaksperiode = [
+const endret_unntaksperiode = [
   {
     kode: 'PERIODE_FEILREGISTRERT',
     term: 'Periode er feilregistrert',
@@ -13,4 +13,4 @@ const ftrl_endret_unntaksperiode = [
   },
 ];
 
-module.exports.ftrl_endret_unntaksperiode = ftrl_endret_unntaksperiode;
+module.exports.endret_unntaksperiode = endret_unntaksperiode;

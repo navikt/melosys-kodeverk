@@ -10,7 +10,6 @@ const { art16_1_avslag } = require('./art16_1_avslag');
 const { art11_4_begrunnelser } = require('./art11_4_begrunnelser');
 const { bosted } = require('./bosted');
 const { endretperiode } = require('./endretperiode');
-const { ftrl_endret_unntaksperiode } = require('./endretunntaksperiode');
 const { fartsomrader } = require('./fartsomrader');
 const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
@@ -34,7 +33,6 @@ const begrunnelser = {
   art11_4_begrunnelser,
   bosted,
   endretperiode,
-  ftrl_endret_unntaksperiode,
   fartsomrader,
   forutgaendemedlemskap,
   henleggelsesgrunner,
