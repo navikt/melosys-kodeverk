@@ -55,6 +55,7 @@
     "dokumenttitler",
     "dokumenttyper",
     "finansiering",
+    "folketrygdloven",
     "forespoerseltyper",
     "kontantytelser_eu_fo",
     "landkoder",
@@ -425,6 +426,27 @@
       "items": {
         "$id": "#/properties/finansiering/items",
         "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "folketrygdloven": {
+      "$id": "#/properties/folketrygdloven",
+      "type": "object",
+      "title": "The folketrygdloven Schema",
+      "additionalProperties": false,
+      "required": [
+        "begrunnelser_endret_unntaksperiode"
+      ],
+      "properties": {
+        "begrunnelser_endret_unntaksperiode": {
+          "$id": "#/properties/folketrygdloven/properties/begrunnelser_endret_unntaksperiode",
+          "type": "array",
+          "title": "The begrunnelser_endret_unntaksperiode Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/folketrygdloven/properties/begrunnelser_endret_unntaksperiode/items",
+            "$ref": "#/definitions/kodeverk"
+          }
+        }
       }
     },
     "forespoerseltyper": {
