@@ -434,17 +434,25 @@
       "title": "The folketrygdloven Schema",
       "additionalProperties": false,
       "required": [
-        "begrunnelser_endret_unntaksperiode"
+        "begrunnelser"
       ],
       "properties": {
-        "begrunnelser_endret_unntaksperiode": {
-          "$id": "#/properties/folketrygdloven/properties/begrunnelser_endret_unntaksperiode",
-          "type": "array",
-          "title": "The begrunnelser_endret_unntaksperiode Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/folketrygdloven/properties/begrunnelser_endret_unntaksperiode/items",
-            "$ref": "#/definitions/kodeverk"
+        "begrunnelser": {
+          "$id": "#/properties/folketrygdloven/properties/begrunnelser",
+          "type": "object",
+          "title": "The Folketrygtloven begrunnelser Schema",
+          "required": ["endret_unntaksperiode"],
+          "properties": {
+            "endret_unntaksperiode": {
+              "$id": "#/properties/folketrygdloven/properties/begrunnelser/endret_unntaksperiode",
+              "type": "array",
+              "title": "The begrunnelser_endret_unntaksperiode Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/folketrygdloven/properties/begrunnelser/endret_unntaksperiode/items",
+                "$ref": "#/definitions/kodeverk"
+              }
+            }
           }
         }
       }
