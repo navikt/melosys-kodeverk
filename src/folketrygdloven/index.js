@@ -1,7 +1,7 @@
-const { endret_unntaksperiode: begrunnelser_endret_unntaksperiode } = require('./endretunntaksperiode');
+const { begrunnelser } = require('./begrunnelser');
 
 const folketrygdloven = {
-  begrunnelser_endret_unntaksperiode,
+  begrunnelser,
 };
 
 module.exports.folketrygdloven = folketrygdloven;

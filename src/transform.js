@@ -17,8 +17,18 @@ const kodeverk2KodeSet = kodeverk => {
       codes[verk] = {};
       for(const prop in node) {
         const obj = {};
-        obj[prop] = {...arrayToObjectSet(node[prop])};
-        codes[verk] = {...codes[verk], ...obj};
+        let node_prop = node[prop];
+        if (Array.isArray(node_prop)) {
+          obj[prop] = {...arrayToObjectSet(node_prop)};
+          codes[verk] = {...codes[verk], ...obj};
+        }
+        else {
+          obj[prop] = {};
+          for (const np in node_prop) {
+            obj[prop][np] = {...arrayToObjectSet(node_prop[np])};
+            codes[verk] = {...codes[verk], ...obj};
+          }
+        }
       }
     }
   }
@@ -45,8 +55,18 @@ const kodeverk2KodeMap = kodeverk => {
       codes[verk] = {};
       for(const prop in node) {
         const obj = {};
-        obj[prop] = {...arrayToObjectMap(node[prop])};
-        codes[verk] = {...codes[verk], ...obj};
+        let node_prop = node[prop];
+        if (Array.isArray(node_prop)) {
+          obj[prop] = {...arrayToObjectMap(node[prop])};
+          codes[verk] = {...codes[verk], ...obj};
+        }
+        else {
+          obj[prop] = {};
+          for (const np in node_prop) {
+            obj[prop][np] = {...arrayToObjectMap(node_prop[np])};
+            codes[verk] = {...codes[verk], ...obj};
+          }
+        }
       }
     }
   }
