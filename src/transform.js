@@ -31,7 +31,7 @@ const kodeverk2Kode = (kodeverk, arrayReducerFunc) => {
         else {
           obj[prop] = {};
           for (const np in node_prop) {
-            obj[prop][np] = {...arrayToObjectSet(node_prop[np])};
+            obj[prop][np] = {...arrayReducerFunc(node_prop[np])};
           }
         }
         codes[verk] = {...codes[verk], ...obj};
