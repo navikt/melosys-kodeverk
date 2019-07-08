@@ -1,3 +1,4 @@
+const MAX_LEVELS = 5;
 const arrayToObjectSet = (array) => {
   return array.reduce((obj, item) => {
     obj[item.kode] = item.kode;  // NB! kode => kode
@@ -12,34 +13,26 @@ const arrayToObjectMap = (array) => {
   }, {});
 };
 
-const kodeverk2Kode = (kodeverk, arrayReducerFunc) => {
+const kodeverk2Kode = (kodeverk, arrayReducerFunc, counter = 1) => {
+  if (counter > MAX_LEVELS) {
+    console.error(`Max levels = ${MAX_LEVELS} Reached`);
+    return {};
+  }
+
+  if (Array.isArray(kodeverk)) {
+    return arrayReducerFunc(kodeverk);
+  }
+
   let codes = {};
   for (const verk in kodeverk) {
     const node = kodeverk[verk];
-    if (Array.isArray(node)) {
-      const obj = arrayReducerFunc(node);
-      codes[verk] = { ...obj };
-    }
-    else {
-      codes[verk] = {};
-      for(const prop in node) {
-        const obj = {};
-        let node_prop = node[prop];
-        if (Array.isArray(node_prop)) {
-          obj[prop] = {...arrayReducerFunc(node_prop)};
-        }
-        else {
-          obj[prop] = {};
-          for (const np in node_prop) {
-            obj[prop][np] = {...arrayReducerFunc(node_prop[np])};
-          }
-        }
-        codes[verk] = {...codes[verk], ...obj};
-      }
-    }
+    codes[verk] = kodeverk2Kode(node,  arrayReducerFunc, counter+1);
   }
   return codes;
 };
+
+
+
 const kodeverk2KodeSet = kodeverk => kodeverk2Kode(kodeverk, arrayToObjectSet);
 module.exports.kodeverk2KodeSet = kodeverk2KodeSet;
 
