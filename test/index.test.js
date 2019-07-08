@@ -1,4 +1,4 @@
-const Transform  = require('../src/transform');
+const Transform  = require('../module/transform');
 
 describe('kodeverk2KodeSet', () => {
   it('returnerer et tomt kodeset gitt et tomt kodeverk', () => {

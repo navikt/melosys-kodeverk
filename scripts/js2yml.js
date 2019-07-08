@@ -14,20 +14,3 @@ createDirIfnotExists(DIST_DIR);
 
 const ymlKodeMap = yaml.safeDump(Kodeverk.KTObjects);
 writeYmlFileSync('kodemap', ymlKodeMap);
-/*
-const ymlKodeverk = yaml.safeDump(Kodeverk.kodeverk);
-writeYmlFileSync('kodeverk', ymlKodeverk);
-*/
-
-/*
-const jsonKodeset = JSON.stringify(Kodeverk.kodeset);
-const jsonKodeVerk = JSON.stringify(Kodeverk.kodeverk);
-
-const writeJsonFileSync = (navn, jsonText) => {
-  const path = `${DIST_DIR}/${navn}.json`;
-  fs.writeFileSync(path, jsonText);
-};
-
-writeJsonFileSync('kodeset', jsonKodeset);
-writeJsonFileSync('kodeverk', jsonKodeVerk);
-*/
