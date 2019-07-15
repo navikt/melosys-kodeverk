@@ -48,6 +48,7 @@
   "additionalProperties": false,
   "required": [
     "aktoersroller",
+    "anmodningsperiodesvartyper",
     "avklartefakta",
     "behandlinger",
     "begrunnelser",
@@ -80,6 +81,14 @@
       "uniqueItems": true,
       "items": {
         "$id": "#/properties/aktoersroller/items",
+        "$ref": "#/definitions/kodeverk"
+      }
+    },
+    "anmodningsperiodesvartyper": {
+      "type": "array",
+      "title": "The Anmodningsperiodesvartyper Schema",
+      "uniqueItems": true,
+      "items": {
         "$ref": "#/definitions/kodeverk"
       }
     },
