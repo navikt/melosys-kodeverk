@@ -53,7 +53,6 @@
     "behandlinger",
     "begrunnelser",
     "brev",
-    "dokumenttitler",
     "dokumenttyper",
     "finansiering",
     "folketrygdloven",
@@ -405,16 +404,6 @@
             "$ref": "#/definitions/kodeverk"
           }
         }
-      }
-    },
-    "dokumenttitler": {
-      "$id": "#/properties/dokumenttitler",
-      "type": "array",
-      "title": "The dokumenttitler Schema",
-      "uniqueItems": true,
-      "items": {
-        "$id": "#/properties/dokumenttitler/items",
-        "$ref": "#/definitions/kodeverk"
       }
     },
     "dokumenttyper": {

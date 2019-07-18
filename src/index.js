@@ -7,7 +7,6 @@ const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avklartefakta } = require('./avklartefakta');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
-const { dokumenttitler } = require('./dokumenttitler');
 const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
@@ -37,7 +36,6 @@ const KodeTermObjects = {
   behandlinger,
   begrunnelser,
   brev,
-  dokumenttitler,
   dokumenttyper,
   finansiering,
   folketrygdloven,
