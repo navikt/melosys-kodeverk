@@ -158,7 +158,6 @@
         },
         "art12_1_begrunnelser": {
           "type": "array",
-          "title": "The art12_1_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -166,7 +165,6 @@
         },
         "art12_2_begrunnelser": {
           "type": "array",
-          "title": "The art12_2_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -174,7 +172,6 @@
         },
         "art12_1_forutgaaende_medl": {
           "type": "array",
-          "title": "The art12_1_forutgaaende_medl Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -182,7 +179,6 @@
         },
         "art12_1_vesentlig_virksomhet": {
           "type": "array",
-          "title": "The art12_1_vesentlig_virksomhet Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -190,7 +186,6 @@
         },
         "art12_2_normalt_virksomhet": {
           "type": "array",
-          "title": "The art12_2_normalt_virksomhet Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -198,7 +193,6 @@
         },
         "art16_1_anmodning": {
           "type": "array",
-          "title": "The art16_1_anmodning Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -206,7 +200,6 @@
         },
         "art16_1_avslag": {
           "type": "array",
-          "title": "The art16_1_avslag Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -214,7 +207,6 @@
         },
         "art11_4_begrunnelser": {
           "type": "array",
-          "title": "The art11_4_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -222,7 +214,6 @@
         },
         "bosted": {
           "type": "array",
-          "title": "The Bosted Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -230,7 +221,6 @@
         },
         "endretperiode": {
           "type": "array",
-          "title": "The Endretperiode Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -238,7 +228,6 @@
         },
         "fartsomrader": {
           "type": "array",
-          "title": "The Fartsomrader Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -246,7 +235,6 @@
         },
         "forutgaendemedlemskap": {
           "type": "array",
-          "title": "The Forutgaendemedlemskap Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -254,7 +242,6 @@
         },
         "henleggelsesgrunner": {
           "type": "array",
-          "title": "The henleggelsesgrunner Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -262,7 +249,6 @@
         },
         "ikkeskip": {
           "type": "array",
-          "title": "The Ikkeskip Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -270,7 +256,6 @@
         },
         "ikke_godkjent_begrunnelser": {
           "type": "array",
-          "title": "The ikke_godkjent_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -278,7 +263,6 @@
         },
         "inngangsvilkaar": {
           "type": "array",
-          "title": "The inngangsvilkaar Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -286,7 +270,6 @@
         },
         "opphold": {
           "type": "array",
-          "title": "The opphold Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -294,7 +277,6 @@
         },
         "normaltdrivervirksomhet": {
           "type": "array",
-          "title": "The Normaltdrivervirksomhet Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -302,7 +284,6 @@
         },
         "sokkel": {
           "type": "array",
-          "title": "The sokkel Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -310,7 +291,6 @@
         },
         "unntak_periode_begrunnelser": {
           "type": "array",
-          "title": "The unntak_periode_begrunnelser Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -320,7 +300,6 @@
     },
     "brev": {
       "type": "object",
-      "title": "The brev Schema",
       "additionalProperties": false,
       "required": [
         "produserbaredokumenter"
@@ -328,7 +307,6 @@
       "properties": {
         "produserbaredokumenter": {
           "type": "array",
-          "title": "The produserbaredokumenter Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -338,7 +316,6 @@
     },
     "dokumenttyper": {
       "type": "array",
-      "title": "The dokumenttyper Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -346,7 +323,6 @@
     },
     "finansiering": {
       "type": "array",
-      "title": "The finansiering Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -354,7 +330,6 @@
     },
     "folketrygdloven": {
       "type": "object",
-      "title": "The folketrygdloven Schema",
       "additionalProperties": false,
       "required": [
         "begrunnelser"
@@ -362,12 +337,10 @@
       "properties": {
         "begrunnelser": {
           "type": "object",
-          "title": "The Folketrygtloven begrunnelser Schema",
           "required": ["endret_unntaksperiode"],
           "properties": {
             "endret_unntaksperiode": {
               "type": "array",
-              "title": "The begrunnelser_endret_unntaksperiode Schema",
               "uniqueItems": true,
               "items": {
                 "$ref": "#/definitions/kodeverk"
@@ -379,7 +352,6 @@
     },
     "forespoerseltyper": {
       "type": "array",
-      "title": "The forespoerseltyper Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -387,7 +359,6 @@
     },
     "kontantytelser_eu_fo": {
       "type": "array",
-      "title": "The kontantytelser_eu_fo Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -395,7 +366,6 @@
     },
     "landkoder": {
       "type": "array",
-      "title": "The landkoder Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -403,7 +373,6 @@
     },
     "lovvalgsbestemmelser": {
       "type": "object",
-      "title": "The lovvalgsbestemmelser object",
       "additionalProperties": false,
       "required": [
         "forordning_883_2004",
@@ -413,7 +382,6 @@
       "properties": {
         "forordning_883_2004": {
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -421,7 +389,6 @@
         },
         "forordning_987_2009": {
           "type": "array",
-          "title": "The forordning_883_2004 Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -429,7 +396,6 @@
         },
         "tillegg": {
           "type": "array",
-          "title": "The tillegg Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -453,7 +419,6 @@
     },
     "oppgavetyper": {
       "type": "array",
-      "title": "The oppgavetyper Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -461,7 +426,6 @@
     },
     "representerer": {
       "type": "array",
-      "title": "The representerer Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -469,7 +433,6 @@
     },
     "saksstatuser":  {
       "type": "array",
-      "title": "The saksstatuser Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -477,7 +440,6 @@
     },
     "sakstyper": {
       "type": "array",
-      "title": "The sakstyper Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -485,7 +447,6 @@
     },
     "trygdedekninger": {
       "type": "array",
-      "title": "The trygdedekninger Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -493,7 +454,6 @@
     },
     "utfallregistreringunntak": {
       "type": "array",
-      "title": "The utfallregistreringunntak Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -501,7 +461,6 @@
     },
     "vedleggstitler": {
       "type": "array",
-      "title": "The vedleggstitler Schema",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -509,7 +468,6 @@
     },
     "vilkaar": {
       "type": "array",
-      "title": "Vilkårene",
       "uniqueItems": true,
       "items": {
         "$ref": "#/definitions/kodeverk"
@@ -517,7 +475,6 @@
     },
     "yrker": {
       "type": "object",
-      "title": "The yrker Schema",
       "additionalProperties": false,
       "required": [
         "yrkesaktivitetstyper",
@@ -526,7 +483,6 @@
       "properties": {
         "yrkesaktivitetstyper": {
           "type": "array",
-          "title": "The yrkesaktivitetstyper Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
@@ -534,7 +490,6 @@
         },
         "yrkesgrupper": {
           "type": "array",
-          "title": "The yrkesgrupper Schema",
           "uniqueItems": true,
           "items": {
             "$ref": "#/definitions/kodeverk"
