@@ -16,8 +16,7 @@
   },
   "files": [
     "lib",
-    "dist",
-    "module"
+    "dist"
   ],
   "repository": {
     "type": "git",
