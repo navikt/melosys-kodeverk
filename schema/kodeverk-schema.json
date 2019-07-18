@@ -36,6 +36,13 @@
           ]
         }
       }
+    },
+    "kodeverkArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/kodeverk"
+      }
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -70,25 +77,13 @@
   ],
   "properties": {
     "aktoersroller": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "anmodningsperiodesvartyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "avklartefakta": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "behandlinger": {
       "type": "object",
@@ -100,25 +95,13 @@
       ],
       "properties": {
         "status": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "typer": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "resultattyper":  {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
@@ -150,151 +133,67 @@
       ],
       "properties": {
         "arbeidsland": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art12_1_begrunnelser": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art12_2_begrunnelser": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art12_1_forutgaaende_medl": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art12_1_vesentlig_virksomhet": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art12_2_normalt_virksomhet": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_anmodning": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_avslag": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "art11_4_begrunnelser": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "bosted": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "endretperiode": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "fartsomrader": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "forutgaendemedlemskap": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "henleggelsesgrunner": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "ikkeskip": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "ikke_godkjent_begrunnelser": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "inngangsvilkaar": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "opphold": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "normaltdrivervirksomhet": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "sokkel": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "unntak_periode_begrunnelser": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
@@ -306,27 +205,15 @@
       ],
       "properties": {
         "produserbaredokumenter": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
     "dokumenttyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "finansiering": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "folketrygdloven": {
       "type": "object",
@@ -340,36 +227,20 @@
           "required": ["endret_unntaksperiode"],
           "properties": {
             "endret_unntaksperiode": {
-              "type": "array",
-              "uniqueItems": true,
-              "items": {
-                "$ref": "#/definitions/kodeverk"
-              }
+              "$ref": "#/definitions/kodeverkArray"
             }
           }
         }
       }
     },
     "forespoerseltyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "kontantytelser_eu_fo": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "landkoder": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "lovvalgsbestemmelser": {
       "type": "object",
@@ -381,97 +252,45 @@
       ],
       "properties": {
         "forordning_883_2004": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "forordning_987_2009": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "tillegg": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
     "medlemskapstyper":   {
-      "type": "array",
-      "uniqueItems": true,
-      "items":  {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "mottaksretning":  {
-      "type": "array",
-      "uniqueItems": true,
-      "items":  {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "oppgavetyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "representerer": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "saksstatuser":  {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "sakstyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "trygdedekninger": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "utfallregistreringunntak": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "vedleggstitler": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "vilkaar": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/definitions/kodeverk"
-      }
+      "$ref": "#/definitions/kodeverkArray"
     },
     "yrker": {
       "type": "object",
@@ -482,18 +301,10 @@
       ],
       "properties": {
         "yrkesaktivitetstyper": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         },
         "yrkesgrupper": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/kodeverk"
-          }
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     }
