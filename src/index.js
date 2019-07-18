@@ -28,7 +28,7 @@ const { vedleggstitler } = require('./vedleggstitler');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
-const Transform  = require('../module/transform');
+const Transform  = require('./transform');
 
 const KodeTermObjects = {
   aktoersroller,
