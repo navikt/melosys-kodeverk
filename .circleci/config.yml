@@ -18,8 +18,8 @@ jobs:
     steps:
       - checkout
       - run:
-          - name: Check versions and env
-          - command: |
+          name: Check versions and env
+          command: |
               yarn --version
               node --version
               env
