@@ -20,9 +20,9 @@ jobs:
       - run:
           - name: Check versions and env
           - command: |
-            yarn --version
-            node --version
-            env
+              yarn --version
+              node --version
+              env
 # Yarn
 #      - restore_cache:
 #        key: yarn-cache-{{ checksum "yarn.lock" }}
