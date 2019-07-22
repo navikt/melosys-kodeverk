@@ -56,4 +56,5 @@ jobs:
           command: |
             cd dist
             pwd
-            cat semver.txt
+            ls -la
+            cat ./semver.txt
