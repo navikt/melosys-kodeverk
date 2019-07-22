@@ -50,8 +50,10 @@ jobs:
       - run: yarn test
       # run build
       - run: yarn build
+
       - run:
-        command: |
-          cd dist
-          pwd
-          cat semver.txt
+          name: Debugging dist directory
+          command: |
+            cd dist
+            pwd
+            cat semver.txt
