@@ -7,7 +7,7 @@
     "build:js": "babel src --out-dir lib",
     "build:yml": "node scripts/js2yml",
     "clean": "rimraf lib dist",
-    "build": "npm-run-all clean -p build:*",
+    "build": "npm-run-all clean -p build:* -s semver",
     "eslint": "eslint src/**",
     "kodeverk": "node $NODE_DEBUG_OPTION index.js",
     "test": "mocha --reporter spec",

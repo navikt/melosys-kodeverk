@@ -5,6 +5,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/melosys-kodeverk
     docker:
       # specify the version you desire here
       - image: circleci/node:latest
@@ -14,11 +15,23 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/melosys-kodeverk
-
     steps:
       - checkout
-
+      - run:
+          - name: Check versions and env
+            - command: |
+              yarn --version
+              node --version
+              env
+# Yarn
+#      - restore_cache:
+#        key: yarn-cache-{{ checksum "yarn.lock" }}
+#       - run: yarn install && yarn build
+#       - save_cache:
+#           key: yarn-cache-{{ checksum "yarn.lock" }}
+#            paths:
+#              - node_modules
+#
       # Download and cache dependencies
       - restore_cache:
           keys:
