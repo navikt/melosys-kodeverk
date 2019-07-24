@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+version: 2.1
 jobs:
   build:
     working_directory: ~/melosys-kodeverk
@@ -68,3 +68,23 @@ jobs:
             pwd
             ls -la
             cat ./semver.txt
+  deploy:
+    steps:
+      - run:
+          command: |
+            echo "Hei, dette er deploy!"
+          
+workflows:
+  version: 2.1
+  bygg_og_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+              - build
+          filters:
+            branches:
+              only:
+                - master
+                    
+        
