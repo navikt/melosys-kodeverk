@@ -22,6 +22,7 @@ jobs:
           command: |
               yarn --version
               node --version
+              npm --version
               env
 # Yarn
 #      - restore_cache:
@@ -50,6 +51,13 @@ jobs:
       - run: yarn test
       # run build
       - run: yarn build
+      - run: npm version patch -m "%s, Testing autopublishing"
+      - run: git push && git push --tags
+      - run:
+          name: Publish to NPM
+          command: |
+            npm set //registry.npmjs.org/:_authToken=61ad269e-8b59-4f0d-abc7-5fb1debcf513
+            npm publish
 
       - run:
           name: Debugging dist directory
