@@ -27,6 +27,10 @@ const resultattyper = [
   {
     kode: 'REGISTRERT_UNNTAK',
     term: 'Om unntaksperioden har blitt godkjent for registrering',
+  },
+  {
+    kode: 'AVSLAG_MANGLENDE_OPPL',
+    term: 'Avslått pga manglende opplysninger',
   }
 ];
 module.exports.resultattyper = resultattyper;
