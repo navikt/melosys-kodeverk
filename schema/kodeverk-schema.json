@@ -122,6 +122,7 @@
         "endretperiode",
         "fartsomrader",
         "forutgaendemedlemskap",
+        "ftrl_21_3_avslag",
         "henleggelsesgrunner",
         "ikkeskip",
         "ikke_godkjent_begrunnelser",
@@ -169,6 +170,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "forutgaendemedlemskap": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "ftrl_21_3_avslag": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "henleggelsesgrunner": {

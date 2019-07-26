@@ -12,6 +12,7 @@ const { bosted } = require('./bosted');
 const { endretperiode } = require('./endretperiode');
 const { fartsomrader } = require('./fartsomrader');
 const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
+const { ftrl_21_3_avslag } = require('./ftrl_21_3_avslag');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { ikkeskip } = require('./ikkeskip');
 const { ikke_godkjent_begrunnelser } = require('./ikke_godkjent_begrunnelser');
@@ -35,6 +36,7 @@ const begrunnelser = {
   endretperiode,
   fartsomrader,
   forutgaendemedlemskap,
+  ftrl_21_3_avslag,
   henleggelsesgrunner,
   ikkeskip,
   ikke_godkjent_begrunnelser,
@@ -42,7 +44,7 @@ const begrunnelser = {
   opphold,
   normaltdrivervirksomhet,
   sokkel,
-  unntak_periode_begrunnelser
+  unntak_periode_begrunnelser,
 };
 
 module.exports.begrunnelser = begrunnelser;
