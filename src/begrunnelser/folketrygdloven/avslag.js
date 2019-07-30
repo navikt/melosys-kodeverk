@@ -1,4 +1,4 @@
-const ftrl_21_3_avslag = [
+const avslag = [
   {
     kode: 'MANGLENDE_OPPLYSNINGER',
     term: 'Manglende opplysninger',
@@ -9,4 +9,4 @@ const ftrl_21_3_avslag = [
   },
 ];
 
-module.exports.ftrl_21_3_avslag = ftrl_21_3_avslag;
+module.exports.avslag = avslag;

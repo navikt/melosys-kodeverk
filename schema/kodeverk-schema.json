@@ -58,7 +58,6 @@
     "brev",
     "dokumenttyper",
     "finansiering",
-    "folketrygdloven",
     "forespoerseltyper",
     "kontantytelser_eu_fo",
     "landkoder",
@@ -121,8 +120,8 @@
         "bosted",
         "endretperiode",
         "fartsomrader",
+        "folketrygdloven",
         "forutgaendemedlemskap",
-        "ftrl_21_3_avslag",
         "henleggelsesgrunner",
         "ikkeskip",
         "ikke_godkjent_begrunnelser",
@@ -169,10 +168,23 @@
         "fartsomrader": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "forutgaendemedlemskap": {
-          "$ref": "#/definitions/kodeverkArray"
+        "folketrygdloven": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "endret_unntaksperiode",
+            "avslag"
+          ],
+          "properties": {
+            "endret_unntaksperiode": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "avslag": {
+              "$ref": "#/definitions/kodeverkArray"
+            }
+          }
         },
-        "ftrl_21_3_avslag": {
+        "forutgaendemedlemskap": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "henleggelsesgrunner": {
@@ -218,24 +230,6 @@
     },
     "finansiering": {
       "$ref": "#/definitions/kodeverkArray"
-    },
-    "folketrygdloven": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "begrunnelser"
-      ],
-      "properties": {
-        "begrunnelser": {
-          "type": "object",
-          "required": ["endret_unntaksperiode"],
-          "properties": {
-            "endret_unntaksperiode": {
-              "$ref": "#/definitions/kodeverkArray"
-            }
-          }
-        }
-      }
     },
     "forespoerseltyper": {
       "$ref": "#/definitions/kodeverkArray"

@@ -12,7 +12,7 @@ const { bosted } = require('./bosted');
 const { endretperiode } = require('./endretperiode');
 const { fartsomrader } = require('./fartsomrader');
 const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
-const { ftrl_21_3_avslag } = require('./ftrl_21_3_avslag');
+const { folketrygdloven } = require('./folketrygdloven');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { ikkeskip } = require('./ikkeskip');
 const { ikke_godkjent_begrunnelser } = require('./ikke_godkjent_begrunnelser');
@@ -35,8 +35,8 @@ const begrunnelser = {
   bosted,
   endretperiode,
   fartsomrader,
+  folketrygdloven,
   forutgaendemedlemskap,
-  ftrl_21_3_avslag,
   henleggelsesgrunner,
   ikkeskip,
   ikke_godkjent_begrunnelser,
