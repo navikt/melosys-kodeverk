@@ -38,6 +38,10 @@ const produserbaredokumenter = [
   {
     kode: 'AVSLAG_ARBEIDSGIVER',
     term: 'Avslag Arbeidsgiver'
+  },
+  {
+    kode: 'AVSLAG_MANGLENDE_OPPLYSNINGER',
+    term: 'Avslag manglende opplysninger'
   }
 ];
 
