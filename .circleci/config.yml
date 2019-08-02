@@ -2,13 +2,16 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+defaults: &defaults
+  docker:
+    # specify the version you desire here
+    - image: circleci/node:latest
+
 version: 2.1
 jobs:
   build:
+    <<: *defaults
     working_directory: ~/melosys-kodeverk
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:latest
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -58,11 +61,39 @@ jobs:
             pwd
             ls -la
             cat ./semver.txt
+      # Persisterer dist-katalogen med de genererte filene      
+      - persist_to_workspace:
+          root: ~/melosys-kodeverk
+          paths:
+            - dist
   deploy:
+    <<: *defaults
     steps:
       - run:
+          name: Deployer
           command: |
             echo "Hei, dette er deploy!"
+  java_build_deploy:
+    docker:
+      # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
+      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
+      - image: navikt/melosys-kodeverk-java:85908bd238ef6cee0d4a3067bd014aa43be1f343
+    steps:
+      # Henter opp den persisterte dist-katalogen
+      - attach_workspace:
+          at: ~/melosys-kodeverk
+      - run:
+          name: Bygge og deploye Java-kodeverk
+          command: |
+            set -e
+            cd /
+            java -jar ./app.jar ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml
+            cd melosys-internt-kodeverk
+            mvn clean install -B -V
+            # mvn -B --settings ../travis/settings.xml deploy -Prelease -DskipTests=true
+            # mvn -B --settings ../settings.xml deploy -DskipTests=true
+            # /release.sh ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml  
+            echo "Hei, dette er Java-deploy!"
           
 workflows:
   version: 2.1
@@ -71,10 +102,13 @@ workflows:
       - build
       - deploy:
           requires:
-              - build
-          filters:
-            branches:
-              only:
-                - master
+            - build
+      - java_build_deploy:
+          requires:
+            - build
+#          filters:
+#            branches:
+#              only:
+#                - master
                     
         
