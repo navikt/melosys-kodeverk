@@ -10,7 +10,6 @@ const { behandlinger } = require('./behandlinger');
 const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
-const { folketrygdloven } = require('./folketrygdloven');
 const { forespoerseltyper } = require('./forespoerseltyper');
 const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { landkoder } = require('./landkoder');
@@ -38,7 +37,6 @@ const KodeTermObjects = {
   brev,
   dokumenttyper,
   finansiering,
-  folketrygdloven,
   forespoerseltyper,
   kontantytelser_eu_fo,
   landkoder,

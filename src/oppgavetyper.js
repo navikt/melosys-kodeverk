@@ -10,6 +10,14 @@ const oppgavetyper = [
   {
     kode: 'JFR',
     term: 'Journalføring'
+  },
+  {
+    kode: 'VUR',
+    term: 'Vurder dokument'
+  },
+  {
+    kode: 'BEH_SED',
+    term: 'Behandle SED'
   }
 ];
 module.exports.oppgavetyper = oppgavetyper;
