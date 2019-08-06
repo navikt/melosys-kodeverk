@@ -69,6 +69,7 @@ jobs:
       - run:
           name: Deploy
           command: |
+            pwd
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/melosys-kodeverk/.npmrc
             npm whoami
             npm publish --access public
