@@ -105,10 +105,10 @@ workflows:
     jobs:
       - build
       - deploy:
-          context: Maven Central Release
           requires:
             - build
       - java_bygg_og_release:
+          context: Maven Central Release
           requires:
             - build
 #          filters:
