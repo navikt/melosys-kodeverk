@@ -70,6 +70,7 @@ jobs:
           name: Deploy
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm whoami
             npm publish --access public
 
   deploy:
