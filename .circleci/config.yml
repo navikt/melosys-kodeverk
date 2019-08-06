@@ -77,7 +77,7 @@ jobs:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
       # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
-      - image: navikt/melosys-kodeverk-java:bc463283eb6bdf5d12c0bbb24489fa3fed38d281
+      - image: navikt/melosys-kodeverk-java:bd59613917c17c54f33fd0e93b61093ebd3092e3
     steps:
       # Henter opp den persisterte dist-katalogen
       - attach_workspace:
