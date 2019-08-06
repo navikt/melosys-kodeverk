@@ -73,7 +73,7 @@ jobs:
           name: Deployer
           command: |
             echo "Hei, dette er deploy!"
-  java_build_deploy:
+  java_bygg_og_release:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
       # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
@@ -83,7 +83,7 @@ jobs:
       - attach_workspace:
           at: ~/melosys-kodeverk
       - run:
-          name: Bygge og deploye Java-kodeverk
+          name: Bygge Java-kodeverk
           command: |
             set -e
             cd /
@@ -93,7 +93,11 @@ jobs:
             # mvn -B --settings ../travis/settings.xml deploy -Prelease -DskipTests=true
             # mvn -B --settings ../settings.xml deploy -DskipTests=true
             # /release.sh ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml  
+      - run:
+          name: Release Java-kodeverk
+          command: |
             echo "Hei, dette er Java-deploy!"
+            echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
           
 workflows:
   version: 2.1
@@ -101,9 +105,10 @@ workflows:
     jobs:
       - build
       - deploy:
+          context: Maven Central Release
           requires:
             - build
-      - java_build_deploy:
+      - java_bygg_og_release:
           requires:
             - build
 #          filters:
