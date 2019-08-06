@@ -94,7 +94,6 @@ jobs:
             # mvn -B --settings ../settings.xml deploy -DskipTests=true
             # /release.sh ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml  
             echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
-            cd melosys-internt-kodeverk
             mvn -B --settings ../settings.xml deploy -Prelease -DskipTests=true
           
 workflows:
