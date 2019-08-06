@@ -66,14 +66,19 @@ jobs:
           root: ~/melosys-kodeverk
           paths:
             - dist
+      - run:
+          name: Deploy
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm publish --access public
+
   deploy:
     <<: *defaults
     steps:
       - run:
           name: Deployer
           command: |
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm publish --access public
+            echo "Deployer"
             
   java_bygg_og_release:
     docker:
