@@ -77,7 +77,7 @@ jobs:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
       # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
-      - image: navikt/melosys-kodeverk-java:85908bd238ef6cee0d4a3067bd014aa43be1f343
+      - image: navikt/melosys-kodeverk-java:bc463283eb6bdf5d12c0bbb24489fa3fed38d281
     steps:
       # Henter opp den persisterte dist-katalogen
       - attach_workspace:
@@ -96,8 +96,8 @@ jobs:
       - run:
           name: Release Java-kodeverk
           command: |
-            echo "Hei, dette er Java-deploy!"
             echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
+            mvn -B --settings ../settings.xml deploy -Prelease -DskipTests=true
           
 workflows:
   version: 2.1
