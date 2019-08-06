@@ -72,7 +72,9 @@ jobs:
       - run:
           name: Deployer
           command: |
-            echo "Hei, dette er deploy!"
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm publish --access public
+            
   java_bygg_og_release:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
@@ -112,5 +114,4 @@ workflows:
 #            branches:
 #              only:
 #                - master
-                    
-        
+#                          
