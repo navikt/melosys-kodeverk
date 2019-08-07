@@ -101,9 +101,9 @@ jobs:
           name: Deployer
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm version patch -m "%s MELOSYS-xxxx"
             git config --global user.email "circleci-melosys@nav.no"
             git config --global user.name "CircleCI"            
+            npm version patch -m "%s MELOSYS-xxxx"
             git push && git push --tags
             npm publish --access public
             npm run semver
