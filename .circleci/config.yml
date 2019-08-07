@@ -63,7 +63,7 @@ jobs:
             cat ./semver.txt
       # Persisterer dist-katalogen med de genererte filene      
       - persist_to_workspace:
-          root: ~
+          root: ~/
           paths:
             - melosys-kodeverk
   maven_bygg:
@@ -84,7 +84,7 @@ jobs:
             cd melosys-internt-kodeverk
             mvn clean install -B -V
       - persist_to_workspace:
-          root: ~
+          root: ~/
           paths:
             - melosys-kodeverk-java/melosys-internt-kodeverk
 
@@ -103,7 +103,7 @@ jobs:
             npm publish --access public
             npm run semver
       - persist_to_workspace:
-          root: ~
+          root: ~/
           paths:
             - melosys-kodeverk
   maven_release:
