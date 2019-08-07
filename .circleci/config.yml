@@ -9,7 +9,7 @@ defaults: &defaults
 
 version: 2.1
 jobs:
-  build:
+  bygg:
     <<: *defaults
     working_directory: ~/melosys-kodeverk
 
@@ -63,62 +63,87 @@ jobs:
             cat ./semver.txt
       # Persisterer dist-katalogen med de genererte filene      
       - persist_to_workspace:
-          root: ~/melosys-kodeverk
+          root: ~
           paths:
-            - dist
-      - run:
-          name: Deploy
-          command: |
-            pwd
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm whoami
-            npm publish --access public
-
-  deploy:
-    <<: *defaults
-    steps:
-      - run:
-          name: Deployer
-          command: |
-            echo "Deployer"
-            
-  java_bygg_og_release:
+            - melosys-kodeverk
+  maven_bygg:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
-      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
+      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres likt)
       - image: navikt/melosys-kodeverk-java:bd59613917c17c54f33fd0e93b61093ebd3092e3
+    working_directory: ~/melosys-kodeverk-java
     steps:
       # Henter opp den persisterte dist-katalogen
       - attach_workspace:
-          at: ~/melosys-kodeverk
+          at: ~
       - run:
           name: Bygge Java-kodeverk
           command: |
             set -e
-            cd /
             java -jar ./app.jar ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml
             cd melosys-internt-kodeverk
             mvn clean install -B -V
-            # mvn -B --settings ../travis/settings.xml deploy -Prelease -DskipTests=true
-            # mvn -B --settings ../settings.xml deploy -DskipTests=true
-            # /release.sh ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml  
+      - persist_to_workspace:
+          root: ~
+          paths:
+            - melosys-kodeverk-java/melosys-internt-kodeverk
+
+  npm_release:
+    <<: *defaults
+    working_directory: ~/melosys-kodeverk
+    steps:
+      - attach_workspace:
+          at: ~
+      - run:
+          name: Deployer
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm --version patch -m "%s MELOSYS-xxxx"
+            git push && git push --tags
+            npm publish --access public
+            npm run semver
+      - persist_to_workspace:
+          root: ~
+          paths:
+            - melosys-kodeverk
+  maven_release:
+    docker:
+      # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
+      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
+      - image: navikt/melosys-kodeverk-java:bd59613917c17c54f33fd0e93b61093ebd3092e3
+    working_directory: ~/melosys-kodeverk-java
+    steps:
+      # Henter opp den persisterte dist-katalogen
+      - attach_workspace:
+          at: ~
+      - run:
+          name: Release Java-kodeverk
+          command: |
+            cd melosys-internt-kodeverk
             echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
-            mvn -B -V -e --settings ../settings.xml deploy -Prelease -DskipTests=true
-          
+            $MELOSYS_KODEVERK_VERSION=`sed 's/\s//g'  ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
+            mvn versions:set -DnewVersion=$MELOSYS_KODEVERK_VERSION -B -V -e --settings ../settings.xml deploy -Prelease -DskipTests=true
+            
 workflows:
   version: 2.1
   bygg_og_deploy:
     jobs:
-      - build
-      - deploy:
+      - bygg
+      - maven_bygg:
           requires:
-            - build
-      - java_bygg_og_release:
-          context: Maven Central Release
+            - bygg
+      - npm_release:
           requires:
-            - build
+            - maven_bygg
           filters:
             branches:
               only:
                 - master
-                          
+      - maven_release:
+          context: Maven Central Release
+          requires:
+            - npm_release
+          filters:
+            branches:
+              only:
+                - master

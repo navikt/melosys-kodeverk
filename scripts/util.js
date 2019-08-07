@@ -12,8 +12,8 @@ const writeYmlFileSync = (navn, ymlText) => {
 };
 const writeSemverText = semver => {
   createDistDir();
-  const buildno = `${process.env.CIRCLE_BUILD_NUM}`;
-  const version = `${semver}:${buildno}\n`;
+  const buildno = ('CIRCLE_BUILD_NUM' in Object.keys(process.env)) ? `:${process.env.CIRCLE_BUILD_NUM}` : ``;
+  const version = `${semver}${buildno}\n`;
   fs.writeFileSync(`${DIST_DIR}/semver.txt`, `${version}\n`);
 };
 
