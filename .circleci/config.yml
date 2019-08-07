@@ -80,7 +80,7 @@ jobs:
           name: Bygge Java-kodeverk
           command: |
             set -e
-            java -jar ./app.jar ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml
+            java -jar /app.jar ~/melosys-kodeverk/dist/semver.txt ~/melosys-kodeverk/dist/kodemap.yml
             cd melosys-internt-kodeverk
             mvn clean install -B -V
       - persist_to_workspace:
