@@ -94,6 +94,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
+      - add_ssh_keys:
+          fingerprints:
+            - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
       - run:
           name: Deployer
           command: |
