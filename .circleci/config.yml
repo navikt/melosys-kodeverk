@@ -98,7 +98,7 @@ jobs:
           name: Deployer
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm --version patch -m "%s MELOSYS-xxxx"
+            npm version patch -m "%s MELOSYS-xxxx"
             git push && git push --tags
             npm publish --access public
             npm run semver
