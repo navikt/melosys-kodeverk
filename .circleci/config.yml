@@ -121,7 +121,7 @@ jobs:
           command: |
             cd melosys-internt-kodeverk
             echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
-            $MELOSYS_KODEVERK_VERSION=`sed 's/\s//g'  ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
+            MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
             mvn versions:set -DnewVersion=$MELOSYS_KODEVERK_VERSION -B -V -e --settings ../settings.xml deploy -Prelease -DskipTests=true
             
 workflows:
