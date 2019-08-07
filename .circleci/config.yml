@@ -75,7 +75,7 @@ jobs:
     steps:
       # Henter opp den persisterte dist-katalogen
       - attach_workspace:
-          at: ~
+          at: ~/
       - run:
           name: Bygge Java-kodeverk
           command: |
@@ -93,7 +93,7 @@ jobs:
     working_directory: ~/melosys-kodeverk
     steps:
       - attach_workspace:
-          at: ~
+          at: ~/
       - run:
           name: Deployer
           command: |
@@ -115,7 +115,7 @@ jobs:
     steps:
       # Henter opp den persisterte dist-katalogen
       - attach_workspace:
-          at: ~
+          at: ~/
       - run:
           name: Release Java-kodeverk
           command: |
@@ -135,15 +135,15 @@ workflows:
       - npm_release:
           requires:
             - maven_bygg
-          filters:
-            branches:
-              only:
-                - master
+#          filters:
+#            branches:
+#              only:
+#                - master
       - maven_release:
           context: Maven Central Release
           requires:
             - npm_release
-          filters:
-            branches:
-              only:
-                - master
+#          filters:
+#            branches:
+#              only:
+#                - master
