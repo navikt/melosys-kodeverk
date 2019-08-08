@@ -108,10 +108,11 @@ jobs:
             git push && git push --tags
             npm publish --access public
             npm run semver
+            cat ~/melosys-kodeverk/dist/semver.txt
       - persist_to_workspace:
           root: ~/
           paths:
-            - melosys-kodeverk
+            - melosys-kodeverk/dist
   maven_release:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
@@ -125,6 +126,7 @@ jobs:
       - run:
           name: Release Java-kodeverk
           command: |
+            cat ~/melosys-kodeverk/dist/semver.txt
             cd melosys-internt-kodeverk
             echo $GPG_KEY_BASE64 | base64 --decode | gpg --yes --batch --import
             MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
