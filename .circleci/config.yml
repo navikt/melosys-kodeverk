@@ -102,24 +102,16 @@ jobs:
           name: Deployer
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            ssh-keyscan -t rsa github.com | tee github-key-temp | ssh-keygen -lf -
-            $strval = cat github-key-temp
-            if [[ $strval == *2048 SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8 github.com (RSA)* ]];
-            then
-              cat github-key-temp >> ~/.ssh/known_hosts
-              git branch --set-upstream-to=origin/$CIRCLE_BRANCH
-              git config --global user.email "circleci-melosys@nav.no"
-              git config --global user.name "CircleCI"            
-              npm version patch -m "%s MELOSYS-xxxx"
-              git push && git push --tags
-              npm publish --access public
-              npm run semver
-              cat ~/melosys-kodeverk/dist/semver.txt
-            else
-              echo "Fingerprint for GitHub does not match!" 1>&2
-              exit 1
-            fi
-            
+            echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
+            git branch --set-upstream-to=origin/$CIRCLE_BRANCH
+            git config --global user.email "circleci-melosys@nav.no"
+            git config --global user.name "CircleCI"            
+            npm version patch -m "%s MELOSYS-xxxx"
+            git push && git push --tags
+            npm publish --access public
+            npm run semver
+            cat ~/melosys-kodeverk/dist/semver.txt
+          
       - persist_to_workspace:
           root: ~/
           paths:
