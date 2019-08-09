@@ -97,7 +97,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
-            - "16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48"
+            - "SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8"
       - run:
           name: Deployer
           command: |
