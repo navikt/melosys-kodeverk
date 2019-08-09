@@ -105,7 +105,7 @@ jobs:
             git branch --set-upstream-to=origin/$CIRCLE_BRANCH
             git config --global user.email "circleci-melosys@nav.no"
             git config --global user.name "CircleCI"            
-            npm version patch -m "%s MELOSYS-xxxx"
+            npm version patch -m "%s MELOSYS-xxxx [skip ci]"
             git push && git push --tags
             npm publish --access public
             npm run semver
@@ -138,10 +138,7 @@ workflows:
   version: 2.1
   bygg_og_deploy:
     jobs:
-      - bygg:
-          filters:
-            tags:
-              ignore: /.*/
+      - bygg
       - maven_bygg:
           requires:
             - bygg
