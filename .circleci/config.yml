@@ -138,7 +138,7 @@ workflows:
   version: 2.1
   bygg_og_deploy:
     jobs:
-      - bygg
+      - bygg:
           filters:
             tags:
               ignore: /.*/
