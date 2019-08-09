@@ -103,7 +103,7 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             ssh-keyscan -t rsa github.com | tee github-key-temp | ssh-keygen -lf -
-
+            $strval = cat github-key-temp
             if [[ $strval == *2048 SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8 github.com (RSA)* ]];
             then
               cat github-key-temp >> ~/.ssh/known_hosts
