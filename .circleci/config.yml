@@ -107,7 +107,6 @@ jobs:
             git branch --set-upstream-to=origin/$CIRCLE_BRANCH
             git config --global user.email "circleci-melosys@nav.no"
             git config --global user.name "CircleCI"
-            npm logout
             if [[ -z "${CIRCLE_TAG}" ]]; then
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 echo "master: releasing patch version"
