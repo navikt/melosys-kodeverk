@@ -28,7 +28,6 @@ jobs:
           command: |
               yarn --version
               node --version
-              npm --version
               env
 
       # Laste ned eksisterende avhengigheter som er cachet
@@ -96,8 +95,8 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
+      # Hash for SSH-nøkkel definert i CircleCI som vi bruker til å sjekke inn i GitHub
       - add_ssh_keys:
-          # Hash for SSH-nøkkel definert i CircleCI som vi bruker til å sjekke inn i GitHub
           fingerprints:
             - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
       - run:
@@ -108,7 +107,6 @@ jobs:
             git branch --set-upstream-to=origin/$CIRCLE_BRANCH
             git config --global user.email "circleci-melosys@nav.no"
             git config --global user.name "CircleCI"
-
             if [[ -z "${CIRCLE_TAG}" ]]; then
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 echo "master: releasing patch version"
