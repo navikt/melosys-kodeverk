@@ -48,15 +48,6 @@ jobs:
 
       - run: yarn test
       - run: yarn build
-      - run:
-          name: Publiserer til NPM
-          command: |
-            npm version patch -m "%s, Testing autopublishing"
-            git config user.email "abjolseth@gmail.com"
-            git config user.name "Are Bjølseth"
-            git --follow-tags
-            npm set //registry.npmjs.org/:_authToken=61ad269e-8b59-4f0d-abc7-5fb1debcf513
-            npm publish
 
       - run:
           name: Debugging dist directory
