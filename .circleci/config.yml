@@ -2,22 +2,25 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-defaults: &defaults
-  docker:
-    # specify the version you desire here
-    - image: circleci/node:latest
+#defaults: &defaults
+#  docker:
+#    - image: circleci/node:latest
 
 version: 2.1
+executors:
+  node:
+    docker:
+      - image: circleci/node:latest
+    working_directory: ~/melosys-kodeverk
+  melosys_java:
+    docker:
+      # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
+      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer bygg som kan rekjøres, eller at det faktisk er siste versjon)
+      - image: navikt/melosys-kodeverk-java:c8bc012bf912e968c3816a245a56588045827bd1
+  
 jobs:
   bygg:
-    <<: *defaults
-    working_directory: ~/melosys-kodeverk
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
+    executor: node
     steps:
       - checkout
       - run:
@@ -28,26 +31,25 @@ jobs:
               npm --version
               env
 
-      # Download and cache dependencies
+      # Laste ned eksisterende avhengigheter som er cachet
       - restore_cache:
           keys:
             - v1-yarn-{{ checksum "yarn.lock" }}
-            # fallback to using the latest cache if no exact match is found
+            # Bruker siste cache hvis vi ikke har nøyaktig treff
             - v1-yarn-
 
       - run: yarn install
 
+      # Lagrer cache til neste bygg
       - save_cache:
           key: v1-yarn-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
 
-      # run tests!
       - run: yarn test
-      # run build
       - run: yarn build
       - run:
-          name: Publish to NPM
+          name: Publiserer til NPM
           command: |
             npm version patch -m "%s, Testing autopublishing"
             git config user.email "abjolseth@gmail.com"
@@ -63,16 +65,13 @@ jobs:
             pwd
             ls -la
             cat ./semver.txt
-      # Persisterer dist-katalogen med de genererte filene      
+      # Persisterer dist-katalogen med de genererte filene til neste jobb      
       - persist_to_workspace:
           root: ~/
           paths:
             - melosys-kodeverk
   maven_bygg:
-    docker:
-      # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
-      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres likt)
-      - image: navikt/melosys-kodeverk-java:67088a1d772a1b096033188123102c5db913fb09
+    executor: melosys_java
     working_directory: ~/melosys-kodeverk-java
     steps:
       # Henter opp den persisterte dist-katalogen
@@ -81,7 +80,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-m2build-{{ checksum "/app.jar" }}
-            # fallback to using the latest cache if no exact match is found
             - v1-m2build-
       - run:
           name: Generere Java-kodeverk
@@ -103,12 +101,12 @@ jobs:
             - melosys-kodeverk-java
 
   npm_release:
-    <<: *defaults
-    working_directory: ~/melosys-kodeverk
+    executor: node
     steps:
       - attach_workspace:
           at: ~/
       - add_ssh_keys:
+          # Hash for SSH-nøkkel definert i CircleCI som vi bruker til å sjekke inn i GitHub
           fingerprints:
             - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
       - run:
@@ -140,10 +138,7 @@ jobs:
           paths:
             - melosys-kodeverk/dist
   maven_release:
-    docker:
-      # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
-      # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer siste versjon eller bygg som kan rekjøres)
-      - image: navikt/melosys-kodeverk-java:4780adedea5aee744e0622b031877bdf533ae8ce
+    executor: melosys_java
     working_directory: ~/melosys-kodeverk-java/melosys-internt-kodeverk
     steps:
       # Henter opp den persisterte dist-katalogen
@@ -152,7 +147,7 @@ jobs:
       - restore_cache:
           keys:
             - v1-m2release-{{ checksum "~/melosys-kodeverk-java/melosys-internt-kodeverk/pom.xml" }}
-            # fallback to using the latest cache if no exact match is found
+            # Bruker siste cache hvis vi ikke har nøyaktig treff
             - v1-m2release-
       - run:
           name: Hente Maven-avhengigheter
