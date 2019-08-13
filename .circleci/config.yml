@@ -111,19 +111,24 @@ jobs:
 
             if [[ -z "${CIRCLE_TAG}" ]]; then
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                echo "master: releasing patch version"
                 GIT_COMMIT_DESC=`git log --format=oneline -n 1 $CIRCLE_SHA1`
                 npm version patch -m "%s $GIT_COMMIT_DESC [skip ci]"
                 git push && git push --tags
+                npm publish --access public
                 npm run semver
               else
+                echo "branch: releasing according to CircleCI build number"
                 MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
                 npm version $MELOSYS_KODEVERK_VERSION -m "%s [skip ci]" --allow-same-version
+                npm publish --access public
               fi
             # Fra tag
             else
+              echo "tag: releasing tagged version"
+              npm publish --access public
               npm run semver
             fi
-            npm publish --access public
       - persist_to_workspace:
           root: ~/
           paths:
