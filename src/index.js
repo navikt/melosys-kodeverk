@@ -20,6 +20,8 @@ const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
+const { territorie_og_landkoder } = require('./territorie_og_landkoder');
+const { territoriekoder } = require('./territoriekoder');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
@@ -47,6 +49,8 @@ const KodeTermObjects = {
   representerer,
   saksstatuser,
   sakstyper,
+  territorie_og_landkoder,
+  territoriekoder,
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,

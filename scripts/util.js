@@ -13,7 +13,7 @@ const writeYmlFileSync = (navn, ymlText) => {
 const writeSemverText = semver => {
   createDistDir();
   let buildno = ``;
-  if (process.env.CIRCLE_BUILD_NUM) {
+  if (process.env.CIRCLE_BUILD_NUM && !process.env.CIRCLE_TAG && process.env.CIRCLE_BRANCH != "master") {
     buildno = `:${process.env.CIRCLE_BUILD_NUM}`;
   }
   const version = `${semver}${buildno}`;
