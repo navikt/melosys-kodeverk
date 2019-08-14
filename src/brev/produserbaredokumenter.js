@@ -42,7 +42,11 @@ const produserbaredokumenter = [
   {
     kode: 'AVSLAG_MANGLENDE_OPPLYSNINGER',
     term: 'Avslag manglende opplysninger'
-  }
+  },
+  {
+    kode: 'INNVILGELSE_YRKESAKTIV_FLERE_LAND',
+    term: 'Innvilgelse yrkesaktiv i flere land'
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
