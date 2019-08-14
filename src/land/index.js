@@ -1,11 +1,11 @@
 const { landkoder } = require('./landkoder');
 const { territoriekoder } = require('./territoriekoder');
-const territorie_og_landkoder = [...landkoder, ...territoriekoder].sort();
+const landkoder_og_territoriekoder = [...landkoder, ...territoriekoder].sort((a, b) => a.term > b.term ? 1 : -1);
 
 const land = {
   landkoder,
   territoriekoder,
-  territorie_og_landkoder
+  landkoder_og_territoriekoder,
 };
 
 module.exports.land = land;

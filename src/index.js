@@ -14,6 +14,7 @@ const { forespoerseltyper } = require('./forespoerseltyper');
 const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { land } = require('./land');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
+const { maritimtyper } = require('./maritimtyper');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -41,6 +42,7 @@ const KodeTermObjects = {
   kontantytelser_eu_fo,
   land,
   lovvalgsbestemmelser,
+  maritimtyper,
   medlemskapstyper,
   mottaksretning,
   oppgavetyper,

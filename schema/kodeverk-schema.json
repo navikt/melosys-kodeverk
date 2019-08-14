@@ -62,6 +62,7 @@
     "kontantytelser_eu_fo",
     "land",
     "lovvalgsbestemmelser",
+    "maritimtyper",
     "medlemskapstyper",
     "mottaksretning",
     "oppgavetyper",
@@ -115,6 +116,7 @@
         "art12_1_vesentlig_virksomhet",
         "art12_2_normalt_virksomhet",
         "art16_1_anmodning",
+        "art16_1_anmodning_engelsk",
         "art16_1_avslag",
         "art11_4_begrunnelser",
         "bosted",
@@ -151,6 +153,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_anmodning": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "art16_1_anmodning_engelsk": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_avslag": {
@@ -243,7 +248,7 @@
       "required": [
         "landkoder",
         "territoriekoder",
-        "territorie_og_landkoder"
+        "landkoder_og_territoriekoder"
       ],
       "properties": {
         "landkoder": {
@@ -252,7 +257,7 @@
         "territoriekoder": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "territorie_og_landkoder":  {
+        "landkoder_og_territoriekoder":  {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
@@ -276,6 +281,9 @@
           "$ref": "#/definitions/kodeverkArray"
         }
       }
+    },
+    "maritimtyper":   {
+      "$ref": "#/definitions/kodeverkArray"
     },
     "medlemskapstyper":   {
       "$ref": "#/definitions/kodeverkArray"

@@ -4,10 +4,6 @@
  */
 const landkoder = [
   {
-    kode: 'CH',
-    term: 'Sveits',
-  },
-  {
     kode: 'BE',
     term: 'Belgia',
   },
@@ -112,8 +108,16 @@ const landkoder = [
     term: 'Storbritannia',
   },
   {
+    kode: 'CH',
+    term: 'Sveits',
+  },
+  {
     kode: 'SE',
     term: 'Sverige',
+  },
+  {
+    kode: 'CZ',
+    term: 'Tsjekkia',
   },
   {
     kode: 'DE',
@@ -126,10 +130,6 @@ const landkoder = [
   {
     kode: 'AT',
     term: 'Østerrike',
-  },
-  {
-    kode: 'CZ',
-    term: 'Tsjekkia',
   },
 ];
 module.exports.landkoder = landkoder;
