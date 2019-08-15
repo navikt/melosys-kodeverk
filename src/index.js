@@ -11,7 +11,6 @@ const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
-const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
@@ -40,7 +39,6 @@ const KodeTermObjects = {
   dokumenttyper,
   finansiering,
   forespoerseltyper,
-  kontantytelser_eu_fo,
   landkoder,
   lovvalgsbestemmelser,
   maritimtyper,
