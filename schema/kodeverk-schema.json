@@ -59,7 +59,6 @@
     "dokumenttyper",
     "finansiering",
     "forespoerseltyper",
-    "kontantytelser_eu_fo",
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
@@ -238,9 +237,6 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "forespoerseltyper": {
-      "$ref": "#/definitions/kodeverkArray"
-    },
-    "kontantytelser_eu_fo": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "landkoder": {
