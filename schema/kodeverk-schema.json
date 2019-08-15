@@ -59,15 +59,16 @@
     "dokumenttyper",
     "finansiering",
     "forespoerseltyper",
-    "kontantytelser_eu_fo",
     "landkoder",
     "lovvalgsbestemmelser",
+    "maritimtyper",
     "medlemskapstyper",
     "mottaksretning",
     "oppgavetyper",
     "representerer",
     "saksstatuser",
     "sakstyper",
+    "territoriekoder",
     "trygdedekninger",
     "utfallregistreringunntak",
     "vedleggstitler",
@@ -115,6 +116,7 @@
         "art12_1_vesentlig_virksomhet",
         "art12_2_normalt_virksomhet",
         "art16_1_anmodning",
+        "art16_1_anmodning_engelsk",
         "art16_1_avslag",
         "art11_4_begrunnelser",
         "bosted",
@@ -151,6 +153,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_anmodning": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "art16_1_anmodning_engelsk": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_avslag": {
@@ -234,9 +239,6 @@
     "forespoerseltyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "kontantytelser_eu_fo": {
-      "$ref": "#/definitions/kodeverkArray"
-    },
     "landkoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -260,6 +262,9 @@
         }
       }
     },
+    "maritimtyper":   {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "medlemskapstyper":   {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -276,6 +281,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "sakstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "territoriekoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "trygdedekninger": {
