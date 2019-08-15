@@ -28,6 +28,14 @@ const landkoder = [
     term: 'Frankrike',
   },
   {
+    kode: 'FO',
+    term: 'Færøyene',
+  },
+  {
+    kode: 'GL',
+    term: 'Grønland',
+  },
+  {
     kode: 'GR',
     term: 'Hellas',
   },
@@ -108,6 +116,10 @@ const landkoder = [
     term: 'Storbritannia',
   },
   {
+    kode: 'SJ',
+    term: 'Svalbard og Jan Mayen',
+  },
+  {
     kode: 'CH',
     term: 'Sveits',
   },
@@ -130,6 +142,10 @@ const landkoder = [
   {
     kode: 'AT',
     term: 'Østerrike',
+  },
+  {
+    kode: 'AX',
+    term: 'Åland',
   },
 ];
 module.exports.landkoder = landkoder;

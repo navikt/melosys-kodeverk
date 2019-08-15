@@ -60,7 +60,7 @@
     "finansiering",
     "forespoerseltyper",
     "kontantytelser_eu_fo",
-    "land",
+    "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
     "medlemskapstyper",
@@ -69,6 +69,7 @@
     "representerer",
     "saksstatuser",
     "sakstyper",
+    "territoriekoder",
     "trygdedekninger",
     "utfallregistreringunntak",
     "vedleggstitler",
@@ -242,25 +243,8 @@
     "kontantytelser_eu_fo": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "land": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "landkoder",
-        "territoriekoder",
-        "landkoder_og_territoriekoder"
-      ],
-      "properties": {
-        "landkoder": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "territoriekoder": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "landkoder_og_territoriekoder":  {
-          "$ref": "#/definitions/kodeverkArray"
-        }
-      }
+    "landkoder": {
+      "$ref": "#/definitions/kodeverkArray"
     },
     "lovvalgsbestemmelser": {
       "type": "object",
@@ -301,6 +285,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "sakstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "territoriekoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "trygdedekninger": {
