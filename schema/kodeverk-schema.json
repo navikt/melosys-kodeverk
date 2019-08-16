@@ -89,9 +89,9 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "status",
-        "typer",
-        "resultattyper"
+        "behandlingsstatus",
+        "behandlingstyper",
+        "behandlingsresultattyper"
       ],
       "properties": {
         "behandlingsstatus": {
