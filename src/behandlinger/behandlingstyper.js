@@ -44,4 +44,4 @@ const behandlingstyper = [
     term: 'Behandling av alle øvrige SED'
   }
 ];
-module.exports.typer = behandlingstyper;
+module.exports.behandlingstyper = behandlingstyper;

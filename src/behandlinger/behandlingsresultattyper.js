@@ -33,4 +33,4 @@ const behandlingsresultattyper = [
     term: 'Avslått pga manglende opplysninger',
   }
 ];
-module.exports.resultattyper = behandlingsresultattyper;
+module.exports.behandlingsresultattyper = behandlingsresultattyper;

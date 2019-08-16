@@ -25,4 +25,4 @@ const tilleggsbestemmelser_883_2004 = [
     term: 'Fo 883/2004 Artikkel 87a',
   }
 ];
-module.exports.tillegg = tilleggsbestemmelser_883_2004;
+module.exports.tilleggsbestemmelser_883_2004 = tilleggsbestemmelser_883_2004;

@@ -52,4 +52,4 @@ const avklartefaktatyper = [
     term: null,
   },
 ];
-module.exports.avklartefakta = avklartefaktatyper;
+module.exports.avklartefaktatyper = avklartefaktatyper;

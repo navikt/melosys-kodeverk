@@ -81,4 +81,4 @@ const lovvalgbestemmelser_883_2004 = [
     term: null,
   }
 ];
-module.exports.forordning_883_2004 = lovvalgbestemmelser_883_2004;
+module.exports.lovvalgbestemmelser_883_2004 = lovvalgbestemmelser_883_2004;
