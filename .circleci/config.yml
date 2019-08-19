@@ -104,23 +104,16 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
-            # Fra branch, ikke tag
+            # Fra branch
             if [[ -z "${CIRCLE_TAG}" ]]; then
-              # TODO: hva kan fjernes her?
-              # echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
-              # git config --global user.email "circleci-melosys@nav.no"
-              # git config --global user.name "CircleCI"
-              # git branch --set-upstream-to=origin/$CIRCLE_BRANCH
               echo "Releaser branch med versjon som inkluderer CircleCI-byggnummer"
               MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
               npm --no-git-tag-version version $MELOSYS_KODEVERK_VERSION --allow-same-version
               # Kommentert ut for ikke å spamme npmjs med unødvendige snapshots. Vurdere å ta inn igjen når vi får GitHub package registry 
               # npm publish --access public
-
             # Fra tag
             else
               npm publish --access public
-              npm run semver
             fi
       - persist_to_workspace:
           root: ~/
