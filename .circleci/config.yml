@@ -2,11 +2,12 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-#defaults: &defaults
-#  docker:
-#    - image: circleci/node:latest
+# For internal NAV use see https://confluence.adeo.no/display/TEESSI/CircleCI-oppsett+MELOSYS
+#
 
 version: 2.1
+
+# Gjenbrukbare executors
 executors:
   node:
     docker:
@@ -204,6 +205,8 @@ workflows:
       - tagge_frontend:
           requires:
             - bygge_backend
+  # Default er alle brancher og ingen tagger inkludert. ALLE jobber i en workflow som skal prosessere en tag må derfor
+  # inkludere filters->tags for å kjøres   
   bygge_og_release_tag:
     jobs:
       - bygge_frontend:
