@@ -190,7 +190,7 @@ workflows:
       - godkjenne_release:
           type: approval
           requires:
-            - maven_bygg
+            - bygge_frontend
       - release_frontend:
           requires:
             - godkjenne_release
