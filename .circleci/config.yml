@@ -19,7 +19,7 @@ executors:
       - image: navikt/melosys-kodeverk-java:078bc2fd1eececc31889cc44c0f34f2f806c3aba
   
 jobs:
-  bygg:
+  bygge_frontend:
     executor: node
     steps:
       - checkout
@@ -60,7 +60,7 @@ jobs:
           root: ~/
           paths:
             - melosys-kodeverk
-  maven_bygg:
+  bygge_backend:
     executor: melosys_java
     working_directory: ~/melosys-kodeverk-java
     steps:
@@ -72,7 +72,7 @@ jobs:
             - v1-m2build-{{ checksum "/app.jar" }}
             - v1-m2build-
       - run:
-          name: Generere Java-kodeverk
+          name: Generere kildekode for Java-kodeverk
           command: |
             set -e
             java -jar /app.jar ~/melosys-kodeverk/dist/kodemap.yml
@@ -90,40 +90,35 @@ jobs:
           paths:
             - melosys-kodeverk-java
 
-  npm_release:
+  release_frontend:
     executor: node
     steps:
       - attach_workspace:
           at: ~/
-      # Hash for SSH-nøkkel definert i CircleCI som vi bruker til å sjekke inn i GitHub
+      # Hash for SSH-nøkkel (definert i CircleCI som environment variabel) vi bruker til å sjekke inn i GitHub
       - add_ssh_keys:
           fingerprints:
             - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
       - run:
-          name: Deployer
+          name: Release
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
-            git branch --set-upstream-to=origin/$CIRCLE_BRANCH
-            git config --global user.email "circleci-melosys@nav.no"
-            git config --global user.name "CircleCI"
+
+            # Fra branch, ikke tag
             if [[ -z "${CIRCLE_TAG}" ]]; then
-              if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                echo "master: releasing patch version"
-                GIT_COMMIT_DESC=`git log --format=oneline -n 1 $CIRCLE_SHA1`
-                npm version patch -m "%s $GIT_COMMIT_DESC [skip ci]"
-                git push && git push --tags
-                npm publish --access public
-                npm run semver
-              else
-                echo "branch: releasing according to CircleCI build number"
-                MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
-                npm version $MELOSYS_KODEVERK_VERSION -m "%s [skip ci]" --allow-same-version
-                npm publish --access public
-              fi
+              # TODO: hva kan fjernes her?
+              # echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
+              # git config --global user.email "circleci-melosys@nav.no"
+              # git config --global user.name "CircleCI"
+              # git branch --set-upstream-to=origin/$CIRCLE_BRANCH
+              echo "Releaser branch med versjon som inkluderer CircleCI-byggnummer"
+              MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
+              npm --no-git-tag-version version $MELOSYS_KODEVERK_VERSION --allow-same-version
+              # Kommentert ut for ikke å spamme npmjs med unødvendige snapshots. Vurdere å ta inn igjen når vi får GitHub package registry 
+              # npm publish --access public
+
             # Fra tag
             else
-              echo "tag: releasing tagged version"
               npm publish --access public
               npm run semver
             fi
@@ -131,7 +126,7 @@ jobs:
           root: ~/
           paths:
             - melosys-kodeverk/dist
-  maven_release:
+  release_backend:
     executor: melosys_java
     working_directory: ~/melosys-kodeverk-java/melosys-internt-kodeverk
     steps:
@@ -159,59 +154,92 @@ jobs:
             MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
             mvn versions:set -DnewVersion=$MELOSYS_KODEVERK_VERSION
             mvn -B --settings /settings.xml deploy -Prelease -DskipTests=true
+  tagge_frontend:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ~/
+      # Hash for SSH-nøkkel (definert i CircleCI environment variables) som vi bruker til å sjekke inn i GitHub
+      - add_ssh_keys:
+          fingerprints:
+            - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
+      - run:
+          name: Tagger og sjekker inn
+          command: |
+            echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
+            git config --global user.email "circleci-melosys@nav.no"
+            git config --global user.name "CircleCI"
+            git branch --set-upstream-to=origin/$CIRCLE_BRANCH
+            echo "Tagger ny patch-versjon"
+            GIT_COMMIT_DESC=`git log --format=oneline -n 1 $CIRCLE_SHA1`
+            npm version patch -m "%s $GIT_COMMIT_DESC [skip ci]"
+            git push && git push --tags
             
 workflows:
   version: 2.1
-  bygg_og_deploy_master_tags:
+  bygge_og_release_branch:
     jobs:
-      - bygg:
-          filters:
-            branches:
-              only:
-                - master
-            tags:
-              only:
-                - /^v.*/
-      - maven_bygg:
-          requires:
-            - bygg
-          filters:
-            tags:
-              only:
-                - /^v.*/
-      - npm_release:
-          requires:
-            - maven_bygg
-          filters:
-            tags:
-              only:
-                - /^v.*/
-      - maven_release:
-          context: Maven Central Release
-          requires:
-            - npm_release
-          filters:
-            tags:
-              only:
-                - /^v.*/
-  bygg_og_deploy_branch:
-    jobs:
-      - bygg:
+      - bygge_frontend:
           filters:
             branches:
               ignore:
                 - master
-      - maven_bygg:
+      - bygge_backend:
           requires:
-            - bygg
-      - release:
+            - bygge_frontend
+      - godkjenne_release:
           type: approval
           requires:
             - maven_bygg
-      - npm_release:
+      - release_frontend:
           requires:
-            - release
-      - maven_release:
+            - godkjenne_release
+      - release_backend:
           context: Maven Central Release
           requires:
-            - npm_release
+            - release_frontend
+  bygge_og_tagge_master:
+    jobs:
+      - bygge_frontend:
+          filters:
+            branches:
+              only:
+                - master
+      - bygge_backend:
+          requires:
+            - bygge_frontend
+      - tagge_frontend:
+          requires:
+            - bygge_backend
+  bygge_og_release_tag:
+    jobs:
+      - bygge_frontend:
+          filters:
+            tags:
+              only:
+                - /^v.*/
+            branches:
+              ignore:
+                - /.*/
+      - bygge_backend:
+          requires:
+            - bygge_frontend
+          filters:
+            tags:
+              only:
+                - /^v.*/
+      - release_frontend:
+          requires:
+            - bygge_backend
+          filters:
+            tags:
+              only:
+                - /^v.*/
+      - release_backend:
+          context: Maven Central Release
+          requires:
+            - release_frontend
+          filters:
+            tags:
+              only:
+                - /^v.*/
