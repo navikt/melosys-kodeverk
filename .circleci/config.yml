@@ -190,7 +190,7 @@ workflows:
       - godkjenne_release:
           type: approval
           requires:
-            - bygge_frontend
+            - bygge_backend
       - release_frontend:
           requires:
             - godkjenne_release
