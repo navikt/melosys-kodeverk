@@ -2,7 +2,7 @@
  * Kodeverk/yrkesaktivitetstyper
  * @module
  */
-const yrkesaktivitetstyper = [
+const yrkesaktivitet_typer = [
   {
     kode: 'LOENNET_ARBEID',
     term: 'Er i lønnet arbeid.'
@@ -17,4 +17,4 @@ const yrkesaktivitetstyper = [
   }
 ];
 
-module.exports.yrkesaktivitetstyper = yrkesaktivitetstyper;
+module.exports.yrkesaktivitet_typer = yrkesaktivitet_typer;
