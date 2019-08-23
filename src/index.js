@@ -13,7 +13,7 @@ const { finansiering } = require('./finansiering');
 const { forespoersel } = require('./forespoersel');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
-const { maritimt } = require('./maritim');
+const { maritim } = require('./maritim');
 const { medlemskap } = require('./medlemskap');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgaver } = require('./oppgaver');
@@ -40,7 +40,7 @@ const KodeTermObjects = {
   forespoersel,
   landkoder,
   lovvalgsbestemmelser,
-  maritimt,
+  maritim,
   medlemskap,
   mottaksretning,
   oppgaver,
