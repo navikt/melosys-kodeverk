@@ -2,7 +2,7 @@
  * Kodeverk/utfallregistreringunntak
  * @module
  */
-const utfallregistreringunntak = [
+const utfall_registrering_unntak = [
   {
     kode: 'GODKJENT',
     term: 'Godkjenn'
@@ -13,4 +13,4 @@ const utfallregistreringunntak = [
   }
 ];
 
-module.exports.utfallregistreringunntak = utfallregistreringunntak;
+module.exports.utfall_registrering_unntak = utfall_registrering_unntak;

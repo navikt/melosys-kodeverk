@@ -22,7 +22,7 @@ const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { territoriekoder } = require('./territoriekoder');
 const { trygdedekninger } = require('./trygdedekninger');
-const { utfallregistreringunntak } = require('./utfallregistreringunntak');
+const { utfall_registrering_unntak } = require('./utfall_registrering_unntak');
 const { vedleggstitler } = require('./vedleggstitler');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
@@ -50,7 +50,7 @@ const KodeTermObjects = {
   sakstyper,
   territoriekoder,
   trygdedekninger,
-  utfallregistreringunntak,
+  utfall_registrering_unntak,
   vedleggstitler,
   vilkaar,
   yrker,
