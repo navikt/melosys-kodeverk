@@ -5,7 +5,7 @@
  * Oppdatert: 12NOV2018, Marte Okkelmo
  * @module
  */
-const saksstatuser = [
+const sak_status = [
   {
     kode: 'OPPRETTET',
     term: 'Saken er opprettet'
@@ -27,4 +27,4 @@ const saksstatuser = [
     term: 'Saken er henlagt som bortfalt i Melosys.'
   }
 ];
-module.exports.saksstatuser = saksstatuser;
+module.exports.sak_status = sak_status;

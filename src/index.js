@@ -18,8 +18,7 @@ const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
-const { saksstatuser } = require('./saksstatuser');
-const { sakstyper } = require('./sakstyper');
+const { sak } = require('./sak');
 const { territoriekoder } = require('./territoriekoder');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfall_registrering_unntak } = require('./utfall_registrering_unntak');
@@ -46,8 +45,7 @@ const KodeTermObjects = {
   mottaksretning,
   oppgavetyper,
   representerer,
-  saksstatuser,
-  sakstyper,
+  sak,
   territoriekoder,
   trygdedekninger,
   utfall_registrering_unntak,

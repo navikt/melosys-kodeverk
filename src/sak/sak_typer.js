@@ -4,7 +4,7 @@
  * Dato: 13SEP2018, Marte Okkelmo
  * @module
  */
-const sakstyper = [
+const sak_typer = [
   {
     kode: 'EU_EOS',
     term: 'EU/EØS',
@@ -18,4 +18,4 @@ const sakstyper = [
     term: 'Folketrygdloven',
   },
 ];
-module.exports.sakstyper = sakstyper;
+module.exports.sak_typer = sak_typer;
