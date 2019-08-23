@@ -7,7 +7,7 @@ const { anmodning } = require('./anmodning');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
-const { dokumenttyper } = require('./dokumenttyper');
+const { dokument } = require('./dokument');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
@@ -35,7 +35,7 @@ const KodeTermObjects = {
   behandlinger,
   begrunnelser,
   brev,
-  dokumenttyper,
+  dokument,
   finansiering,
   forespoerseltyper,
   landkoder,

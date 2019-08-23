@@ -2,7 +2,7 @@
  * Kodeverk/dokumenttyper
  * @module
  */
-const dokumenttyper = [
+const dokument_typer = [
   {
     kode: 'SOEKNAD_AVKL_LOV',
     term: null,
@@ -44,4 +44,4 @@ const dokumenttyper = [
     term: 'Trygderettskjennelse',
   }
 ];
-module.exports.dokumenttyper = dokumenttyper;
+module.exports.dokument_typer = dokument_typer;
