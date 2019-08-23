@@ -2,7 +2,7 @@
  * Kodeverk/avklartefaktatyper
  * @module
  */
-const avklartefaktatyper = [
+const avklartefakta_typer = [
   {
     kode: 'VIRKSOMHET',
     term: null,
@@ -52,4 +52,4 @@ const avklartefaktatyper = [
     term: null,
   },
 ];
-module.exports.avklartefaktatyper = avklartefaktatyper;
+module.exports.avklartefakta_typer = avklartefakta_typer;

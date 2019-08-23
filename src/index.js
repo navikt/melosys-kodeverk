@@ -4,7 +4,7 @@
  */
 const { aktoersroller } = require('./aktoerroller');
 const { anmodning } = require('./anmodning');
-const { avklartefaktatyper } = require('./avklartefaktatyper');
+const { avklartefakta } = require('./avklartefakta');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
 const { dokument } = require('./dokument');
@@ -31,7 +31,7 @@ const Transform  = require('./transform');
 const KodeTermObjects = {
   aktoersroller,
   anmodning,
-  avklartefaktatyper,
+  avklartefakta,
   behandlinger,
   begrunnelser,
   brev,
