@@ -2,7 +2,7 @@
  * Kodeverk/anmodningsperiodesvartyper
  * @module
  */
-const anmodningsperiodesvartyper = [
+const periodesvar_typer = [
   {
     kode: 'INNVILGELSE',
     term: 'Innvilgelse',
@@ -17,4 +17,4 @@ const anmodningsperiodesvartyper = [
   },
 ];
 
-module.exports.anmodningsperiodesvartyper = anmodningsperiodesvartyper;
+module.exports.periodesvar_typer = periodesvar_typer;
