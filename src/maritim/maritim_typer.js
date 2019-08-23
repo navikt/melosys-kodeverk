@@ -2,7 +2,7 @@
  * Kodeverk/maritimtyper
  * @module
  */
-const maritimtyper = [
+const maritim_typer = [
   {
     kode: 'SOKKEL',
     term: null,
@@ -12,4 +12,4 @@ const maritimtyper = [
     term: null,
   }
 ];
-module.exports.maritimtyper = maritimtyper;
+module.exports.maritim_typer = maritim_typer;
