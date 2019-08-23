@@ -10,11 +10,11 @@ const { behandlinger } = require('./behandlinger');
 const { dokument } = require('./dokument');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
-const { forespoerseltyper } = require('./forespoerseltyper');
+const { forespoersel } = require('./forespoersel');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
-const { medlemskapstyper } = require('./medlemskapstyper');
+const { medlemskap } = require('./medlemskap');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
@@ -37,11 +37,11 @@ const KodeTermObjects = {
   brev,
   dokument,
   finansiering,
-  forespoerseltyper,
+  forespoersel,
   landkoder,
   lovvalgsbestemmelser,
   maritimtyper,
-  medlemskapstyper,
+  medlemskap,
   mottaksretning,
   oppgavetyper,
   representerer,

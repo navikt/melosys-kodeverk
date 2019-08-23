@@ -2,7 +2,7 @@
  * Kodeverk/medlemskapstyper
  * @module
  */
-const medlemskapstyper = [
+const medlemskaps_typer = [
   {
     kode: 'PLIKTIG',
     term: 'Pliktig medlemskap'
@@ -16,4 +16,4 @@ const medlemskapstyper = [
     term: 'Unntatt medlemskap'
   }
 ];
-module.exports.medlemskapstyper = medlemskapstyper;
+module.exports.medlemskaps_typer = medlemskaps_typer;

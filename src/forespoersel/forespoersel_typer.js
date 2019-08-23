@@ -2,7 +2,7 @@
  * Kodeverk/forespoerseltyper
  * @module
  */
-const forespoerseltyper = [
+const forespoersel_typer = [
   {
     kode: 'PURRING',
     term: null,
@@ -16,4 +16,4 @@ const forespoerseltyper = [
     term: null,
   }
 ];
-module.exports.forespoerseltyper = forespoerseltyper;
+module.exports.forespoersel_typer = forespoersel_typer;
