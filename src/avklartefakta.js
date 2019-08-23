@@ -24,6 +24,10 @@ const avklartefakta = [
     term: null,
   },
   {
+    kode: 'SOKKEL_ELLER_SKIP',
+    term: null,
+  },
+  {
     kode: 'BOSTEDSLAND',
     term: null,
   },
@@ -33,6 +37,18 @@ const avklartefakta = [
   },
   {
     kode: 'VURDERING_UNNTAK_PERIODE',
+    term: null,
+  },
+  {
+    kode: 'MARGINALT_ARBEID',
+    term: null,
+  },
+  {
+    kode: 'VESENTLIG_AKTIVITET_I_NORGE',
+    term: null,
+  },
+  {
+    kode: 'ARBEIDSGIVERS_FORRETNINGSSTED',
     term: null,
   },
 ];

@@ -11,15 +11,16 @@ const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
-const { kontantytelser_eu_fo } = require('./kontantytelser_eu_fo');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
+const { maritimtyper } = require('./maritimtyper');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
+const { territoriekoder } = require('./territoriekoder');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
@@ -38,15 +39,16 @@ const KodeTermObjects = {
   dokumenttyper,
   finansiering,
   forespoerseltyper,
-  kontantytelser_eu_fo,
   landkoder,
   lovvalgsbestemmelser,
+  maritimtyper,
   medlemskapstyper,
   mottaksretning,
   oppgavetyper,
   representerer,
   saksstatuser,
   sakstyper,
+  territoriekoder,
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,
