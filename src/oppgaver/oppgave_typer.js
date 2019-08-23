@@ -2,7 +2,7 @@
  * Kodeverk/oppgavetyper
  * @module
  */
-const oppgavetyper = [
+const oppgave_typer = [
   {
     kode: 'BEH_SAK_MK',
     term: 'Behandle sak (Manuell)'
@@ -20,4 +20,4 @@ const oppgavetyper = [
     term: 'Behandle SED'
   }
 ];
-module.exports.oppgavetyper = oppgavetyper;
+module.exports.oppgave_typer = oppgave_typer;
