@@ -48,11 +48,11 @@ const produserbaredokumenter = [
     term: 'Innvilgelse yrkesaktiv i flere land'
   },
   {
-    kode: 'ORIENTERING_VIDERESENDT_SØKNAD',
+    kode: 'ORIENTERING_VIDERESENDT_SOEKNAD',
     term: 'Orienteringsbrev til bruker om videresendt søknad',
   },
   {
-    kode: 'VIDERESENDT_SØKNAD_UTLAND',
+    kode: 'VIDERESENDT_SOEKNAD_UTLAND',
     term: 'Videresendt søknad til utenlandsk myndighet',
   },
 ];
