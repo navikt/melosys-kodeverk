@@ -47,6 +47,14 @@ const produserbaredokumenter = [
     kode: 'INNVILGELSE_YRKESAKTIV_FLERE_LAND',
     term: 'Innvilgelse yrkesaktiv i flere land'
   },
+  {
+    kode: 'ORIENTERING_VIDERESENDT_SOEKNAD',
+    term: 'Orienteringsbrev til bruker om videresendt søknad',
+  },
+  {
+    kode: 'VIDERESENDT_SOEKNAD_UTLAND',
+    term: 'Videresendt søknad til utenlandsk myndighet',
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
