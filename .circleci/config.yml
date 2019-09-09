@@ -17,7 +17,7 @@ executors:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
       # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer bygg som kan rekjøres, eller at det faktisk er siste versjon)
-      - image: navikt/melosys-kodeverk-java:db3d289504b72e375973b269286815cc098fe6c4
+      - image: navikt/melosys-kodeverk-java:078bc2fd1eececc31889cc44c0f34f2f806c3aba
 
 jobs:
   bygge_frontend:
@@ -56,7 +56,7 @@ jobs:
             pwd
             ls -la
             cat ./semver.txt
-      # Persisterer dist-katalogen med de genererte filene til neste jobb      
+      # Persisterer dist-katalogen med de genererte filene til neste jobb
       - persist_to_workspace:
           root: ~/
           paths:
@@ -110,7 +110,7 @@ jobs:
               echo "Releaser branch med versjon som inkluderer CircleCI-byggnummer"
               MELOSYS_KODEVERK_VERSION=`sed 's/\s//g' ~/melosys-kodeverk/dist/semver.txt | tr -d '\n' | sed 's/:/-/g'`
               npm --no-git-tag-version version $MELOSYS_KODEVERK_VERSION --allow-same-version
-              # Kommentert ut for ikke å spamme npmjs med unødvendige snapshots. Vurdere å ta inn igjen når vi får GitHub package registry 
+              # Kommentert ut for ikke å spamme npmjs med unødvendige snapshots. Vurdere å ta inn igjen når vi får GitHub package registry
               # npm publish --access public
             # Fra tag
             else
@@ -206,7 +206,7 @@ workflows:
           requires:
             - bygge_backend
   # Default er alle brancher og ingen tagger inkludert. ALLE jobber i en workflow som skal prosessere en tag må derfor
-  # inkludere filters->tags for å kjøres   
+  # inkludere filters->tags for å kjøres
   bygge_og_release_tag:
     jobs:
       - bygge_frontend:
