@@ -15,8 +15,8 @@ const saksstatuser = [
     term: 'Lovvalget er avklart'
   },
   {
-    kode: 'AVSLUTTET',
-    term: 'Saken er avsluttet'
+    kode: 'VIDERESENDT',
+    term: 'Saken er videresendt'
   },
   {
     kode: 'HENLAGT',
