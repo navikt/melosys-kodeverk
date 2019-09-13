@@ -1,8 +1,8 @@
 /**
- * Kodeverk/avklartefakta
+ * Kodeverk/avklartefaktatyper
  * @module
  */
-const avklartefakta = [
+const avklartefaktatyper = [
   {
     kode: 'VIRKSOMHET',
     term: null,
@@ -32,6 +32,10 @@ const avklartefakta = [
     term: null,
   },
   {
+    kode: 'IKKE_BOSATT_NORGE',
+    term: null,
+  },
+  {
     kode: 'AARSAK_ENDRING_PERIODE',
     term: null,
   },
@@ -52,4 +56,4 @@ const avklartefakta = [
     term: null,
   },
 ];
-module.exports.avklartefakta = avklartefakta;
+module.exports.avklartefaktatyper = avklartefaktatyper;
