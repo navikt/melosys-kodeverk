@@ -17,5 +17,9 @@ const sakstyper = [
     kode: 'FTRL',
     term: 'Folketrygdloven',
   },
+  {
+    kode: 'UKJENT',
+    term: 'Ukjent',
+  },
 ];
 module.exports.sakstyper = sakstyper;
