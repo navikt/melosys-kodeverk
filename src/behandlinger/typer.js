@@ -1,8 +1,8 @@
 /**
- * Kodeverk/behandlingstyper
+ * Kodeverk/typer
  * @module
  */
-const behandlingstyper = [
+const typer = [
   {
     kode: 'SOEKNAD',
     term: 'Søknad'
@@ -44,4 +44,4 @@ const behandlingstyper = [
     term: 'Behandling av alle øvrige SED'
   }
 ];
-module.exports.behandlingstyper = behandlingstyper;
+module.exports.typer = typer;

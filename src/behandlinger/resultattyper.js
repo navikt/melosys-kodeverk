@@ -1,9 +1,9 @@
 /**
- * Kodeverk/behandlingsresultattyper
+ * Kodeverk/resultattyper
  * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys
  * @module
  */
-const behandlingsresultattyper = [
+const resultattyper = [
   {
     kode: 'FASTSATT_LOVVALGSLAND',
     term: 'Lovvalgsland er fastsatt',
@@ -33,4 +33,4 @@ const behandlingsresultattyper = [
     term: 'Avslått pga manglende opplysninger',
   }
 ];
-module.exports.behandlingsresultattyper = behandlingsresultattyper;
+module.exports.resultattyper = resultattyper;

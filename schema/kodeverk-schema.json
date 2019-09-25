@@ -89,18 +89,18 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "behandlingsstatus",
-        "behandlingstyper",
-        "behandlingsresultattyper"
+        "status",
+        "typer",
+        "resultattyper"
       ],
       "properties": {
-        "behandlingsstatus": {
+        "status": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "behandlingstyper": {
+        "typer": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "behandlingsresultattyper":  {
+        "resultattyper":  {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
