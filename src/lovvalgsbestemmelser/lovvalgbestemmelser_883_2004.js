@@ -41,15 +41,15 @@ const lovvalgbestemmelser_883_2004 = [
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b i)',
   },
   {
-    kode: 'FO_883_2004_ART13_1_B2',
+    kode: 'FO_883_2004_ART13_1B2',
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b ii)',
   },
   {
-    kode: 'FO_883_2004_ART13_1_B3',
+    kode: 'FO_883_2004_ART13_1B3',
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b iii)',
   },
   {
-    kode: 'FO_883_2004_ART13_1_B4',
+    kode: 'FO_883_2004_ART13_1B4',
     term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b iv)',
   },
   {
