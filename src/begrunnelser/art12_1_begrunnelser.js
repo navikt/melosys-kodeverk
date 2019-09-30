@@ -9,7 +9,7 @@ const art12_1_begrunnelser = [
   },
   {
     kode: 'IKKE_UTSENDT_PAA_OPPDRAG_FOR_AG',
-    term: 'Ikke sendt ut for å utføre oppdrag for det norske foretaket',
+    term: 'Ikke sendt ut av arbeidsgiver for å utføre arbeid som må gjøres i utlandet',
   },
   {
     kode: 'IKKE_NORSK_AG_REGNING',
@@ -21,7 +21,7 @@ const art12_1_begrunnelser = [
   },
   {
     kode: 'UNDER_2_MN_SIDEN_FORRIGE_UTSENDING_TIL_SAMME_LAND',
-    term: 'Mindre enn 2 md. siden søker var utsendt for å utføre oppdrag i samme land for samme foretak',
+    term: 'Mindre enn 2 md. siden søker var utsendt for å arbeide i samme land for samme arbeidsgiver',
   },
   {
     kode: 'IKKE_VESENTLIG_VIRKSOMHET',
