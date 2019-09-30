@@ -1,27 +1,31 @@
 const art12_1_begrunnelser = [
   {
     kode: 'UTSENDELSE_OVER_24_MN',
-    term: 'Utsendelseperioden overskrider 24 måneder',
+    term: 'Utsendingen er ment å vare mer enn 24 md.',
   },
   {
     kode: 'ERSTATTER_ANNEN',
-    term: 'Erstatter en annen utsendt person',
+    term: 'Erstatter en annen utsendt person, samlet periode over 24 md.',
   },
   {
     kode: 'IKKE_UTSENDT_PAA_OPPDRAG_FOR_AG',
-    term: 'Ikke sendt ut for å utføre oppdrag for det norske foretaket',
+    term: 'Ikke sendt ut av arbeidsgiver for å utføre arbeid som må gjøres i utlandet',
+  },
+  {
+    kode: 'IKKE_NORSK_AG_REGNING',
+    term: 'Lønnes helt eller delvis av et utenlandsk foretak',
   },
   {
     kode: 'IKKE_OMFATTET_LENGE_NOK_I_NORGE_FOER',
-    term: 'Ikke omfattet av norsk trygd 1 md før utsendelse',
+    term: 'Ansatt for å sendes ut, og ikke omfattet av norsk trygd 1 md. før utsending',
   },
   {
     kode: 'UNDER_2_MN_SIDEN_FORRIGE_UTSENDING_TIL_SAMME_LAND',
-    term: 'Mindre enn 2 md siden søker var utsendt for å utføre oppdrag i samme land for samme foretak',
+    term: 'Mindre enn 2 md. siden søker var utsendt for å arbeide i samme land for samme arbeidsgiver',
   },
   {
     kode: 'IKKE_VESENTLIG_VIRKSOMHET',
-    term: 'Foretaket har ikke vesentlig virksomhet',
+    term: 'Foretaket har ikke vesentlig virksomhet i Norge',
   }
 ];
 module.exports.art12_1_begrunnelser = art12_1_begrunnelser;
