@@ -16,8 +16,12 @@ const behandlingstyper = [
     term: 'Anke'
   },
   {
-    kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD',
-    term: 'Registrering av unntak norsk trygd (A009,A010)'
+    kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING',
+    term: 'Registrering av unntak fra norsk trygd – utstasjonerte (A009)'
+  },
+  {
+    kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE',
+    term: 'Registrering av unntak fra norsk trygd – øvrige (A010)'
   },
   {
     kode: 'UTL_MYND_UTPEKT_NORGE',
@@ -42,6 +46,10 @@ const behandlingstyper = [
   {
     kode: 'ØVRIGE_SED',
     term: 'Behandling av alle øvrige SED'
+  },
+  {
+    kode: 'VURDER_TRYGDETID',
+    term: 'Behandling av forespørsel om trygdetid'
   }
 ];
 module.exports.behandlingstyper = behandlingstyper;
