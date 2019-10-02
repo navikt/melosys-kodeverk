@@ -36,8 +36,15 @@ module.exports = {
         "node/prefer-global/process": ["error", "always"],
         "node/prefer-global/url-search-params": ["error", "always"],
         "node/prefer-global/url": ["error", "always"],
-        "node/no-unsupported-features/es-syntax": ["error", "always"],
-        "node/no-deprecated-api": ["error", "always"]
+        "node/no-unsupported-features/es-syntax": ["error", {
+          "version": "10.0",
+          "ignores": []
+        }],
+        "node/no-deprecated-api": ["error", {
+          "version": ">=10.0",
+          "ignoreModuleItems": [],
+          "ignoreGlobalItems": []
+        }]
     },
     "globals": {
       "assert": true,
