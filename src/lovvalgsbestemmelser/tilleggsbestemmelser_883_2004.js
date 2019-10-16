@@ -17,8 +17,8 @@ const tilleggsbestemmelser_883_2004 = [
     term: 'Fo 883/2004 Artikkel 13 nr. 4',
   },
   {
-    kode: 'FO_883_2004_ART87_7',
-    term: 'Fo 883/2004 Artikkel 87 nr. 7',
+    kode: 'FO_883_2004_ART87_8',
+    term: 'Fo 883/2004 Artikkel 87 nr. 8',
   },
   {
     kode: 'FO_883_2004_ART87A',

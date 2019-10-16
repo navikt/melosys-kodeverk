@@ -69,6 +69,10 @@ const lovvalgbestemmelser_883_2004 = [
     term: 'Fo 883/2004 Artikkel 13 nr. 4',
   },
   {
+    kode: 'FO_883_2004_ART15',
+    term: 'Fo 883/2004 Artikkel 15',
+  },
+  {
     kode: 'FO_883_2004_ART16_1',
     term: 'Fo 883/2004 Artikkel 16 nr. 1',
   },
