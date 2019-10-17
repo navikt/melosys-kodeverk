@@ -29,7 +29,7 @@ const art16_1_anmodning = [
   },
   {
     kode: 'SAERLIG_GRUNN',
-    term: 'Fritekstfelt',
+    term: 'Særlig grunn',
   },
 ];
 module.exports.art16_1_anmodning = art16_1_anmodning;

@@ -117,6 +117,7 @@
         "art12_2_normalt_virksomhet",
         "art16_1_anmodning",
         "art16_1_anmodning_engelsk",
+        "art16_1_anmodning_uten_art12",
         "art16_1_avslag",
         "art11_4_begrunnelser",
         "bosted",
@@ -156,6 +157,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_anmodning_engelsk": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "art16_1_anmodning_uten_art12": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "art16_1_avslag": {

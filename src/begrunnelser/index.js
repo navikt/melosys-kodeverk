@@ -7,6 +7,7 @@ const { art12_2_begrunnelser } = require('./art12_2_begrunnelser');
 const { art12_2_normalt_virksomhet } = require('./art12_2_normalt_virksomhet');
 const { art16_1_anmodning } = require('./art16_1_anmodning');
 const { art16_1_anmodning_engelsk } = require('./art16_1_anmodning_engelsk');
+const { art16_1_anmodning_uten_art12 } = require('./art16_1_anmodning_uten_art12');
 const { art16_1_avslag } = require('./art16_1_avslag');
 const { art11_4_begrunnelser } = require('./art11_4_begrunnelser');
 const { bosted } = require('./bosted');
@@ -32,6 +33,7 @@ const begrunnelser = {
   art12_2_normalt_virksomhet,
   art16_1_anmodning,
   art16_1_anmodning_engelsk,
+  art16_1_anmodning_uten_art12,
   art16_1_avslag,
   art11_4_begrunnelser,
   bosted,
