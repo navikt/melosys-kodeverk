@@ -21,6 +21,10 @@ const unntak_periode_begrunnelser = [
     term: 'Periodelengde er mer enn 24 måneder'
   },
   {
+    kode: 'PERIODEN_OVER_5_AR',
+    term: 'Periodelengde er mer enn 5 år'
+  },
+  {
     kode: 'FEIL_I_PERIODEN',
     term: 'Startdato er før sluttdato'
   },
