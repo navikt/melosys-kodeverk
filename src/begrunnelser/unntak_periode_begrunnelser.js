@@ -38,7 +38,7 @@ const unntak_periode_begrunnelser = [
   },
   {
     kode: 'BOSATT_I_NORGE',
-    term: 'Personen har en folkeregistrert adresse i Norge'
+    term: 'Personen har en folkeregistrert bostedsadresse i Norge'
   },
   {
     kode: 'INGEN_SLUTTDATO',
