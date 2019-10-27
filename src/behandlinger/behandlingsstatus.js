@@ -43,6 +43,10 @@ const behandlingsstatus = [
   {
     kode: 'IVERKSETTER_VEDTAK',
     term: 'Vedtak iverksettes',
+  },
+  {
+    kode: "SVAR_ANMODNING_MOTTATT",
+    term: "Mottatt svar på anmodning unntak"
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
