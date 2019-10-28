@@ -53,7 +53,7 @@
     "aktoersroller",
     "anmodningsperiodesvartyper",
     "avklartefaktatyper",
-    "AvsenderTyper",
+    "avsendertyper",
     "behandlinger",
     "begrunnelser",
     "brev",
@@ -86,7 +86,7 @@
     "avklartefaktatyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "AvsenderTyper": {
+    "avsendertyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "behandlinger": {

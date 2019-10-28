@@ -2,7 +2,7 @@
  * Kodeverk/AvsenderTyper
  * @module
  */
-const AvsenderTyper = [
+const avsendertyper = [
   {
     kode: 'PERSON',
     term: 'Person',
@@ -17,4 +17,4 @@ const AvsenderTyper = [
   },
 ];
 
-module.exports.AvsenderTyper = AvsenderTyper;
+module.exports.avsendertyper = avsendertyper;
