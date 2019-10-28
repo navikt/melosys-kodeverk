@@ -5,7 +5,7 @@ const art16_1_anmodning_engelsk = [
   },
   {
     kode: 'LOENNET_UTL_ENHET_I_KONSERN',
-    term: 'The person has a temporary employment contract within the same concern/conglomerate, and will return to the Norwegian employer.',
+    term: 'The person’s salary will partially or entirely be paid by a company within the same concern/conglomerate as the Norwegain employer.',
   },
   {
     kode: 'ERSTATTER_EN_ANNEN_UNDER_5_AAR',
@@ -13,7 +13,7 @@ const art16_1_anmodning_engelsk = [
   },
   {
     kode: 'KORT_OPPDRAG_RETUR_NORSK_AG',
-    term: 'The person has not been attached to the Norwegian social insurance system before posting, but will return to the Norwegian employer after a brief posting.',
+    term: 'The person has not been covered by the Norwegian social security scheme for a sufficient period of time prior to the posting, but will return to the Norwegian employer after a brief posting.',
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',

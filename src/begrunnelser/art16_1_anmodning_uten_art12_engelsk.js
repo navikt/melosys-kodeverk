@@ -20,7 +20,7 @@ const art16_1_anmodning_uten_art12_engelsk = [
   },
   {
     kode: 'DEN_NORSKE_SKOLEN',
-    term: 'Working in your country for the Norwegian school, which is financially supported by the Norwegian Government.',
+    term: 'Working in your country for The Norwegian school, which is financially supported by the Norwegian Government.',
   },  {
     kode: 'SJOEMANNSKIRKEN',
     term: 'Working for Sjømannskirken (The Norwegian Seamen’s Church), which is a nonprofit organization receiving financial support from the Norwegian Government.',
