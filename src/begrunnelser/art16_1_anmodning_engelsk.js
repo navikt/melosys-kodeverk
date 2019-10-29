@@ -17,7 +17,7 @@ const art16_1_anmodning_engelsk = [
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',
-    term: 'Working for a non-profit organisation, but the Norwegian organisation does not normally carry out its activity in Norway.',
+    term: 'Working for a non-profit organization.',
   },
   {
     kode: 'KORTVARIG_NAERINGSDRIVENDE_IKKE_YRKESAKTIV',

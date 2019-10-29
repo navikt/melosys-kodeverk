@@ -5,7 +5,7 @@ const art16_1_anmodning_uten_art12_engelsk = [
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',
-    term: 'Working for a nonprofit organization.',
+    term: 'Working for a non-profit organization.',
   },
   {
     kode: 'HJEMMEKONTOR_MEDFOELGENDE',
