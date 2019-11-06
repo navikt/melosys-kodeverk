@@ -1,23 +1,23 @@
 const art16_1_anmodning = [
   {
     kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
-    term: 'Utsendelseperioden er mellom 2 og 5 år',
+    term: 'Utenlandsperioden er ment å vare mindre enn 5 år',
   },
   {
     kode: 'LOENNET_UTL_ENHET_I_KONSERN',
-    term: 'Lønnes av utenlandsk foretak som er del av samme konsern',
+    term: 'Lønnes av utl. foretak i samme konsern',
   },
   {
     kode: 'ERSTATTER_EN_ANNEN_UNDER_5_AAR',
-    term: 'Erstatter en annen utsendt person, samlet periode mindre enn 5 år',
+    term: 'Erstatter en annen person, samlet periode under 5 år',
   },
   {
     kode: 'KORT_OPPDRAG_RETUR_NORSK_AG',
-    term: 'Ikke omfattet 1 md før, men kun kortvarig oppdrag og skal returnere til norsk arbeidsgiver',
+    term: 'Ikke omfattet 1 md. før, kortvarig oppdrag, skal returnere til Norge',
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',
-    term: 'Arbeider for ideell organisasjon som ikke har vesentlig virksomhet i Norge',
+    term: 'Arbeider for en ideell organisasjon',
   },
   {
     kode: 'KORTVARIG_NAERINGSDRIVENDE_IKKE_YRKESAKTIV',
