@@ -22,6 +22,10 @@ const art12_1_vesentlig_virksomhet = [
   {
     kode: 'FOR_LITE_OPPDRAG_NORGE',
     term: 'Under 50 % av oppdragene uføres i Norge',
+  },
+  {
+    kode: 'KONTRAKTER_IKKE_NORSK_LOV',
+    term: 'Norsk rett gjelder ikke for kontraktene',
   }
 ];
 module.exports.art12_1_vesentlig_virksomhet = art12_1_vesentlig_virksomhet;
