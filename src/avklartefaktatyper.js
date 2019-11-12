@@ -32,10 +32,6 @@ const avklartefaktatyper = [
     term: null,
   },
   {
-    kode: 'IKKE_BOSATT_NORGE',
-    term: null,
-  },
-  {
     kode: 'AARSAK_ENDRING_PERIODE',
     term: null,
   },
