@@ -307,6 +307,9 @@
     "vedleggstitler": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "vedtakstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "vilkaar": {
       "$ref": "#/definitions/kodeverkArray"
     },

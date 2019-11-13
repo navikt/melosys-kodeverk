@@ -25,6 +25,7 @@ const { territoriekoder } = require('./territoriekoder');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
+const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 
@@ -54,6 +55,7 @@ const KodeTermObjects = {
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,
+  vedtakstyper,
   vilkaar,
   yrker,
 };
