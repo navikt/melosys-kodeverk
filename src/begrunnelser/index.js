@@ -20,6 +20,7 @@ const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { ikkeskip } = require('./ikkeskip');
 const { ikke_godkjent_begrunnelser } = require('./ikke_godkjent_begrunnelser');
 const { inngangsvilkaar } = require('./inngangsvilkaar');
+const { nyvurderingbakgrunner } = require('./nyvurderingbakgrunner');
 const { opphold } = require('./opphold');
 const { normaltdrivervirksomhet } = require('./normaltdrivervirksomhet');
 const { sokkel } = require('./sokkel');
@@ -47,6 +48,7 @@ const begrunnelser = {
   ikkeskip,
   ikke_godkjent_begrunnelser,
   inngangsvilkaar,
+  nyvurderingbakgrunner,
   opphold,
   normaltdrivervirksomhet,
   sokkel,

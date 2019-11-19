@@ -134,6 +134,7 @@
         "ikkeskip",
         "ikke_godkjent_begrunnelser",
         "inngangsvilkaar",
+        "nyvurderingbakgrunner",
         "opphold",
         "normaltdrivervirksomhet",
         "sokkel",
@@ -214,6 +215,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "inngangsvilkaar": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "nyvurderingbakgrunner": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "opphold": {
