@@ -8,6 +8,10 @@ const behandlingstyper = [
     term: 'Søknad'
   },
   {
+    kode: 'SOEKNAD_IKKE_YRKESAKTIV',
+    term: 'Søknad ikke yrkesaktiv'
+  },
+  {
     kode: 'KLAGE',
     term: 'Klage'
   },
