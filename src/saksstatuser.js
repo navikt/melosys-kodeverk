@@ -25,6 +25,10 @@ const saksstatuser = [
   {
     kode: 'HENLAGT_BORTFALT',
     term: 'Saken er henlagt som bortfalt i Melosys.'
+  },
+  {
+    kode: 'AVSLUTTET',
+    term: 'Saken er avsluttet'
   }
 ];
 module.exports.saksstatuser = saksstatuser;
