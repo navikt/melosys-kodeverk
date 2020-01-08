@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser
  * @module
  */
-const vurdering_begrunnelser = [
+const kontroll_begrunnelser = [
   {
     kode: 'TREDJELANDSBORGER_IKKE_AVTALELAND',
     term: 'Personen er ikke EØS-borger'
@@ -53,4 +53,4 @@ const vurdering_begrunnelser = [
     term: 'Norge er oppgitt som lovvalgsland'
   }
 ];
-module.exports.vurdering_begrunnelser = vurdering_begrunnelser;
+module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
