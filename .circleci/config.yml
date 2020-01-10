@@ -99,7 +99,7 @@ jobs:
       # Hash for SSH-nøkkel (definert i CircleCI som environment variabel) vi bruker til å sjekke inn i GitHub
       - add_ssh_keys:
           fingerprints:
-            - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
+            - "33:f8:bc:8c:52:6a:d6:bd:a4:83:86:b0:48:70:09:d3"
       - run:
           name: Release
           command: |
@@ -156,7 +156,7 @@ jobs:
       # Hash for SSH-nøkkel (definert i CircleCI environment variables) som vi bruker til å sjekke inn i GitHub
       - add_ssh_keys:
           fingerprints:
-            - "2a:4c:ad:ed:24:4c:d0:c4:1f:03:86:1b:c8:bd:90:c2"
+            - "33:f8:bc:8c:52:6a:d6:bd:a4:83:86:b0:48:70:09:d3"
       - run:
           name: Tagger og sjekker inn
           command: |
