@@ -55,6 +55,10 @@ const produserbaredokumenter = [
     kode: 'VIDERESENDT_SOEKNAD_UTLAND',
     term: 'Videresendt søknad til utenlandsk myndighet',
   },
+  {
+    kode: 'ORIENTERING_UTPEKING_UTLAND',
+    term: 'Orienteringsbrev om utpeking til et annet land',
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
