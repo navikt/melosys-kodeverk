@@ -51,6 +51,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'LOVVALGSLAND_NORGE',
     term: 'Norge er oppgitt som lovvalgsland'
+  },
+  {
+    kode: 'ARBEIDSSTED_UTENFOR_EOS',
+    term: 'Arbeidsstedet er utenfor EU/EØS'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
