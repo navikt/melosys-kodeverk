@@ -14,6 +14,10 @@ const vedtakstyper = [
   {
     kode: 'OMGJØRINGSVEDTAK',
     term: null,
+  },
+  {
+    kode: 'ENDRINGSVEDTAK',
+    term: null,
   }
 ];
 module.exports.vedtakstyper = vedtakstyper;
