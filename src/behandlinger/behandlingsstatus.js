@@ -47,6 +47,14 @@ const behandlingsstatus = [
   {
     kode: "SVAR_ANMODNING_MOTTATT",
     term: "Mottatt svar på anmodning unntak"
+  },
+  {
+    kode: "UTPEKING_SENDT",
+    term: "Utpeking av et annet land er sendt"
+  },
+  {
+    kode: "SVAR_UTPEKING_MOTTATT",
+    term: "Mottatt svar på utpeking av et annet land"
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
