@@ -3,7 +3,7 @@
  * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser
  * @module
  */
-const unntak_periode_begrunnelser = [
+const kontroll_begrunnelser = [
   {
     kode: 'TREDJELANDSBORGER_IKKE_AVTALELAND',
     term: 'Personen er ikke EØS-borger'
@@ -51,6 +51,10 @@ const unntak_periode_begrunnelser = [
   {
     kode: 'LOVVALGSLAND_NORGE',
     term: 'Norge er oppgitt som lovvalgsland'
+  },
+  {
+    kode: 'ARBEIDSSTED_UTENFOR_EOS',
+    term: 'Arbeidsstedet er utenfor EU/EØS'
   }
 ];
-module.exports.unntak_periode_begrunnelser = unntak_periode_begrunnelser;
+module.exports.kontroll_begrunnelser = kontroll_begrunnelser;

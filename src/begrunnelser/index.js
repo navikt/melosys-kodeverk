@@ -24,7 +24,7 @@ const { nyvurderingbakgrunner } = require('./nyvurderingbakgrunner');
 const { opphold } = require('./opphold');
 const { normaltdrivervirksomhet } = require('./normaltdrivervirksomhet');
 const { sokkel } = require('./sokkel');
-const { unntak_periode_begrunnelser } = require('./unntak_periode_begrunnelser');
+const { kontroll_begrunnelser } = require('./kontroll_begrunnelser');
 
 const begrunnelser = {
   arbeidsland,
@@ -52,7 +52,7 @@ const begrunnelser = {
   opphold,
   normaltdrivervirksomhet,
   sokkel,
-  unntak_periode_begrunnelser,
+  kontroll_begrunnelser,
 };
 
 module.exports.begrunnelser = begrunnelser;

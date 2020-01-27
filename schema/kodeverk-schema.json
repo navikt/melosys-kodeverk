@@ -138,7 +138,7 @@
         "opphold",
         "normaltdrivervirksomhet",
         "sokkel",
-        "unntak_periode_begrunnelser"
+        "kontroll_begrunnelser"
       ],
       "properties": {
         "arbeidsland": {
@@ -229,7 +229,7 @@
         "sokkel": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "unntak_periode_begrunnelser": {
+        "kontroll_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
