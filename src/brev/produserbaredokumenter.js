@@ -49,16 +49,16 @@ const produserbaredokumenter = [
   },
   {
     kode: 'ORIENTERING_VIDERESENDT_SOEKNAD',
-    term: 'Orienteringsbrev til bruker om videresendt søknad',
+    term: 'Orienteringsbrev til bruker om videresendt søknad'
   },
   {
     kode: 'VIDERESENDT_SOEKNAD_UTLAND',
-    term: 'Videresendt søknad til utenlandsk myndighet',
+    term: 'Videresendt søknad til utenlandsk myndighet'
   },
   {
     kode: 'ORIENTERING_UTPEKING_UTLAND',
-    term: 'Orienteringsbrev om utpeking til et annet land',
-  },
+    term: 'Orienteringsbrev om utpeking til et annet land'
+  }
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
