@@ -1,7 +1,7 @@
 const endretperiode = [
   {
     kode: 'RETURNERT_NORGE',
-    term: 'Arbeidstakeren har returnert til Norge',
+    term: 'Tidligere retur til Norge',
   },
   {
     kode: 'ARBEIDSFORHOLD_AVSLUTTET',
