@@ -109,6 +109,9 @@
         }
       }
     },
+    "behandlingsgrunnlagtyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "begrunnelser": {
       "type": "object",
       "additionalProperties": false,
