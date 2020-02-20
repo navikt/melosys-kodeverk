@@ -8,6 +8,7 @@ const { avklartefaktatyper } = require('./avklartefaktatyper');
 const { avsendertyper } = require('./avsendertyper');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
+const { behandlingsgrunnlagtyper } = require('./behandlingsgrunnlagtyper.js');
 const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
@@ -37,6 +38,7 @@ const KodeTermObjects = {
   avklartefaktatyper,
   avsendertyper,
   behandlinger,
+  behandlingsgrunnlagtyper,
   begrunnelser,
   brev,
   dokumenttyper,
