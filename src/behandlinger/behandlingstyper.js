@@ -12,6 +12,14 @@ const behandlingstyper = [
     term: 'Søknad ikke yrkesaktiv'
   },
   {
+    kode: 'SOEKNAD_ARBEID_FLERE_LAND',
+    term: 'Søknad arbeid i flere land'
+  },
+  {
+    kode: 'SOEKNAD_ARBEID_NORGE_BOSATT_ANNET_LAND',
+    term: 'Søknad arbeid i Norge - bosatt i et annet land'
+  },
+  {
     kode: 'KLAGE',
     term: 'Klage'
   },
