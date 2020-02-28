@@ -36,12 +36,12 @@ const behandlingstyper = [
     term: 'Registrering av unntak fra norsk trygd – øvrige (A010)'
   },
   {
-    kode: 'UTL_MYND_UTPEKT_NORGE',
-    term: 'Norge er utpekt (A003)'
+    kode: 'BESLUTNING_LOVVALG_NORGE',
+    term: 'Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)'
   },
   {
-    kode: 'UTL_MYND_UTPEKT_SEG_SELV',
-    term: 'Utl. myndh. har utpekt seg selv (A003)'
+    kode: 'BESLUTNING_LOVVALG_ANNET_LAND',
+    term: 'Utenlandsk myndighet har utpekt et annet land enn Norge (A003)'
   },
   {
     kode: 'NY_VURDERING',
