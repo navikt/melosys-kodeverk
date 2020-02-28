@@ -55,6 +55,10 @@ const behandlingsstatus = [
   {
     kode: "SVAR_UTPEKING_MOTTATT",
     term: "Mottatt svar på utpeking av et annet land"
+  },
+  {
+    kode: "MIDLERTIDIG_LOVVALGSBESLUTNING",
+    term: "Midlertidig lovvalgsbeslutning (artikkel 13)"
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
