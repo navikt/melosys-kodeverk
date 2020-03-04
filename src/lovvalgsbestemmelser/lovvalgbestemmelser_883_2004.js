@@ -2,83 +2,83 @@
 const lovvalgbestemmelser_883_2004 = [
   {
     kode: 'FO_883_2004_ART11_1',
-    term: 'Fo 883/2004 Artikkel 11 nr. 1',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 1',
   },
   {
     kode: 'FO_883_2004_ART11_3A',
-    term: 'Fo 883/2004 Artikkel 11 nr. 3 bokstav a',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav a',
   },
   {
     kode: 'FO_883_2004_ART11_3B',
-    term: 'Fo 883/2004 Artikkel 11 nr. 3 bokstav b',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav b',
   },
   {
     kode: 'FO_883_2004_ART11_3C',
-    term: 'Fo 883/2004 Artikkel 11 nr. 3 bokstav c',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav c',
   },
   {
     kode: 'FO_883_2004_ART11_3E',
-    term: 'Fo 883/2004 Artikkel 11 nr. 3 bokstav e',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav e',
   },
   {
     kode: 'FO_883_2004_ART11_4_2',
-    term: 'Fo 883/2004 Artikkel 11 nr. 4 andre punktum',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 4 andre punktum',
   },
   {
     kode: 'FO_883_2004_ART12_1',
-    term: 'Fo 883/2004 Artikkel 12 nr. 1',
+    term: 'Rfo. 883/2004 artikkel 12 nr. 1',
   },
   {
     kode: 'FO_883_2004_ART12_2',
-    term: 'Fo 883/2004 Artikkel 12 nr. 2',
+    term: 'Rfo. 883/2004 artikkel 12 nr. 2',
   },
   {
     kode: 'FO_883_2004_ART13_1A',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav a',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 1 bokstav a',
   },
   {
     kode: 'FO_883_2004_ART13_1B1',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b i)',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 1 bokstav b i)',
   },
   {
     kode: 'FO_883_2004_ART13_1B2',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b ii)',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 1 bokstav b ii)',
   },
   {
     kode: 'FO_883_2004_ART13_1B3',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b iii)',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 1 bokstav b iii)',
   },
   {
     kode: 'FO_883_2004_ART13_1B4',
-    term: 'Fo 883/2004 Artikkel 13 nr. 1 bokstav b iv)',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 1 bokstav b iv)',
   },
   {
     kode: 'FO_883_2004_ART13_2A',
-    term: 'Fo 883/2004 Artikkel 13 nr. 2 bokstav a',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 2 bokstav a',
   },
   {
     kode: 'FO_883_2004_ART13_2B',
-    term: 'Fo 883/2004 Artikkel 13 nr. 2 bokstav b',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 2 bokstav b',
   },
   {
     kode: 'FO_883_2004_ART13_3',
-    term: 'Fo 883/2004 Artikkel 13 nr. 3',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 3',
   },
   {
     kode: 'FO_883_2004_ART13_4',
-    term: 'Fo 883/2004 Artikkel 13 nr. 4',
+    term: 'Rfo. 883/2004 artikkel 13 nr. 4',
   },
   {
     kode: 'FO_883_2004_ART15',
-    term: 'Fo 883/2004 Artikkel 15',
+    term: 'Rfo. 883/2004 artikkel 15',
   },
   {
     kode: 'FO_883_2004_ART16_1',
-    term: 'Fo 883/2004 Artikkel 16 nr. 1',
+    term: 'Rfo. 883/2004 artikkel 16 nr. 1',
   },
   {
     kode: 'FO_883_2004_ART16_2',
-    term: 'Fo 883/2004 Artikkel 16 nr. 2',
+    term: 'Rfo. 883/2004 artikkel 16 nr. 2',
   },
   {
     kode: 'FO_883_2004_ANNET',
