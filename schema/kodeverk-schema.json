@@ -278,6 +278,9 @@
         },
         "tilleggsbestemmelser_883_2004": {
           "$ref": "#/definitions/kodeverkArray"
+        },
+        "overgangsregelbestemmelser": {
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
