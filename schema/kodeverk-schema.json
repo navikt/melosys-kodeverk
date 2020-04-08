@@ -104,6 +104,9 @@
         "behandlingstyper": {
           "$ref": "#/definitions/kodeverkArray"
         },
+        "behandlingstema": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
         "behandlingsresultattyper":  {
           "$ref": "#/definitions/kodeverkArray"
         }
