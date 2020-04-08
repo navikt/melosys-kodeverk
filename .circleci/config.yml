@@ -17,7 +17,7 @@ executors:
     docker:
       # Henter inn docker-image for melosys-kodeverk-java, som kan generere melosys-internt-kodeverk
       # Bruker eksplisitt referanse, og ikke latest (siden det verken garanterer bygg som kan rekjøres, eller at det faktisk er siste versjon)
-      - image: navikt/melosys-kodeverk-java:002e2a7b2e5bbb236e71835fbb1e9d6250391a80
+      - image: navikt/melosys-kodeverk-java:9e7b71c1691dfda48f4de4a55fd0b7d6e1b6a241
 
 jobs:
   bygge_frontend:
