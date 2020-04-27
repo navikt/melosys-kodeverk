@@ -16,7 +16,7 @@ const art16_1_anmodning_uten_art12_engelsk = [
     term: 'Will briefly be working in a home office in your country for her/his Norwegian employer.',
   },  {
     kode: 'DELTIDSARBEID_I_UTLANDET_MOTTAR_AAP',
-    term: 'The person receives work assessment allowance from Norway and will work part time abroad as part of the rehabilitation plan. Work assessment allowance is a cash benefit that falls under article 11(2) of Regulation (EC) No 883/2004. It is given as financial support in a set period while the person assesses his or her work capability through different activities.',
+    term: 'Receives work assessment allowance from Norway while working part time abroad as part of the rehabilitation plan. This allowance is a cash benefit under article 11(2) of Reg. (EC) No 883/2004, given while the person’s work capacity is being assessed.',
   },
   {
     kode: 'DEN_NORSKE_SKOLEN',
