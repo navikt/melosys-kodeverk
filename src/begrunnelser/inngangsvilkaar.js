@@ -1,12 +1,12 @@
 
 const inngangsvilkaar = [
   {
-    kode: 'TREDJELANDSBORGER',
-    term: null,
+    kode: 'MANGLER_STATSBORGERSKAP',
+    term: 'Statborgerskap er ikke registrert for bruker i søknadsperioden.',
   },
   {
-    kode: 'NORDISK_UTENFOR_EOS',
-    term: null,
+    kode: 'TEKNISK_FEIL',
+    term: 'Det har oppstått en teknisk feil ved automatisk vurdering av inngangsvilkår.',
   },
   {
     kode: 'EOS_BORGER',
