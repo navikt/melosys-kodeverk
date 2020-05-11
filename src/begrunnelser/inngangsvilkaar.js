@@ -2,16 +2,12 @@
 const inngangsvilkaar = [
   {
     kode: 'MANGLER_STATSBORGERSKAP',
-    term: 'Statborgerskap er ikke registrert for bruker i søknadsperioden.',
+    term: 'Finner ikke statsborgerskap i NAVs registre.',
   },
   {
     kode: 'TEKNISK_FEIL',
-    term: 'Det har oppstått en teknisk feil ved automatisk vurdering av inngangsvilkår.',
-  },
-  {
-    kode: 'EOS_BORGER',
-    term: null,
-  },
+    term: 'Det oppsto en teknisk feil ved automatisk vurdering av inngangsvilkår.',
+  }
 ];
 module.exports.inngangsvilkaar = inngangsvilkaar;
 
