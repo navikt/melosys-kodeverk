@@ -13,10 +13,6 @@ const tilleggsbestemmelser_883_2004 = [
     term: 'Rfo. 883/2004 artikkel 11 nr. 5',
   },
   {
-    kode: 'FO_883_2004_ART13_4',
-    term: 'Rfo. 883/2004 artikkel 13 nr. 4',
-  },
-  {
     kode: 'FO_883_2004_ART87_8',
     term: 'Rfo. 883/2004 artikkel 87 nr. 8',
   },
