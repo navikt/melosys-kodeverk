@@ -55,6 +55,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'ARBEIDSSTED_UTENFOR_EOS',
     term: 'Arbeidsstedet er utenfor EU/EØS'
+  },
+  {
+    kode: 'MANGLENDE_BOSTEDSADRESSE',
+    term: 'Bostedsadresse trenges for å kunne utstede A1'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
