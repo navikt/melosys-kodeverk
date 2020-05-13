@@ -17,6 +17,10 @@ const lovvalgbestemmelser_883_2004 = [
     term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav c',
   },
   {
+    kode: 'FO_883_2004_ART11_3D',
+    term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav d',
+  },
+  {
     kode: 'FO_883_2004_ART11_3E',
     term: 'Rfo. 883/2004 artikkel 11 nr. 3 bokstav e',
   },
