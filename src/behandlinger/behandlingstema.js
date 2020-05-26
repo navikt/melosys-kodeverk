@@ -44,8 +44,12 @@ const behandlingstema = [
     term: 'Behandling av en mottatt anmodning om unntak hovedregel (A001)'
   },
   {
-    kode: 'ØVRIGE_SED',
-    term: 'Behandling av alle øvrige SED'
+    kode: 'ØVRIGE_SED_MED',
+    term: 'MED: Henvendelse eller forespørsel'
+  },
+  {
+    kode: 'ØVRIGE_SED_UFM',
+    term: 'UFM: Henvendelse eller forespørsel'
   },
   {
     kode: 'TRYGDETID',
