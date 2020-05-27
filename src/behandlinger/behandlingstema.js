@@ -1,47 +1,47 @@
 const behandlingstema = [
   {
     kode: 'UTSENDT_ARBEIDSTAKER',
-    term: 'Utsendt arbeidstaker'
+    term: 'MED: Utsendt arbeidstaker, skip (11.4) og direkte til artikkel 16'
   },
   {
     kode: 'UTSENDT_SELVSTENDIG',
-    term: 'Utsendt selvstendig næringsdrivende'
+    term: 'MED: Utsendt selvstendig næringsdrivende, skip (11.4) og direkte til artikkel 16'
   },
   {
     kode: 'ARBEID_ETT_LAND_ØVRIG',
-    term: 'Øvrig arbeid og næring'
+    term: 'MED: Arbeid eller selvstendig næringsvirksomhet i ett land'
   },
   {
     kode: 'IKKE_YRKESAKTIV',
-    term: 'Ikke yrkesaktiv'
+    term: 'MED: Ikke yrkesaktiv'
   },
   {
     kode: 'ARBEID_FLERE_LAND',
-    term: 'Arbeid i flere land'
+    term: 'MED: Arbeid og/eller selvstendig næringsvirksomhet i flere land'
   },
   {
     kode: 'ARBEID_NORGE_BOSATT_ANNET_LAND',
-    term: 'Arbeid i Norge - bosatt i et annet land'
+    term: 'MED: Arbeid eller selvstendig næringsvirksomhet i Norge - bosatt i et annet land'
   },
   {
     kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING',
-    term: 'Registrering av unntak fra norsk trygd – utstasjonerte (A009)'
+    term: 'UFM: Melding om utstasjonering (A009)'
   },
   {
     kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE',
-    term: 'Registrering av unntak fra norsk trygd – øvrige (A010)'
+    term: 'UFM: Melding om lovvalg (A010)'
   },
   {
     kode: 'BESLUTNING_LOVVALG_NORGE',
-    term: 'Norge er utpekt (A003)'
+    term: 'MED: Beslutning om norsk lovvalg (A003)'
   },
   {
     kode: 'BESLUTNING_LOVVALG_ANNET_LAND',
-    term: 'Utenlandsk myndighet har utpekt et annet land enn Norge (A003)'
+    term: 'UFM: Beslutning om lovvalg i et annet land (A003)'
   },
   {
     kode: 'ANMODNING_OM_UNNTAK_HOVEDREGEL',
-    term: 'Behandling av en mottatt anmodning om unntak hovedregel (A001)'
+    term: 'UFM: Anmodning om unntak (A001)'
   },
   {
     kode: 'ØVRIGE_SED_MED',
@@ -53,7 +53,7 @@ const behandlingstema = [
   },
   {
     kode: 'TRYGDETID',
-    term: 'Forespørsel om trygdetid'
+    term: 'MED: Forespørsel om trygdetid'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
