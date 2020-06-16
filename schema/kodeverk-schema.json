@@ -63,6 +63,7 @@
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
+    "flyvningstyper",
     "medlemskapstyper",
     "mottaksretning",
     "oppgavetyper",
@@ -288,6 +289,9 @@
       }
     },
     "maritimtyper":   {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "flyvningstyper":   {
       "$ref": "#/definitions/kodeverkArray"
     },
     "medlemskapstyper":   {

@@ -16,6 +16,7 @@ const { forespoerseltyper } = require('./forespoerseltyper');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
+const { flyvningstyper } = require('./flyvningstyper');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -47,6 +48,7 @@ const KodeTermObjects = {
   landkoder,
   lovvalgsbestemmelser,
   maritimtyper,
+  flyvningstyper,
   medlemskapstyper,
   mottaksretning,
   oppgavetyper,
