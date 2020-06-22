@@ -1,0 +1,169 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  bygge_frontend:
+    runs-on: ubuntu-latest
+    outputs:
+      short_sha: ${{ steps.parse_commit.outputs.short_sha }}
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: v1-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            v1-yarn-
+      - run: yarn install
+      - run: yarn test
+      - run: yarn build
+      - id: parse_commit
+        run: echo "::set-output name=short_sha::$(git rev-parse --short HEAD)"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: melosys-kodeverk
+          path: dist
+
+  bygge_backend:
+    needs: bygge_frontend
+    runs-on: ubuntu-latest
+    container: navikt/melosys-kodeverk-java:FIXME-ny-docker-tag
+    steps:
+      # GitHub Actions tillater kun filer under workspace i cache-nøkler
+      - run: cp /app.jar .
+      - uses: actions/cache@v1
+        with:
+          path: ~/.m2
+          key: v1-m2build-${{ hashFiles('app.jar') }}
+          restore-keys: |
+            v1-m2build-
+      - uses: actions/download-artifact@v1
+        with:
+          name: melosys-kodeverk
+          path: melosys-kodeverk-java/melosys-kodeverk/dist
+      - name: Generere kildekode for Java-kodeverk
+        working-directory: melosys-kodeverk-java
+        run: |
+          set -e
+          java -jar ../app.jar melosys-kodeverk/dist/kodemap.yml
+      - name: Bygge Java-kodeverk
+        working-directory: melosys-kodeverk-java/melosys-internt-kodeverk
+        run: mvn clean install -B -V
+      - uses: actions/upload-artifact@v1
+        with:
+          name: melosys-kodeverk-java
+          path: melosys-kodeverk-java
+
+  tagge_frontend:
+    if: github.ref == 'refs/heads/master'
+    needs: bygge_backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: |
+          # FIXME: Bytt ut med en action for å tagge og committe
+          git config --global user.email "githubci-melosys@nav.no"
+          git config --global user.name "GitHubCI"
+          git remote set-url origin "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+
+          BRANCH=${GITHUB_REF#refs/heads/}
+          git checkout -b ${BRANCH}
+          git branch --set-upstream-to=origin/${BRANCH}
+
+          echo "Tagger ny patch-versjon"
+
+          GIT_COMMIT_DESC=$(git log --format=oneline -n 1 ${GITHUB_SHA})
+          npm version patch -m "%s $GIT_COMMIT_DESC [skip ci]"
+          git push && git push --tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  lag_versjon:
+    needs: bygge_frontend
+    runs-on: ubuntu-latest
+    outputs:
+      frontend_versjon: ${{ steps.versjoner.outputs.frontend }}
+      backend_versjon: ${{ steps.versjoner.outputs.backend }}
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: melosys-kodeverk
+          path: dist
+      - id: versjoner
+        run: |
+          if [ ${IS_MASTER} == true ]; then
+            echo "::set-output name=frontend::$(cat dist/semver.txt)"
+            echo "::set-output name=backend::$(cat dist/semver.txt)"
+          else
+            # GPR tillater ikke samme versjon av ei npm-pakke, selv med --allow-same-versionn
+            echo "::set-output name=frontend::$(cat dist/semver.txt)-beta.${SHORT_SHA}"
+            # GPR git '400 Bad Request' ved bruk av samme versjon
+            echo "::set-output name=backend::$(cat dist/semver.txt)-${SHORT_SHA}-SNAPSHOT"
+          fi
+        env:
+          IS_MASTER: ${{ github.ref == 'refs/heads/master' }}
+          PR_NUMBER: ${{ github.event.number }}
+          SHORT_SHA: ${{needs.bygge_frontend.outputs.short_sha}}
+
+  release_frontend:
+    needs: lag_versjon
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@navikt'
+      - name: Publisere til GitHub package registry
+        run: |
+          # FIXME: Burde ikke være nødvendig, men registry-url og scope fra setup-node, ser ikke ut til å bli plukka opp
+          npm config set registry https://npm.pkg.github.com/@navikt
+
+          if [ ${IS_MASTER} == true ]; then
+            npm publish --access public
+          else
+            npm --no-git-tag-version version ${FRONTEND_VERSION} --allow-same-version
+            npm publish --tag beta
+          fi
+        env:
+          IS_MASTER: ${{ github.ref == 'refs/heads/master' }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FRONTEND_VERSION: ${{needs.lag_versjon.outputs.frontend_versjon}}
+
+  release_backend:
+    needs: [bygge_backend, lag_versjon]
+    runs-on: ubuntu-latest
+    container: navikt/melosys-kodeverk-java:FIXME-ny-docker-tag
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: melosys-kodeverk-java
+          path: .
+      - uses: actions/cache@v1
+        with:
+          path: ~/.m2
+          key: v1-m2release-${{ hashFiles('melosys-internt-kodeverk/pom.xml') }}
+          restore-keys: |
+            v1-m2release-
+      - name: Publisere til GitHub package registry
+        run: |
+          mvn dependency:resolve --settings /settings.xml
+          mvn dependency:resolve-plugins --settings /settings.xml
+          mvn versions:set -DnewVersion=${BACKEND_VERSION}
+          mvn -B deploy -Prelease -DskipTests=true --settings /settings.xml
+        working-directory: melosys-internt-kodeverk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BACKEND_VERSION: ${{needs.lag_versjon.outputs.backend_versjon}}
