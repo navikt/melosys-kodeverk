@@ -25,6 +25,10 @@ const lovvalgbestemmelser_883_2004 = [
     term: 'artikkel 11 nr. 3 bokstav e',
   },
   {
+    kode: 'FO_883_2004_ART11_4',
+    term: 'artikkel 11 nr. 4',
+  },
+  {
     kode: 'FO_883_2004_ART11_4_2',
     term: 'artikkel 11 nr. 4 andre punktum',
   },
