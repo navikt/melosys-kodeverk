@@ -9,8 +9,6 @@ on:
 jobs:
   bygge_frontend:
     runs-on: ubuntu-latest
-    outputs:
-      short_sha: ${{ steps.parse_commit.outputs.short_sha }}
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
@@ -25,17 +23,19 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: yarn build
-      - id: parse_commit
-        run: echo "::set-output name=short_sha::$(git rev-parse --short HEAD)"
       - uses: actions/upload-artifact@v1
         with:
-          name: melosys-kodeverk
+          name: melosys-kodeverk-dist
           path: dist
+      - uses: actions/upload-artifact@v1
+        with:
+          name: melosys-kodeverk-lib
+          path: lib
 
   bygge_backend:
     needs: bygge_frontend
     runs-on: ubuntu-latest
-    container: navikt/melosys-kodeverk-java:FIXME-ny-docker-tag
+    container: navikt/melosys-kodeverk-java:c0885b1e2fe12abee916aee5289933eb35a67be0
     steps:
       # GitHub Actions tillater kun filer under workspace i cache-nøkler
       - run: cp /app.jar .
@@ -47,80 +47,72 @@ jobs:
             v1-m2build-
       - uses: actions/download-artifact@v1
         with:
-          name: melosys-kodeverk
-          path: melosys-kodeverk-java/melosys-kodeverk/dist
+          name: melosys-kodeverk-dist
+          path: melosys-kodeverk/dist
       - name: Generere kildekode for Java-kodeverk
-        working-directory: melosys-kodeverk-java
         run: |
           set -e
-          java -jar ../app.jar melosys-kodeverk/dist/kodemap.yml
+          java -jar app.jar melosys-kodeverk/dist/kodemap.yml
       - name: Bygge Java-kodeverk
-        working-directory: melosys-kodeverk-java/melosys-internt-kodeverk
+        working-directory: melosys-internt-kodeverk
         run: mvn clean install -B -V
       - uses: actions/upload-artifact@v1
         with:
           name: melosys-kodeverk-java
-          path: melosys-kodeverk-java
+          path: .
 
-  tagge_frontend:
-    if: github.ref == 'refs/heads/master'
+  lage_versjoner:
     needs: bygge_backend
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - run: |
-          # FIXME: Bytt ut med en action for å tagge og committe
-          git config --global user.email "githubci-melosys@nav.no"
-          git config --global user.name "GitHubCI"
-          git remote set-url origin "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
-
-          BRANCH=${GITHUB_REF#refs/heads/}
-          git checkout -b ${BRANCH}
-          git branch --set-upstream-to=origin/${BRANCH}
-
-          echo "Tagger ny patch-versjon"
-
-          GIT_COMMIT_DESC=$(git log --format=oneline -n 1 ${GITHUB_SHA})
-          npm version patch -m "%s $GIT_COMMIT_DESC [skip ci]"
-          git push && git push --tags
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  lag_versjon:
-    needs: bygge_frontend
     runs-on: ubuntu-latest
     outputs:
       frontend_versjon: ${{ steps.versjoner.outputs.frontend }}
       backend_versjon: ${{ steps.versjoner.outputs.backend }}
     steps:
-      - uses: actions/download-artifact@v1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          name: melosys-kodeverk
-          path: dist
+          node-version: '12'
+      - name: Øk versjon
+        if: github.ref == 'refs/heads/master'
+        run: |
+          git config --global user.email "actions-melosys@nav.no"
+          git config --global user.name "Actions"
+          COMMIT_MESSAGE=`git log -1 --pretty=%B`
+          npm version patch -m "%s, $COMMIT_MESSAGE, [skip ci]"
+      - name: Push versjon
+        if: github.ref == 'refs/heads/master'
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Hent short sha1
+        if: github.ref != 'refs/heads/master'
+        id: parse_commit
+        run: echo "::set-output name=short_sha::$(git rev-parse --short HEAD)"
       - id: versjoner
         run: |
+          SEMVER=$(jq -r .version package.json)
           if [ ${IS_MASTER} == true ]; then
-            echo "::set-output name=frontend::$(cat dist/semver.txt)"
-            echo "::set-output name=backend::$(cat dist/semver.txt)"
+            echo "::set-output name=frontend::${SEMVER}"
+            echo "::set-output name=backend::${SEMVER}"
           else
-            # GPR tillater ikke samme versjon av ei npm-pakke, selv med --allow-same-versionn
-            echo "::set-output name=frontend::$(cat dist/semver.txt)-beta.${SHORT_SHA}"
-            # GPR git '400 Bad Request' ved bruk av samme versjon
-            echo "::set-output name=backend::$(cat dist/semver.txt)-${SHORT_SHA}-SNAPSHOT"
+            # GPR støtter ikke mutable artifacts (snapshot/beta)
+            echo "::set-output name=frontend::${SEMVER}-beta.${SHORT_SHA}"
+            echo "::set-output name=backend::${SEMVER}-${SHORT_SHA}-SNAPSHOT"
           fi
         env:
           IS_MASTER: ${{ github.ref == 'refs/heads/master' }}
           PR_NUMBER: ${{ github.event.number }}
-          SHORT_SHA: ${{needs.bygge_frontend.outputs.short_sha}}
+          SHORT_SHA: ${{ steps.parse_commit.outputs.short_sha }}
 
   release_frontend:
-    needs: lag_versjon
+    needs: lage_versjoner
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/download-artifact@v1
+        with:
+          name: melosys-kodeverk-lib
+          path: lib
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
@@ -132,6 +124,8 @@ jobs:
           npm config set registry https://npm.pkg.github.com/@navikt
 
           if [ ${IS_MASTER} == true ]; then
+            # Setter versjon eksplisitt for å slippe å trigge på taggen fra forrige jobb
+            npm --no-git-tag-version version ${FRONTEND_VERSION}
             npm publish --access public
           else
             npm --no-git-tag-version version ${FRONTEND_VERSION} --allow-same-version
@@ -140,12 +134,12 @@ jobs:
         env:
           IS_MASTER: ${{ github.ref == 'refs/heads/master' }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FRONTEND_VERSION: ${{needs.lag_versjon.outputs.frontend_versjon}}
+          FRONTEND_VERSION: ${{ needs.lage_versjoner.outputs.frontend_versjon }}
 
   release_backend:
-    needs: [bygge_backend, lag_versjon]
+    needs: lage_versjoner
     runs-on: ubuntu-latest
-    container: navikt/melosys-kodeverk-java:FIXME-ny-docker-tag
+    container: navikt/melosys-kodeverk-java:c0885b1e2fe12abee916aee5289933eb35a67be0
     steps:
       - uses: actions/download-artifact@v1
         with:
@@ -166,4 +160,4 @@ jobs:
         working-directory: melosys-internt-kodeverk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BACKEND_VERSION: ${{needs.lag_versjon.outputs.backend_versjon}}
+          BACKEND_VERSION: ${{ needs.lage_versjoner.outputs.backend_versjon }}
