@@ -1,11 +1,11 @@
 const fartsomrader = [
   {
     kode: 'INNENRIKS',
-    term: 'Innenfor territorialfarvann',
+    term: 'Innenfor territorialfarvann / til kai',
   },
   {
     kode: 'UTENRIKS',
-    term: 'Til sjøs',
+    term: 'Internasjonalt farvann',
   },
 ];
 
