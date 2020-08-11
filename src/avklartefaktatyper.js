@@ -51,5 +51,9 @@ const avklartefaktatyper = [
     kode: 'ARBEIDSGIVERS_FORRETNINGSSTED',
     term: null,
   },
+  {
+    kode: 'INFORMERT_MYNDIGHET',
+    term: null,
+  },
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
