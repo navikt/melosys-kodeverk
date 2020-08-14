@@ -9,18 +9,18 @@ const art16_1_anmodning_uten_art12_engelsk = [
   },
   {
     kode: 'HJEMMEKONTOR_MEDFOELGENDE',
-    term: 'The person is accompanying her/his spouse or partner who is posted to your country, and will be working in a home office for her/his Norwegian employer.',
+    term: 'The person is accompanying her/his spouse or partner who is posted to your country, and will be working in a home office for her/his Norwegian employer. She/he is not considered to be covered under Art. 12 No 1 of Reg 883/04.',
   },
   {
     kode: 'HJEMMEKONTOR_BEGRENSET_PERIODE',
-    term: 'Will briefly be working in a home office in your country for her/his Norwegian employer.',
+    term: 'Will briefly be working in a home office in your country for her/his Norwegian employer, and is not considered to be covered under Art. 12 No 1 of Reg 883/04.',
   },  {
     kode: 'DELTIDSARBEID_I_UTLANDET_MOTTAR_AAP',
-    term: 'Receives work assessment allowance from Norway while working part time abroad as part of the rehabilitation plan. This allowance is a cash benefit under article 11(2) of Reg. (EC) No 883/2004, given while the person’s work capacity is being assessed.',
+    term: 'Receives work assessment allowance from Norway while working part time abroad as part of the rehabilitation plan. This allowance is a cash benefit under article 11(2) of Reg. (EC) No 883/2004, given while the person\'s work capacity is being assessed.',
   },
   {
     kode: 'DEN_NORSKE_SKOLEN',
-    term: 'Working in your country for The Norwegian school, which is financially supported by the Norwegian Government.',
+    term: 'Working in your country for the Norwegian school, which is financially supported by the Norwegian Government.',
   },  {
     kode: 'SJOEMANNSKIRKEN',
     term: 'Working for Sjømannskirken (The Norwegian Seamen’s Church), which is a nonprofit organization receiving financial support from the Norwegian Government.',

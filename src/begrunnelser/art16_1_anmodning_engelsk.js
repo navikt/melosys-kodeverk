@@ -1,19 +1,19 @@
 const art16_1_anmodning_engelsk = [
   {
     kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
-    term: 'Ongoing contract for a period longer than 2 and shorter than 5 years.',
+    term: 'Posting of an anticipated duration exceeding two years, thus Art. 12 No 1 of Reg 883/04 does not apply. However, the anticipated posting period is shorter than five years.',
   },
   {
     kode: 'LOENNET_UTL_ENHET_I_KONSERN',
-    term: 'The person’s salary will partially or entirely be paid by a company within the same concern/conglomerate as the Norwegain employer.',
+    term: 'Posted employee who will partially or entirely be paid by a company in your country, and  thus not considered to be covered under Art. 12 No 1 of Reg 883/04. However, this company is part of the same concern/conglomerate as the Norwegian employer.',
   },
   {
     kode: 'ERSTATTER_EN_ANNEN_UNDER_5_AAR',
-    term: 'The person is being posted to replace another posted worker, and the aggregated posting period is shorter than 5 years.',
+    term: 'Posted employee who replaces another posted employee. The aggregated posting period is anticipated to exceed two years, thus  Art. 12 no 1 of Reg 883/04 does not apply. However, the aggregated posting period is shorter than 5 years.',
   },
   {
     kode: 'KORT_OPPDRAG_RETUR_NORSK_AG',
-    term: 'The person has not been covered by the Norwegian social security scheme for a sufficient period of time prior to the posting, but will return to the Norwegian employer after a brief posting.',
+    term: 'Posted employee who has not been covered by Norwegian legislation for a sufficient period of time prior to the posting to meet the conditions of Art. 12 no. 1 of Reg 883/04. The person will return to the Norwegian employer after a brief posting.',
   },
   {
     kode: 'IDEELL_ORGANISASJON_IKKE_VESENTLIG_VIRK',
