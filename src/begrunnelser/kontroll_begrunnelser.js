@@ -59,6 +59,14 @@ const kontroll_begrunnelser = [
   {
     kode: 'MANGLENDE_BOSTEDSADRESSE',
     term: 'Bostedsadresse trenges for å kunne utstede A1'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
+    term: 'Navn og by av arbeidssted trengs for utfylling SED'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD',
+    term: 'Navn og land av andre arbeidsforhold trengs for utfylling SED'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
