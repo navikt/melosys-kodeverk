@@ -73,6 +73,10 @@ const kontroll_begrunnelser = [
     term: 'Navn og land av andre arbeidsforhold i utlandet trengs for utfylling SED'
   },
   {
+    kode: 'INGEN_SLUTTDATO_ANMODNINGSPERIODE',
+    term: 'Anmodningsperioden mangler sluttdato'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
