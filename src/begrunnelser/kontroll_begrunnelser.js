@@ -58,19 +58,19 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_BOSTEDSADRESSE',
-    term: 'Bostedsadresse trenges for å kunne utstede A1'
+    term: 'Bostedsadresse trengs for å kunne utstede A1.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
-    term: 'Navn og by av arbeidssted trengs for utfylling SED'
+    term: 'Navn og land for arbeidssted trengs for utfylling av SED.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_NO',
-    term: 'Navn og land av andre arbeidsforhold i Norge trengs for utfylling SED'
+    term: 'Navn og land for andre arbeidsforhold i Norge trengs for utfylling av SED.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_UTL',
-    term: 'Navn og land av andre arbeidsforhold i utlandet trengs for utfylling SED'
+    term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
     kode: 'ANNET',

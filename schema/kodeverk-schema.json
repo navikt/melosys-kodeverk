@@ -60,6 +60,7 @@
     "dokumenttyper",
     "finansiering",
     "forespoerseltyper",
+    "innretningstyper",
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
@@ -260,6 +261,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "forespoerseltyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "innretningstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "landkoder": {
