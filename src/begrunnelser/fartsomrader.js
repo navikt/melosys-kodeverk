@@ -1,7 +1,7 @@
 const fartsomrader = [
   {
     kode: 'INNENRIKS',
-    term: 'Innenfor territorialfarvann / til kai',
+    term: 'Innenfor territorialfarvann',
   },
   {
     kode: 'UTENRIKS',
