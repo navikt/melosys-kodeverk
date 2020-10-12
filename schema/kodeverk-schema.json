@@ -146,7 +146,8 @@
         "opphold",
         "normaltdrivervirksomhet",
         "sokkel",
-        "kontroll_begrunnelser"
+        "kontroll_begrunnelser",
+        "medfolgende_barn_begrunnelser"
       ],
       "properties": {
         "arbeidsland": {
@@ -238,6 +239,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "kontroll_begrunnelser": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "medfolgende_barn_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
