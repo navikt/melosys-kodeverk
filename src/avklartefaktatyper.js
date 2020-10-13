@@ -55,5 +55,9 @@ const avklartefaktatyper = [
     kode: 'INFORMERT_MYNDIGHET',
     term: null,
   },
+  {
+    kode: 'VURDERING_LOVVALG_BARN',
+    term: null,
+  },
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
