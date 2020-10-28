@@ -13,7 +13,7 @@ const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
-const { ftlbestemmelser } = require('./ftlbestemmelser');
+const { folketrygdloven_kap2_bestemmelser } = require('./folketrygdloven_kap2_bestemmelser');
 const { innretningstyper } = require('./innretningstyper');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
@@ -48,7 +48,7 @@ const KodeTermObjects = {
   dokumenttyper,
   finansiering,
   forespoerseltyper,
-  ftlbestemmelser,
+  folketrygdloven_kap2_bestemmelser,
   innretningstyper,
   landkoder,
   lovvalgsbestemmelser,

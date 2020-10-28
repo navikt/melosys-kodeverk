@@ -267,7 +267,7 @@
     "forespoerseltyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "ftlbestemmelser": {
+    "folketrygdloven_kap2_bestemmelser": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "innretningstyper": {

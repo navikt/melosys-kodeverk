@@ -2,7 +2,7 @@
  * Kodeverk/Folketrygdloven_kap2_bestemmelser
  * @module
  */
-const ftlbestemmelser = [
+const folketrygdloven_kap2_bestemmelser = [
   {
     kode: 'FTRL_KAP2_2_1',
     term: null
@@ -48,4 +48,4 @@ const ftlbestemmelser = [
     term: null
   }
 ];
-module.exports.ftlbestemmelser = ftlbestemmelser;
+module.exports.folketrygdloven_kap2_bestemmelser = folketrygdloven_kap2_bestemmelser;
