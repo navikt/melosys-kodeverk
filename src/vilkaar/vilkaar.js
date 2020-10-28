@@ -56,11 +56,11 @@ const vilkaar = [
     term: null,
   },
   {
-    kode: 'FTRL_2_8_FORUTGAAENDE_TRYGDETID',
+    kode: 'FTRL_2_8_FORUTGÅENDE_TRYGDETID',
     term: 'Medlem i minst tre av de fem siste kalenderårene'
   },
   {
-    kode: 'FTRL_2_8_NAER_TILKNYTNING_NORGE',
+    kode: 'FTRL_2_8_NÆR_TILKNYTNING_NORGE',
     term: 'Nær tilknytning til det norske samfunnet'
   }
 ];

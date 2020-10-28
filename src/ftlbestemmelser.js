@@ -12,19 +12,19 @@ const ftlbestemmelser = [
     term: 'folketrygdloven § 2-8 (frivillig medlemskap i utlandet)'
   },
   {
-    kode: 'FTRL_KAP2_2_8_FOERSTE_LEDD_A',
+    kode: 'FTRL_KAP2_2_8_FØRSTE_LEDD_A',
     term: '§ 2-8 første ledd bokstav a (arbeidstaker)'
   },
   {
-    kode: 'FTRL_KAP2_2_8_FOERSTE_LEDD_B',
+    kode: 'FTRL_KAP2_2_8_FØRSTE_LEDD_B',
     term: '§ 2-8 første ledd bokstav b (student)'
   },
   {
-    kode: 'FTRL_KAP2_2_8_FOERSTE_LEDD_C',
+    kode: 'FTRL_KAP2_2_8_FØRSTE_LEDD_C',
     term: '§ 2-8 første ledd bokstav c (offentlig oppdrag eller stipend)'
   },
   {
-    kode: 'FTRL_KAP2_2_8_FOERSTE_LEDD_D',
+    kode: 'FTRL_KAP2_2_8_FØRSTE_LEDD_D',
     term: '§ 2-8 første ledd bokstav d (pensjonist)'
   },
   {

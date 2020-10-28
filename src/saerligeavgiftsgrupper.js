@@ -8,7 +8,7 @@ const saerligeavgiftsgrupper = [
     term: 'Ansatt i FN (med staff assessment)'
   },
   {
-    kode: 'MISJONAER',
+    kode: 'MISJONÆR',
     term: 'Misjonær'
   },
   {
