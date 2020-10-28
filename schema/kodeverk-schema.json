@@ -267,6 +267,9 @@
     "forespoerseltyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "ftlbestemmelser": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "innretningstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -312,6 +315,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "representerer": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "saerligeavgiftsgrupper":  {
       "$ref": "#/definitions/kodeverkArray"
     },
     "saksstatuser":  {
