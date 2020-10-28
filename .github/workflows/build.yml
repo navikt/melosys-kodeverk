@@ -97,7 +97,7 @@ jobs:
           else
             # GPR støtter ikke mutable artifacts (snapshot/beta)
             echo "::set-output name=frontend::${SEMVER}-beta.${SHORT_SHA}"
-            echo "::set-output name=backend::${SEMVER}-${SHORT_SHA}-SNAPSHOT"
+            echo "::set-output name=backend::${SEMVER}-${SHORT_SHA}"
           fi
         env:
           IS_MASTER: ${{ github.ref == 'refs/heads/master' }}
