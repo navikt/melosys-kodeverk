@@ -59,5 +59,33 @@ const avklartefaktatyper = [
     kode: 'VURDERING_LOVVALG_BARN',
     term: null,
   },
+  {
+    kode: 'LØNN_NORGE_ARBEIDSGIVERAVGIFT',
+    term: null
+  },
+  {
+    kode: 'LØNN_NORGE_SKATTEPLIKTIG',
+    term: null
+  },
+  {
+    kode: 'LØNN_NORGE_SÆRLIG_AVGIFTS_GRUPPE',
+    term: null
+  },
+  {
+    kode: 'LØNN_UTL_ARBEIDSGIVERAVGIFT',
+    term: null
+  },
+  {
+    kode: 'LØNN_UTL_SKATTEPLIKTIG',
+    term: null
+  },
+  {
+    kode: 'LØNN_UTL_SÆRLIG_AVGIFTS_GRUPPE',
+    term: null
+  },
+  {
+    kode: 'VURDERING_MEDLEMSKAP_EKTEFELLE_SAMBOER',
+    term: null
+  }
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;

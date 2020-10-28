@@ -54,6 +54,14 @@ const vilkaar = [
   {
     kode: 'FO_883_2004_ART11_4_2',
     term: null,
+  },
+  {
+    kode: 'FTRL_2_8_FORUTGÅENDE_TRYGDETID',
+    term: 'Medlem i minst tre av de fem siste kalenderårene'
+  },
+  {
+    kode: 'FTRL_2_8_NÆR_TILKNYTNING_NORGE',
+    term: 'Nær tilknytning til det norske samfunnet'
   }
 ];
 module.exports.vilkaar = vilkaar;

@@ -13,6 +13,7 @@ const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
 const { forespoerseltyper } = require('./forespoerseltyper');
+const { folketrygdloven_kap2_bestemmelser } = require('./folketrygdloven_kap2_bestemmelser');
 const { innretningstyper } = require('./innretningstyper');
 const { landkoder } = require('./landkoder');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
@@ -22,6 +23,7 @@ const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { representerer } = require('./representerer');
+const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { territoriekoder } = require('./territoriekoder');
@@ -46,6 +48,7 @@ const KodeTermObjects = {
   dokumenttyper,
   finansiering,
   forespoerseltyper,
+  folketrygdloven_kap2_bestemmelser,
   innretningstyper,
   landkoder,
   lovvalgsbestemmelser,
@@ -55,6 +58,7 @@ const KodeTermObjects = {
   mottaksretning,
   oppgavetyper,
   representerer,
+  saerligeavgiftsgrupper,
   saksstatuser,
   sakstyper,
   territoriekoder,
