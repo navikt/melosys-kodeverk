@@ -54,6 +54,10 @@ const behandlingstema = [
   {
     kode: 'TRYGDETID',
     term: 'MED: Forespørsel om trygdetid'
+  },
+  {
+    kode: 'ARBEID_I_UTLANDET',
+    term: 'Arbeid i utlandet'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
