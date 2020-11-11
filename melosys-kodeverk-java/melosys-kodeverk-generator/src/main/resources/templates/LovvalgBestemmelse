@@ -1,0 +1,12 @@
+package no.nav.melosys.domain.kodeverk;
+
+public interface LovvalgBestemmelse extends Bestemmelse {
+
+    String name();
+
+    // Til Hibernate https://hibernate.atlassian.net/browse/HHH-10858
+    boolean equals(Object other);
+
+    // Til Hibernate https://hibernate.atlassian.net/browse/HHH-10858
+    int hashCode();
+}

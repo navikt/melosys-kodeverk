@@ -36,10 +36,13 @@ jobs:
   bygge_backend:
     needs: bygge_frontend
     runs-on: ubuntu-latest
-    container: navikt/melosys-kodeverk-java:c0885b1e2fe12abee916aee5289933eb35a67be0
     steps:
       # GitHub Actions tillater kun filer under workspace i cache-nøkler
-      - run: cp /app.jar .
+      - uses: actions/checkout@v1
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11.x'
       - uses: actions/cache@v1
         with:
           path: ~/.m2
@@ -50,17 +53,22 @@ jobs:
         with:
           name: melosys-kodeverk-dist
           path: melosys-kodeverk/dist
+      - name: Bygg melosys-kodeverk-java
+        working-directory: melosys-kodeverk-java
+        run: |
+          mvn clean install
       - name: Generere kildekode for Java-kodeverk
+        working-directory: melosys-kodeverk-java
         run: |
           set -e
-          java -jar app.jar melosys-kodeverk/dist/kodemap.yml
+          java -jar melosys-kodeverk-generator/target/melosys-kodeverk-generator-1.jar ../melosys-kodeverk/dist/kodemap.yml
       - name: Bygge Java-kodeverk
-        working-directory: melosys-internt-kodeverk
+        working-directory: melosys-kodeverk-java/melosys-internt-kodeverk
         run: mvn clean install -B -V
       - uses: actions/upload-artifact@v1
         with:
           name: melosys-kodeverk-java
-          path: .
+          path: melosys-kodeverk-java/melosys-internt-kodeverk
 
   lage_versjoner:
     needs: bygge_backend
@@ -140,8 +148,11 @@ jobs:
   release_backend:
     needs: lage_versjoner
     runs-on: ubuntu-latest
-    container: navikt/melosys-kodeverk-java:c0885b1e2fe12abee916aee5289933eb35a67be0
     steps:
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11.x'
       - uses: actions/download-artifact@v1
         with:
           name: melosys-kodeverk-java
@@ -154,11 +165,10 @@ jobs:
             v1-m2release-
       - name: Publisere til GitHub package registry
         run: |
-          mvn dependency:resolve --settings /settings.xml
-          mvn dependency:resolve-plugins --settings /settings.xml
+          mvn dependency:resolve --settings settings.xml
+          mvn dependency:resolve-plugins --settings settings.xml
           mvn versions:set -DnewVersion=${BACKEND_VERSION}
-          mvn -B deploy -Prelease -DskipTests=true --settings /settings.xml
-        working-directory: melosys-internt-kodeverk
+          mvn -B deploy -Prelease -DskipTests=true --settings settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BACKEND_VERSION: ${{ needs.lage_versjoner.outputs.backend_versjon }}
