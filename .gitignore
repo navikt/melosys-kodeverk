@@ -80,6 +80,4 @@ _*.sh
 es.properties
 *.zip
 *.versionsBackup
-melosys-internt-kodeverk
-melosys-kodeverk-generator/node_modules
-melosys-kodeverk-generator/package-lock.json
+melosys-kodeverk-java/melosys-internt-kodeverk/src
