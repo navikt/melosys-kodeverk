@@ -81,3 +81,4 @@ es.properties
 *.zip
 *.versionsBackup
 melosys-kodeverk-java/melosys-internt-kodeverk/src
+/melosys-internt-kodeverk

@@ -58,9 +58,10 @@ jobs:
         run: |
           mvn clean install
       - name: Generere kildekode for Java-kodeverk
+        working-directory: melosys-kodeverk-java
         run: |
           set -e
-          java -jar melosys-kodeverk-java/melosys-kodeverk-generator/target/melosys-kodeverk-generator-1.jar melosys-kodeverk/dist/kodemap.yml
+          java -jar melosys-kodeverk-generator/target/melosys-kodeverk-generator-1.jar ../melosys-kodeverk/dist/kodemap.yml
       - name: Bygge Java-kodeverk
         working-directory: melosys-kodeverk-java/melosys-internt-kodeverk
         run: mvn clean install -B -V
