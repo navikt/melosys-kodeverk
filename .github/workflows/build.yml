@@ -162,16 +162,12 @@ jobs:
           key: v1-m2release-${{ hashFiles('melosys-internt-kodeverk/pom.xml') }}
           restore-keys: |
             v1-m2release-
-      - name: List filer
-        run: |
-          ls -R
       - name: Publisere til GitHub package registry
         run: |
           mvn dependency:resolve --settings settings.xml
           mvn dependency:resolve-plugins --settings settings.xml
           mvn versions:set -DnewVersion=${BACKEND_VERSION}
           mvn -B deploy -Prelease -DskipTests=true --settings settings.xml
-        working-directory: melosys-internt-kodeverk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BACKEND_VERSION: ${{ needs.lage_versjoner.outputs.backend_versjon }}
