@@ -33,7 +33,7 @@
         <module>melosys-kodeverk-generator</module>
         <module>melosys-internt-kodeverk</module>
     </modules>
-    
+
     <scm>
         <developerConnection>scm:git:git@github.com:navikt/melosys-kodeverk-java.git</developerConnection>
         <connection>scm:git:git@github.com:navikt/melosys-kodeverk-java.git</connection>
@@ -93,6 +93,14 @@
                     </execution>
                 </executions>
             </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+              <finalName>kodeverk-generator</finalName>
+            </configuration>
+          </plugin>
         </plugins>
     </build>
 </project>
