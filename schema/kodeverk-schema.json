@@ -200,10 +200,18 @@
           "additionalProperties": false,
           "required": [
             "endret_unntaksperiode",
+            "ftrl_2_8_annet_ledd_begrunnelser",
+            "ftrl_2_8_foerste_bokstav_a_begrunnelser",
             "avslag"
           ],
           "properties": {
             "endret_unntaksperiode": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "ftrl_2_8_annet_ledd_begrunnelser": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "ftrl_2_8_foerste_bokstav_a_begrunnelser": {
               "$ref": "#/definitions/kodeverkArray"
             },
             "avslag": {
