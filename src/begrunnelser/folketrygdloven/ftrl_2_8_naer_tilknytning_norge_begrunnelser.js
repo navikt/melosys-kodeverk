@@ -1,4 +1,4 @@
-const ftrl_2_8_annet_ledd_begrunnelser = [
+const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   {
     kode: 'ANSATT_I_MULTINASJONALT_SELSKAP',
     term: 'Arbeider i multinasjonalt selskap',
@@ -25,4 +25,4 @@ const ftrl_2_8_annet_ledd_begrunnelser = [
   }
 ];
 
-module.exports.ftrl_2_8_annet_ledd_begrunnelser = ftrl_2_8_annet_ledd_begrunnelser;
+module.exports.ftrl_2_8_naer_tilknytning_norge_begrunnelser = ftrl_2_8_naer_tilknytning_norge_begrunnelser;

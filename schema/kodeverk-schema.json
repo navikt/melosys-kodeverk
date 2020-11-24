@@ -200,18 +200,18 @@
           "additionalProperties": false,
           "required": [
             "endret_unntaksperiode",
-            "ftrl_2_8_annet_ledd_begrunnelser",
-            "ftrl_2_8_foerste_bokstav_a_begrunnelser",
+            "ftrl_2_8_forutgaaende_trygdetid_begrunnelser",
+            "ftrl_2_8_naer_tilknytning_norge_begrunnelser",
             "avslag"
           ],
           "properties": {
             "endret_unntaksperiode": {
               "$ref": "#/definitions/kodeverkArray"
             },
-            "ftrl_2_8_annet_ledd_begrunnelser": {
+            "ftrl_2_8_forutgaaende_trygdetid_begrunnelser": {
               "$ref": "#/definitions/kodeverkArray"
             },
-            "ftrl_2_8_foerste_bokstav_a_begrunnelser": {
+            "ftrl_2_8_naer_tilknytning_norge_begrunnelser": {
               "$ref": "#/definitions/kodeverkArray"
             },
             "avslag": {
