@@ -28,11 +28,14 @@ const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { territoriekoder } = require('./territoriekoder');
+const { trygdeavgift_typer } = require('./trygdeavgift_typer');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
 const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
+const { vurderingsutfall_trygdeavgift_norsk_inntekt } = require('./vurderingsutfall_trygdeavgift_norsk_inntekt');
+const { vurderingsutfall_trygdeavgift_utenlandsk_inntekt } = require('./vurderingsutfall_trygdeavgift_utenlandsk_inntekt');
 const { yrker } = require('./yrker');
 
 const Transform  = require('./transform');
@@ -64,11 +67,14 @@ const KodeTermObjects = {
   saksstatuser,
   sakstyper,
   territoriekoder,
+  trygdeavgift_typer,
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,
   vedtakstyper,
   vilkaar,
+  vurderingsutfall_trygdeavgift_norsk_inntekt,
+  vurderingsutfall_trygdeavgift_utenlandsk_inntekt,
   yrker,
 };
 
