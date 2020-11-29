@@ -16,6 +16,7 @@ const { forespoerseltyper } = require('./forespoerseltyper');
 const { folketrygdloven_kap2_bestemmelser } = require('./folketrygdloven_kap2_bestemmelser');
 const { innretningstyper } = require('./innretningstyper');
 const { landkoder } = require('./landkoder');
+const { loenn_forhold } = require('./loenn_forhold');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
 const { flyvningstyper } = require('./flyvningstyper');
@@ -51,6 +52,7 @@ const KodeTermObjects = {
   folketrygdloven_kap2_bestemmelser,
   innretningstyper,
   landkoder,
+  loenn_forhold,
   lovvalgsbestemmelser,
   maritimtyper,
   flyvningstyper,

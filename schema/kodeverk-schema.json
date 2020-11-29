@@ -284,6 +284,9 @@
     "landkoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "loenn_forhold": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "lovvalgsbestemmelser": {
       "type": "object",
       "additionalProperties": false,
