@@ -284,6 +284,9 @@
     "landkoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "loenn_forhold": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "lovvalgsbestemmelser": {
       "type": "object",
       "additionalProperties": false,
@@ -337,6 +340,9 @@
     "territoriekoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "trygdeavgift_typer": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "trygdedekninger": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -350,6 +356,12 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "vilkaar": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "vurderingsutfall_trygdeavgift_norsk_inntekt": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "vurderingsutfall_trygdeavgift_utenlandsk_inntekt": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "yrker": {
