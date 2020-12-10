@@ -57,11 +57,11 @@ const vilkaar = [
   },
   {
     kode: 'FTRL_2_8_FORUTGÅENDE_TRYGDETID',
-    term: 'Medlem i minst tre av de fem siste kalenderårene'
+    term: 'Har søker vært medlem i minst tre av de fem siste kalenderårene?'
   },
   {
     kode: 'FTRL_2_8_NÆR_TILKNYTNING_NORGE',
-    term: 'Nær tilknytning til det norske samfunnet'
+    term: 'Har søker nær tilknytning til det norske samfunnet?'
   }
 ];
 module.exports.vilkaar = vilkaar;

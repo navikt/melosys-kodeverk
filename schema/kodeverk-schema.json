@@ -200,10 +200,18 @@
           "additionalProperties": false,
           "required": [
             "endret_unntaksperiode",
+            "ftrl_2_8_forutgaaende_trygdetid_begrunnelser",
+            "ftrl_2_8_naer_tilknytning_norge_begrunnelser",
             "avslag"
           ],
           "properties": {
             "endret_unntaksperiode": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "ftrl_2_8_forutgaaende_trygdetid_begrunnelser": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "ftrl_2_8_naer_tilknytning_norge_begrunnelser": {
               "$ref": "#/definitions/kodeverkArray"
             },
             "avslag": {
@@ -276,6 +284,9 @@
     "landkoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "loenn_forhold": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "lovvalgsbestemmelser": {
       "type": "object",
       "additionalProperties": false,
@@ -329,6 +340,9 @@
     "territoriekoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "trygdeavgift_typer": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "trygdedekninger": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -342,6 +356,12 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "vilkaar": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "vurderingsutfall_trygdeavgift_norsk_inntekt": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "vurderingsutfall_trygdeavgift_utenlandsk_inntekt": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "yrker": {

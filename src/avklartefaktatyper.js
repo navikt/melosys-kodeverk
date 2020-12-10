@@ -60,15 +60,11 @@ const avklartefaktatyper = [
     term: null,
   },
   {
+    kode: 'LØNN_FORHOLD_VIRKSOMHET',
+    term: null
+  },
+  {
     kode: 'LØNN_NORGE_ARBEIDSGIVERAVGIFT',
-    term: null
-  },
-  {
-    kode: 'LØNN_NORGE_SKATTEPLIKTIG',
-    term: null
-  },
-  {
-    kode: 'LØNN_NORGE_SÆRLIG_AVGIFTS_GRUPPE',
     term: null
   },
   {
@@ -76,7 +72,15 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'LØNN_UTL_SKATTEPLIKTIG',
+    kode: 'LØNN_NORGE_SKATTEPLIKTIG_NORGE',
+    term: null
+  },
+  {
+    kode: 'LØNN_UTL_SKATTEPLIKTIG_NORGE',
+    term: null
+  },
+  {
+    kode: 'LØNN_NORGE_SÆRLIG_AVGIFTS_GRUPPE',
     term: null
   },
   {

@@ -5,7 +5,15 @@ const produserbaredokumenter = [
   },
   {
     kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID',
-    term: 'Melding om forventet sakbehandlingstid'
+    term: 'Melding om forventet saksbehandlingstid'
+  },
+  {
+    kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD',
+    term: 'Melding om forventet saksbehandlingstid av søknad'
+  },
+  {
+    kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE',
+    term: 'Melding om forventet saksbehandlingstid av klage'
   },
   {
     kode: 'ORIENTERING_ANMODNING_UNNTAK',

@@ -68,3 +68,17 @@ jspm_packages/
 .next
 
 package-lock.json
+
+.settings
+target
+.project
+.classpath
+bin
+_*.sh
+*.local
+*.localz
+es.properties
+*.zip
+*.versionsBackup
+melosys-kodeverk-java/melosys-internt-kodeverk/src
+/melosys-internt-kodeverk
