@@ -202,7 +202,9 @@
             "endret_unntaksperiode",
             "ftrl_2_8_forutgaaende_trygdetid_begrunnelser",
             "ftrl_2_8_naer_tilknytning_norge_begrunnelser",
-            "avslag"
+            "avslag",
+            "medfolgende_barn_begrunnelser_ftrl",
+            "medfolgende_ektefelle_samboer_begrunnelser_ftrl"
           ],
           "properties": {
             "endret_unntaksperiode": {
@@ -215,6 +217,12 @@
               "$ref": "#/definitions/kodeverkArray"
             },
             "avslag": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "medfolgende_barn_begrunnelser_ftrl": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "medfolgende_ektefelle_samboer_begrunnelser_ftrl": {
               "$ref": "#/definitions/kodeverkArray"
             }
           }
