@@ -17,11 +17,11 @@ const produserbaredokumenter = [
   },
   {
     kode: 'MANGELBREV_BRUKER',
-    term: 'Mangelbrev til bruker'
+    term: 'Melding om manglende opplysninger til bruker'
   },
   {
     kode: 'MANGELBREV_ARBEIDSGIVER',
-    term: 'Mangelbrev til arbeidsgiver'
+    term: 'Melding om manglende opplysninger til arbeidsgiver'
   },
   {
     kode: 'INNVILGELSE_FOLKETRYGDEN',
