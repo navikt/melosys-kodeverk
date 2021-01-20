@@ -16,6 +16,18 @@ const produserbaredokumenter = [
     term: 'Melding om forventet saksbehandlingstid av klage'
   },
   {
+    kode: 'MANGELBREV_BRUKER',
+    term: 'Melding om manglende opplysninger til bruker'
+  },
+  {
+    kode: 'MANGELBREV_ARBEIDSGIVER',
+    term: 'Melding om manglende opplysninger til arbeidsgiver'
+  },
+  {
+    kode: 'INNVILGELSE_FOLKETRYGDEN',
+    term: 'Innvilgelsesbrev folketrygden'
+  },
+  {
     kode: 'ORIENTERING_ANMODNING_UNNTAK',
     term: 'Orienteringsbrev om anmodning unntak'
   },
