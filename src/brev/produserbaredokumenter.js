@@ -17,15 +17,15 @@ const produserbaredokumenter = [
   },
   {
     kode: 'MANGELBREV_BRUKER',
-    term: 'Melding om manglende opplysninger til bruker'
+    term: 'Melding om manglende opplysninger'
   },
   {
     kode: 'MANGELBREV_ARBEIDSGIVER',
-    term: 'Melding om manglende opplysninger til arbeidsgiver'
+    term: 'Melding om manglende opplysninger'
   },
   {
-    kode: 'INNVILGELSE_FOLKETRYGDEN',
-    term: 'Innvilgelsesbrev folketrygden'
+    kode: 'INNVILGELSE_FOLKETRYGDEN_2_8',
+    term: 'Vedtak om frivillig medlemskap'
   },
   {
     kode: 'ORIENTERING_ANMODNING_UNNTAK',
