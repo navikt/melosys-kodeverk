@@ -9,19 +9,19 @@ const produserbaredokumenter = [
   },
   {
     kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD',
-    term: 'Melding om forventet saksbehandlingstid av søknad'
+    term: 'Melding om forventet sakbehandlingstid'
   },
   {
     kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE',
-    term: 'Melding om forventet saksbehandlingstid av klage'
+    term: 'Melding om forventet sakbehandlingstid'
   },
   {
     kode: 'MANGELBREV_BRUKER',
-    term: 'Melding om manglende opplysninger'
+    term: 'Melding om manglende opplysninger til bruker'
   },
   {
     kode: 'MANGELBREV_ARBEIDSGIVER',
-    term: 'Melding om manglende opplysninger'
+    term: 'Melding om manglende opplysninger til virksomhet'
   },
   {
     kode: 'INNVILGELSE_FOLKETRYGDLOVEN_2_8',
