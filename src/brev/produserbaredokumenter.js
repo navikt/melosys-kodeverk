@@ -9,11 +9,11 @@ const produserbaredokumenter = [
   },
   {
     kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD',
-    term: 'Melding om forventet sakbehandlingstid'
+    term: 'Melding om forventet saksbehandlingstid'
   },
   {
     kode: 'MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE',
-    term: 'Melding om forventet sakbehandlingstid'
+    term: 'Melding om forventet saksbehandlingstid'
   },
   {
     kode: 'MANGELBREV_BRUKER',
