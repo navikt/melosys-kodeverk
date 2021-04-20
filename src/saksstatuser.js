@@ -29,6 +29,10 @@ const saksstatuser = [
   {
     kode: 'AVSLUTTET',
     term: 'Saken er avsluttet'
+  },
+  {
+    kode: 'MEDLEMSKAP_AVKLART',
+    term: 'Medlemskapet er avklart'
   }
 ];
 module.exports.saksstatuser = saksstatuser;
