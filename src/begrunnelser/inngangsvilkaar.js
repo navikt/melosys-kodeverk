@@ -10,7 +10,7 @@ const inngangsvilkaar = [
   },
   {
     kode: 'OVERSTYRT_AV_SAKSBEHANDLER',
-    term: null,
+    term: 'Automatisk vurdering av inngangsvilkår ble overstyrt av saksbehandler.',
   }
 ];
 module.exports.inngangsvilkaar = inngangsvilkaar;
