@@ -55,6 +55,8 @@ behandlinger:
       term: Om unntaksperioden har blitt godkjent for registrering
     - kode: AVSLAG_MANGLENDE_OPPL
       term: Avslått pga manglende opplysninger
+    - kode: MEDLEM_I_FOLKETRYGDEN
+      term: Medlem i folketrygden
   behandlingsstatus:
     - kode: OPPRETTET
       term: Behandlingen er opprettet
