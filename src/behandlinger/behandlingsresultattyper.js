@@ -31,6 +31,10 @@ const behandlingsresultattyper = [
   {
     kode: 'AVSLAG_MANGLENDE_OPPL',
     term: 'Avslått pga manglende opplysninger',
+  },
+  {
+    kode: 'MEDLEM_I_FOLKETRYGDEN',
+    term: 'Medlem i folketrygden'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
