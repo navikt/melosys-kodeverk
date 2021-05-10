@@ -59,6 +59,10 @@ const behandlingsstatus = [
   {
     kode: "MIDLERTIDIG_LOVVALGSBESLUTNING",
     term: "Midlertidig lovvalgsbeslutning (artikkel 13)"
+  },
+  {
+    kode: "AVVENT_FAGLIG_AVKLARING",
+    term: "Avventer en faglig avklaring"
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
