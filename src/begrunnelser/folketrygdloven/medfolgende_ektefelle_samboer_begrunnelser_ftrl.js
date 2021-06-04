@@ -13,7 +13,7 @@ const medfolgende_ektefelle_samboer_begrunnelser_ftrl = [
     term: 'Ektefelle/samboer har egen inntekt'
   },
   {
-    kode: 'IKKE_TRE_AV_FEM',
+    kode: 'IKKE_TRE_AV_FEM_SISTE_ÅR',
     term: 'Ektefelle/samboer har ikke vært medlem i tre av de siste fem kalenderårene'
   },
   {
