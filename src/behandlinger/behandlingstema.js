@@ -58,6 +58,10 @@ const behandlingstema = [
   {
     kode: 'ARBEID_I_UTLANDET',
     term: 'Arbeid i utlandet'
+  },
+  {
+    kode: 'TRYGDEAVTALE_UK',
+    term: 'Yrkesaktiv i Storbritannia'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
