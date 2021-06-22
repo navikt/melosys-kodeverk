@@ -45,24 +45,32 @@ const behandlingsstatus = [
     term: 'Vedtak iverksettes',
   },
   {
-    kode: "SVAR_ANMODNING_MOTTATT",
-    term: "Mottatt svar på anmodning unntak"
+    kode: 'SVAR_ANMODNING_MOTTATT',
+    term: 'Mottatt svar på anmodning unntak'
   },
   {
-    kode: "UTPEKING_SENDT",
-    term: "Utpeking av et annet land er sendt"
+    kode: 'UTPEKING_SENDT',
+    term: 'Utpeking av et annet land er sendt'
   },
   {
-    kode: "SVAR_UTPEKING_MOTTATT",
-    term: "Mottatt svar på utpeking av et annet land"
+    kode: 'SVAR_UTPEKING_MOTTATT',
+    term: 'Mottatt svar på utpeking av et annet land'
   },
   {
-    kode: "MIDLERTIDIG_LOVVALGSBESLUTNING",
-    term: "Midlertidig lovvalgsbeslutning (artikkel 13)"
+    kode: 'MIDLERTIDIG_LOVVALGSBESLUTNING',
+    term: 'Midlertidig lovvalgsbeslutning (artikkel 13)'
   },
   {
-    kode: "AVVENT_FAGLIG_AVKLARING",
-    term: "Avventer en faglig avklaring"
+    kode: 'AVVENT_FAGLIG_AVKLARING',
+    term: 'Avventer en faglig avklaring'
+  },
+  {
+    kode: 'SENDT_ASD',
+    term: 'Saken er sendt til departementet'
+  },
+  {
+    kode: 'SVAR_ASD_MOTTATT',
+    term: 'Mottatt svar fra departementet'
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
