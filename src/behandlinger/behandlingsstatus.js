@@ -63,6 +63,14 @@ const behandlingsstatus = [
   {
     kode: 'AVVENT_FAGLIG_AVKLARING',
     term: 'Avventer en faglig avklaring'
+  },
+  {
+    kode: 'SENDT_ASD',
+    term: 'Saken er sendt til departementet'
+  },
+  {
+    kode: 'SVAR_ASD_MOTTATT',
+    term: 'Mottatt svar fra departementet'
   }
 ];
 module.exports.behandlingsstatus = behandlingsstatus;
