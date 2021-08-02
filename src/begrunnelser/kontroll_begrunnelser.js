@@ -26,7 +26,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'FEIL_I_PERIODEN',
-    term: 'Startdato er før sluttdato'
+    term: 'Sluttdato er før startdato'
   },
   {
     kode: 'PERIODE_FOR_GAMMEL',
