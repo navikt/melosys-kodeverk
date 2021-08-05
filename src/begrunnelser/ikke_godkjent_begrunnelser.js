@@ -10,7 +10,7 @@ const ikke_godkjent_begrunnelser = [
   },
   {
     kode: 'TREDJELANDSBORGER_IKKE_AVTALELAND',
-    term: 'Tredjelandsborger fra en ikke avtaleland'
+    term: 'Tredjelandsborger fra et ikke-avtaleland'
   },
   {
     kode: 'ANNET',
