@@ -54,6 +54,7 @@
     "anmodningsperiodesvartyper",
     "avklartefaktatyper",
     "avsendertyper",
+    "avtaleland",
     "behandlinger",
     "begrunnelser",
     "brev",
@@ -89,6 +90,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "avsendertyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "avtaleland": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "behandlinger": {
