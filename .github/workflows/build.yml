@@ -73,6 +73,7 @@ jobs:
   lage_versjoner:
     needs: bygge_backend
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     outputs:
       frontend_versjon: ${{ steps.versjoner.outputs.frontend }}
       backend_versjon: ${{ steps.versjoner.outputs.backend }}
@@ -82,19 +83,16 @@ jobs:
         with:
           node-version: '12'
       - name: Øk versjon
-        if: github.ref == 'refs/heads/master'
         run: |
           git config --global user.email "actions-melosys@nav.no"
           git config --global user.name "Actions"
           COMMIT_MESSAGE=`git log -1 --pretty=%B`
           npm version patch -m "%s, $COMMIT_MESSAGE, [skip ci]"
       - name: Push versjon
-        if: github.ref == 'refs/heads/master'
         uses: ad-m/github-push-action@v0.5.0
         with:
           github_token: ${{ secrets.TEMP_GITHUB_TOKEN }}
       - name: Hent short sha1
-        if: github.ref != 'refs/heads/master'
         id: parse_commit
         run: echo "::set-output name=short_sha::$(git rev-parse --short HEAD)"
       - id: versjoner
