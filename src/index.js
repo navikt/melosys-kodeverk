@@ -6,6 +6,7 @@ const { aktoersroller } = require('./aktoerroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
 const { avsendertyper } = require('./avsendertyper');
+const { avtaleland } = require('./avtaleland');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
 const { behandlingsgrunnlagtyper } = require('./behandlingsgrunnlagtyper.js');
@@ -45,6 +46,7 @@ const KodeTermObjects = {
   anmodningsperiodesvartyper,
   avklartefaktatyper,
   avsendertyper,
+  avtaleland,
   behandlinger,
   behandlingsgrunnlagtyper,
   begrunnelser,
