@@ -22,5 +22,6 @@ generator:
     - Lovvalgbestemmelser_987_2009
     - Tilleggsbestemmelser_883_2004
     - Overgangsregelbestemmelser
+    - Lovvalgbestemmelser_trygdeavtale_uk
   pakke-navn: no.nav.melosys.domain.kodeverk
 
