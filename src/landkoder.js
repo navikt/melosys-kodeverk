@@ -3,6 +3,7 @@
  * @module
  */
 const landkoder = [
+  // Alpha-2 code
   {
     kode: 'BE',
     term: 'Belgia',
@@ -145,6 +146,151 @@ const landkoder = [
   },
   {
     kode: 'AX',
+    term: 'Åland',
+  },
+  // Alpha-3 code
+  {
+    kode: 'BEL',
+    term: 'Belgia',
+  },
+  {
+    kode: 'BGR',
+    term: 'Bulgaria',
+  },
+  {
+    kode: 'DNK',
+    term: 'Danmark',
+  },
+  {
+    kode: 'EST',
+    term: 'Estland',
+  },
+  {
+    kode: 'FIN',
+    term: 'Finland',
+  },
+  {
+    kode: 'FRA',
+    term: 'Frankrike',
+  },
+  {
+    kode: 'FRO',
+    term: 'Færøyene',
+  },
+  {
+    kode: 'GRL',
+    term: 'Grønland',
+  },
+  {
+    kode: 'GRC',
+    term: 'Hellas',
+  },
+  {
+    kode: 'IRL',
+    term: 'Irland',
+  },
+  {
+    kode: 'ISL',
+    term: 'Island',
+  },
+  {
+    kode: 'ITA',
+    term: 'Italia',
+  },
+  {
+    kode: 'HRV',
+    term: 'Kroatia',
+  },
+  {
+    kode: 'CYP',
+    term: 'Kypros',
+  },
+  {
+    kode: 'LVA',
+    term: 'Latvia',
+  },
+  {
+    kode: 'LIE',
+    term: 'Liechtenstein',
+  },
+  {
+    kode: 'LTU',
+    term: 'Litauen',
+  },
+  {
+    kode: 'LUX',
+    term: 'Luxembourg',
+  },
+  {
+    kode: 'MLT',
+    term: 'Malta',
+  },
+  {
+    kode: 'NLD',
+    term: 'Nederland',
+  },
+  {
+    kode: 'NOR',
+    term: 'Norge',
+  },
+  {
+    kode: 'POL',
+    term: 'Polen',
+  },
+  {
+    kode: 'PRT',
+    term: 'Portugal',
+  },
+  {
+    kode: 'ROU',
+    term: 'Romania',
+  },
+  {
+    kode: 'SVK',
+    term: 'Slovakia',
+  },
+  {
+    kode: 'SVN',
+    term: 'Slovenia',
+  },
+  {
+    kode: 'ESP',
+    term: 'Spania',
+  },
+  {
+    kode: 'GBR',
+    term: 'Storbritannia',
+  },
+  {
+    kode: 'SJM',
+    term: 'Svalbard og Jan Mayen',
+  },
+  {
+    kode: 'CHE',
+    term: 'Sveits',
+  },
+  {
+    kode: 'SWE',
+    term: 'Sverige',
+  },
+  {
+    kode: 'CZE',
+    term: 'Tsjekkia',
+  },
+  {
+    kode: 'DEU',
+    term: 'Tyskland',
+  },
+  {
+    kode: 'HUN',
+    term: 'Ungarn',
+  },
+  {
+    kode: 'AUT',
+    term: 'Østerrike',
+  },
+  {
+    kode: 'ALA',
     term: 'Åland',
   },
 ];
