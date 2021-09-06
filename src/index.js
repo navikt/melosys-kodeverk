@@ -24,6 +24,7 @@ const { flyvningstyper } = require('./flyvningstyper');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
+const { personstatuser } = require('./personstatuser');
 const { representerer } = require('./representerer');
 const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
@@ -64,6 +65,7 @@ const KodeTermObjects = {
   medlemskapstyper,
   mottaksretning,
   oppgavetyper,
+  personstatuser,
   representerer,
   saerligeavgiftsgrupper,
   saksstatuser,
