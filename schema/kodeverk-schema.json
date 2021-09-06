@@ -69,6 +69,7 @@
     "medlemskapstyper",
     "mottaksretning",
     "oppgavetyper",
+    "personstatuser",
     "representerer",
     "saksstatuser",
     "sakstyper",
@@ -339,6 +340,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "oppgavetyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "personstatuser": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "representerer": {

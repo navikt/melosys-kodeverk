@@ -41,5 +41,9 @@ const personstatuser = [
     kode: 'INAKTIV',
     term: 'Inaktiv',
   },
+  {
+    kode: 'UDEFINERT',
+    term: 'Udefinert for Melosys',
+  },
 ];
 module.exports.personstatuser = personstatuser;
