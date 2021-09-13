@@ -136,6 +136,10 @@ const landkoder = [
     term: 'Tyskland',
   },
   {
+    kode: 'UA',
+    term: 'Ukraina',
+  },
+  {
     kode: 'HU',
     term: 'Ungarn',
   },
