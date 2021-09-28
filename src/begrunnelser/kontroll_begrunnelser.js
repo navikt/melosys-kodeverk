@@ -61,6 +61,10 @@ const kontroll_begrunnelser = [
     term: 'Bostedsadresse trengs for å kunne utstede A1.'
   },
   {
+    kode: 'MANGLENDE_REGISTRERTE_ADRESSE',
+    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev og SED.'
+  },
+  {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
     term: 'Navn og land for arbeidssted trengs for utfylling av SED.'
   },
