@@ -45,4 +45,4 @@ const sivilstandtyper = [
   },
 ];
 
-module.exports.personstatuser = sivilstandtyper;
+module.exports.sivilstandtyper = sivilstandtyper;

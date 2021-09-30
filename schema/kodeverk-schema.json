@@ -69,7 +69,7 @@
     "medlemskapstyper",
     "mottaksretning",
     "oppgavetyper",
-    "personstatuser",
+    "pdl",
     "representerer",
     "saksstatuser",
     "sakstyper",
@@ -342,8 +342,21 @@
     "oppgavetyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "personstatuser": {
-      "$ref": "#/definitions/kodeverkArray"
+    "pdl": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "personstatuser",
+        "sivilstandtyper"
+      ],
+      "properties": {
+        "personstatuser": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "sivilstandtyper": {
+          "$ref": "#/definitions/kodeverkArray"
+        }
+      }
     },
     "representerer": {
       "$ref": "#/definitions/kodeverkArray"

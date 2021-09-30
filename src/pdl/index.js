@@ -1,7 +1,9 @@
 const { personstatuser } = require('./personstatuser');
 const { sivilstandtyper } = require('./sivilstandtyper');
 
-module.exports = {
+const pdl = {
   personstatuser,
   sivilstandtyper,
 };
+
+module.exports.pdl = pdl;
