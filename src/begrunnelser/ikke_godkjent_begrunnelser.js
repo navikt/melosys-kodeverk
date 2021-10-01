@@ -14,7 +14,7 @@ const ikke_godkjent_begrunnelser = [
   },
   {
     kode: 'ANNET',
-    term: 'Fritekstfelt'
+    term: 'Fritekst',
   }
 ];
 module.exports.ikke_godkjent_begrunnelser = ikke_godkjent_begrunnelser;
