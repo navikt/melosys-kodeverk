@@ -9,7 +9,7 @@ const endret_unntaksperiode = [
   },
   {
     kode: 'ANNET',
-    term: 'Annet',
+    term: 'Fritekst',
   },
 ];
 
