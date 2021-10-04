@@ -78,6 +78,10 @@ const produserbaredokumenter = [
   {
     kode: 'ORIENTERING_UTPEKING_UTLAND',
     term: 'Orienteringsbrev om utpeking til et annet land'
+  },
+  {
+    kode: 'ATTEST_NO_UK_1',
+    term: 'Attest NO/UK 1 - artikkel 6.1, 6.5 og 7.3'
   }
 ];
 
