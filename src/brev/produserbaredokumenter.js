@@ -82,6 +82,10 @@ const produserbaredokumenter = [
   {
     kode: 'ATTEST_NO_UK_1',
     term: 'Attest NO/UK 1 - artikkel 6.1, 6.5 og 7.3'
+  },
+  {
+    kode: 'GENERELT_FRITEKSTBREV',
+    term: 'Fritekstbrev'
   }
 ];
 
