@@ -18,6 +18,10 @@ const behandlingsgrunnlagtyper = [
   {
     kode: 'SØKNAD_FOLKETRYGDEN',
     term: 'Søknad om medlemskap i folketrygden'
+  },
+  {
+    kode: 'SØKNAD_TRYGDEAVTALE',
+    term: 'Søknad om medlemskap i folketrygden'
   }
 ];
 

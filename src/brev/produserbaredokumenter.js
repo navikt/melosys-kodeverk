@@ -86,6 +86,18 @@ const produserbaredokumenter = [
   {
     kode: 'ATTEST_NO_UK_1',
     term: 'Attest NO/UK 1 - artikkel 6.1, 6.5 og 7.3'
+  },
+  {
+    kode: 'INNVILGELSE_UK',
+    term: 'Vedtaksbrev innvilgelse Storbritannia'
+  },
+  {
+    kode: 'GENERELT_FRITEKSTBREV_BRUKER',
+    term: 'Fritekstbrev til bruker'
+  },
+  {
+    kode: 'GENERELT_FRITEKSTBREV_ARBEIDSGIVER',
+    term: 'Fritekstbrev til arbeidsgiver'
   }
 ];
 
