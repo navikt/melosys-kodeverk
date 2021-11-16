@@ -30,7 +30,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'PERIODE_FOR_GAMMEL',
-    term: 'Periode mer enn 5 år tilbake i tid'
+    term: 'Periode er før 1. juni 2012'
   },
   {
     kode: 'PERIODE_LANGT_FREM_I_TID',
