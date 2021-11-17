@@ -62,6 +62,7 @@
     "finansiering",
     "forespoerseltyper",
     "innretningstyper",
+    "innvilgelsesresultat",
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
@@ -292,6 +293,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "innretningstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "innvilgelsesresultat": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "landkoder": {
