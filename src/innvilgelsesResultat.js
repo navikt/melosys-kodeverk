@@ -1,8 +1,8 @@
 /**
- * Kodeverk/innvilgelsesresultat
+ * Kodeverk/innvilgelsesResultat
  * @module
  */
-const innvilgelsesresultat = [
+const innvilgelsesResultat = [
   {
     kode: 'INNVILGET',
     term: 'Innvilget'
@@ -16,4 +16,4 @@ const innvilgelsesresultat = [
     term: 'Avslått'
   }
 ];
-module.exports.innvilgelsesresultat = innvilgelsesresultat;
+module.exports.innvilgelsesResultat = innvilgelsesResultat;
