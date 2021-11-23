@@ -8,8 +8,8 @@ const lovvalgbestemmelser_trygdeavtale_uk = [
     term: 'Utsendt til kontinentalsokkel - artikkel 6 nr. 5',
   },
   {
-    kode: 'UK_ART7',
-    term: 'Arbeid på skip - artikkel 7',
+    kode: 'UK_ART7_3',
+    term: 'Utsendt til skip - artikkel 7 nr. 3',
   },
   {
     kode: 'UK_ART8_2',
