@@ -14,21 +14,27 @@ const art16_1_anmodning_uten_art12 = [
   {
     kode: 'HJEMMEKONTOR_BEGRENSET_PERIODE',
     term: 'Hjemmekontor for norsk arbeidsgiver en kort periode – andre',
-  },  {
+  },
+  {
+    kode: 'HJEMMEKONTOR_NAERINGSDRIVENDE',
+    term: 'Hjemmekontor en begrenset periode - selvstendig næringsdrivende ',
+  },
+  {
     kode: 'DELTIDSARBEID_I_UTLANDET_MOTTAR_AAP',
     term: 'Mottar AAP, arbeider deltid i utlandet',
   },
   {
     kode: 'DEN_NORSKE_SKOLEN',
     term: 'Arbeider for norsk skole i utlandet',
-  },  {
+  },
+  {
     kode: 'SJOEMANNSKIRKEN',
     term: 'Arbeider for Sjømannskirken',
   },
   {
     kode: 'STUDENT_I_NORGE_RELEVANT_ARBEID',
     term: 'Student i Norge, relevant arbeid i utlandet',
-  },  {
+  }, {
     kode: 'STUDENT_I_UTLANDET_RELEVANT_ARBEID',
     term: 'Student i utlandet, relevant arbeid i studielandet',
   },
