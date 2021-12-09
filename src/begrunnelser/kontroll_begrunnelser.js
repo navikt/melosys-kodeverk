@@ -62,7 +62,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE',
-    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev og SED.'
+    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev, SED eller attest.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
