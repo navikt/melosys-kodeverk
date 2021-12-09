@@ -62,7 +62,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE',
-    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev og SED.'
+    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev, SED eller attest.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
@@ -75,6 +75,14 @@ const kontroll_begrunnelser = [
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_UTL',
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
+  },
+  {
+    kode: 'MER_ENN_TRE_ÅR',
+    term: 'OBS: Perioden er mer enn tre år. Det er ikke mulig å fatte vedtak når perioden er mer enn tre år'
+  },
+  {
+    kode: 'ATTEST_MANGER_ARBEIDSSTED',
+    term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
   {
     kode: 'ANNET',
