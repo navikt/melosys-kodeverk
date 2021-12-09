@@ -77,6 +77,14 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
+    kode: 'MER_ENN_TRE_ÅR',
+    term: 'OBS: Perioden er mer enn tre år. Det er ikke mulig å fatte vedtak når perioden er mer enn tre år'
+  },
+  {
+    kode: 'ATTEST_MANGER_ARBEIDSSTED',
+    term: 'Du må oppgi et arbeidssted/representant i utlandet'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
