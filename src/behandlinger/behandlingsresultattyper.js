@@ -35,6 +35,14 @@ const behandlingsresultattyper = [
   {
     kode: 'MEDLEM_I_FOLKETRYGDEN',
     term: 'Medlem i folketrygden'
+  },
+  {
+    kode: 'AVSLUTTET_UTEN_ENDRING',
+    term: 'Ferdigbehandlet'
+  },
+  {
+    kode: 'HENLEGGELSE_BORTFALT',
+    term: 'Kan ikke behandles i Melosys'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
