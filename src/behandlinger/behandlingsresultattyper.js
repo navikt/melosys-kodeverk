@@ -14,7 +14,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'HENLEGGELSE',
-    term: 'Saken er henlagt',
+    term: 'Behandlingen er henlagt/trukket',
   },
   {
     kode: 'ANMODNING_OM_UNNTAK',
