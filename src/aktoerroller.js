@@ -21,6 +21,10 @@ const aktoersroller = [
     term: 'Trygdemyndighet'
   },
   {
+    kode: 'UTENLANDSK_MYNDIGHET',
+    term: 'Utenlandsk trygdemyndighet'
+  },
+  {
     kode: 'REPRESENTANT_TRYGDEAVGIFT',
     term: 'Representant trygdeavgift'
   }
