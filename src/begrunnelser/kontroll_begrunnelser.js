@@ -81,7 +81,7 @@ const kontroll_begrunnelser = [
     term: 'OBS: Perioden er mer enn tre år. Det er ikke mulig å fatte vedtak når perioden er mer enn tre år'
   },
   {
-    kode: 'ATTEST_MANGER_ARBEIDSSTED',
+    kode: 'ATTEST_MANGLER_ARBEIDSSTED',
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
   {
