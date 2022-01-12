@@ -78,7 +78,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MER_ENN_TRE_ÅR',
-    term: 'OBS: Perioden er mer enn tre år. Det er ikke mulig å fatte vedtak når perioden er mer enn tre år'
+    term: 'OBS: Perioden er mer enn tre år!'
   },
   {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
