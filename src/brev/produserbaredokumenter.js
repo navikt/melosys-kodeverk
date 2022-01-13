@@ -100,7 +100,7 @@ const produserbaredokumenter = [
   },
   {
     kode: 'GENERELT_FRITEKSTBREV_ARBEIDSGIVER',
-    term: 'Fritekstbrev til arbeidsgiver'
+    term: 'Fritekstbrev til virksomhet'
   }
 ];
 
