@@ -5,16 +5,12 @@
  */
 const nyvurderingbakgrunner = [
   {
-    kode: 'SAKSBEHANDLER_OPPDAGET_FEIL',
-    term: 'Saksbehandler oppdaget feil'
+    kode: 'FEIL_I_BEHANDLING',
+    term: 'Det ble gjort feil i tidligere behandling'
   },
   {
-    kode: 'HENVENDELSE_OM_OPPDAGET_FEIL',
-    term: 'Mottatt henvendelse om oppdaget feil'
-  },
-  {
-    kode: 'HENVENDELSE_OM_FEIL_BRUKER',
-    term: 'Bruker har meldt fra om feil'
+    kode: 'NYE_OPPLYSNINGER',
+    term: 'Det er mottatt nye opplysninger i saken'
   }
 ];
 
