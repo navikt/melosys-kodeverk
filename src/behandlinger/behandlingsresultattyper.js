@@ -14,7 +14,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'HENLEGGELSE',
-    term: 'Behandlingen er henlagt/trukket',
+    term: 'Søknaden er henlagt/trukket',
   },
   {
     kode: 'ANMODNING_OM_UNNTAK',
@@ -38,7 +38,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'AVSLUTTET_UTEN_ENDRING',
-    term: 'Ferdigbehandlet'
+    term: 'Ferdigbehandlet uten nytt vedtak'
   },
   {
     kode: 'HENLEGGELSE_BORTFALT',
