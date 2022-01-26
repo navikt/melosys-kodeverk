@@ -38,7 +38,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'AVSLUTTET_UTEN_ENDRING',
-    term: 'Ferdigbehandlet uten nytt vedtak'
+    term: 'Behandlingen er avsluttet'
   },
   {
     kode: 'HENLEGGELSE_BORTFALT',
