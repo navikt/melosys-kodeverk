@@ -43,7 +43,7 @@
   },
   "homepage": "https://github.com/navikt/melosys-kodeverk#readme",
   "devDependencies": {
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-add-module-exports": "^1.0.2",
