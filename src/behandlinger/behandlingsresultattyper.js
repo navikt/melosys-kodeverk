@@ -37,8 +37,8 @@ const behandlingsresultattyper = [
     term: 'Medlem i folketrygden'
   },
   {
-    kode: 'AVSLUTTET_UTEN_ENDRING',
-    term: 'Ferdigbehandlet uten nytt vedtak'
+    kode: 'FERDIGBEHANDLET',
+    term: 'Ferdigbehandlet'
   },
   {
     kode: 'HENLEGGELSE_BORTFALT',
