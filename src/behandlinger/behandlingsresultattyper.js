@@ -14,7 +14,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'HENLEGGELSE',
-    term: 'Saken er henlagt',
+    term: 'Søknaden er henlagt/trukket',
   },
   {
     kode: 'ANMODNING_OM_UNNTAK',
@@ -35,6 +35,14 @@ const behandlingsresultattyper = [
   {
     kode: 'MEDLEM_I_FOLKETRYGDEN',
     term: 'Medlem i folketrygden'
+  },
+  {
+    kode: 'FERDIGBEHANDLET',
+    term: 'Ferdigbehandlet'
+  },
+  {
+    kode: 'HENLEGGELSE_BORTFALT',
+    term: 'Kan ikke behandles i Melosys'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
