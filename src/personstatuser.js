@@ -35,11 +35,11 @@ const personstatuser = [
   },
   {
     kode: 'MIDLERTIDIG',
-    term: 'Midlertidig',
+    term: 'Midlertidig (D-nummer)',
   },
   {
     kode: 'INAKTIV',
-    term: 'Inaktiv',
+    term: 'Inaktiv (D-nummer)',
   },
   {
     kode: 'UDEFINERT',
