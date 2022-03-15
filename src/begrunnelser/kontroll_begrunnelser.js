@@ -85,6 +85,10 @@ const kontroll_begrunnelser = [
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
   {
+    kode: 'IKKE_ÉN_VIRKSOMHET',
+    term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet oppgitt for avslag eller art 16.1'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
