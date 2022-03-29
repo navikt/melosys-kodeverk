@@ -23,6 +23,10 @@ const aktoersroller = [
   {
     kode: 'REPRESENTANT_TRYGDEAVGIFT',
     term: 'Representant trygdeavgift'
+  },
+  {
+    kode: 'VIRKSOMHET',
+    term: 'Virksomhet'
   }
 ];
 module.exports.aktoersroller = aktoersroller;
