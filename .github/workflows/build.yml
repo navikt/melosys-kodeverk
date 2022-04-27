@@ -90,7 +90,7 @@ jobs:
           npm version patch -m "%s, $COMMIT_MESSAGE, [skip ci]"
       - name: Push versjon
         if: github.ref == 'refs/heads/master'
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.TEMP_GITHUB_TOKEN }}
       - name: Hent short sha1
