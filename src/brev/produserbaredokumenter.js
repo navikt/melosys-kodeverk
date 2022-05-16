@@ -101,6 +101,10 @@ const produserbaredokumenter = [
   {
     kode: 'GENERELT_FRITEKSTBREV_ARBEIDSGIVER',
     term: 'Fritekstbrev til virksomhet'
+  },
+  {
+    kode: 'GENERELT_FRITEKSTBREV_VIRKSOMHET',
+    term: 'Fritekstbrev til virksomhet'
   }
 ];
 
