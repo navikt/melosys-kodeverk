@@ -62,7 +62,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE',
-    term: 'Person mangler registrert adresse. Den må registreres for å kunne sende brev, SED eller attest.'
+    term: 'Bruker har ingen registrert adresse.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
@@ -87,6 +87,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'IKKE_KUN_EN_VIRKSOMHET',
     term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet oppgitt for avslag eller art 16.1'
+  },
+  {
+    kode: 'INGEN_ARBEIDSGIVERE',
+    term: 'Finner ingen arbeidsgivere. Hent registeropplysninger'
   },
   {
     kode: 'ANNET',
