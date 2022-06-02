@@ -89,6 +89,10 @@ const kontroll_begrunnelser = [
     term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet oppgitt for avslag eller art 16.1'
   },
   {
+    kode: 'INGEN_ARBEIDSGIVERE',
+    term: 'Finner ingen arbeidsgivere. Hent registeropplysninger'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
