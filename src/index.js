@@ -30,6 +30,7 @@ const { representerer } = require('./representerer');
 const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
+const { sakstemaer } = require('./sakstemaer');
 const { territoriekoder } = require('./territoriekoder');
 const { trygdeavgift_typer } = require('./trygdeavgift_typer');
 const { trygdedekninger } = require('./trygdedekninger');
@@ -72,6 +73,7 @@ const KodeTermObjects = {
   saerligeavgiftsgrupper,
   saksstatuser,
   sakstyper,
+  sakstemaer,
   territoriekoder,
   trygdeavgift_typer,
   trygdedekninger,
