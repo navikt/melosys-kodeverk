@@ -4,6 +4,10 @@
  */
 const behandlingstyper = [
   {
+    kode: 'FØRSTEGANG',
+    term: 'Førstegangsbehandling'
+  },
+  {
     kode: 'SOEKNAD',
     term: 'Søknad'
   },
@@ -14,6 +18,10 @@ const behandlingstyper = [
   {
     kode: 'NY_VURDERING',
     term: 'Ny vurdering'
+  },
+  {
+    kode: 'HENVENDELSE',
+    term: 'Henvendelse'
   },
   {
     kode: 'KLAGE',
