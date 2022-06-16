@@ -60,8 +60,16 @@ const behandlingstema = [
     term: 'Arbeid i utlandet'
   },
   {
+    kode: 'REGISTRERING_UNNTAK',
+    term: 'Registrering unntak'
+  },
+  {
     kode: 'YRKESAKTIV',
     term: 'Yrkesaktiv'
+  },
+  {
+    kode: 'PENSJONIST',
+    term: 'Pensjonist/uføretrygdet'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
