@@ -52,12 +52,20 @@ const behandlingstema = [
     term: 'UFM: Henvendelse eller forespørsel'
   },
   {
+    kode: 'FORESPØRSEL_TRYGDEMYNDIGHET',
+    term: 'Forespørsel fra trygdemyndighet'
+  },
+  {
     kode: 'TRYGDETID',
     term: 'MED: Forespørsel om trygdetid'
   },
   {
     kode: 'ARBEID_I_UTLANDET',
     term: 'Arbeid i utlandet'
+  },
+  {
+    kode: 'UNNTAK_MEDLEMSKAP',
+    term: 'Unntak fra medlemskap'
   },
   {
     kode: 'REGISTRERING_UNNTAK',
