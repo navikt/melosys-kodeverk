@@ -5,15 +5,15 @@
 const distribusjonstyper = [
   {
     kode: 'VEDTAK',
-    term: 'Vedtak',
+    term: 'VEDTAK',
   },
   {
     kode: 'VIKTIG',
-    term: 'Viktig',
+    term: 'VIKTIG',
   },
   {
     kode: 'ANNET',
-    term: 'Annet',
+    term: 'ANNET',
   }
 ];
 module.exports.distribusjonstyper = distribusjonstyper;
