@@ -407,6 +407,9 @@
           "$ref": "#/definitions/kodeverkArray"
         }
       }
+    },
+    "distribusjonstyper": {
+      "$ref": "#/definitions/kodeverkArray"
     }
   }
 }
