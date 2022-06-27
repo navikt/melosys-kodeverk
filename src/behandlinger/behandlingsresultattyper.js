@@ -43,6 +43,14 @@ const behandlingsresultattyper = [
   {
     kode: 'HENLEGGELSE_BORTFALT',
     term: 'Kan ikke behandles i Melosys'
+  },
+  {
+    kode: 'UNNTATT_MEDLEMSKAP',
+    term: 'Unntatt fra medlemskap i folketrygden'
+  },
+  {
+    kode: 'AVSLAG_SØKNAD',
+    term: 'Søknaden er avslått'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
