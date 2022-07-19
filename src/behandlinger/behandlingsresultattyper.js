@@ -51,6 +51,10 @@ const behandlingsresultattyper = [
   {
     kode: 'AVSLAG_SØKNAD',
     term: 'Søknaden er avslått'
+  },
+  {
+    kode: 'UTPEKING_NORGE_AVVIST',
+    term: 'Utpeking av Norge er avvist'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
