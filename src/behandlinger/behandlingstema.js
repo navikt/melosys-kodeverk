@@ -12,6 +12,14 @@ const behandlingstema = [
     term: 'MED: Arbeid eller selvstendig virksomhet i ett land'
   },
   {
+    kode: 'ARBEID_TJENESTEPERSON_ELLER_FLY',
+    term: 'Offentlig tjenesteperson/flyvende personell'
+  },
+  {
+    kode: 'ARBEID_KUN_NORGE',
+    term: 'Arbeid kun i Norge'
+  },
+  {
     kode: 'IKKE_YRKESAKTIV',
     term: 'MED: Ikke yrkesaktiv'
   },
