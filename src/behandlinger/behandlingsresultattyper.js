@@ -26,7 +26,7 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'REGISTRERT_UNNTAK',
-    term: 'Om unntaksperioden har blitt godkjent for registrering',
+    term: 'Unntaksperioden er godkjent',
   },
   {
     kode: 'AVSLAG_MANGLENDE_OPPL',
