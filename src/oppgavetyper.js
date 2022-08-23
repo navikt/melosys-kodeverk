@@ -20,6 +20,10 @@ const oppgavetyper = [
     term: 'Vurder dokument'
   },
   {
+    kode: 'VURD_HENV',
+    term: 'Vurder henvendelse'
+  },
+  {
     kode: 'BEH_SED',
     term: 'Behandle SED'
   }
