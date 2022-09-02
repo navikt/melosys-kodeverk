@@ -55,6 +55,22 @@ const behandlingsresultattyper = [
   {
     kode: 'UTPEKING_NORGE_AVVIST',
     term: 'Utpeking av Norge er avvist'
+  },
+  {
+    kode: 'MEDHOLD',
+    term: 'Medhold på klage'
+  },
+  {
+    kode: 'KLAGEINNSTILLING',
+    term: 'Klageinnstilling er oversendt til klageinstansen'
+  },
+  {
+    kode: 'AVVIST_KLAGE',
+    term: 'Klage er avvist'
+  },
+  {
+    kode: 'OMGJORT',
+    term: 'Vedtak er omgjort (fvl § 35)'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
