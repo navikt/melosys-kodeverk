@@ -26,7 +26,11 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'REGISTRERT_UNNTAK',
-    term: 'Unntaksperioden er godkjent',
+    term: 'Perioden er godkjent',
+  },
+  {
+    kode: 'DELVIS_GODKJENT_UNNTAK',
+    term: 'Perioden er delvis godkjent',
   },
   {
     kode: 'AVSLAG_MANGLENDE_OPPL',
