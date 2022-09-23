@@ -86,6 +86,10 @@ const behandlingstema = [
   {
     kode: 'PENSJONIST',
     term: 'Pensjonist/uføretrygdet'
+  },
+  {
+    kode: 'VIRKSOMHET',
+    term: 'Virksomhet'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
