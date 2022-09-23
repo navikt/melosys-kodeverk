@@ -90,6 +90,6 @@ const behandlingstema = [
   {
     kode: 'VIRKSOMHET',
     term: 'Virksomhet'
-  },
+  }
 ];
 module.exports.behandlingstema = behandlingstema;
