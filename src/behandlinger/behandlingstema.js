@@ -1,15 +1,15 @@
 const behandlingstema = [
   {
     kode: 'UTSENDT_ARBEIDSTAKER',
-    term: 'Utsendt arbeidstaker / skip / direkte til artikkel 16'
+    term: 'MED: Utsendt arbeidstaker / skip / direkte til artikkel 16'
   },
   {
     kode: 'UTSENDT_SELVSTENDIG',
-    term: 'Utsendt selvstendig næringsdrivende / skip / direkte til artikkel 16'
+    term: 'MED: Utsendt selvstendig næringsdrivende / skip / direkte til artikkel 16'
   },
   {
     kode: 'ARBEID_ETT_LAND_ØVRIG',
-    term: 'Arbeid eller selvstendig virksomhet i ett land'
+    term: 'MED: Arbeid eller selvstendig virksomhet i ett land'
   },
   {
     kode: 'ARBEID_TJENESTEPERSON_ELLER_FLY',
@@ -21,43 +21,43 @@ const behandlingstema = [
   },
   {
     kode: 'IKKE_YRKESAKTIV',
-    term: 'Ikke yrkesaktiv'
+    term: 'MED: Ikke yrkesaktiv'
   },
   {
     kode: 'ARBEID_FLERE_LAND',
-    term: 'Arbeid og/eller selvstendig virksomhet i flere land'
+    term: 'MED: Arbeid og/eller selvstendig virksomhet i flere land'
   },
   {
     kode: 'ARBEID_NORGE_BOSATT_ANNET_LAND',
-    term: 'Arbeid eller selvstendig virksomhet i Norge - bosatt i et annet land'
+    term: 'MED: Arbeid eller selvstendig virksomhet i Norge - bosatt i et annet land'
   },
   {
     kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING',
-    term: 'Melding om utstasjonering – A009'
+    term: 'UFM: Melding om utstasjonering – A009'
   },
   {
     kode: 'REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE',
-    term: 'Melding om lovvalg – A010'
+    term: 'UFM: Melding om lovvalg – A010'
   },
   {
     kode: 'BESLUTNING_LOVVALG_NORGE',
-    term: 'Beslutning om norsk lovvalg – A003'
+    term: 'MED: Beslutning om norsk lovvalg – A003'
   },
   {
     kode: 'BESLUTNING_LOVVALG_ANNET_LAND',
-    term: 'Beslutning om lovvalg i et annet land – A003'
+    term: 'UFM: Beslutning om lovvalg i et annet land – A003'
   },
   {
     kode: 'ANMODNING_OM_UNNTAK_HOVEDREGEL',
-    term: 'Anmodning om unntak – A001'
+    term: 'UFM: Anmodning om unntak – A001'
   },
   {
     kode: 'ØVRIGE_SED_MED',
-    term: 'Henvendelse eller forespørsel'
+    term: 'MED: Henvendelse eller forespørsel'
   },
   {
     kode: 'ØVRIGE_SED_UFM',
-    term: 'Henvendelse eller forespørsel'
+    term: 'UFM: Henvendelse eller forespørsel'
   },
   {
     kode: 'FORESPØRSEL_TRYGDEMYNDIGHET',
@@ -65,7 +65,7 @@ const behandlingstema = [
   },
   {
     kode: 'TRYGDETID',
-    term: 'Forespørsel om trygdetid'
+    term: 'MED: Forespørsel om trygdetid'
   },
   {
     kode: 'ARBEID_I_UTLANDET',
