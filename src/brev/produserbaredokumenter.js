@@ -105,7 +105,11 @@ const produserbaredokumenter = [
   {
     kode: 'GENERELT_FRITEKSTBREV_VIRKSOMHET',
     term: 'Fritekstbrev til virksomhet'
-  }
+  },
+  {
+    kode: 'GENERELT_FRITEKSTVEDLEGG',
+    term: 'Fritekstvedlegg'
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
