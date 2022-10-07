@@ -73,7 +73,7 @@ const behandlingstema = [
   },
   {
     kode: 'UNNTAK_MEDLEMSKAP',
-    term: 'Unntak fra medlemskap'
+    term: 'Søknad om unntak fra folketrygdloven'
   },
   {
     kode: 'REGISTRERING_UNNTAK',
