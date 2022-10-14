@@ -82,6 +82,6 @@ const trygdeavtale_myndighetsland = [
   {
     kode: 'US',
     term: 'USA',
-  },
+  }
 ];
 module.exports.trygdeavtale_myndighetsland = trygdeavtale_myndighetsland;
