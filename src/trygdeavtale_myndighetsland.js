@@ -36,6 +36,10 @@ const trygdeavtale_myndighetsland = [
     term: 'Storbritannia',
   },
   {
+    kode: 'GR',
+    term: 'Hellas',
+  },
+  {
     kode: 'HR',
     term: 'Kroatia',
   },
@@ -58,6 +62,10 @@ const trygdeavtale_myndighetsland = [
   {
     kode: 'JE',
     term: 'Jersey'
+  },
+  {
+    kode: 'LU',
+    term: 'Luxembourg',
   },
   {
     kode: 'ME',
