@@ -24,16 +24,24 @@ const avtaleland = [
     term: 'Frankrike',
   },
   {
-    kode: 'IN',
-    term: 'India',
-  },
-  {
     kode: 'IL',
     term: 'Israel',
   },
   {
+    kode: 'IM',
+    term: 'Isle of Man'
+  },
+  {
+    kode: 'IN',
+    term: 'India',
+  },
+  {
     kode: 'IT',
     term: 'Italia',
+  },
+  {
+    kode: 'JE',
+    term: 'Jersey'
   },
   {
     kode: 'HR',
