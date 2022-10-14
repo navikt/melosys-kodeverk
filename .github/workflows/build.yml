@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3.0.11
         with:
           path: node_modules
           key: v1-yarn-${{ hashFiles('yarn.lock') }}
@@ -43,7 +43,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11.x'
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3.0.11
         with:
           path: ~/.m2
           key: v1-m2build-${{ hashFiles('app.jar') }}
@@ -157,7 +157,7 @@ jobs:
         with:
           name: melosys-kodeverk-java
           path: .
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3.0.11
         with:
           path: ~/.m2
           key: v1-m2release-${{ hashFiles('melosys-internt-kodeverk/pom.xml') }}
