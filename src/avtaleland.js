@@ -20,6 +20,10 @@ const avtaleland = [
     term: 'Chile',
   },
   {
+    kode: 'FR',
+    term: 'Frankrike',
+  },
+  {
     kode: 'IN',
     term: 'India',
   },
@@ -28,24 +32,40 @@ const avtaleland = [
     term: 'Israel',
   },
   {
+    kode: 'IT',
+    term: 'Italia',
+  },
+  {
+    kode: 'HR',
+    term: 'Kroatia',
+  },
+  {
     kode: 'ME',
     term: 'Montenegro',
+  },
+  {
+    kode: 'PT',
+    term: 'Portugal',
+  },
+  {
+    kode: 'CA_QUEBEC',
+    term: 'Quebec',
   },
   {
     kode: 'RS',
     term: 'Serbia',
   },
   {
+    kode: 'SI',
+    term: 'Slovenia',
+  },
+  {
     kode: 'GB',
     term: 'Storbritannia',
   },
   {
-    kode: 'JE',
-    term: 'Jersey'
-  },
-  {
-    kode: 'IM',
-    term: 'Isle of Man'
+    kode: 'CH',
+    term: 'Sveits',
   },
   {
     kode: 'TR',
@@ -54,10 +74,6 @@ const avtaleland = [
   {
     kode: 'US',
     term: 'USA',
-  },
-  {
-    kode: 'CH',
-    term: 'Sveits',
   },
 ];
 module.exports.avtaleland = avtaleland;
