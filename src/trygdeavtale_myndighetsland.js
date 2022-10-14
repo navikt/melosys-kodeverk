@@ -16,7 +16,7 @@ const trygdeavtale_myndighetsland = [
     term: 'Canada',
   },
   {
-    kode: 'CA-QC',
+    kode: 'CA_QC',
     term: 'Quebec',
   },
   {
