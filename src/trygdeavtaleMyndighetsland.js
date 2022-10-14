@@ -16,12 +16,28 @@ const trygdeavtaleMyndighetsland = [
     term: 'Canada',
   },
   {
+    kode: 'CA-QC',
+    term: 'Quebec',
+  },
+  {
+    kode: 'CH',
+    term: 'Sveits',
+  },
+  {
     kode: 'CL',
     term: 'Chile',
   },
   {
     kode: 'FR',
     term: 'Frankrike',
+  },
+  {
+    kode: 'GB',
+    term: 'Storbritannia',
+  },
+  {
+    kode: 'HR',
+    term: 'Kroatia',
   },
   {
     kode: 'IL',
@@ -44,10 +60,6 @@ const trygdeavtaleMyndighetsland = [
     term: 'Jersey'
   },
   {
-    kode: 'HR',
-    term: 'Kroatia',
-  },
-  {
     kode: 'ME',
     term: 'Montenegro',
   },
@@ -56,24 +68,12 @@ const trygdeavtaleMyndighetsland = [
     term: 'Portugal',
   },
   {
-    kode: 'CA_QUEBEC',
-    term: 'Quebec',
-  },
-  {
     kode: 'RS',
     term: 'Serbia',
   },
   {
     kode: 'SI',
     term: 'Slovenia',
-  },
-  {
-    kode: 'GB',
-    term: 'Storbritannia',
-  },
-  {
-    kode: 'CH',
-    term: 'Sveits',
   },
   {
     kode: 'TR',
