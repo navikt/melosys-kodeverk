@@ -6,7 +6,7 @@ const { aktoersroller } = require('./aktoerroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
 const { avsendertyper } = require('./avsendertyper');
-const { trygdeavtaleMyndighetsland } = require('./trygdeavtaleMyndighetsland');
+const { trygdeavtale_myndighetsland } = require('./trygdeavtale_myndighetsland');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
 const { behandlingsgrunnlagtyper } = require('./behandlingsgrunnlagtyper.js');
@@ -49,7 +49,7 @@ const KodeTermObjects = {
   anmodningsperiodesvartyper,
   avklartefaktatyper,
   avsendertyper,
-  trygdeavtaleMyndighetsland,
+  trygdeavtale_myndighetsland,
   behandlinger,
   behandlingsgrunnlagtyper,
   begrunnelser,
