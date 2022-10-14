@@ -43,7 +43,7 @@ avklartefaktatyper:
     term: null
   - kode: ARBEIDSGIVERS_FORRETNINGSSTED
     term: null
-avtaleland:
+trygdeavtaleMyndighetsland:
   - kode: AU
     term: Australia
   - kode: BA

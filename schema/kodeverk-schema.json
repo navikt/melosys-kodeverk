@@ -54,7 +54,7 @@
     "anmodningsperiodesvartyper",
     "avklartefaktatyper",
     "avsendertyper",
-    "avtaleland",
+    "trygdeavtaleMyndighetsland",
     "behandlinger",
     "begrunnelser",
     "brev",
@@ -95,7 +95,7 @@
     "avsendertyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "avtaleland": {
+    "trygdeavtaleMyndighetsland": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "behandlinger": {

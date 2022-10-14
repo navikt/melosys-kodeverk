@@ -1,8 +1,8 @@
 /**
- * Kodeverk/avtaleland
+ * Kodeverk/trygdeavtaleMyndighetsland
  * @module
  */
-const avtaleland = [
+const trygdeavtaleMyndighetsland = [
   {
     kode: 'AU',
     term: 'Australia',
@@ -84,4 +84,4 @@ const avtaleland = [
     term: 'USA',
   },
 ];
-module.exports.avtaleland = avtaleland;
+module.exports.trygdeavtaleMyndighetsland = trygdeavtaleMyndighetsland;
