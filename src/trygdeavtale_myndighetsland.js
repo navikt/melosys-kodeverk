@@ -16,14 +16,6 @@ const trygdeavtale_myndighetsland = [
     term: 'Canada',
   },
   {
-    kode: 'CA_QC',
-    term: 'Quebec',
-  },
-  {
-    kode: 'CH',
-    term: 'Sveits',
-  },
-  {
     kode: 'CL',
     term: 'Chile',
   },
@@ -32,12 +24,12 @@ const trygdeavtale_myndighetsland = [
     term: 'Frankrike',
   },
   {
-    kode: 'GB',
-    term: 'Storbritannia',
+    kode: 'GR',
+    term: 'Hellas',
   },
   {
-    kode: 'HR',
-    term: 'Kroatia',
+    kode: 'IN',
+    term: 'India',
   },
   {
     kode: 'IL',
@@ -48,10 +40,6 @@ const trygdeavtale_myndighetsland = [
     term: 'Isle of Man'
   },
   {
-    kode: 'IN',
-    term: 'India',
-  },
-  {
     kode: 'IT',
     term: 'Italia',
   },
@@ -60,12 +48,28 @@ const trygdeavtale_myndighetsland = [
     term: 'Jersey'
   },
   {
+    kode: 'HR',
+    term: 'Kroatia',
+  },
+  {
+    kode: 'LU',
+    term: 'Luxembourg',
+  },
+  {
     kode: 'ME',
     term: 'Montenegro',
   },
   {
+    kode: 'NL',
+    term: 'Nederland',
+  },
+  {
     kode: 'PT',
     term: 'Portugal',
+  },
+  {
+    kode: 'CA_QC',
+    term: 'Quebec',
   },
   {
     kode: 'RS',
@@ -76,12 +80,28 @@ const trygdeavtale_myndighetsland = [
     term: 'Slovenia',
   },
   {
+    kode: 'GB',
+    term: 'Storbritannia',
+  },
+  {
+    kode: 'CH',
+    term: 'Sveits',
+  },
+  {
     kode: 'TR',
     term: 'Tyrkia',
   },
   {
+    kode: 'HU',
+    term: 'Ungarn',
+  },
+  {
     kode: 'US',
     term: 'USA',
+  },
+  {
+    kode: 'AT',
+    term: 'Østerrike',
   }
 ];
 module.exports.trygdeavtale_myndighetsland = trygdeavtale_myndighetsland;
