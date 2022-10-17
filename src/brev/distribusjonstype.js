@@ -1,9 +1,9 @@
 /**
- * Kodeverk/brevtype
+ * Kodeverk/distribusjonstype
  * ref: https://confluence.adeo.no/display/BOA/RDIST002-1.+DistribuerJournalpost+-+For+Konsumenter#RDIST0021.DistribuerJournalpostForKonsumenter-Distribusjonstype
  * @module
  */
-const brevtype = [
+const distribusjonstype = [
   {
     kode: 'VEDTAK',
     term: 'Vedtak',
@@ -18,4 +18,4 @@ const brevtype = [
   },
 ]
 
-module.exports.brevtype = brevtype;
+module.exports.distribusjonstype = distribusjonstype;

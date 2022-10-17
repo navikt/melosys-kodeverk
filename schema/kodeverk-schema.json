@@ -274,13 +274,13 @@
       "additionalProperties": false,
       "required": [
         "produserbaredokumenter",
-        "brevtype"
+        "distribusjonstype"
       ],
       "properties": {
         "produserbaredokumenter": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "brevtype": {
+        "distribusjonstype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }

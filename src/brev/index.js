@@ -1,9 +1,9 @@
 const { produserbaredokumenter } = require('./produserbaredokumenter');
-const { brevtype } = require('./brevtype');
+const { distribusjonstype } = require('./distribusjonstype');
 
 const brev = {
   produserbaredokumenter,
-  brevtype
+  distribusjonstype
 };
 
 module.exports.brev = brev;
