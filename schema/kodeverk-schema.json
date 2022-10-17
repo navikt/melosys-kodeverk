@@ -273,10 +273,14 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "produserbaredokumenter"
+        "produserbaredokumenter",
+        "brevtype"
       ],
       "properties": {
         "produserbaredokumenter": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "brevtype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
