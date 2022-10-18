@@ -23,5 +23,6 @@ generator:
     - Tilleggsbestemmelser_883_2004
     - Overgangsregelbestemmelser
     - Lovvalgbestemmelser_trygdeavtale_uk
+    - Lovvalgbestemmelser_trygdeavtale_usa
   pakke-navn: no.nav.melosys.domain.kodeverk
 
