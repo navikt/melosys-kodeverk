@@ -68,12 +68,12 @@ const trygdeavtale_myndighetsland = [
     term: 'Nederland',
   },
   {
-    kode: 'PT',
-    term: 'Portugal',
-  },
-  {
     kode: 'PO',
     term: 'Polen',
+  },
+  {
+    kode: 'PT',
+    term: 'Portugal',
   },
   {
     kode: 'CA_QC',
