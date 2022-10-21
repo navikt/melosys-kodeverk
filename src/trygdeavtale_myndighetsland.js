@@ -52,6 +52,10 @@ const trygdeavtale_myndighetsland = [
     term: 'Kroatia',
   },
   {
+    kode: 'LV',
+    term: 'Latvia'
+  },
+  {
     kode: 'LU',
     term: 'Luxembourg',
   },
@@ -68,8 +72,16 @@ const trygdeavtale_myndighetsland = [
     term: 'Portugal',
   },
   {
+    kode: 'PO',
+    term: 'Polen',
+  },
+  {
     kode: 'CA_QC',
     term: 'Quebec',
+  },
+  {
+    kode: 'RO',
+    term: 'Romania'
   },
   {
     kode: 'RS',
