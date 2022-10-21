@@ -63,6 +63,7 @@
     "forespoerseltyper",
     "innretningstyper",
     "innvilgelsesResultat",
+    "land_iso2",
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
@@ -301,6 +302,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "innvilgelsesResultat": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "land_iso2": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "landkoder": {
