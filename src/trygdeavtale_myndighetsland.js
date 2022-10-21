@@ -68,7 +68,7 @@ const trygdeavtale_myndighetsland = [
     term: 'Nederland',
   },
   {
-    kode: 'PO',
+    kode: 'PL',
     term: 'Polen',
   },
   {
