@@ -17,6 +17,7 @@ const { forespoerseltyper } = require('./forespoerseltyper');
 const { folketrygdloven_kap2_bestemmelser } = require('./folketrygdloven_kap2_bestemmelser');
 const { innretningstyper } = require('./innretningstyper');
 const { innvilgelsesResultat } = require('./innvilgelsesResultat');
+const {land_iso2} = require('./land_iso2');
 const { landkoder } = require('./landkoder');
 const { loenn_forhold } = require('./loenn_forhold');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
@@ -60,6 +61,7 @@ const KodeTermObjects = {
   folketrygdloven_kap2_bestemmelser,
   innretningstyper,
   innvilgelsesResultat,
+  land_iso2,
   landkoder,
   loenn_forhold,
   lovvalgsbestemmelser,
