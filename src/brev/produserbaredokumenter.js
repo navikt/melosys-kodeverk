@@ -83,6 +83,10 @@ const produserbaredokumenter = [
     kode: 'STORBRITANNIA',
     term: 'Vedtaksbrev innvilgelse og Attest for NO/UK 1'
   },
+  {
+    kode: 'TRYGDEAVTALE_US',
+    term: 'Vedtaksbrev innvilgelse og Attest for N/USA 2'
+  },
   // Fjern etter bytte til STORBRITANNIA
   // ----
   {
