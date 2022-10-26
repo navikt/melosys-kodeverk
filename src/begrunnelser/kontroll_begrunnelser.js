@@ -107,6 +107,6 @@ const kontroll_begrunnelser = [
   {
     kode: 'ANNET',
     term: 'Fritekstfelt'
-  },
+  }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
