@@ -85,6 +85,10 @@ const kontroll_begrunnelser = [
     term: 'OBS: Perioden er mer enn tre år!'
   },
   {
+    kode: 'MER_ENN_FEM_ÅR',
+    term: 'OBS: Perioden er mer enn fem år!'
+  },
+  {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
