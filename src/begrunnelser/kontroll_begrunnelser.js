@@ -77,24 +77,12 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
-    kode: 'MER_ENN_12_MD',
-    term: 'OBS: Perioden er mer enn 12 måneder!'
-  },
-  {
     kode: 'MER_ENN_TRE_ÅR',
     term: 'OBS: Perioden er mer enn tre år!'
   },
   {
-    kode: 'MER_ENN_FEM_ÅR',
-    term: 'OBS: Perioden er mer enn fem år!'
-  },
-  {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
-  },
-  {
-    kode: 'MANGLER_VIRKSOMHET',
-    term: 'Det er ingen virksomhet registret. Du må legge til virksomhet under "Arbeidsgiver/virksomhet"'
   },
   {
     kode: 'IKKE_KUN_EN_VIRKSOMHET',
