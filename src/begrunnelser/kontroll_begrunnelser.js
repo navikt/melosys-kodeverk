@@ -94,6 +94,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLER_VIRKSOMHET',
+    /* eslint-disable-next-line no-useless-escape */
     term: 'Det er ingen virksomhet registret. Du må legge til virksomhet under \"Arbeidsgiver/virksomhet\"'
   },
   {
