@@ -94,7 +94,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLER_VIRKSOMHET',
-    term: 'Det er ingen virksomhet registret. Du må legge til virksomhet under Arbeidsgiver/virksomhet'
+    term: 'Det er ingen virksomhet registrert. Du må legge til virksomhet under Arbeidsgiver/virksomhet'
   },
   {
     kode: 'IKKE_KUN_EN_VIRKSOMHET',
