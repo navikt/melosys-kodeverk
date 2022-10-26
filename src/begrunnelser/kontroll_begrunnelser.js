@@ -77,6 +77,10 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
+    kode: 'MER_ENN_12_MD',
+    term: 'OBS: Perioden er mer enn 12 måneder!'
+  },
+  {
     kode: 'MER_ENN_TRE_ÅR',
     term: 'OBS: Perioden er mer enn tre år!'
   },
