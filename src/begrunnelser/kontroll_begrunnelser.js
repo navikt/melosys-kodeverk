@@ -93,6 +93,10 @@ const kontroll_begrunnelser = [
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
   {
+    kode: 'MANGLER_VIRKSOMHET',
+    term: 'Det er ingen virksomhet registret. Du må legge til virksomhet under "Arbeidsgiver/virksomhet"'
+  },
+  {
     kode: 'IKKE_KUN_EN_VIRKSOMHET',
     term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet oppgitt for avslag eller art 16.1'
   },
