@@ -78,15 +78,15 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MER_ENN_12_MD',
-    term: 'OBS: Perioden er mer enn 12 måneder!'
+    term: 'Perioden er mer enn 12 måneder!'
   },
   {
     kode: 'MER_ENN_TRE_ÅR',
-    term: 'OBS: Perioden er mer enn tre år!'
+    term: 'Perioden er mer enn tre år!'
   },
   {
     kode: 'MER_ENN_FEM_ÅR',
-    term: 'OBS: Perioden er mer enn fem år!'
+    term: 'Perioden er mer enn fem år!'
   },
   {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
