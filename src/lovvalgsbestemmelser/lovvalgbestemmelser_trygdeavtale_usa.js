@@ -9,7 +9,7 @@ const lovvalgbestemmelser_trygdeavtale_usa = [
   },
   {
     kode: 'USA_ART5_4',
-    term: 'Selvstendignæringsdrivende artikkel 5 nr. 4',
+    term: 'Selvstendig næringsdrivende - artikkel 5 nr. 4',
   },
   {
     kode: 'USA_ART5_5',
