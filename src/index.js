@@ -9,7 +9,7 @@ const { avsendertyper } = require('./avsendertyper');
 const { trygdeavtale_myndighetsland } = require('./trygdeavtale_myndighetsland');
 const { begrunnelser } = require('./begrunnelser');
 const { behandlinger } = require('./behandlinger');
-const { behandlingsgrunnlagtyper } = require('./behandlingsgrunnlagtyper.js');
+const { mottatteopplysningertyper } = require('./mottatteopplysningertyper.js');
 const { dokumenttyper } = require('./dokumenttyper');
 const { brev } = require('./brev');
 const { finansiering } = require('./finansiering');
@@ -52,7 +52,7 @@ const KodeTermObjects = {
   avsendertyper,
   trygdeavtale_myndighetsland,
   behandlinger,
-  behandlingsgrunnlagtyper,
+  mottatteopplysningertyper,
   begrunnelser,
   brev,
   dokumenttyper,

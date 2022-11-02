@@ -1,8 +1,8 @@
 /**
- * Kodeverk/BehandlingsgrunnlagTyper
+ * Kodeverk/Mottatteopplysningertyper
  * @module
  */
-const behandlingsgrunnlagtyper = [
+const mottatteopplysningertyper = [
   {
     kode: 'SED',
     term: 'SED'
@@ -25,4 +25,4 @@ const behandlingsgrunnlagtyper = [
   }
 ];
 
-module.exports.behandlingsgrunnlagtyper = behandlingsgrunnlagtyper;
+module.exports.mottatteopplysningertyper = mottatteopplysningertyper;
