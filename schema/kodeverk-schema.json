@@ -103,11 +103,15 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "behandlingsaarsaktyper",
         "behandlingsstatus",
         "behandlingstyper",
         "behandlingsresultattyper"
       ],
       "properties": {
+        "behandlingsaarsaktyper": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
         "behandlingsstatus": {
           "$ref": "#/definitions/kodeverkArray"
         },
