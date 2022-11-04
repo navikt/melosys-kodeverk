@@ -80,24 +80,13 @@ const produserbaredokumenter = [
     term: 'Orienteringsbrev om utpeking til et annet land'
   },
   {
-    kode: 'STORBRITANNIA',
+    kode: 'TRYGDEAVTALE_GB',
     term: 'Vedtaksbrev innvilgelse og Attest for NO/UK 1'
   },
   {
     kode: 'TRYGDEAVTALE_US',
     term: 'Vedtaksbrev innvilgelse og Attest for N/USA 2'
   },
-  // Fjern etter bytte til STORBRITANNIA
-  // ----
-  {
-    kode: 'ATTEST_NO_UK_1',
-    term: 'Attest NO/UK 1 - artikkel 6.1, 6.5 og 7.3'
-  },
-  {
-    kode: 'INNVILGELSE_UK',
-    term: 'Vedtaksbrev innvilgelse Storbritannia'
-  },
-  // ----
   {
     kode: 'GENERELT_FRITEKSTBREV_BRUKER',
     term: 'Fritekstbrev til bruker'
