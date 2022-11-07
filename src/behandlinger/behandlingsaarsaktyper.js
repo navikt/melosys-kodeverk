@@ -14,6 +14,10 @@ const behandlingsaarsaktyper = [
   {
     kode: 'ANNET',
     term: 'Annet'
+  },
+  {
+    kode: 'FRITEKST',
+    term: 'Fritekst'
   }
 ];
 
