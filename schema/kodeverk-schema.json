@@ -325,7 +325,8 @@
         "lovvalgbestemmelser_987_2009",
         "tilleggsbestemmelser_883_2004",
         "lovvalgbestemmelser_trygdeavtale_uk",
-        "lovvalgbestemmelser_trygdeavtale_usa"
+        "lovvalgbestemmelser_trygdeavtale_usa",
+        "lovvalgbestemmelser_trygdeavtale_ca"
       ],
       "properties": {
         "lovvalgbestemmelser_883_2004": {
@@ -344,6 +345,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "lovvalgbestemmelser_trygdeavtale_usa": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "lovvalgbestemmelser_trygdeavtale_ca": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
