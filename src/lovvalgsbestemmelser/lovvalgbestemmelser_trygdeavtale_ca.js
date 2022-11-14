@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_usa = [
+const lovvalgbestemmelser_trygdeavtale_ca = [
   {
     kode: 'CA_ART6_2',
     term: 'Selvstendig næringsdrivende - artikkel 6 nr. 2',
