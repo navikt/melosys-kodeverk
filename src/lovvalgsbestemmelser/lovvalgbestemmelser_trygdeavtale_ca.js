@@ -4,12 +4,16 @@ const lovvalgbestemmelser_trygdeavtale_ca = [
         term: 'Selvstendig næringsdrivende - artikkel 6 nr. 2',
     },
     {
+        kode: 'CAN_ART6_2_JF8',
+        term: 'Selvstendig næringsdrivende - arbeid på sokkel (artikkel 6 nr. 2 jf. artikkel 8)',
+    },
+    {
         kode: 'CAN_ART7',
         term: 'Utsendt arbeidstaker - artikkel 7',
     },
     {
-        kode: 'CAN_ART8',
-        term: 'Arbeid på sokkel - artikkel 8',
+        kode: 'CAN_ART7_JF8',
+        term: 'Utsendt arbeidstaker - arbeid på sokkel (artikkel 7 jf. artikkel 8)',
     },
     {
         kode: 'CAN_ART9',
