@@ -89,7 +89,7 @@ const produserbaredokumenter = [
     },
     {
         kode: 'TRYGDEAVTALE_CAN',
-        term: 'Vedtaksbrev innvilgelse og Attest for NO/CAN 2'
+        term: 'Vedtaksbrev innvilgelse og Attest for NO/CAN 1'
     },
     {
         kode: 'GENERELT_FRITEKSTBREV_BRUKER',
