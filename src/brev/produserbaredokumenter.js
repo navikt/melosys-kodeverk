@@ -108,8 +108,8 @@ const produserbaredokumenter = [
     term: 'Fritekstvedlegg'
   },
   {
-    kode: 'ENGELSK_FRITEKSTBREV',
-    term: 'Engelsk fritekstbrev'
+    kode: 'UTENLANDSK_TRYGDEMYNDIGHET_FRITEKSTBREV',
+    term: 'Fritekstbrev'
   },
 ];
 
