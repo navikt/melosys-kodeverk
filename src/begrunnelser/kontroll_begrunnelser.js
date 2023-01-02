@@ -105,6 +105,10 @@ const kontroll_begrunnelser = [
     term: 'Finner ingen arbeidsgivere. Hent registeropplysninger'
   },
   {
+    kode: 'OVERGANGSREGEL_VALGT',
+    term: 'Overgangsregel valgt. Manuell behandling kreves'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
