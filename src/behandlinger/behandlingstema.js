@@ -8,10 +8,6 @@ const behandlingstema = [
     term: 'Utsendt selvstendig næringsdrivende / skip / direkte til artikkel 16'
   },
   {
-    kode: 'ARBEID_ETT_LAND_ØVRIG',
-    term: 'Arbeid eller selvstendig virksomhet i ett land'
-  },
-  {
     kode: 'ARBEID_TJENESTEPERSON_ELLER_FLY',
     term: 'Offentlig tjenesteperson/flyvende personell'
   },
