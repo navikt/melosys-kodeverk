@@ -1,6 +1,6 @@
 {
   "name": "@navikt/melosys-kodeverk",
-  "version": "5.15.157",
+  "version": "5.15.158",
   "description": "Dictionary of kode/term objects for use with associated melosys projects",
   "main": "./lib/index.js",
   "scripts": {
