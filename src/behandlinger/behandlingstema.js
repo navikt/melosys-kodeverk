@@ -49,7 +49,7 @@ const behandlingstema = [
   },
   {
     kode: 'ANMODNING_OM_UNNTAK_HOVEDREGEL',
-    term: 'Anmodning om unntak – A001'
+    term: 'Anmodning om unntak'
   },
   {
     kode: 'ØVRIGE_SED_MED',
