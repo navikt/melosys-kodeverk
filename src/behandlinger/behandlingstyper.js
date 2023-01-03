@@ -8,14 +8,6 @@ const behandlingstyper = [
     term: 'Førstegangsbehandling'
   },
   {
-    kode: 'SOEKNAD',
-    term: 'Søknad'
-  },
-  {
-    kode: 'SED',
-    term: 'SED'
-  },
-  {
     kode: 'NY_VURDERING',
     term: 'Ny vurdering'
   },
@@ -26,10 +18,6 @@ const behandlingstyper = [
   {
     kode: 'KLAGE',
     term: 'Klage'
-  },
-  {
-    kode: 'ANKE',
-    term: 'Anke'
   },
   {
     kode: 'ENDRET_PERIODE',
