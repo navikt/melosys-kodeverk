@@ -48,14 +48,6 @@ const behandlingstema = [
     term: 'Anmodning om unntak'
   },
   {
-    kode: 'ØVRIGE_SED_MED',
-    term: 'Henvendelse eller forespørsel'
-  },
-  {
-    kode: 'ØVRIGE_SED_UFM',
-    term: 'Henvendelse eller forespørsel'
-  },
-  {
     kode: 'FORESPØRSEL_TRYGDEMYNDIGHET',
     term: 'Forespørsel fra trygdemyndighet'
   },
