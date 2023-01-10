@@ -26,5 +26,6 @@ generator:
     - Lovvalgbestemmelser_trygdeavtale_usa
     - Lovvalgbestemmelser_trygdeavtale_ca
     - Tilleggsbestemmelser_trygdeavtale_ca
+    - Lovvalgbestemmelser_trygdeavtale_au
   pakke-navn: no.nav.melosys.domain.kodeverk
 
