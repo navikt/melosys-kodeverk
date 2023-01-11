@@ -92,6 +92,10 @@ const produserbaredokumenter = [
     term: 'Vedtaksbrev innvilgelse og Attest for NO/CAN 1'
   },
   {
+    kode: 'TRYGDEAVTALE_AU',
+    term: 'Vedtaksbrev innvilgelse og Attest for NO/AUS 101'
+  },
+  {
     kode: 'GENERELT_FRITEKSTBREV_BRUKER',
     term: 'Fritekstbrev til bruker'
   },
