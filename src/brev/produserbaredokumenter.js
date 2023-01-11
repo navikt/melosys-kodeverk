@@ -111,6 +111,10 @@ const produserbaredokumenter = [
     kode: 'UTENLANDSK_TRYGDEMYNDIGHET_FRITEKSTBREV',
     term: 'Fritekstbrev'
   },
+  {
+    kode: 'FRITEKSTBREV',
+    term: 'Fritekstbrev'
+  },
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
