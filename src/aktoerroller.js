@@ -25,6 +25,10 @@ const aktoersroller = [
     term: 'Representant trygdeavgift'
   },
   {
+    kode: 'OFFENTLIG_ETAT',
+    term: 'Offentlig etat'
+  },
+  {
     kode: 'VIRKSOMHET',
     term: 'Virksomhet'
   }
