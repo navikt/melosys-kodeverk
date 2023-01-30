@@ -21,7 +21,7 @@ const mottakerroller = [
   },
   {
     kode: 'NORSK_MYNDIGHET',
-    term: 'Andre offentlige etater'
+    term: 'Norsk myndighet'
   },
 ];
 module.exports.mottakerroller = mottakerroller;
