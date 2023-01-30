@@ -67,6 +67,7 @@
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
+    "mottakerroller",
     "flyvningstyper",
     "medlemskapstyper",
     "mottaksretning",
@@ -361,6 +362,9 @@
       }
     },
     "maritimtyper":   {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "mottakerroller":   {
       "$ref": "#/definitions/kodeverkArray"
     },
     "flyvningstyper":   {
