@@ -22,6 +22,7 @@ const { landkoder } = require('./landkoder');
 const { loenn_forhold } = require('./loenn_forhold');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
+const { mottakerroller } = require('./mottakerroller');
 const { flyvningstyper } = require('./flyvningstyper');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
@@ -66,6 +67,7 @@ const KodeTermObjects = {
   loenn_forhold,
   lovvalgsbestemmelser,
   maritimtyper,
+  mottakerroller,
   flyvningstyper,
   medlemskapstyper,
   mottaksretning,
