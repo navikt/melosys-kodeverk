@@ -1,15 +1,19 @@
 const mottakerroller = [
   {
-    kode: 'BRUKER_ELLER_BRUKERS_FULLMEKTIG',
-    term: 'Bruker eller brukers fullmektig'
+    kode: 'BRUKER',
+    term: 'Bruker'
   },
   {
     kode: 'VIRKSOMHET',
     term: 'Virksomheten saken er tilknyttet'
   },
   {
-    kode: 'ARBEIDSGIVER_ELLER_ARBEIDSGIVERS_FULLMEKTIG',
-    term: 'Arbeidsgiver eller arbeidsgivers fullmektig'
+    kode: 'ARBEIDSGIVER',
+    term: 'Arbeidsgiver'
+  },
+  {
+    kode: 'REPRESENTANT',
+    term: 'Fullmektig'
   },
   {
     kode: 'ANNEN_ORGANISASJON',
