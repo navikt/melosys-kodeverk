@@ -5,7 +5,7 @@ const mottakerroller = [
   },
   {
     kode: 'VIRKSOMHET',
-    term: 'Virksomheten saken er tilknyttet'
+    term: 'Virksomheten'
   },
   {
     kode: 'ARBEIDSGIVER',
@@ -21,7 +21,7 @@ const mottakerroller = [
   },
   {
     kode: 'UTENLANDSK_TRYGDEMYNDIGHET',
-    term: 'Utenlandsk trygdemyndighet i avtaleland'
+    term: 'Utenlandsk trygdemyndighet'
   },
   {
     kode: 'NORSK_MYNDIGHET',
