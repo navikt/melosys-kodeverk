@@ -1,15 +1,19 @@
 const mottakerroller = [
   {
-    kode: 'BRUKER_ELLER_BRUKERS_FULLMEKTIG',
-    term: 'Bruker eller brukers fullmektig'
+    kode: 'BRUKER',
+    term: 'Bruker'
   },
   {
     kode: 'VIRKSOMHET',
-    term: 'Virksomheten saken er tilknyttet'
+    term: 'Virksomhet'
   },
   {
-    kode: 'ARBEIDSGIVER_ELLER_ARBEIDSGIVERS_FULLMEKTIG',
-    term: 'Arbeidsgiver eller arbeidsgivers fullmektig'
+    kode: 'ARBEIDSGIVER',
+    term: 'Arbeidsgiver'
+  },
+  {
+    kode: 'FULLMEKTIG',
+    term: 'Fullmektig/Representant'
   },
   {
     kode: 'ANNEN_ORGANISASJON',
@@ -17,7 +21,7 @@ const mottakerroller = [
   },
   {
     kode: 'UTENLANDSK_TRYGDEMYNDIGHET',
-    term: 'Utenlandsk trygdemyndighet i avtaleland'
+    term: 'Utenlandsk trygdemyndighet'
   },
   {
     kode: 'NORSK_MYNDIGHET',
