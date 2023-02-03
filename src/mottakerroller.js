@@ -12,8 +12,8 @@ const mottakerroller = [
     term: 'Arbeidsgiver'
   },
   {
-    kode: 'REPRESENTANT',
-    term: 'Fullmektig'
+    kode: 'FULLMEKTIG',
+    term: 'Fullmektig/Representant'
   },
   {
     kode: 'ANNEN_ORGANISASJON',
