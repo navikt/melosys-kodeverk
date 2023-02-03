@@ -5,7 +5,7 @@ const mottakerroller = [
   },
   {
     kode: 'VIRKSOMHET',
-    term: 'Virksomheten'
+    term: 'Virksomhet'
   },
   {
     kode: 'ARBEIDSGIVER',
