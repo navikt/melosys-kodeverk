@@ -40,7 +40,6 @@ const { vilkaar } = require('./vilkaar');
 const { vurderingsutfall_trygdeavgift_norsk_inntekt } = require('./vurderingsutfall_trygdeavgift_norsk_inntekt');
 const { vurderingsutfall_trygdeavgift_utenlandsk_inntekt } = require('./vurderingsutfall_trygdeavgift_utenlandsk_inntekt');
 const { yrker } = require('./yrker');
-const { distribusjonstyper } = require('./distribusjonstyper');
 
 const Transform  = require('./transform');
 
@@ -83,7 +82,6 @@ const KodeTermObjects = {
   vurderingsutfall_trygdeavgift_norsk_inntekt,
   vurderingsutfall_trygdeavgift_utenlandsk_inntekt,
   yrker,
-  distribusjonstyper
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
