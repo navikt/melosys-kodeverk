@@ -62,6 +62,10 @@ const behandlingstema = [
   {
     kode: 'YRKESAKTIV',
     term: 'Yrkesaktiv'
+  },
+  {
+    kode: 'A1_ANMODNING_OM_UNNTAK_PAPIR',
+    term: 'A1 / Anmodning om unntak på papir'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
