@@ -26,7 +26,11 @@ const behandlingsresultattyper = [
   },
   {
     kode: 'REGISTRERT_UNNTAK',
-    term: 'Om unntaksperioden har blitt godkjent for registrering',
+    term: 'Unntaksperioden er godkjent',
+  },
+  {
+    kode: 'DELVIS_GODKJENT_UNNTAK',
+    term: 'Unntaksperioden er delvis godkjent',
   },
   {
     kode: 'AVSLAG_MANGLENDE_OPPL',
@@ -43,6 +47,34 @@ const behandlingsresultattyper = [
   {
     kode: 'HENLEGGELSE_BORTFALT',
     term: 'Kan ikke behandles i Melosys'
+  },
+  {
+    kode: 'UNNTATT_MEDLEMSKAP',
+    term: 'Unntatt fra medlemskap i folketrygden'
+  },
+  {
+    kode: 'AVSLAG_SØKNAD',
+    term: 'Søknaden er avslått'
+  },
+  {
+    kode: 'UTPEKING_NORGE_AVVIST',
+    term: 'Utpeking av Norge er avvist'
+  },
+  {
+    kode: 'MEDHOLD',
+    term: 'Medhold på klage'
+  },
+  {
+    kode: 'KLAGEINNSTILLING',
+    term: 'Klageinnstilling er oversendt til klageinstansen'
+  },
+  {
+    kode: 'AVVIST_KLAGE',
+    term: 'Klage er avvist'
+  },
+  {
+    kode: 'OMGJORT',
+    term: 'Vedtak er omgjort (fvl § 35)'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;

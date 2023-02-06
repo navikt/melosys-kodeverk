@@ -4,24 +4,20 @@
  */
 const behandlingstyper = [
   {
-    kode: 'SOEKNAD',
-    term: 'Søknad'
-  },
-  {
-    kode: 'SED',
-    term: 'SED'
+    kode: 'FØRSTEGANG',
+    term: 'Førstegangsbehandling'
   },
   {
     kode: 'NY_VURDERING',
     term: 'Ny vurdering'
   },
   {
-    kode: 'KLAGE',
-    term: 'Klage'
+    kode: 'HENVENDELSE',
+    term: 'Henvendelse'
   },
   {
-    kode: 'ANKE',
-    term: 'Anke'
+    kode: 'KLAGE',
+    term: 'Klage'
   },
   {
     kode: 'ENDRET_PERIODE',

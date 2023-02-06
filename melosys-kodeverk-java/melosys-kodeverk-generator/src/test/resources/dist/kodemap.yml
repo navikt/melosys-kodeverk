@@ -43,7 +43,7 @@ avklartefaktatyper:
     term: null
   - kode: ARBEIDSGIVERS_FORRETNINGSSTED
     term: null
-avtaleland:
+trygdeavtale_myndighetsland:
   - kode: AU
     term: Australia
   - kode: BA
@@ -85,7 +85,7 @@ behandlinger:
     - kode: IKKE_FASTSATT
       term: Ikke fastsatt
     - kode: REGISTRERT_UNNTAK
-      term: Om unntaksperioden har blitt godkjent for registrering
+      term: Unntaksperioden er godkjent
     - kode: AVSLAG_MANGLENDE_OPPL
       term: Avslått pga manglende opplysninger
     - kode: MEDLEM_I_FOLKETRYGDEN

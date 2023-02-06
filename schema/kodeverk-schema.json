@@ -54,7 +54,7 @@
     "anmodningsperiodesvartyper",
     "avklartefaktatyper",
     "avsendertyper",
-    "avtaleland",
+    "trygdeavtale_myndighetsland",
     "behandlinger",
     "begrunnelser",
     "brev",
@@ -63,9 +63,11 @@
     "forespoerseltyper",
     "innretningstyper",
     "innvilgelsesResultat",
+    "land_iso2",
     "landkoder",
     "lovvalgsbestemmelser",
     "maritimtyper",
+    "mottakerroller",
     "flyvningstyper",
     "medlemskapstyper",
     "mottaksretning",
@@ -74,6 +76,7 @@
     "representerer",
     "saksstatuser",
     "sakstyper",
+    "sakstemaer",
     "territoriekoder",
     "trygdedekninger",
     "utfallregistreringunntak",
@@ -94,18 +97,22 @@
     "avsendertyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "avtaleland": {
+    "trygdeavtale_myndighetsland": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "behandlinger": {
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "behandlingsaarsaktyper",
         "behandlingsstatus",
         "behandlingstyper",
         "behandlingsresultattyper"
       ],
       "properties": {
+        "behandlingsaarsaktyper": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
         "behandlingsstatus": {
           "$ref": "#/definitions/kodeverkArray"
         },
@@ -120,7 +127,7 @@
         }
       }
     },
-    "behandlingsgrunnlagtyper": {
+    "mottatteopplysningertyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "begrunnelser": {
@@ -272,10 +279,14 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "produserbaredokumenter"
+        "produserbaredokumenter",
+        "distribusjonstype"
       ],
       "properties": {
         "produserbaredokumenter": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "distribusjonstype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
@@ -298,6 +309,9 @@
     "innvilgelsesResultat": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "land_iso2": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "landkoder": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -311,7 +325,11 @@
         "lovvalgbestemmelser_883_2004",
         "lovvalgbestemmelser_987_2009",
         "tilleggsbestemmelser_883_2004",
-        "lovvalgbestemmelser_trygdeavtale_uk"
+        "lovvalgbestemmelser_trygdeavtale_uk",
+        "lovvalgbestemmelser_trygdeavtale_usa",
+        "lovvalgbestemmelser_trygdeavtale_ca",
+        "tilleggsbestemmelser_trygdeavtale_ca",
+        "lovvalgbestemmelser_trygdeavtale_au"
       ],
       "properties": {
         "lovvalgbestemmelser_883_2004": {
@@ -328,10 +346,25 @@
         },
         "lovvalgbestemmelser_trygdeavtale_uk": {
           "$ref": "#/definitions/kodeverkArray"
+        },
+        "lovvalgbestemmelser_trygdeavtale_usa": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "lovvalgbestemmelser_trygdeavtale_ca": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "tilleggsbestemmelser_trygdeavtale_ca": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "lovvalgbestemmelser_trygdeavtale_au": {
+          "$ref": "#/definitions/kodeverkArray"
         }
       }
     },
     "maritimtyper":   {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "mottakerroller":   {
       "$ref": "#/definitions/kodeverkArray"
     },
     "flyvningstyper":   {
@@ -359,6 +392,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "sakstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "sakstemaer": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "territoriekoder": {

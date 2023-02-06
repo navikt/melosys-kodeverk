@@ -7,15 +7,15 @@
 const sakstyper = [
   {
     kode: 'EU_EOS',
-    term: 'EU/EØS',
+    term: 'EU/EØS-land',
   },
   {
     kode: 'TRYGDEAVTALE',
-    term: 'Trygdeavtale',
+    term: 'Avtaleland',
   },
   {
     kode: 'FTRL',
-    term: 'Folketrygdloven',
+    term: 'Utenfor avtaleland',
   }
 ];
 module.exports.sakstyper = sakstyper;
