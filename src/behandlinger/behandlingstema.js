@@ -78,6 +78,10 @@ const behandlingstema = [
   {
     kode: 'VIRKSOMHET',
     term: 'Virksomhet'
+  },
+  {
+    kode: 'A1_ANMODNING_OM_UNNTAK_PAPIR',
+    term: 'A1 / Anmodning om unntak på papir'
   }
 ];
 module.exports.behandlingstema = behandlingstema;
