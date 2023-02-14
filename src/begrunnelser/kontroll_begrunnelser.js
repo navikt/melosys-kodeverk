@@ -89,6 +89,10 @@ const kontroll_begrunnelser = [
     term: 'Perioden er mer enn fem år!'
   },
   {
+    kode: 'OPPHØRT_ARBEIDSGIVER',
+    term: 'Arbeidsforholdet/arbeidsgiver er opphørt. Hvis arbeidsgiver har et nytt organisasjonsnummer, kan du legge inn dette i sidemenyen under Arbeidsgiver/Virksomhet - Arbeidsgiver i Norge, og starte på nytt i stegvelgeren fra Virksomhet.'
+  },
+  {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
     term: 'Du må oppgi et arbeidssted/representant i utlandet'
   },
