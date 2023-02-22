@@ -22,6 +22,10 @@ const mottatteopplysningertyper = [
   {
     kode: 'SØKNAD_TRYGDEAVTALE',
     term: 'Søknad om medlemskap i folketrygden'
+  },
+  {
+    kode: 'ANMODNING_ELLER_ATTEST',
+    term: 'Anmodning eller attest'
   }
 ];
 
