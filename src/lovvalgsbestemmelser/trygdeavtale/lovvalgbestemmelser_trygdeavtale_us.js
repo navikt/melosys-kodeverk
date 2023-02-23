@@ -1,7 +1,7 @@
 const lovvalgbestemmelser_trygdeavtale_us = [
   {
     kode: 'USA',
-    term: 'Hovedregel - artikkel 5 nr. 1',
+    term: 'Generell bestemmelse',
   },
   {
     kode: 'USA_ART5_1',
@@ -25,7 +25,7 @@ const lovvalgbestemmelser_trygdeavtale_us = [
   },
   {
     kode: 'USA_ART5_9',
-    term: 'Unntak - artikkel 5 nr.  9',
+    term: 'Unntak - artikkel 5 nr. 9',
   }
 ];
 module.exports.lovvalgbestemmelser_trygdeavtale_us = lovvalgbestemmelser_trygdeavtale_us;
