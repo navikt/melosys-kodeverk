@@ -122,7 +122,7 @@
         "behandlingstema": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "behandlingsresultattyper":  {
+        "behandlingsresultattyper": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
@@ -325,11 +325,8 @@
         "lovvalgbestemmelser_883_2004",
         "lovvalgbestemmelser_987_2009",
         "tilleggsbestemmelser_883_2004",
-        "lovvalgbestemmelser_trygdeavtale_uk",
-        "lovvalgbestemmelser_trygdeavtale_usa",
-        "lovvalgbestemmelser_trygdeavtale_ca",
-        "tilleggsbestemmelser_trygdeavtale_ca",
-        "lovvalgbestemmelser_trygdeavtale_au"
+        "overgangsregelbestemmelser",
+        "trygdeavtale"
       ],
       "properties": {
         "lovvalgbestemmelser_883_2004": {
@@ -344,36 +341,97 @@
         "overgangsregelbestemmelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "lovvalgbestemmelser_trygdeavtale_uk": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "lovvalgbestemmelser_trygdeavtale_usa": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "lovvalgbestemmelser_trygdeavtale_ca": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "tilleggsbestemmelser_trygdeavtale_ca": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "lovvalgbestemmelser_trygdeavtale_au": {
-          "$ref": "#/definitions/kodeverkArray"
+        "trygdeavtale": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "lovvalgbestemmelser_trygdeavtale_au",
+            "lovvalgbestemmelser_trygdeavtale_ba",
+            "lovvalgbestemmelser_trygdeavtale_ca",
+            "lovvalgbestemmelser_trygdeavtale_ca_qc",
+            "lovvalgbestemmelser_trygdeavtale_ch",
+            "lovvalgbestemmelser_trygdeavtale_cl",
+            "lovvalgbestemmelser_trygdeavtale_gb",
+            "lovvalgbestemmelser_trygdeavtale_gr",
+            "lovvalgbestemmelser_trygdeavtale_il",
+            "lovvalgbestemmelser_trygdeavtale_in",
+            "lovvalgbestemmelser_trygdeavtale_me",
+            "lovvalgbestemmelser_trygdeavtale_pt",
+            "lovvalgbestemmelser_trygdeavtale_rs",
+            "lovvalgbestemmelser_trygdeavtale_tr",
+            "lovvalgbestemmelser_trygdeavtale_us",
+            "tilleggsbestemmelser_trygdeavtale_ca",
+            "tilleggsbestemmelser_trygdeavtale_cl"
+          ],
+          "properties": {
+            "lovvalgbestemmelser_trygdeavtale_au": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_ba": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_ca": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_ca_qc": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_ch": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_cl": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_gb": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_gr": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_il": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_in": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_me": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_pt": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_rs": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_tr": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgbestemmelser_trygdeavtale_us": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "tilleggsbestemmelser_trygdeavtale_ca": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "tilleggsbestemmelser_trygdeavtale_cl": {
+              "$ref": "#/definitions/kodeverkArray"
+            }
+          }
         }
       }
     },
-    "maritimtyper":   {
+    "maritimtyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "mottakerroller":   {
+    "mottakerroller": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "flyvningstyper":   {
+    "flyvningstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "medlemskapstyper":   {
+    "medlemskapstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "mottaksretning":  {
+    "mottaksretning": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "oppgavetyper": {
@@ -385,10 +443,10 @@
     "representerer": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "saerligeavgiftsgrupper":  {
+    "saerligeavgiftsgrupper": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "saksstatuser":  {
+    "saksstatuser": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "sakstyper": {

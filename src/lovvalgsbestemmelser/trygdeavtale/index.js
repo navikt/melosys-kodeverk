@@ -16,7 +16,7 @@ const {lovvalgbestemmelser_trygdeavtale_us} = require('./lovvalgbestemmelser_try
 const {tilleggsbestemmelser_trygdeavtale_ca} = require('./tilleggsbestemmelser_trygdeavtale_ca');
 const {tilleggsbestemmelser_trygdeavtale_cl} = require('./tilleggsbestemmelser_trygdeavtale_cl');
 
-const lovvalgsbestemmelser = {
+const trygdeavtale = {
   lovvalgbestemmelser_trygdeavtale_au,
   lovvalgbestemmelser_trygdeavtale_ba,
   lovvalgbestemmelser_trygdeavtale_ca,
@@ -35,4 +35,4 @@ const lovvalgsbestemmelser = {
   tilleggsbestemmelser_trygdeavtale_ca,
   tilleggsbestemmelser_trygdeavtale_cl
 };
-module.exports.lovvalgsbestemmelser = lovvalgsbestemmelser;
+module.exports.trygdeavtale = trygdeavtale;
