@@ -8,12 +8,8 @@ const lovvalgbestemmelser_trygdeavtale_us = [
     term: 'Hovedregel - artikkel 5 nr. 1',
   },
   {
-    kode: 'USA_ART5_2_yrkesaktiv',
-    term: 'Utsendt arbeidstaker - artikkel 5 nr. 2',
-  },
-  {
-    kode: 'USA_ART5_2_ikke_yrkesaktiv',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 5 nr. 2',
+    kode: 'USA_ART5_2',
+    term: 'Utsendt arbeidstaker og familiemedlemmer - artikkel 5 nr. 2',
   },
   {
     kode: 'USA_ART5_4',

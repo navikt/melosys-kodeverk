@@ -16,12 +16,8 @@ const lovvalgbestemmelser_trygdeavtale_rs = [
     term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
   },
   {
-    kode: 'SRB_ART5_unntak',
-    term: 'Offentlig tjenesteperson - artikkel 5',
-  },
-  {
-    kode: 'SRB_ART5_ikke_yrkesaktiv',
-    term: 'Medfølgende familie til offentlig tjenesteperson - artikkel 5',
+    kode: 'SRB_ART5',
+    term: 'Offentlig tjenesteperson og familiemedlemmer - artikkel 5',
   },
   {
     kode: 'SRB_ART6',
