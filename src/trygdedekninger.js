@@ -12,24 +12,24 @@ const trygdedekninger = [
     term: null
   },
   {
-    kode: 'FTRL_KAP2_2_9_FØRSTE_LEDD_A',
-    term: '§ 2-9 første ledd bokstav a (helse)'
+    kode: 'HELSEDEL',
+    term: 'Helsedel (§ 2-9)'
   },
   {
-    kode: 'FTRL_KAP2_2_9_FØRSTE_LEDD_A_OG_ANDRE_LEDD',
-    term: '§ 2-9 første ledd bokstav a og andre ledd (helse, syke- og foreldrepenger)'
+    kode: 'HELSEDEL_MED_SYKE_OG_FORELDREPENGER',
+    term: 'Helsedel med syke- og foreldrepenger (§ 2-9)'
   },
   {
-    kode: 'FTRL_KAP2_2_9_FØRSTE_LEDD_B',
-    term: '§ 2-9 første ledd bokstav b (pensjon)'
+    kode: 'PENSJONSDEL',
+    term: 'Pensjonsdel (§ 2-9)'
   },
   {
-    kode: 'FTRL_KAP2_2_9_FØRSTE_LEDD_C',
-    term: '§ 2-9 første ledd bokstav c (helse og pensjon)'
+    kode: 'HELSE_OG_PENSJONSDEL',
+    term: 'Helse- og pensjonsdel (§ 2-9)'
   },
   {
-    kode: 'FTRL_KAP2_2_9_FØRSTE_LEDD_C_OG_ANDRE_LEDD',
-    term: '§ 2-9 første ledd bokstav c og andre ledd (helse, pensjon, syke- og foreldrepenger)'
+    kode: 'HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER',
+    term: 'Helse- og pensjonsdel med syke- og foreldrepenger (§ 2-9)'
   },
   {
     kode: 'FULL_DEKNING_FTRL',
