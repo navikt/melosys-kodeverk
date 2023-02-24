@@ -22,10 +22,22 @@ generator:
     - Lovvalgbestemmelser_987_2009
     - Tilleggsbestemmelser_883_2004
     - Overgangsregelbestemmelser
-    - Lovvalgbestemmelser_trygdeavtale_uk
-    - Lovvalgbestemmelser_trygdeavtale_usa
-    - Lovvalgbestemmelser_trygdeavtale_ca
+    - Lovvalgsbestemmelser_trygdeavtale_au
+    - Lovvalgsbestemmelser_trygdeavtale_ba
+    - Lovvalgsbestemmelser_trygdeavtale_ca
+    - Lovvalgsbestemmelser_trygdeavtale_ca_qc
+    - Lovvalgsbestemmelser_trygdeavtale_ch
+    - Lovvalgsbestemmelser_trygdeavtale_cl
+    - Lovvalgsbestemmelser_trygdeavtale_gb
+    - Lovvalgsbestemmelser_trygdeavtale_gr
+    - Lovvalgsbestemmelser_trygdeavtale_il
+    - Lovvalgsbestemmelser_trygdeavtale_in
+    - Lovvalgsbestemmelser_trygdeavtale_me
+    - Lovvalgsbestemmelser_trygdeavtale_pt
+    - Lovvalgsbestemmelser_trygdeavtale_rs
+    - Lovvalgsbestemmelser_trygdeavtale_tr
+    - Lovvalgsbestemmelser_trygdeavtale_us
     - Tilleggsbestemmelser_trygdeavtale_ca
-    - Lovvalgbestemmelser_trygdeavtale_au
+    - Tilleggsbestemmelser_trygdeavtale_cl
   pakke-navn: no.nav.melosys.domain.kodeverk
 
