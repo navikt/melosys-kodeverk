@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_ch = [
+const lovvalgsbestemmelser_trygdeavtale_ch = [
   {
     kode: 'CHE',
     term: 'Generell bestemmelse',
@@ -24,4 +24,4 @@ const lovvalgbestemmelser_trygdeavtale_ch = [
     term: 'Unntak - artikkel 11',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_ch = lovvalgbestemmelser_trygdeavtale_ch;
+module.exports.lovvalgsbestemmelser_trygdeavtale_ch = lovvalgsbestemmelser_trygdeavtale_ch;

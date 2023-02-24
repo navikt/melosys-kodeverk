@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_au = [
+const lovvalgsbestemmelser_trygdeavtale_au = [
   {
     kode: 'AUS',
     term: 'Generell bestemmelse',
@@ -20,4 +20,4 @@ const lovvalgbestemmelser_trygdeavtale_au = [
     term: 'Medfølgende familie - artikkel 14 nr. 1',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_au = lovvalgbestemmelser_trygdeavtale_au;
+module.exports.lovvalgsbestemmelser_trygdeavtale_au = lovvalgsbestemmelser_trygdeavtale_au;

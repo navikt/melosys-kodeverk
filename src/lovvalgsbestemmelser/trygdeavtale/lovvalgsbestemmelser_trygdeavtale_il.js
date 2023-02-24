@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_il = [
+const lovvalgsbestemmelser_trygdeavtale_il = [
   {
     kode: 'ISR',
     term: 'Generell bestemmelse',
@@ -36,4 +36,4 @@ const lovvalgbestemmelser_trygdeavtale_il = [
     term: 'Unntak - medfølgende familie - artikkel 9 nr. 3',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_il = lovvalgbestemmelser_trygdeavtale_il;
+module.exports.lovvalgsbestemmelser_trygdeavtale_il = lovvalgsbestemmelser_trygdeavtale_il;

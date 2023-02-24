@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_cl = [
+const lovvalgsbestemmelser_trygdeavtale_cl = [
   {
     kode: 'CHL',
     term: 'Generell bestemmelse',
@@ -16,4 +16,4 @@ const lovvalgbestemmelser_trygdeavtale_cl = [
     term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 6 nr. 4',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_cl = lovvalgbestemmelser_trygdeavtale_cl;
+module.exports.lovvalgsbestemmelser_trygdeavtale_cl = lovvalgsbestemmelser_trygdeavtale_cl;

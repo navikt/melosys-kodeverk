@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_tr = [
+const lovvalgsbestemmelser_trygdeavtale_tr = [
   {
     kode: 'TUR',
     term: 'Generell bestemmelse',
@@ -24,4 +24,4 @@ const lovvalgbestemmelser_trygdeavtale_tr = [
     term: 'Unntak - artikkel 6',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_tr = lovvalgbestemmelser_trygdeavtale_tr;
+module.exports.lovvalgsbestemmelser_trygdeavtale_tr = lovvalgsbestemmelser_trygdeavtale_tr;

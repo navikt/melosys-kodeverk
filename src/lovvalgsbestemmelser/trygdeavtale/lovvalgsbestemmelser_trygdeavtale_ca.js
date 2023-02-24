@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_ca = [
+const lovvalgsbestemmelser_trygdeavtale_ca = [
   {
     kode: 'CAN',
     term: 'Generell bestemmelse',
@@ -32,4 +32,4 @@ const lovvalgbestemmelser_trygdeavtale_ca = [
     term: 'Unntak - artikkel 11',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_ca = lovvalgbestemmelser_trygdeavtale_ca;
+module.exports.lovvalgsbestemmelser_trygdeavtale_ca = lovvalgsbestemmelser_trygdeavtale_ca;

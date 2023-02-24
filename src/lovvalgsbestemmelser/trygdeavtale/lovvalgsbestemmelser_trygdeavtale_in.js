@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_in = [
+const lovvalgsbestemmelser_trygdeavtale_in = [
   {
     kode: 'IND',
     term: 'Generell bestemmelse',
@@ -24,4 +24,4 @@ const lovvalgbestemmelser_trygdeavtale_in = [
     term: 'Unntak - artikkel 10',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_in = lovvalgbestemmelser_trygdeavtale_in;
+module.exports.lovvalgsbestemmelser_trygdeavtale_in = lovvalgsbestemmelser_trygdeavtale_in;

@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_gr = [
+const lovvalgsbestemmelser_trygdeavtale_gr = [
   {
     kode: 'GRC',
     term: 'Generell bestemmelse',
@@ -12,4 +12,4 @@ const lovvalgbestemmelser_trygdeavtale_gr = [
     term: 'Unntak - artikkel 7',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_gr = lovvalgbestemmelser_trygdeavtale_gr;
+module.exports.lovvalgsbestemmelser_trygdeavtale_gr = lovvalgsbestemmelser_trygdeavtale_gr;

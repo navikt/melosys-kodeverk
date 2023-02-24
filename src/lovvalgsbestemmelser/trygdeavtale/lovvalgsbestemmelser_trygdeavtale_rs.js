@@ -1,31 +1,31 @@
-const lovvalgbestemmelser_trygdeavtale_me = [
+const lovvalgsbestemmelser_trygdeavtale_rs = [
   {
-    kode: 'MNE',
+    kode: 'SRB',
     term: 'Generell bestemmelse',
   },
   {
-    kode: 'MNE_ART3',
+    kode: 'SRB_ART3',
     term: 'Hovedregel - artikkel 3',
   },
   {
-    kode: 'MNE_ART4',
+    kode: 'SRB_ART4',
     term: 'Utsendt arbeidstaker - artikkel 4',
   },
   {
-    kode: 'MNE_ART4_A',
+    kode: 'SRB_ART4_A',
     term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
   },
   {
-    kode: 'MNE_ART5',
+    kode: 'SRB_ART5',
     term: 'Offentlig tjenesteperson og familiemedlemmer - artikkel 5',
   },
   {
-    kode: 'MNE_ART6',
+    kode: 'SRB_ART6',
     term: 'Arbeid på skip - artikkel 6',
   },
   {
-    kode: 'MNE_ART7',
+    kode: 'SRB_ART7',
     term: 'Unntak - artikkel 7',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_me = lovvalgbestemmelser_trygdeavtale_me;
+module.exports.lovvalgsbestemmelser_trygdeavtale_rs = lovvalgsbestemmelser_trygdeavtale_rs;

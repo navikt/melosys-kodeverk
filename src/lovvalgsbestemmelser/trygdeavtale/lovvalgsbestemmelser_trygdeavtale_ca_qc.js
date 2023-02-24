@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_ca_qc = [
+const lovvalgsbestemmelser_trygdeavtale_ca_qc = [
   {
     kode: 'QUE',
     term: 'Generell bestemmelse',
@@ -32,4 +32,4 @@ const lovvalgbestemmelser_trygdeavtale_ca_qc = [
     term: 'Unntak - artikkel 10',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_ca_qc = lovvalgbestemmelser_trygdeavtale_ca_qc;
+module.exports.lovvalgsbestemmelser_trygdeavtale_ca_qc = lovvalgsbestemmelser_trygdeavtale_ca_qc;

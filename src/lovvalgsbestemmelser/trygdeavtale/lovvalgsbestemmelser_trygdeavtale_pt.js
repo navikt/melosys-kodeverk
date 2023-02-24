@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_pt = [
+const lovvalgsbestemmelser_trygdeavtale_pt = [
   {
     kode: 'PRT',
     term: 'Generell bestemmelse',
@@ -24,4 +24,4 @@ const lovvalgbestemmelser_trygdeavtale_pt = [
     term: 'Unntak - artikkel 11',
   },
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_pt = lovvalgbestemmelser_trygdeavtale_pt;
+module.exports.lovvalgsbestemmelser_trygdeavtale_pt = lovvalgsbestemmelser_trygdeavtale_pt;

@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_gb = [
+const lovvalgsbestemmelser_trygdeavtale_gb = [
   {
     kode: 'UK',
     term: 'Generell bestemmelse',
@@ -44,4 +44,4 @@ const lovvalgbestemmelser_trygdeavtale_gb = [
     term: 'Unntak - artikkel 9',
   }
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_gb = lovvalgbestemmelser_trygdeavtale_gb;
+module.exports.lovvalgsbestemmelser_trygdeavtale_gb = lovvalgsbestemmelser_trygdeavtale_gb;

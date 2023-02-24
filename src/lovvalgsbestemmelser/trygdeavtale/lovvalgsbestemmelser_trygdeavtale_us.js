@@ -1,4 +1,4 @@
-const lovvalgbestemmelser_trygdeavtale_us = [
+const lovvalgsbestemmelser_trygdeavtale_us = [
   {
     kode: 'USA',
     term: 'Generell bestemmelse',
@@ -28,4 +28,4 @@ const lovvalgbestemmelser_trygdeavtale_us = [
     term: 'Unntak - artikkel 5 nr. 9',
   }
 ];
-module.exports.lovvalgbestemmelser_trygdeavtale_us = lovvalgbestemmelser_trygdeavtale_us;
+module.exports.lovvalgsbestemmelser_trygdeavtale_us = lovvalgsbestemmelser_trygdeavtale_us;
