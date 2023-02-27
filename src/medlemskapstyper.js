@@ -14,6 +14,10 @@ const medlemskapstyper = [
   {
     kode: 'UNNTATT',
     term: 'Unntatt medlemskap'
+  },
+  {
+    kode: 'DELVIS_UNNTATT',
+    term: 'Delvis unntatt medlemskap'
   }
 ];
 module.exports.medlemskapstyper = medlemskapstyper;
