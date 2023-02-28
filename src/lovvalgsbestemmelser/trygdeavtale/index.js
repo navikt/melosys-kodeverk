@@ -4,10 +4,12 @@ const {lovvalgsbestemmelser_trygdeavtale_ca} = require('./lovvalgsbestemmelser_t
 const {lovvalgsbestemmelser_trygdeavtale_ca_qc} = require('./lovvalgsbestemmelser_trygdeavtale_ca_qc');
 const {lovvalgsbestemmelser_trygdeavtale_ch} = require('./lovvalgsbestemmelser_trygdeavtale_ch');
 const {lovvalgsbestemmelser_trygdeavtale_cl} = require('./lovvalgsbestemmelser_trygdeavtale_cl');
+const {lovvalgsbestemmelser_trygdeavtale_fr} = require('./lovvalgsbestemmelser_trygdeavtale_fr');
 const {lovvalgsbestemmelser_trygdeavtale_gb} = require('./lovvalgsbestemmelser_trygdeavtale_gb');
 const {lovvalgsbestemmelser_trygdeavtale_gr} = require('./lovvalgsbestemmelser_trygdeavtale_gr');
 const {lovvalgsbestemmelser_trygdeavtale_il} = require('./lovvalgsbestemmelser_trygdeavtale_il');
 const {lovvalgsbestemmelser_trygdeavtale_in} = require('./lovvalgsbestemmelser_trygdeavtale_in');
+const {lovvalgsbestemmelser_trygdeavtale_it} = require('./lovvalgsbestemmelser_trygdeavtale_it');
 const {lovvalgsbestemmelser_trygdeavtale_me} = require('./lovvalgsbestemmelser_trygdeavtale_me');
 const {lovvalgsbestemmelser_trygdeavtale_pt} = require('./lovvalgsbestemmelser_trygdeavtale_pt');
 const {lovvalgsbestemmelser_trygdeavtale_rs} = require('./lovvalgsbestemmelser_trygdeavtale_rs');
@@ -23,10 +25,12 @@ const trygdeavtale = {
   lovvalgsbestemmelser_trygdeavtale_ca_qc,
   lovvalgsbestemmelser_trygdeavtale_ch,
   lovvalgsbestemmelser_trygdeavtale_cl,
+  lovvalgsbestemmelser_trygdeavtale_fr,
   lovvalgsbestemmelser_trygdeavtale_gb,
   lovvalgsbestemmelser_trygdeavtale_gr,
   lovvalgsbestemmelser_trygdeavtale_il,
   lovvalgsbestemmelser_trygdeavtale_in,
+  lovvalgsbestemmelser_trygdeavtale_it,
   lovvalgsbestemmelser_trygdeavtale_me,
   lovvalgsbestemmelser_trygdeavtale_pt,
   lovvalgsbestemmelser_trygdeavtale_rs,
