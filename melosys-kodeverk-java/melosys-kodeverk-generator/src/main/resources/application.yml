@@ -28,10 +28,12 @@ generator:
     - Lovvalgsbestemmelser_trygdeavtale_ca_qc
     - Lovvalgsbestemmelser_trygdeavtale_ch
     - Lovvalgsbestemmelser_trygdeavtale_cl
+    - Lovvalgsbestemmelser_trygdeavtale_fr
     - Lovvalgsbestemmelser_trygdeavtale_gb
     - Lovvalgsbestemmelser_trygdeavtale_gr
     - Lovvalgsbestemmelser_trygdeavtale_il
     - Lovvalgsbestemmelser_trygdeavtale_in
+    - Lovvalgsbestemmelser_trygdeavtale_it
     - Lovvalgsbestemmelser_trygdeavtale_me
     - Lovvalgsbestemmelser_trygdeavtale_pt
     - Lovvalgsbestemmelser_trygdeavtale_rs
