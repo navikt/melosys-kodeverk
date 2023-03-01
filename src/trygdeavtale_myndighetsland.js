@@ -44,10 +44,6 @@ const trygdeavtale_myndighetsland = [
     term: 'Kroatia',
   },
   {
-    kode: 'LV',
-    term: 'Latvia'
-  },
-  {
     kode: 'ME',
     term: 'Montenegro',
   },
