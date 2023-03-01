@@ -56,10 +56,6 @@ const land_iso2 = [
     term: 'Kypros',
   },
   {
-    kode: 'LV',
-    term: 'Latvia',
-  },
-  {
     kode: 'LI',
     term: 'Liechtenstein',
   },
