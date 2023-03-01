@@ -79,8 +79,8 @@
                     <executable>true</executable>
                     <mainClass>no.nav.melosys.Application</mainClass>
                     <arguments>
-                        <argument>melosys-kodeverk-generator/src/test/resources/dist/kodemap.yml</argument>
-                        <argument>melosys-kodeverk-generator/src/test/resources/dist/semver.txt</argument>
+                        <argument>src/test/resources/dist/kodemap.yml</argument>
+                        <argument>src/test/resources/dist/semver.txt</argument>
                     </arguments>
                 </configuration>
             </plugin>
