@@ -36,40 +36,16 @@ const trygdeavtale_myndighetsland = [
     term: 'Israel',
   },
   {
-    kode: 'IM',
-    term: 'Isle of Man'
-  },
-  {
     kode: 'IT',
     term: 'Italia',
-  },
-  {
-    kode: 'JE',
-    term: 'Jersey'
   },
   {
     kode: 'HR',
     term: 'Kroatia',
   },
   {
-    kode: 'LV',
-    term: 'Latvia'
-  },
-  {
-    kode: 'LU',
-    term: 'Luxembourg',
-  },
-  {
     kode: 'ME',
     term: 'Montenegro',
-  },
-  {
-    kode: 'NL',
-    term: 'Nederland',
-  },
-  {
-    kode: 'PL',
-    term: 'Polen',
   },
   {
     kode: 'PT',
@@ -78,10 +54,6 @@ const trygdeavtale_myndighetsland = [
   {
     kode: 'CA_QC',
     term: 'Quebec',
-  },
-  {
-    kode: 'RO',
-    term: 'Romania'
   },
   {
     kode: 'RS',
@@ -104,16 +76,8 @@ const trygdeavtale_myndighetsland = [
     term: 'Tyrkia',
   },
   {
-    kode: 'HU',
-    term: 'Ungarn',
-  },
-  {
     kode: 'US',
     term: 'USA',
-  },
-  {
-    kode: 'AT',
-    term: 'Østerrike',
   }
 ];
 module.exports.trygdeavtale_myndighetsland = trygdeavtale_myndighetsland;
