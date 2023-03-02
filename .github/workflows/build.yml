@@ -24,11 +24,11 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: yarn build
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
           name: melosys-kodeverk-dist
           path: dist
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
           name: melosys-kodeverk-lib
           path: lib
@@ -65,7 +65,7 @@ jobs:
       - name: Bygge Java-kodeverk
         working-directory: melosys-kodeverk-java/melosys-internt-kodeverk
         run: mvn clean install -B -V
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
           name: melosys-kodeverk-java
           path: melosys-kodeverk-java/melosys-internt-kodeverk
