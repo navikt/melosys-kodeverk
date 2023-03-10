@@ -90,7 +90,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'OPPHØRT_ARBEIDSGIVER',
-    term: 'Arbeidsforholdet/arbeidsgiver er opphørt. Hvis arbeidsgiver har et nytt organisasjonsnummer, kan du legge inn dette i sidemenyen under Arbeidsgiver/Virksomhet - Arbeidsgiver i Norge, og starte på nytt i stegvelgeren fra Virksomhet.'
+    term: 'Virksomheten er opphørt. Du kan enten velge å ikke sende orienteringsbrev til arbeidsgiver, eller - hvis arbeidsgiver har et nytt organisasjonsnummer - legge det inn i sidemenyen, og starte på nytt i stegvelgeren fra Virksomhet.'
   },
   {
     kode: 'ATTEST_MANGLER_ARBEIDSSTED',
