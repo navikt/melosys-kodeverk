@@ -354,12 +354,14 @@
             "lovvalgsbestemmelser_trygdeavtale_fr",
             "lovvalgsbestemmelser_trygdeavtale_gb",
             "lovvalgsbestemmelser_trygdeavtale_gr",
+            "lovvalgsbestemmelser_trygdeavtale_hr",
             "lovvalgsbestemmelser_trygdeavtale_il",
             "lovvalgsbestemmelser_trygdeavtale_in",
             "lovvalgsbestemmelser_trygdeavtale_it",
             "lovvalgsbestemmelser_trygdeavtale_me",
             "lovvalgsbestemmelser_trygdeavtale_pt",
             "lovvalgsbestemmelser_trygdeavtale_rs",
+            "lovvalgsbestemmelser_trygdeavtale_si",
             "lovvalgsbestemmelser_trygdeavtale_tr",
             "lovvalgsbestemmelser_trygdeavtale_us",
             "tilleggsbestemmelser_trygdeavtale_ca",
@@ -393,6 +395,9 @@
             "lovvalgsbestemmelser_trygdeavtale_gr": {
               "$ref": "#/definitions/kodeverkArray"
             },
+            "lovvalgsbestemmelser_trygdeavtale_hr": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
             "lovvalgsbestemmelser_trygdeavtale_il": {
               "$ref": "#/definitions/kodeverkArray"
             },
@@ -409,6 +414,9 @@
               "$ref": "#/definitions/kodeverkArray"
             },
             "lovvalgsbestemmelser_trygdeavtale_rs": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "lovvalgsbestemmelser_trygdeavtale_si": {
               "$ref": "#/definitions/kodeverkArray"
             },
             "lovvalgsbestemmelser_trygdeavtale_tr": {
