@@ -5,7 +5,7 @@ const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   },
   {
     kode: 'ANSATT_I_INTERNASJONAL_ORGANISASJON',
-    term: 'Arbeider i internasjonal organisasjon',
+    term: 'Arbeid i internasjonal org. som Norge er medlem av',
   },
   {
     kode: 'MEDFOLGENDE_SOM_ARBEIDER_FRA_HJEMMEKONTOR',
@@ -13,7 +13,7 @@ const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   },
   {
     kode: 'SJOFOLK_SOM_ER_BOSATT_I_UTLANDET',
-    term: 'Arbeider på utenlandskregistrert skip',
+    term: 'Arbeider for norsk virksomhet på utenlandskregistrert skip',
   },
   {
     kode: 'HUMANITÆRT_ARBEID',
