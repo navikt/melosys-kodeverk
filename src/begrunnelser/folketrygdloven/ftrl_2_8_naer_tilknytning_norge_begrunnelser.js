@@ -16,12 +16,20 @@ const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
     term: 'Arbeider på utenlandskregistrert skip',
   },
   {
-    kode: 'ANSATT_I_UTENLANDSK_SELSKAP',
-    term: 'Arbeider i utenlandsk selskap',
+    kode: 'HUMANITÆRT_ARBEID',
+    term: 'Humanitært arbeid som finansieres av norske kilder',
   },
   {
-    kode: 'ANSATT_I_NORSK_VIRKSOMHET_IKKE_UTSENDT',
-    term: 'Arbeider i norsk virksomhet, men ikke utsendt',
+    kode: 'AUPAIR',
+    term: 'Aupair, begrenset periode',
+  },
+  {
+    kode: 'PRAKTIKANT',
+    term: 'Praktikant, begrenset periode',
+  },
+  {
+    kode: 'ANNEN_GRUNN',
+    term: 'Annen grunn (fritekst)',
   }
 ];
 
