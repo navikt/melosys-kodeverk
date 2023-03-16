@@ -1,7 +1,7 @@
 const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   {
     kode: 'ANSATT_I_MULTINASJONALT_SELSKAP',
-    term: 'Arbeider i multinasjonalt selskap',
+    term: 'Arbeid i mor- eller søsterselskap i multinasjonalt konsern',
   },
   {
     kode: 'ANSATT_I_INTERNASJONAL_ORGANISASJON',
