@@ -1,11 +1,11 @@
 const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   {
     kode: 'ANSATT_I_MULTINASJONALT_SELSKAP',
-    term: 'Arbeider i multinasjonalt selskap',
+    term: 'Arbeid i mor- eller søsterselskap i multinasjonalt konsern',
   },
   {
     kode: 'ANSATT_I_INTERNASJONAL_ORGANISASJON',
-    term: 'Arbeider i internasjonal organisasjon',
+    term: 'Arbeid i internasjonal org. som Norge er medlem av',
   },
   {
     kode: 'MEDFOLGENDE_SOM_ARBEIDER_FRA_HJEMMEKONTOR',
@@ -13,15 +13,23 @@ const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   },
   {
     kode: 'SJOFOLK_SOM_ER_BOSATT_I_UTLANDET',
-    term: 'Arbeider på utenlandskregistrert skip',
+    term: 'Arbeider for norsk virksomhet på utenlandskregistrert skip',
   },
   {
-    kode: 'ANSATT_I_UTENLANDSK_SELSKAP',
-    term: 'Arbeider i utenlandsk selskap',
+    kode: 'HUMANITÆRT_ARBEID',
+    term: 'Humanitært arbeid som finansieres av norske kilder',
   },
   {
-    kode: 'ANSATT_I_NORSK_VIRKSOMHET_IKKE_UTSENDT',
-    term: 'Arbeider i norsk virksomhet, men ikke utsendt',
+    kode: 'AUPAIR',
+    term: 'Aupair, begrenset periode',
+  },
+  {
+    kode: 'PRAKTIKANT',
+    term: 'Praktikant, begrenset periode',
+  },
+  {
+    kode: 'ANNEN_GRUNN',
+    term: 'Annen grunn (fritekst)',
   }
 ];
 
