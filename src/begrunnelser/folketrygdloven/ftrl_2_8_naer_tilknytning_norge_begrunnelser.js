@@ -13,7 +13,7 @@ const ftrl_2_8_naer_tilknytning_norge_begrunnelser = [
   },
   {
     kode: 'SJOFOLK_SOM_ER_BOSATT_I_UTLANDET',
-    term: 'Arbeider for norsk virksomhet på utenlandskregistrert skip',
+    term: 'Arbeid for norsk virksomhet på utenlandskregistrert skip',
   },
   {
     kode: 'HUMANITÆRT_ARBEID',
