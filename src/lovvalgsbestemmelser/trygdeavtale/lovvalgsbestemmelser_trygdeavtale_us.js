@@ -12,6 +12,10 @@ const lovvalgsbestemmelser_trygdeavtale_us = [
     term: 'Utsendt arbeidstaker og familiemedlemmer - artikkel 5 nr. 2',
   },
   {
+    kode: 'USA_ART5_3',
+    term: 'Arbeid på norsk sokkel - artikkel 5 nr. 3',
+  },
+  {
     kode: 'USA_ART5_4',
     term: 'Selvstendig næringsdrivende - artikkel 5 nr. 4',
   },
