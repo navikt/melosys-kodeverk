@@ -62,6 +62,7 @@
     "finansiering",
     "forespoerseltyper",
     "innretningstyper",
+    "inntektskildetype",
     "innvilgelsesResultat",
     "land_iso2",
     "landkoder",
@@ -304,6 +305,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "innretningstyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "inntektskildetype": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "innvilgelsesResultat": {
