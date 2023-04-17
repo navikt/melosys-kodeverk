@@ -10,6 +10,10 @@ const skatteplikttype = [
   {
     kode: 'IKKE_SKATTEPLIKTIG',
     term: 'Ikke skattepliktig til Norge',
+  },
+  {
+    kode: 'TRYGDEAVGIFT_BETALES_TIL_NAV_OG_SKATT',
+    term: 'Trygdeavgift skal betales både til Nav og Skatt',
   }
 ];
 
