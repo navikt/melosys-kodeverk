@@ -76,10 +76,12 @@
     "personstatuser",
     "representerer",
     "saksstatuser",
+    "skatteplikttype",
     "sakstyper",
     "sakstemaer",
     "territoriekoder",
     "trygdedekninger",
+    "trygdeavgiftmottaker",
     "utfallregistreringunntak",
     "vedleggstitler",
     "vilkaar",
@@ -472,6 +474,9 @@
     "sakstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "skatteplikttype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "sakstemaer": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -479,6 +484,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "trygdeavgift_typer": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "trygdeavgiftmottaker": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "trygdedekninger": {

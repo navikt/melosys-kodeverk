@@ -33,9 +33,11 @@ const { representerer } = require('./representerer');
 const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
+const { skatteplikttype } = require('./skatteplikttype');
 const { sakstemaer } = require('./sakstemaer');
 const { territoriekoder } = require('./territoriekoder');
 const { trygdeavgift_typer } = require('./trygdeavgift_typer');
+const { trygdeavgiftmottaker } = require('./trygdeavgiftmottaker');
 const { trygdedekninger } = require('./trygdedekninger');
 const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
@@ -79,9 +81,11 @@ const KodeTermObjects = {
   saerligeavgiftsgrupper,
   saksstatuser,
   sakstyper,
+  skatteplikttype,
   sakstemaer,
   territoriekoder,
   trygdeavgift_typer,
+  trygdeavgiftmottaker,
   trygdedekninger,
   utfallregistreringunntak,
   vedleggstitler,
