@@ -52,6 +52,7 @@
   "required": [
     "aktoersroller",
     "anmodningsperiodesvartyper",
+    "avgiftsdekning",
     "avklartefaktatyper",
     "avsendertyper",
     "trygdeavtale_myndighetsland",
@@ -92,6 +93,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "anmodningsperiodesvartyper": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "avgiftsdekning": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "avklartefaktatyper": {
