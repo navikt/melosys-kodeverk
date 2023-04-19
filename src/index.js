@@ -4,6 +4,7 @@
  */
 const { aktoersroller } = require('./aktoerroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
+const { avgiftsdekning } = require('./avgiftsdekning');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
 const { avsendertyper } = require('./avsendertyper');
 const { trygdeavtale_myndighetsland } = require('./trygdeavtale_myndighetsland');
@@ -52,6 +53,7 @@ const Transform  = require('./transform');
 const KodeTermObjects = {
   aktoersroller,
   anmodningsperiodesvartyper,
+  avgiftsdekning,
   avklartefaktatyper,
   avsendertyper,
   trygdeavtale_myndighetsland,
