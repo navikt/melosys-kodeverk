@@ -17,6 +17,10 @@ const kontroll_begrunnelser = [
     term: 'Det finnes overlappende unntaksperiode i MEDL'
   },
   {
+    kode: 'OVERLAPPENDE_MEDLEMSKAPSPERIODER',
+    term: 'Det finnes overlappende medlemskapsperiode i MEDL'
+  },
+  {
     kode: 'MOTTAR_YTELSER',
     term: 'Personen mottar ytelser'
   },
