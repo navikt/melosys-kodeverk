@@ -1,4 +1,4 @@
-const ikke_yrkesaktiv_situasjon = [
+const ikkeyrkesaktivsituasjontype = [
   {
     'kode': 'STUDENT',
     'term': 'Student'
@@ -16,4 +16,4 @@ const ikke_yrkesaktiv_situasjon = [
     'term': 'Andre som ikke er i ordinært arbeid'
   }
 ];
-module.exports.ikke_yrkesaktiv_situasjon = ikke_yrkesaktiv_situasjon;
+module.exports.ikkeyrkesaktivsituasjontype = ikkeyrkesaktivsituasjontype;
