@@ -167,7 +167,8 @@
         "normaltdrivervirksomhet",
         "sokkel",
         "kontroll_begrunnelser",
-        "medfolgende_barn_begrunnelser"
+        "medfolgende_barn_begrunnelser",
+        "ikkeyrkesaktivsituasjontype"
       ],
       "properties": {
         "arbeidsland": {
@@ -278,6 +279,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "medfolgende_barn_begrunnelser": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "ikkeyrkesaktivsituasjontype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
