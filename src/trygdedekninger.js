@@ -43,5 +43,9 @@ const trygdedekninger = [
     kode: 'UNNTATT_CAN_7_5_B',
     term: 'Trygdeavtale Canada - Artikkel 7 nr. 5 bokstav b'
   },
+  {
+    kode: 'FULL_DEKNING',
+    term: 'Full dekning i trygden'
+  },
 ];
 module.exports.trygdedekninger = trygdedekninger;
