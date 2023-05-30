@@ -13,7 +13,7 @@ const lovvalgsbestemmelser_trygdeavtale_tr = [
   },
   {
     kode: 'TUR_ART4_A',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
+    term: 'Utsendt arbeidstaker og familiemedlemmer- artikkel 4 a',
   },
   {
     kode: 'TUR_ART5',

@@ -13,7 +13,7 @@ const lovvalgsbestemmelser_trygdeavtale_si = [
   },
   {
     kode: 'SVN_ART4_A',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
+    term: 'Utsendt arbeidstaker og familiemedlemmer- artikkel 4 a',
   },
   {
     kode: 'SVN_ART5',

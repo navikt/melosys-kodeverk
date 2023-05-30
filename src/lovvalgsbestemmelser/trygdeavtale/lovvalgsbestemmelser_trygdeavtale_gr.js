@@ -5,7 +5,7 @@ const lovvalgsbestemmelser_trygdeavtale_gr = [
   },
   {
     kode: 'GRC_ART4_A',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
+    term: 'Utsendt arbeidstaker og familiemedlemmer- artikkel 4 a',
   },
   {
     kode: 'GRC_ART7',

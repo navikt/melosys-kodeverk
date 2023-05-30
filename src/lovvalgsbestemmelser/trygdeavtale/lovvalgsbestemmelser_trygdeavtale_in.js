@@ -9,7 +9,7 @@ const lovvalgsbestemmelser_trygdeavtale_in = [
   },
   {
     kode: 'IND_ART8_1',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 8 nr. 1',
+    term: 'Utsendt arbeidstaker og familiemedlemmer - artikkel 8 nr. 1',
   },
   {
     kode: 'IND_ART9',
@@ -17,7 +17,7 @@ const lovvalgsbestemmelser_trygdeavtale_in = [
   },
   {
     kode: 'IND_ART9_1',
-    term: 'Medfølgende familie til offentlig tjenesteperson - artikkel 9 nr. 1',
+    term: 'Offentlig tjenesteperson og familiemedlemmer - artikkel 9 nr. 1',
   },
   {
     kode: 'IND_ART10',
