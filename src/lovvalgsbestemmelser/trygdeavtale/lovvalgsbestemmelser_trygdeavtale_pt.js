@@ -9,7 +9,7 @@ const lovvalgsbestemmelser_trygdeavtale_pt = [
   },
   {
     kode: 'PRT_ART8_1',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 8 nr. 1',
+    term: 'Utsendt arbeidstaker og familiemedlemmer - artikkel 8 nr. 1',
   },
   {
     kode: 'PRT_ART9',

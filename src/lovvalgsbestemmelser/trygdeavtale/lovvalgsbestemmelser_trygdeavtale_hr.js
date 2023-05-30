@@ -13,7 +13,7 @@ const lovvalgsbestemmelser_trygdeavtale_hr = [
   },
   {
     kode: 'HRV_ART4_A',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 4 a',
+    term: 'Utsendt arbeidstaker og familiemedlemmer- artikkel 4 a',
   },
   {
     kode: 'HRV_ART5',

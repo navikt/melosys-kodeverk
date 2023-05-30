@@ -9,7 +9,7 @@ const lovvalgsbestemmelser_trygdeavtale_ch = [
   },
   {
     kode: 'CHE_ART8_1_A',
-    term: 'Medfølgende familie til utsendt arbeidstaker - artikkel 8 nr.1 a',
+    term: 'Utsendt arbeidstaker og familiemedlemmer - artikkel 8 nr.1 a',
   },
   {
     kode: 'CHE_ART9',
