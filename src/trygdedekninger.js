@@ -36,12 +36,20 @@ const trygdedekninger = [
     term: 'Full dekning'
   },
   {
+    kode: 'UNNTATT_CAN_7_5_B',
+    term: 'Trygdeavtale Canada - Artikkel 7 nr. 5 bokstav b'
+  },
+  {
+    kode: 'UNNTATT_CAN_11',
+    term: 'Trygdeavtale Canada - Artikkel 7 nr. 11'
+  },
+  {
     kode: 'UNNTATT_USA_5_2_G',
     term: 'Trygdeavtale USA - Artikkel 5 nr. 2 bokstav g'
   },
   {
-    kode: 'UNNTATT_CAN_7_5_B',
-    term: 'Trygdeavtale Canada - Artikkel 7 nr. 5 bokstav b'
+    kode: 'UNNTATT_USA_5_9',
+    term: 'Trygdeavtale USA - Artikkel 5 nr. 9'
   },
   {
     kode: 'FULL_DEKNING',
