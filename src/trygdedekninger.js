@@ -41,7 +41,7 @@ const trygdedekninger = [
   },
   {
     kode: 'UNNTATT_CAN_11',
-    term: 'Trygdeavtale Canada - Artikkel 7 nr. 11'
+    term: 'Trygdeavtale Canada - Artikkel 11'
   },
   {
     kode: 'UNNTATT_USA_5_2_G',
