@@ -24,6 +24,10 @@ const produserbaredokumenter = [
     term: 'Melding om manglende opplysninger til virksomhet'
   },
   {
+    kode: 'IKKE_YRKESAKTIV_VEDTAKSBREV',
+    term: 'Vedtak om medlemskap'
+  },
+  {
     kode: 'INNVILGELSE_FOLKETRYGDLOVEN_2_8',
     term: 'Vedtak om frivillig medlemskap'
   },
