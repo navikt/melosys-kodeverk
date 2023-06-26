@@ -21,7 +21,6 @@ const { inntektskildetype } = require('./inntektskildetype');
 const { innvilgelsesResultat } = require('./innvilgelsesResultat');
 const { land_iso2 } = require('./land_iso2');
 const { landkoder } = require('./landkoder');
-const { loenn_forhold } = require('./loenn_forhold');
 const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
 const { mottakerroller } = require('./mottakerroller');
@@ -31,7 +30,6 @@ const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { personstatuser } = require('./personstatuser');
 const { representerer } = require('./representerer');
-const { saerligeavgiftsgrupper } = require('./saerligeavgiftsgrupper');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { skatteplikttype } = require('./skatteplikttype');
@@ -44,8 +42,6 @@ const { utfallregistreringunntak } = require('./utfallregistreringunntak');
 const { vedleggstitler } = require('./vedleggstitler');
 const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
-const { vurderingsutfall_trygdeavgift_norsk_inntekt } = require('./vurderingsutfall_trygdeavgift_norsk_inntekt');
-const { vurderingsutfall_trygdeavgift_utenlandsk_inntekt } = require('./vurderingsutfall_trygdeavgift_utenlandsk_inntekt');
 const { yrker } = require('./yrker');
 
 const Transform  = require('./transform');
@@ -70,7 +66,6 @@ const KodeTermObjects = {
   innvilgelsesResultat,
   land_iso2,
   landkoder,
-  loenn_forhold,
   lovvalgsbestemmelser,
   maritimtyper,
   mottakerroller,
@@ -80,7 +75,6 @@ const KodeTermObjects = {
   oppgavetyper,
   personstatuser,
   representerer,
-  saerligeavgiftsgrupper,
   saksstatuser,
   sakstyper,
   skatteplikttype,
@@ -93,8 +87,6 @@ const KodeTermObjects = {
   vedleggstitler,
   vedtakstyper,
   vilkaar,
-  vurderingsutfall_trygdeavgift_norsk_inntekt,
-  vurderingsutfall_trygdeavgift_utenlandsk_inntekt,
   yrker,
 };
 

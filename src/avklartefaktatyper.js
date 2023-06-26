@@ -60,34 +60,6 @@ const avklartefaktatyper = [
     term: null,
   },
   {
-    kode: 'LØNN_FORHOLD_VIRKSOMHET',
-    term: null
-  },
-  {
-    kode: 'LØNN_NORGE_ARBEIDSGIVERAVGIFT',
-    term: null
-  },
-  {
-    kode: 'LØNN_UTL_ARBEIDSGIVERAVGIFT',
-    term: null
-  },
-  {
-    kode: 'LØNN_NORGE_SKATTEPLIKTIG_NORGE',
-    term: null
-  },
-  {
-    kode: 'LØNN_UTL_SKATTEPLIKTIG_NORGE',
-    term: null
-  },
-  {
-    kode: 'LØNN_NORGE_SÆRLIG_AVGIFTS_GRUPPE',
-    term: null
-  },
-  {
-    kode: 'LØNN_UTL_SÆRLIG_AVGIFTS_GRUPPE',
-    term: null
-  },
-  {
     kode: 'VURDERING_MEDLEMSKAP_EKTEFELLE_SAMBOER',
     term: null
   }
