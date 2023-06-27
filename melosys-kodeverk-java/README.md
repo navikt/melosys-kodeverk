@@ -2,6 +2,15 @@
 This is a standalone application which generates Java enum classes based on the information 
 provided by a yaml file and a version file.
 
+For å ta i bruk lokal versjon av kodeverk:
+1. Kjør `mvn clean install` i `melosys-kodeverk-java`
+   1. Hvis ikke melosys-internt-kodeverk/src blir generert må du kjøre
+`java -jar melosys-kodeverk-generator/target/melosys-kodeverk-generator-1.jar ../dist/kodemap.yml`
+   2. Og så `mvn clean install` på nytt 
+2. Sett `<melosys.internt.kodeverk.version>1.0.0-SNAPSHOT</melosys.internt.kodeverk.version>`
+i pom.xml i melosys-api
+
+---
 A `mvn install` will build **melosys-kodeverk-generator**, which will in turn be used to 
 generate files for **melosys-internt-kodeverk**, which will then be built as the final step.
 
