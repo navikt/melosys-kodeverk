@@ -12,23 +12,23 @@ const trygdedekninger = [
     term: null
   },
   {
-    kode: 'HELSEDEL',
+    kode: 'FTRL_2-9_FØRSTE_LEDD_A_HELSE',
     term: 'Helsedel (§ 2-9)'
   },
   {
-    kode: 'HELSEDEL_MED_SYKE_OG_FORELDREPENGER',
+    kode: 'FTRL_2-9_FØRSTE_LEDD_A_ANDRE_LEDD_HELSE_SYKE_FORELDREPENGER',
     term: 'Helsedel med syke- og foreldrepenger (§ 2-9)'
   },
   {
-    kode: 'PENSJONSDEL',
+    kode: 'FTRL_2-9_FØRSTE_LEDD_B_PENSJON',
     term: 'Pensjonsdel (§ 2-9)'
   },
   {
-    kode: 'HELSE_OG_PENSJONSDEL',
+    kode: 'FTRL_2-9_FØRSTE_LEDD_C_HELSE_PENSJON',
     term: 'Helse- og pensjonsdel (§ 2-9)'
   },
   {
-    kode: 'HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER',
+    kode: 'FTRL_2-9_FØRSTE_LEDD_C_ANDRE_LEDD_HELSE_PENSJON_SYKE_FORELDREPENGER',
     term: 'Helse- og pensjonsdel med syke- og foreldrepenger (§ 2-9)'
   },
   {
