@@ -70,7 +70,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE',
-    term: 'Bruker har ingen registrert adresse.'
+    term: 'Ingen gyldig adresse funnet'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
