@@ -28,7 +28,12 @@ const produserbaredokumenter = [
     term: 'Vedtak om medlemskap'
   },
   {
+    //   Deprecated. Slettes etter fullførelse av MELOSYS-5746
     kode: 'INNVILGELSE_FOLKETRYGDLOVEN_2_8',
+    term: 'Vedtak om frivillig medlemskap'
+  },
+  {
+    kode: 'INNVILGELSE_FOLKETRYGDLOVEN',
     term: 'Vedtak om frivillig medlemskap'
   },
   {
