@@ -74,11 +74,11 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE_BRUKER',
-    term: 'Bruker må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
+    term: 'Ingen gyldig adresse funnet. Bruker må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
   },
   {
     kode: 'MANGLENDE_REGISTRERTE_ADRESSE_REPRESENTANT',
-    term: 'Fullmektig må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
+    term: 'Ingen gyldig adresse funnet. Fullmektig må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
