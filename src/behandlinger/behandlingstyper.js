@@ -22,6 +22,10 @@ const behandlingstyper = [
   {
     kode: 'ENDRET_PERIODE',
     term: 'Behandle forkortet periode'
+  },
+  {
+    kode: 'MANGLENDE_INNBETALING_TRYGDEAVGIFT',
+    term: 'Vurdering manglende innbetaling trygdeavgift'
   }
 ];
 module.exports.behandlingstyper = behandlingstyper;
