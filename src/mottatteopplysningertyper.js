@@ -24,7 +24,7 @@ const mottatteopplysningertyper = [
     term: 'Søknad om medlemskap i folketrygden'
   },
   {
-    kode: 'SØKNAD_YRKESAKTIVE_NORGE_ELLER UTENFOR_EØS',
+    kode: 'SØKNAD_YRKESAKTIVE_NORGE_ELLER_UTENFOR_EØS',
     term: 'Søknadsopplysninger om yrkesaktive utenfor EØS eller i Norge'
   },
   {
