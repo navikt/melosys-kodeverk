@@ -16,14 +16,6 @@ const mottatteopplysningertyper = [
     term: 'Søknad om A1 for utsendte arbeidstakere innen EØS/Sveits',
   },
   {
-    kode: 'SØKNAD_FOLKETRYGDEN',
-    term: 'Søknad om medlemskap i folketrygden'
-  },
-  {
-    kode: 'SØKNAD_TRYGDEAVTALE',
-    term: 'Søknad om medlemskap i folketrygden'
-  },
-  {
     kode: 'SØKNAD_YRKESAKTIVE_NORGE_ELLER_UTENFOR_EØS',
     term: 'Søknadsopplysninger om yrkesaktive utenfor EØS eller i Norge'
   },
