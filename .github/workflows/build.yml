@@ -6,6 +6,9 @@ on:
     branches:
       - master
 
+permissions:
+  packages: write
+
 jobs:
   bygge_frontend:
     runs-on: ubuntu-latest
