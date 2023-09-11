@@ -56,10 +56,6 @@ const behandlingstema = [
     term: 'Forespørsel om trygdetid'
   },
   {
-    kode: 'ARBEID_I_UTLANDET',
-    term: 'Arbeid i utlandet'
-  },
-  {
     kode: 'UNNTAK_MEDLEMSKAP',
     term: 'Søknad om unntak fra folketrygdloven'
   },
