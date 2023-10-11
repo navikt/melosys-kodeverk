@@ -4,12 +4,12 @@ const fullmaktstype = [
     term: 'Fullmektig for søknad'
   },
   {
-    kode: 'REPRESENTANT_ARBEIDSGIVER',
-    term: 'Fullmektig for betaling'
+    kode: 'FULLMEKTIG_ARBEIDSGIVER',
+    term: 'Fullmektig for arbeidsgiver'
   },
   {
     kode: 'FULLMEKTIG_TRYGDEAVGIFT',
-    term: 'Fullmektig for betaling'
+    term: 'Fullmektig for betaling trygdeavgift'
   }
 ];
 module.exports.fullmaktstype = fullmaktstype;
