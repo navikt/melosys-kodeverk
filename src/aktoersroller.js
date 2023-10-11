@@ -17,6 +17,10 @@ const aktoersroller = [
     term: 'Fullmektig'
   },
   {
+    kode: 'FULLMEKTIG',
+    term: 'Fullmektig'
+  },
+  {
     kode: 'TRYGDEMYNDIGHET',
     term: 'Trygdemyndighet'
   },

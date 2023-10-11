@@ -5,6 +5,8 @@ aktoersroller:
     term: Arbeidsgiver
   - kode: REPRESENTANT
     term: Fullmektig
+  - kode: FULLMEKTIG
+    term: Fullmektig
   - kode: MYNDIGHET
     term: Trygdemyndighet
   - kode: REPRESENTANT_TRYGDEAVGIFT
