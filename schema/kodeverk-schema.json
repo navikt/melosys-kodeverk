@@ -458,6 +458,9 @@
     "flyvningstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "fullmaktstype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "medlemskapstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },

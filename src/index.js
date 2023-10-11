@@ -2,7 +2,7 @@
  * Kodeverk.
  * @module
  */
-const { aktoersroller } = require('./aktoerroller');
+const { aktoersroller } = require('./aktoersroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avgiftsdekning } = require('./avgiftsdekning');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
@@ -25,6 +25,7 @@ const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
 const { mottakerroller } = require('./mottakerroller');
 const { flyvningstyper } = require('./flyvningstyper');
+const { fullmaktstype} = require('./fullmaktstype');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -70,6 +71,7 @@ const KodeTermObjects = {
   maritimtyper,
   mottakerroller,
   flyvningstyper,
+  fullmaktstype,
   medlemskapstyper,
   mottaksretning,
   oppgavetyper,
