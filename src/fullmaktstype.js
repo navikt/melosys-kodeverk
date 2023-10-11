@@ -1,3 +1,8 @@
+/**
+ * Kodeverk/fullmaktstyper
+ * ref: https://confluence.adeo.no/display/TEESSI/Kodeverk+i+Melosys#KodeverkiMelosys-Akt%C3%B8rsrollerogfullmaktstype
+ * @module
+ */
 const fullmaktstype = [
   {
     kode: 'FULLMEKTIG_SØKNAD',
