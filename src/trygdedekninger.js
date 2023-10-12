@@ -5,7 +5,7 @@
 const trygdedekninger = [
   {
     kode: 'UTEN_DEKNING',
-    term: 'Uten dekning'
+    term: 'Uten dekning i folketrygden'
   },
   {
     kode: 'FULL_DEKNING_EOSFO',
@@ -37,11 +37,11 @@ const trygdedekninger = [
   },
   {
     kode: 'UNNTATT_CAN_7_5_B',
-    term: 'Trygdeavtale Canada - Artikkel 7 nr. 5 bokstav b'
+    term: 'Helsedel (Canada Art. 7 nr. 5 bokstav b)'
   },
   {
     kode: 'UNNTATT_USA_5_2_G',
-    term: 'Trygdeavtale USA - Artikkel 5 nr. 2 bokstav g'
+    term: 'Helsedel (USA Art. 5 nr. 2 bokstav g)'
   },
   {
     kode: 'FULL_DEKNING',
