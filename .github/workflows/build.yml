@@ -15,7 +15,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: '12'
       - uses: actions/cache@v1
@@ -81,7 +81,7 @@ jobs:
       backend_versjon: ${{ steps.versjoner.outputs.backend }}
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: '12'
       - name: Øk versjon
@@ -125,7 +125,7 @@ jobs:
         with:
           name: melosys-kodeverk-lib
           path: lib
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: '12'
           registry-url: 'https://npm.pkg.github.com/'
