@@ -28,7 +28,7 @@ const produserbaredokumenter = [
     term: 'Vedtak om medlemskap'
   },
   {
-    kode: 'VARSELBREV_MANGLENDE_INNBETALING_FTRL',
+    kode: 'VARSELBREV_MANGLENDE_INNBETALING',
     term: 'Varsel om manglende innbetaling av trygdeavgift'
   },
   {
