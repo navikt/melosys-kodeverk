@@ -93,6 +93,10 @@ const produserbaredokumenter = [
     term: 'Orienteringsbrev om utpeking til et annet land'
   },
   {
+    kode: 'OPPHOERT_MEDLEMSKAP',
+    term: 'Vedtak om opphør av frivillig medlemskap'
+  },
+  {
     kode: 'TRYGDEAVTALE_GB',
     term: 'Vedtaksbrev innvilgelse og Attest for NO/UK 1'
   },
