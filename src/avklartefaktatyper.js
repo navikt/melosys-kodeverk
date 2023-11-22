@@ -62,6 +62,10 @@ const avklartefaktatyper = [
   {
     kode: 'VURDERING_MEDLEMSKAP_EKTEFELLE_SAMBOER',
     term: null
-  }
+  },
+    {
+        kode: 'FULLSTENDIG_MANGLENDE_INNBETALING',
+        term: null
+    }
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
