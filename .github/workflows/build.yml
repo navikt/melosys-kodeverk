@@ -95,7 +95,7 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.TEMP_GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Hent short sha1
         if: github.ref != 'refs/heads/master'
         id: parse_commit
