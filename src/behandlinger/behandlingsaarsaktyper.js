@@ -18,6 +18,10 @@ const behandlingsaarsaktyper = [
   {
     kode: 'FRITEKST',
     term: 'Fritekst'
+  },
+  {
+    kode: 'MELDING_OM_MANGLENDE_INNBETALING',
+    term: 'Melding om manglende innbetaling'
   }
 ];
 
