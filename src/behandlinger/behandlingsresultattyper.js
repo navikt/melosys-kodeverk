@@ -75,6 +75,10 @@ const behandlingsresultattyper = [
   {
     kode: 'OMGJORT',
     term: 'Vedtak er omgjort (fvl § 35)'
+  },
+  {
+    kode: 'AVBRUTT',
+    term: 'Avbrutt av Melosys'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
