@@ -37,6 +37,10 @@ const saksstatuser = [
   {
     kode: 'ANNULLERT',
     term: 'Saken er annullert'
+  },
+  {
+    kode: 'OPPHØRT',
+    term: 'Saken har opphørt'
   }
 ];
 module.exports.saksstatuser = saksstatuser;

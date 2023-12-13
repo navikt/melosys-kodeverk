@@ -79,6 +79,18 @@ const behandlingsresultattyper = [
   {
     kode: 'AVBRUTT',
     term: 'Avbrutt av Melosys'
+  },
+  {
+    kode: 'OPPHØRT',
+    term: 'Opphørt'
+  },
+  {
+    kode: 'DELVIS_OPPHØRT',
+    term: 'Delvis opphørt'
+  },
+  {
+    kode: 'ANNULLERT',
+    term: 'Annullert'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
