@@ -5,19 +5,23 @@
 const vedtakstyper = [
   {
     kode: 'FØRSTEGANGSVEDTAK',
-    term: null,
+    term: 'Førstegangsvedtak',
   },
   {
     kode: 'KORRIGERT_VEDTAK',
-    term: null,
+    term: 'Korrigert vedtak',
   },
   {
     kode: 'OMGJØRINGSVEDTAK',
-    term: null,
+    term: 'Omgjøringsvedtak',
   },
   {
     kode: 'ENDRINGSVEDTAK',
-    term: null,
+    term: 'Endringsvedtak',
+  },
+  {
+    kode: 'OPPHØRSVEDTAK',
+    term: 'Opphørsvedtak',
   }
 ];
 module.exports.vedtakstyper = vedtakstyper;
