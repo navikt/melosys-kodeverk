@@ -14,6 +14,10 @@ const innvilgelsesResultat = [
   {
     kode: 'AVSLAATT',
     term: 'Avslått'
+  },
+  {
+    kode: 'OPPHØRT',
+    term: 'Opphørt'
   }
 ];
 module.exports.innvilgelsesResultat = innvilgelsesResultat;
