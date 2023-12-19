@@ -49,6 +49,10 @@ const kontroll_begrunnelser = [
     term: 'Personen har en folkeregistrert bostedsadresse i Norge'
   },
   {
+    kode: 'BOSATT_I_NORGE_I_PERIODEN',
+    term: 'Personen har bostedsadresse i Norge i perioden'
+  },
+  {
     kode: 'INGEN_SLUTTDATO',
     term: 'Sluttdato mangler'
   },
