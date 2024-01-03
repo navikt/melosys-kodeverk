@@ -122,6 +122,10 @@ const folketrygdloven_kap2_bestemmelser = [
   {
     kode: 'FTRL_KAP2_2_7A',
     term: '§ 2-7a (frivillig medlemskap på utenlandsk skip)'
+  },
+  {
+    kode: 'FTRL_KAP2_2_15_ANDRE_LEDD',
+    term: '§ 2-15 andre ledd (opphør pga. manglende innbetaling)'
   }
 ];
 module.exports.folketrygdloven_kap2_bestemmelser = folketrygdloven_kap2_bestemmelser;
