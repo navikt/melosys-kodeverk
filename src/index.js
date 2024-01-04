@@ -44,6 +44,7 @@ const { vedleggstitler } = require('./vedleggstitler');
 const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
+const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
 
 const Transform  = require('./transform');
 
@@ -90,6 +91,7 @@ const KodeTermObjects = {
   vedtakstyper,
   vilkaar,
   yrker,
+    forvaltningsmeldingMottaker,
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
