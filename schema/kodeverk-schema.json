@@ -86,7 +86,8 @@
     "utfallregistreringunntak",
     "vedleggstitler",
     "vilkaar",
-    "yrker"
+    "yrker",
+    "forvaltningsmeldingMottaker"
   ],
   "properties": {
     "aktoersroller": {
@@ -536,6 +537,9 @@
           "$ref": "#/definitions/kodeverkArray"
         }
       }
+    },
+    "forvaltningsmeldingMottaker": {
+      "$ref": "#/definitions/kodeverkArray"
     }
   }
 }
