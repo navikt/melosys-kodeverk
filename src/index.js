@@ -91,7 +91,7 @@ const KodeTermObjects = {
   vedtakstyper,
   vilkaar,
   yrker,
-    forvaltningsmeldingMottaker,
+  forvaltningsmeldingMottaker,
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);

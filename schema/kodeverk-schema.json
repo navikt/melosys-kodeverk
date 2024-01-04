@@ -87,7 +87,7 @@
     "vedleggstitler",
     "vilkaar",
     "yrker",
-      "forvaltningsmeldingMottaker"
+    "forvaltningsmeldingMottaker"
   ],
   "properties": {
     "aktoersroller": {
@@ -538,8 +538,8 @@
         }
       }
     },
-      "forvaltningsmeldingMottaker": {
-          "$ref": "#/definitions/kodeverkArray"
-      }
+    "forvaltningsmeldingMottaker": {
+      "$ref": "#/definitions/kodeverkArray"
+    }
   }
 }
