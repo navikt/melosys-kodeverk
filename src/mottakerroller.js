@@ -27,5 +27,9 @@ const mottakerroller = [
     kode: 'NORSK_MYNDIGHET',
     term: 'Norsk myndighet'
   },
+  {
+    kode: 'ANNEN_PERSON',
+    term: 'Annen person'
+  },
 ];
 module.exports.mottakerroller = mottakerroller;
