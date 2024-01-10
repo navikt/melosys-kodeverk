@@ -97,6 +97,10 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
+    kode: 'MANGLENDE_OPPL_ADRESSE_ARBEIDSFORHOLD_UTL',
+    term: 'Oppgitt adresse til utenlandsk arbeidsgiver/virksomhet er ufullstendig.'
+  },
+  {
     kode: 'MER_ENN_12_MD',
     term: 'Perioden er mer enn 12 måneder!'
   },
