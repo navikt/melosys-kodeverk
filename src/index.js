@@ -30,7 +30,6 @@ const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
 const { personstatuser } = require('./personstatuser');
-const { representerer } = require('./representerer');
 const { saksstatuser } = require('./saksstatuser');
 const { sakstyper } = require('./sakstyper');
 const { skatteplikttype } = require('./skatteplikttype');
@@ -77,7 +76,6 @@ const KodeTermObjects = {
   mottaksretning,
   oppgavetyper,
   personstatuser,
-  representerer,
   saksstatuser,
   sakstyper,
   skatteplikttype,
