@@ -75,7 +75,6 @@
     "mottaksretning",
     "oppgavetyper",
     "personstatuser",
-    "representerer",
     "saksstatuser",
     "skatteplikttype",
     "sakstyper",
@@ -472,9 +471,6 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "personstatuser": {
-      "$ref": "#/definitions/kodeverkArray"
-    },
-    "representerer": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "saerligeavgiftsgrupper": {

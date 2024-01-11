@@ -613,13 +613,6 @@ oppgavetyper:
     term: Vurder dokument
   - kode: BEH_SED
     term: Behandle SED
-representerer:
-  - kode: BRUKER
-    term: Representerer bruker
-  - kode: ARBEIDSGIVER
-    term: Representerer arbeidsgiver
-  - kode: BEGGE
-    term: Representerer bruker og arbeidsgiver
 saksstatuser:
   - kode: OPPRETTET
     term: Saken er opprettet
