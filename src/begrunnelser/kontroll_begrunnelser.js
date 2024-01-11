@@ -85,8 +85,16 @@ const kontroll_begrunnelser = [
     term: 'Ingen gyldig adresse funnet. Fullmektig må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
   },
   {
-    kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
-    term: 'Arbeidssted(er) i utlandet er mangelfullt utfylt.'
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LAND',
+    term: 'Arbeidssted(er) i utlandet(land) er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_MARITIM',
+    term: 'Arbeidssted(er) i utlandet(skip) er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LUFTFART',
+    term: 'Arbeidssted(er) i utlandet(fly) er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_NO',
