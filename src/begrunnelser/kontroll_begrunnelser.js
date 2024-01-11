@@ -86,7 +86,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
-    term: 'Navn og land for arbeidssted trengs for utfylling av SED.'
+    term: 'Arbeidssted(er) i utlandet er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_NO',
@@ -97,8 +97,8 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
-    kode: 'MANGLENDE_OPPL_ADRESSE_ARBEIDSFORHOLD_UTL',
-    term: 'Oppgitt adresse til utenlandsk arbeidsgiver/virksomhet er ufullstendig.'
+    kode: 'MANGLENDE_OPPL_ARBEIDSFORHOLD_UTL',
+    term: 'Arbeidsgiver i utlandet er mangelfullt utfylt.'
   },
   {
     kode: 'MER_ENN_12_MD',
