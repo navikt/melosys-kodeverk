@@ -85,8 +85,16 @@ const kontroll_begrunnelser = [
     term: 'Ingen gyldig adresse funnet. Fullmektig må enten registrere adresse i Folkeregisteret eller kontaktadresse via nav.no'
   },
   {
-    kode: 'MANGLENDE_OPPL_ARBEIDSSTED',
-    term: 'Navn og land for arbeidssted trengs for utfylling av SED.'
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LAND',
+    term: 'Arbeidssted(er) i utlandet(land) er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_MARITIM',
+    term: 'Arbeidssted(er) i utlandet(skip) er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LUFTFART',
+    term: 'Arbeidssted(er) i utlandet(fly) er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_NO',
@@ -97,8 +105,8 @@ const kontroll_begrunnelser = [
     term: 'Navn og land for andre arbeidsforhold i utlandet trengs for utfylling av SED.'
   },
   {
-    kode: 'MANGLENDE_OPPL_ADRESSE_ARBEIDSFORHOLD_UTL',
-    term: 'Oppgitt adresse til utenlandsk arbeidsgiver/virksomhet er ufullstendig.'
+    kode: 'MANGLENDE_OPPL_ARBEIDSFORHOLD_UTL',
+    term: 'Arbeidsgiver i utlandet er mangelfullt utfylt.'
   },
   {
     kode: 'MER_ENN_12_MD',
