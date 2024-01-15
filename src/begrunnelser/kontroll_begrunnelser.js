@@ -86,15 +86,19 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LAND',
-    term: 'Arbeidssted(er) i utlandet(land) er mangelfullt utfylt.'
+    term: 'Arbeidssted(er) i utlandet(på land) er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED_MARITIM',
-    term: 'Arbeidssted(er) i utlandet(skip) er mangelfullt utfylt.'
+    term: 'Arbeidssted(er) i utlandet(på skip) er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSSTED_LUFTFART',
-    term: 'Arbeidssted(er) i utlandet(fly) er mangelfullt utfylt.'
+    term: 'Arbeidssted(er) i utlandet(på fly) er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_ARBEIDSSTED_OFFSHORE',
+    term: 'Arbeidssted(er) i utlandet(offshore) er mangelfullt utfylt.'
   },
   {
     kode: 'MANGLENDE_OPPL_ANDRE_ARBEIDSFORHOLD_NO',
@@ -107,6 +111,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'MANGLENDE_OPPL_ARBEIDSFORHOLD_UTL',
     term: 'Arbeidsgiver i utlandet er mangelfullt utfylt.'
+  },
+  {
+    kode: 'MANGLENDE_OPPL_SELVSTENDIG_ARBEIDSFORHOLD_UTL',
+    term: 'Selvstendig næringsvirksomhet i utlandet er mangelfullt utfylt.'
   },
   {
     kode: 'MER_ENN_12_MD',
