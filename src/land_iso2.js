@@ -198,6 +198,10 @@ const land_iso2 = [
   {
     kode: 'AT',
     term: 'Østerrike',
+  },
+  {
+    kode: 'KR',
+    term: 'Sør-Korea',
   }
 ];
 module.exports.land_iso2 = land_iso2;
