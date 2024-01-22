@@ -49,7 +49,7 @@ const trygdedekninger = [
   },
   {
     kode: 'FTRL_2-7_TREDJE_LEDD_B_HELSE_SYKE_FORELDREPENGER',
-    name: 'Helsedel med syke- og foreldrepenger (§ 2-7)'
+    term: 'Helsedel med syke- og foreldrepenger (§ 2-7)'
   },
   {
     kode: 'FTRL_2-7A_ANDRE_LEDD_B_HELSE_SYKE_FORELDREPENGER',
