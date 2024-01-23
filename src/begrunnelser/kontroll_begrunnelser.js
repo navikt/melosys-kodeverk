@@ -1,6 +1,8 @@
 /**
  * Kodeverk/vesentligVirksomhet
- * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser
+ * ref: https://confluence.adeo.no/pages/viewpage.action?pageId=320040520
+ * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser+FTRL
+ * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser+TRYGDEAVTALE
  * @module
  */
 const kontroll_begrunnelser = [
