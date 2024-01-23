@@ -1,6 +1,8 @@
 /**
  * Kodeverk/vesentligVirksomhet
- * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser
+ * ref: https://confluence.adeo.no/pages/viewpage.action?pageId=320040520
+ * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser+FTRL
+ * ref: https://confluence.adeo.no/display/TEESSI/Ulike+begrunnelser+TRYGDEAVTALE
  * @module
  */
 const kontroll_begrunnelser = [
@@ -19,6 +21,14 @@ const kontroll_begrunnelser = [
   {
     kode: 'OVERLAPPENDE_MEDLEMSKAPSPERIODER',
     term: 'Det finnes overlappende medlemskapsperiode i MEDL'
+  },
+  {
+    kode: 'OPPHOERT_OVERLAPPER_INNVILGET_PERIODE',
+    term: 'Opphørt periode overlapper med innvilget periode'
+  },
+  {
+    kode: 'OPPHOERT_OVERLAPPER_OPPHOERT_PERIODE',
+    term: 'Opphørte perioder overlapper'
   },
   {
     kode: 'MOTTAR_YTELSER',
