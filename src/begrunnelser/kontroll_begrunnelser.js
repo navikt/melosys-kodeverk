@@ -23,14 +23,6 @@ const kontroll_begrunnelser = [
     term: 'Det finnes overlappende medlemskapsperiode i MEDL'
   },
   {
-    kode: 'OPPHOERT_OVERLAPPER_INNVILGET_PERIODE',
-    term: 'Opphørt periode overlapper med innvilget periode'
-  },
-  {
-    kode: 'OPPHOERT_OVERLAPPER_OPPHOERT_PERIODE',
-    term: 'Opphørte perioder overlapper'
-  },
-  {
     kode: 'MOTTAR_YTELSER',
     term: 'Personen mottar ytelser'
   },
