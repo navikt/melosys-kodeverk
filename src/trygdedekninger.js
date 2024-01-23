@@ -47,5 +47,13 @@ const trygdedekninger = [
     kode: 'FULL_DEKNING',
     term: 'Full dekning i trygden'
   },
+  {
+    kode: 'FTRL_2_7_TREDJE_LEDD_B_HELSE_SYKE_FORELDREPENGER',
+    term: 'Helsedel med syke- og foreldrepenger (§ 2-7)'
+  },
+  {
+    kode: 'FTRL_2_7A_ANDRE_LEDD_B_HELSE_SYKE_FORELDREPENGER',
+    term: 'Helsedel med syke- og foreldrepenger (§ 2-7a)'
+  },
 ];
 module.exports.trygdedekninger = trygdedekninger;
