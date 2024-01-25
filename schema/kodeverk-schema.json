@@ -221,6 +221,7 @@
           "additionalProperties": false,
           "required": [
             "endret_unntaksperiode",
+            "ftrl_2_7_begrunnelser",
             "ftrl_2_8_forutgaaende_trygdetid_begrunnelser",
             "ftrl_2_8_naer_tilknytning_norge_begrunnelser",
             "avslag",
@@ -229,6 +230,9 @@
           ],
           "properties": {
             "endret_unntaksperiode": {
+              "$ref": "#/definitions/kodeverkArray"
+            },
+            "ftrl_2_7_begrunnelser": {
               "$ref": "#/definitions/kodeverkArray"
             },
             "ftrl_2_8_forutgaaende_trygdetid_begrunnelser": {
