@@ -65,7 +65,7 @@ const vilkaar = [
   },
   {
     kode: 'FTRL_2-1A_TRYGDEKOORDINGERING',
-    term: 'Har du kommet frem til at søker ikke er omfattet av et annet lands trygdelovgivning, etter en avtale som hindrer frivillig medlemskap?',
+    term: 'Har du kommet frem til at søker ikke er omfattet av et annet lands trygdelovgivning, etter en avtale som hindrer frivillig medlemskap?'
   },
   {
     kode: 'FTRL_2-1_BOSATT_NORGE',
