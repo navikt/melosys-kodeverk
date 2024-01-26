@@ -64,27 +64,27 @@ const vilkaar = [
     term: 'Har søker nær tilknytning til det norske samfunnet?'
   },
   {
-    kode: 'FTRL_2-1A_TRYGDEKOORDINGERING',
+    kode: 'FTRL_2_1A_TRYGDEKOORDINGERING',
     term: 'Har du kommet frem til at søker ikke er omfattet av et annet lands trygdelovgivning, etter en avtale som hindrer frivillig medlemskap?'
   },
   {
-    kode: 'FTRL_2-1_BOSATT_NORGE',
+    kode: 'FTRL_2_1_BOSATT_NORGE',
     term: 'Har søker oppholdt seg eller hatt til hensikt å oppholde seg i Norge i minst 12 måneder?'
   },
   {
-    kode: 'FTRL_2-7_IKKE_PLIKTIG_MEDLEM',
+    kode: 'FTRL_2_7_IKKE_PLIKTIG_MEDLEM',
     term: 'Oppholder søker seg i Norge uten å være pliktig medlem?'
   },
   {
-    kode: 'FTRL_2-7_RIMELIGHETSVURDERING',
+    kode: 'FTRL_2_7_RIMELIGHETSVURDERING',
     term: 'Er det, etter en samlet vurdering, rimelig at søker får innvilget frivillig medlemskap?'
   },
   {
-    kode: 'FTRL_2-7A_BOSATT_I_NORGE',
+    kode: 'FTRL_2_7A_BOSATT_I_NORGE',
     term: 'Er søker bosatt i Norge?'
   },
   {
-    kode: 'FTRL_2-7A_SKIP_UTENFOR_EØS',
+    kode: 'FTRL_2_7A_SKIP_UTENFOR_EØS',
     term: 'Er søker i arbeid på et skip registrert i en stat utenfor EØS-området?'
   }
 ];
