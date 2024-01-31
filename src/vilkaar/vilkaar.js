@@ -68,10 +68,6 @@ const vilkaar = [
     term: 'Har du kommet frem til at søker ikke er omfattet av et annet lands trygdelovgivning, etter en avtale som hindrer frivillig medlemskap?'
   },
   {
-    kode: 'FTRL_2_1_BOSATT_NORGE',
-    term: 'Har søker oppholdt seg eller hatt til hensikt å oppholde seg i Norge i minst 12 måneder?'
-  },
-  {
     kode: 'FTRL_2_7_IKKE_PLIKTIG_MEDLEM',
     term: 'Oppholder søker seg i Norge uten å være pliktig medlem?'
   },
