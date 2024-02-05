@@ -121,7 +121,7 @@ const folketrygdloven_kap2_bestemmelser = [
   },
   {
     kode: 'FTRL_KAP2_2_7A',
-    term: '§ 2-7a (frivillig medlemskap på utenlandsk skip)'
+    term: '§ 2-7a (bosatt i Norge, arbeid på utenlandsk skip)'
   },
   {
     kode: 'FTRL_KAP2_2_15_ANDRE_LEDD',
