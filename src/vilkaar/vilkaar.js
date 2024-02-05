@@ -60,6 +60,10 @@ const vilkaar = [
     term: 'Har søker vært medlem i minst tre av de fem siste kalenderårene?'
   },
   {
+    kode: 'FTRL_2_8_FØRSTE_LEDD_NÆR_TILKNYTNING_NORGE',
+    term: 'Har søker nær tilknytning til det norske samfunnet?'
+  },
+  {
     kode: 'FTRL_2_8_NÆR_TILKNYTNING_NORGE',
     term: 'Har søker nær tilknytning til det norske samfunnet?'
   },
