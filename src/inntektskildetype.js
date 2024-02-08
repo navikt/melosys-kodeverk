@@ -19,5 +19,13 @@ const inntektskildetype = [
     kode: 'MISJONÆR',
     term: 'Misjonær som skal arbeide i utlandet i minst to år',
   },
+  {
+    kode: 'PENSJON_UFØRETRYGD',
+    term: 'Pensjon/uføretrygd',
+  },
+  {
+    kode: 'PENSJON_UFØRETRYGD_KILDESKATT',
+    term: 'Pensjon/uføretrygd det betales kildeskatt av',
+  },
 ];
 module.exports.inntektskildetype = inntektskildetype;
