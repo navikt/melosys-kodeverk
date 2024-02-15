@@ -26,6 +26,8 @@ const { maritimtyper } = require('./maritimtyper');
 const { mottakerroller } = require('./mottakerroller');
 const { flyvningstyper } = require('./flyvningstyper');
 const { fullmaktstype} = require('./fullmaktstype');
+const { ikkeyrkesaktivoppholdtype } = require('./ikkeyrkesaktivoppholdtype');
+const { ikkeyrkesaktivrelasjontype } = require('./ikkeyrkesaktivrelasjontype');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -62,6 +64,8 @@ const KodeTermObjects = {
   finansiering,
   forespoerseltyper,
   folketrygdloven_kap2_bestemmelser,
+  ikkeyrkesaktivoppholdtype,
+  ikkeyrkesaktivrelasjontype,
   innretningstyper,
   inntektskildetype,
   innvilgelsesResultat,
