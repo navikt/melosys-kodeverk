@@ -465,6 +465,12 @@
     "fullmaktstype": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "ikkeyrkesaktivoppholdtype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "ikkeyrkesaktivrelasjontype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "medlemskapstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
