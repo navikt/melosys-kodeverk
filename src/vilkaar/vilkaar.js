@@ -138,10 +138,6 @@ const vilkaar = [
   {
     kode: 'FTRL_2_8_FORSØRGET_FAMILIEMEDLEM',
     term: 'Er søker forsørget og oppholder seg sammen med en person som er medlem etter § 2-8 første eller andre ledd?'
-  },
-  {
-    kode: 'FTRL_2_12_UNNTAK_TURISTSKIP',
-    term: 'Folketrygdloven § 2-12'
   }
 ];
 module.exports.vilkaar = vilkaar;
