@@ -116,10 +116,6 @@ const vilkaar = [
     term: 'Er søker i arbeid på et skip registrert i en stat utenfor EØS-området?'
   },
   {
-    kode: 'FTRL_2_8_FORUTGÅENDE_TRYGDETID',
-    term: 'Har søker vært medlem i minst tre av de fem siste kalenderårene?'
-  },
-  {
     kode: 'FTRL_FORUTGÅENDE_TRYGDETID',
     term: 'Har søker vært medlem i minst tre av de fem siste kalenderårene?'
   },
