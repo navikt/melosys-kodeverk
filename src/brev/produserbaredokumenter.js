@@ -25,7 +25,7 @@ const produserbaredokumenter = [
   },
   {
     kode: 'IKKE_YRKESAKTIV_VEDTAKSBREV',
-    term: 'Vedtak om medlemskap'
+    term: 'Vedtak om pliktig medlemskap'
   },
   {
     kode: 'VARSELBREV_MANGLENDE_INNBETALING',
@@ -39,6 +39,10 @@ const produserbaredokumenter = [
   {
     kode: 'INNVILGELSE_FOLKETRYGDLOVEN',
     term: 'Vedtak om frivillig medlemskap'
+  },
+  {
+    kode: 'IKKE_YRKESAKTIV_PLIKTIG_FTRL',
+    term: 'Vedtak om pliktig medlemskap'
   },
   {
     kode: 'ORIENTERING_ANMODNING_UNNTAK',
