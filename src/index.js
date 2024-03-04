@@ -25,9 +25,10 @@ const { lovvalgsbestemmelser } = require('./lovvalgsbestemmelser');
 const { maritimtyper } = require('./maritimtyper');
 const { mottakerroller } = require('./mottakerroller');
 const { flyvningstyper } = require('./flyvningstyper');
-const { fullmaktstype} = require('./fullmaktstype');
+const { fullmaktstype } = require('./fullmaktstype');
 const { ikkeyrkesaktivoppholdtype } = require('./ikkeyrkesaktivoppholdtype');
 const { ikkeyrkesaktivrelasjontype } = require('./ikkeyrkesaktivrelasjontype');
+const { arbeidssituasjontype } = require('./arbeidssituasjontype');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -47,7 +48,7 @@ const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
 
-const Transform  = require('./transform');
+const Transform = require('./transform');
 
 const KodeTermObjects = {
   aktoersroller,
@@ -66,6 +67,7 @@ const KodeTermObjects = {
   folketrygdloven_kap2_bestemmelser,
   ikkeyrkesaktivoppholdtype,
   ikkeyrkesaktivrelasjontype,
+  arbeidssituasjontype,
   innretningstyper,
   inntektskildetype,
   innvilgelsesResultat,
@@ -93,7 +95,7 @@ const KodeTermObjects = {
   vedtakstyper,
   vilkaar,
   yrker,
-  forvaltningsmeldingMottaker,
+  forvaltningsmeldingMottaker
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
