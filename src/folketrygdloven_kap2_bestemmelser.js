@@ -4,20 +4,12 @@
  */
 const folketrygdloven_kap2_bestemmelser = [
   {
-    kode: 'FTRL_KAP2_2_1_FØRSTE_LEDD',
-    term: '§ 2-1 første ledd (bosatt i Norge)'
-  },
-  {
-    kode: 'FTRL_KAP2_2_1_FJERDE_LEDD',
-    term: '§ 2-1 fjerde ledd (midlertidig fravær under 12 mnd)'
+    kode: 'FTRL_KAP2_2_1',
+    term: '§ 2-1 (bosatt i Norge)'
   },
   {
     kode: 'FTRL_KAP2_2_2',
     term: '§ 2-2 (arbeidstaker i Norge)'
-  },
-  {
-    kode: 'FTRL_KAP2_2_3_FØRSTE_LEDD',
-    term: '§ 2-3 første ledd (pliktig før opphold)'
   },
   {
     kode: 'FTRL_KAP2_2_3_ANDRE_LEDD',
@@ -98,18 +90,6 @@ const folketrygdloven_kap2_bestemmelser = [
   {
     kode: 'FTRL_KAP2_2_5_ANDRE_LEDD',
     term: '§ 2-5 andre ledd (familiemedlemmer)'
-  },
-  {
-    kode: 'FTRL_KAP2_2_6_FØRSTE_LEDD_A',
-    term: '§ 2-6 (norsk skip i utenriksfart)'
-  },
-  {
-    kode: 'FTRL_KAP2_2_6_FØRSTE_LEDD_B',
-    term: '§ 2-6 (norsk fiskefartøy)'
-  },
-  {
-    kode: 'FTRL_KAP2_2_6_FØRSTE_LEDD_C',
-    term: '§ 2-6 (norsk sivilt luftfartsselskap)'
   },
   {
     kode: 'FTRL_KAP2_2_7_FØRSTE_LEDD',
