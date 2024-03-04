@@ -5,59 +5,59 @@
 const avklartefaktatyper = [
   {
     kode: 'VIRKSOMHET',
-    term: null,
+    term: null
   },
   {
     kode: 'TIDLIGERE_LOVVALGSPERIODE',
-    term: null,
+    term: null
   },
   {
     kode: 'ARBEIDSLAND',
-    term: null,
+    term: null
   },
   {
     kode: 'ARBEID_SOKKEL_SKIP',
-    term: null,
+    term: null
   },
   {
     kode: 'YRKESGRUPPE',
-    term: null,
+    term: null
   },
   {
     kode: 'SOKKEL_ELLER_SKIP',
-    term: null,
+    term: null
   },
   {
     kode: 'BOSTEDSLAND',
-    term: null,
+    term: null
   },
   {
     kode: 'AARSAK_ENDRING_PERIODE',
-    term: null,
+    term: null
   },
   {
     kode: 'VURDERING_UNNTAK_PERIODE',
-    term: null,
+    term: null
   },
   {
     kode: 'MARGINALT_ARBEID',
-    term: null,
+    term: null
   },
   {
     kode: 'VESENTLIG_AKTIVITET_I_NORGE',
-    term: null,
+    term: null
   },
   {
     kode: 'ARBEIDSGIVERS_FORRETNINGSSTED',
-    term: null,
+    term: null
   },
   {
     kode: 'INFORMERT_MYNDIGHET',
-    term: null,
+    term: null
   },
   {
     kode: 'VURDERING_LOVVALG_BARN',
-    term: null,
+    term: null
   },
   {
     kode: 'VURDERING_MEDLEMSKAP_EKTEFELLE_SAMBOER',
@@ -73,6 +73,10 @@ const avklartefaktatyper = [
   },
   {
     kode: 'IKKE_YRKESAKTIV_RELASJON',
+    term: null
+  },
+  {
+    kode: 'ARBEIDSSITUASJON',
     term: null
   }
 ];
