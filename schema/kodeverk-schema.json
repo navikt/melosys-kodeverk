@@ -3,10 +3,7 @@
     "kodeverk": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "kode",
-        "term"
-      ],
+      "required": ["kode", "term"],
       "properties": {
         "kode": {
           "anyOf": [
@@ -16,9 +13,7 @@
             }
           ],
           "default": "",
-          "examples": [
-            "OPPRETTET"
-          ]
+          "examples": ["OPPRETTET"]
         },
         "term": {
           "anyOf": [
@@ -31,9 +26,7 @@
             }
           ],
           "default": "",
-          "examples": [
-            "Opprettet"
-          ]
+          "examples": ["Opprettet"]
         }
       }
     },
@@ -110,12 +103,7 @@
     "behandlinger": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "behandlingsaarsaktyper",
-        "behandlingsstatus",
-        "behandlingstyper",
-        "behandlingsresultattyper"
-      ],
+      "required": ["behandlingsaarsaktyper", "behandlingsstatus", "behandlingstyper", "behandlingsresultattyper"],
       "properties": {
         "behandlingsaarsaktyper": {
           "$ref": "#/definitions/kodeverkArray"
@@ -293,10 +281,7 @@
     "brev": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "produserbaredokumenter",
-        "distribusjonstype"
-      ],
+      "required": ["produserbaredokumenter", "distribusjonstype"],
       "properties": {
         "produserbaredokumenter": {
           "$ref": "#/definitions/kodeverkArray"
@@ -471,6 +456,9 @@
     "ikkeyrkesaktivrelasjontype": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "arbeidssituasjontype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "medlemskapstyper": {
       "$ref": "#/definitions/kodeverkArray"
     },
@@ -531,10 +519,7 @@
     "yrker": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "yrkesaktivitetstyper",
-        "yrkesgrupper"
-      ],
+      "required": ["yrkesaktivitetstyper", "yrkesgrupper"],
       "properties": {
         "yrkesaktivitetstyper": {
           "$ref": "#/definitions/kodeverkArray"
