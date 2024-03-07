@@ -1,4 +1,5 @@
 const inntektskildetype = [
+    // Inntektskilder for ftrl frivillig medlemskap
     {
         kode: 'ARBEIDSINNTEKT_FRA_NORGE',
         term: 'Arbeidsinntekt fra Norge',
@@ -27,6 +28,8 @@ const inntektskildetype = [
         kode: 'PENSJON_UFØRETRYGD_KILDESKATT',
         term: 'Pensjon/uføretrygd det betales kildeskatt av',
     },
+
+    //Inntektskilder for pliktig medlemskap
     {
         kode: 'ARBEIDSINNTEKT',
         term: 'Arbeidsinntekt fra norsk eller utenlandsk virksomhet. ' +
