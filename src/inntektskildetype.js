@@ -30,7 +30,7 @@ const inntektskildetype = [
     {
         kode: 'ARBEIDSINNTEKT',
         term: 'Arbeidsinntekt fra norsk eller utenlandsk virksomhet. ' +
-            'Forutsetning om at norsk arbeidsgiver alltid innraporterer arbeidsgiveravift  til norske myndigheter',
+            'Forutsetning om at norsk arbeidsgiver alltid innraporterer arbeidsgiveravift til norske myndigheter',
     },
     {
         kode: 'NÆRINGSINNTEKT',
