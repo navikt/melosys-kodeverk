@@ -32,21 +32,19 @@ const inntektskildetype = [
     //Inntektskilder for pliktig medlemskap
     {
         kode: 'ARBEIDSINNTEKT',
-        term: 'Arbeidsinntekt fra norsk eller utenlandsk virksomhet. ' +
-            'Forutsetning om at norsk arbeidsgiver alltid innraporterer arbeidsgiveravift til norske myndigheter',
+        term: 'Arbeidsinntekt',
     },
     {
         kode: 'NÆRINGSINNTEKT',
-        term: 'Næringsinntekt fra norsk eller utenlandsk virksomhet. ' +
-            'Dvs. inntekt fra enkeltmannsforetak der det ikke betales arbeidsgiveravgift.',
+        term: 'Næringsinntekt',
     },
     {
         kode: 'PENSJON',
-        term: 'Pensjon fra Norge eller utlandet',
+        term: 'Pensjon',
     },
     {
         kode: 'UFØRETRYGD',
-        term: 'Inntekt fra uføretrygd',
+        term: 'Uføretrygd',
     },
 ];
 module.exports.inntektskildetype = inntektskildetype;
