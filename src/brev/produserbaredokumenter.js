@@ -49,6 +49,10 @@ const produserbaredokumenter = [
     term: 'Vedtak om frivillig medlemskap'
   },
   {
+    kode: 'PLIKTIG_MEDLEM_FTRL',
+    term: 'Vedtak om pliktig medlemskap'
+  },
+  {
     kode: 'ORIENTERING_ANMODNING_UNNTAK',
     term: 'Orienteringsbrev om anmodning unntak'
   },
