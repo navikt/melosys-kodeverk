@@ -24,12 +24,28 @@ const trygdedekninger = [
     term: 'Pensjonsdel (§ 2-9)'
   },
   {
+    kode: 'FTRL_2_9_FØRSTE_LEDD_B_TREDJE_LEDD_PENSJON_YRKESSKADE',
+    term: 'Pensjonsdel med yrkesskadefordeler (§ 2-9)'
+  },
+  {
     kode: 'FTRL_2_9_FØRSTE_LEDD_C_HELSE_PENSJON',
     term: 'Helse- og pensjonsdel (§ 2-9)'
   },
   {
     kode: 'FTRL_2_9_FØRSTE_LEDD_C_ANDRE_LEDD_HELSE_PENSJON_SYKE_FORELDREPENGER',
     term: 'Helse- og pensjonsdel med syke- og foreldrepenger (§ 2-9)'
+  },
+  {
+    kode: 'FTRL_2_9_FØRSTE_LEDD_C_TREDJE_LEDD_HELSE_PENSJON_YRKESSKADE',
+    term: 'Helse- og pensjonsdel med yrkesskadefordeler (§ 2-9)'
+  },
+  {
+    kode: 'FTRL_2_9_FØRSTE_LEDD_C_ANDRE_LEDD_TREDJE_LEDD_HELSE_PENSJON_SYKE_FORELDREPENGER_YRKESSKADE',
+    term: 'Helse- og pensjonsdel med syke-, foreldrepenger og yrkesskadefordeler (§ 2-9)'
+  },
+  {
+    kode: 'FTRL_2_9_TREDJE_LEDD_YRKESSKADE',
+    term: 'Yrkesskadefordeler (§ 2-9)'
   },
   {
     kode: 'FULL_DEKNING_FTRL',
