@@ -16,6 +16,10 @@ const sakstyper = [
   {
     kode: 'FTRL',
     term: 'Utenfor avtaleland',
+  },
+  {
+    kode: 'ÅRSAVREGNING',
+    term: 'Årsavregning',
   }
 ];
 module.exports.sakstyper = sakstyper;
