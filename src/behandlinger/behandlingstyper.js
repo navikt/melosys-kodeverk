@@ -26,6 +26,10 @@ const behandlingstyper = [
   {
     kode: 'MANGLENDE_INNBETALING_TRYGDEAVGIFT',
     term: 'Vurdering manglende innbetaling trygdeavgift'
+  },
+  {
+    kode: 'ÅRSAVREGNING',
+    term: 'Årsavregning'
   }
 ];
 module.exports.behandlingstyper = behandlingstyper;
