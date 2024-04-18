@@ -155,6 +155,10 @@ const kontroll_begrunnelser = [
     term: 'Overgangsregel valgt. Manuell behandling kreves'
   },
   {
+    kode: 'ÅPENT_UTKAST',
+    term: 'Det finnes et åpent brevutkast. Du må sende eller forkaste brevet før du avslutter behandlingen.'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
