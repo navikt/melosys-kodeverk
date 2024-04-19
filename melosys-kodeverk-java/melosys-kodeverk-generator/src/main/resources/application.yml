@@ -43,5 +43,6 @@ generator:
     - Lovvalgsbestemmelser_trygdeavtale_us
     - Tilleggsbestemmelser_trygdeavtale_ca
     - Tilleggsbestemmelser_trygdeavtale_cl
+    - Lovvalgbestemmelser_konv_efta_storbritannia
   pakke-navn: no.nav.melosys.domain.kodeverk
 
