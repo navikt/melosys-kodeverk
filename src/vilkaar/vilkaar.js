@@ -12,11 +12,31 @@ const vilkaar = [
     term: null
   },
   {
+    kode: 'KONV_EFTA_STORBRITANNIA_ART14_1',
+    term: null
+  },
+  {
+    kode: 'KONV_EFTA_STORBRITANNIA_ART16_1',
+    term: null
+  },
+  {
     kode: 'FO_883_2004_ART12_2',
     term: null
   },
   {
+    kode: 'KONV_EFTA_STORBRITANNIA_ART14_2',
+    term: null
+  },
+  {
+    kode: 'KONV_EFTA_STORBRITANNIA_ART16_3',
+    term: null
+  },
+  {
     kode: 'FO_883_2004_ART16_1',
+    term: null
+  },
+  {
+    kode: 'KONV_EFTA_STORBRITANNIA_ART18_1',
     term: null
   },
   {
