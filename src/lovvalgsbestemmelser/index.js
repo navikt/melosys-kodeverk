@@ -3,6 +3,7 @@ const {lovvalgbestemmelser_987_2009} = require('./lovvalgbestemmelser_987_2009')
 const {tilleggsbestemmelser_883_2004} = require('./tilleggsbestemmelser_883_2004');
 const {overgangsregelbestemmelser} = require('./overgangsregelbestemmelser');
 const {lovvalgbestemmelser_konv_efta_storbritannia} = require('./lovvalgbestemmelser_konv_efta_storbritannia');
+const {tilleggsbestemmelser_konv_efta_storbritannia} = require('./tilleggsbestemmelser_konv_efta_storbritannia');
 const {trygdeavtale} = require('./trygdeavtale');
 
 const lovvalgsbestemmelser = {
@@ -11,6 +12,7 @@ const lovvalgsbestemmelser = {
   tilleggsbestemmelser_883_2004,
   overgangsregelbestemmelser,
   lovvalgbestemmelser_konv_efta_storbritannia,
+  tilleggsbestemmelser_konv_efta_storbritannia,
   trygdeavtale,
 };
 module.exports.lovvalgsbestemmelser = lovvalgsbestemmelser;
