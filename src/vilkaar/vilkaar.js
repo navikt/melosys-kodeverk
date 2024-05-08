@@ -76,7 +76,7 @@ const vilkaar = [
     term: null
   },
   {
-    kode: 'KONV_EFTA_STORBRITTANNIA_ART13_4_1',
+    kode: 'KONV_EFTA_STORBRITANNIA_ART13_4_1',
     term: null
   },
   {
@@ -84,7 +84,7 @@ const vilkaar = [
     term: null
   },
   {
-    kode: 'KONV_EFTA_STORBRITTANNIA_ART13_4_2',
+    kode: 'KONV_EFTA_STORBRITANNIA_ART13_4_2',
     term: null
   },
   {
