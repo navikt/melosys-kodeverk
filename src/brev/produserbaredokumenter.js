@@ -145,6 +145,10 @@ const produserbaredokumenter = [
     term: 'Fritekstbrev'
   },
   {
+    kode: 'INNHENTING_AV_INNTEKTSOPPLYSNINGER',
+    term: 'Innhenting av inntektsopplysninger for årsavregning'
+  },
+  {
     kode: 'FRITEKSTBREV',
     term: 'Fritekstbrev'
   },
