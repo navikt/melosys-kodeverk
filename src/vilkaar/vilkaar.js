@@ -40,15 +40,15 @@ const vilkaar = [
     term: null
   },
   {
-    kode: 'ART12_1_VESENTLIG_VIRKSOMHET',
+    kode: 'VESENTLIG_VIRKSOMHET',
     term: null
   },
   {
-    kode: 'ART12_1_FORUTGAAENDE_MEDLEMSKAP',
+    kode: 'FORUTGAAENDE_MEDLEMSKAP',
     term: null
   },
   {
-    kode: 'ART12_2_NORMALT_DRIVER_VIRKSOMHET',
+    kode: 'NORMALT_DRIVER_VIRKSOMHET',
     term: null
   },
   {

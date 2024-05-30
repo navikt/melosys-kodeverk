@@ -130,22 +130,20 @@
       "additionalProperties": false,
       "required": [
         "arbeidsland",
-        "art12_1_begrunnelser",
-        "art12_2_begrunnelser",
-        "art12_1_forutgaaende_medl",
-        "art12_1_vesentlig_virksomhet",
-        "art12_2_normalt_virksomhet",
-        "art16_1_anmodning",
-        "art16_1_anmodning_engelsk",
-        "art16_1_anmodning_uten_art12",
-        "art16_1_anmodning_uten_art12_engelsk",
-        "art16_1_avslag",
-        "art11_4_begrunnelser",
+        "utsendt_arbeidstaker_begrunnelser",
+        "utsendt_naeringsdrivende_begrunnelser",
+        "forutgaaende_medl_begrunnelser",
+        "vesentlig_virksomhet_begrunnelser",
+        "normalt_virksomhet_begrunnelser",
+        "anmodning_begrunnelser",
+        "anmodning_engelsk_begrunnelser",
+        "direkte_til_anmodning_begrunnelser",
+        "direkte_til_anmodning_engelsk_begrunnelser",
+        "avslag_anmodning_begrunnelser",
         "bosted",
         "endretperiode",
         "fartsomrader",
         "folketrygdloven",
-        "forutgaendemedlemskap",
         "henleggelsesgrunner",
         "ikkeskip",
         "ikke_godkjent_begrunnelser",
@@ -162,37 +160,34 @@
         "arbeidsland": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art12_1_begrunnelser": {
+        "utsendt_arbeidstaker_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art12_2_begrunnelser": {
+        "utsendt_naeringsdrivende_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art12_1_forutgaaende_medl": {
+        "forutgaaende_medl_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art12_1_vesentlig_virksomhet": {
+        "vesentlig_virksomhet_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art12_2_normalt_virksomhet": {
+        "normalt_virksomhet_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art16_1_anmodning": {
+        "anmodning_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art16_1_anmodning_engelsk": {
+        "anmodning_engelsk_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art16_1_anmodning_uten_art12": {
+        "direkte_til_anmodning_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art16_1_anmodning_uten_art12_engelsk": {
+        "direkte_til_anmodning_engelsk_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
-        "art16_1_avslag": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "art11_4_begrunnelser": {
+        "avslag_anmodning_begrunnelser": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "bosted": {
@@ -239,9 +234,6 @@
               "$ref": "#/definitions/kodeverkArray"
             }
           }
-        },
-        "forutgaendemedlemskap": {
-          "$ref": "#/definitions/kodeverkArray"
         },
         "henleggelsesgrunner": {
           "$ref": "#/definitions/kodeverkArray"

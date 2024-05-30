@@ -1,4 +1,4 @@
-const art12_1_begrunnelser = [
+const utsendt_arbeidstaker_begrunnelser = [
   {
     kode: 'UTSENDELSE_OVER_24_MN',
     term: 'Utsendingen er ment å vare mer enn 24 md.',
@@ -28,4 +28,4 @@ const art12_1_begrunnelser = [
     term: 'Foretaket har ikke vesentlig virksomhet i Norge',
   }
 ];
-module.exports.art12_1_begrunnelser = art12_1_begrunnelser;
+module.exports.utsendt_arbeidstaker_begrunnelser = utsendt_arbeidstaker_begrunnelser;

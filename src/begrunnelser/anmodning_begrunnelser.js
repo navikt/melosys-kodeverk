@@ -1,4 +1,4 @@
-const art16_1_anmodning = [
+const anmodning_begrunnelser = [
   {
     kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
     term: 'Utenlandsperioden er ment å vare mindre enn 5 år',
@@ -32,4 +32,4 @@ const art16_1_anmodning = [
     term: 'Særlig grunn',
   },
 ];
-module.exports.art16_1_anmodning = art16_1_anmodning;
+module.exports.anmodning_begrunnelser = anmodning_begrunnelser;

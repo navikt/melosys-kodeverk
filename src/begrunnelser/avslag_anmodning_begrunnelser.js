@@ -1,4 +1,4 @@
-const art16_1_avslag = [
+const avslag_anmodning_begrunnelser = [
   {
     kode: 'SOEKT_FOR_SENT',
     term: 'Søkt mer enn ett år etter at perioden startet',
@@ -16,4 +16,4 @@ const art16_1_avslag = [
     term: 'Særlig avslagsgrunn',
   },
 ];
-module.exports.art16_1_avslag = art16_1_avslag;
+module.exports.avslag_anmodning_begrunnelser = avslag_anmodning_begrunnelser;

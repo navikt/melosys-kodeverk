@@ -1,4 +1,4 @@
-const art16_1_anmodning_uten_art12 = [
+const direkte_til_anmodning_begrunnelser = [
   {
     kode: 'KORTVARIG_PERIODE_RETUR_NORSK_AG',
     term: 'Kort periode i utlandet og retur til norsk arbeidsgiver',
@@ -44,4 +44,4 @@ const art16_1_anmodning_uten_art12 = [
   },
 ];
 
-module.exports.art16_1_anmodning_uten_art12 = art16_1_anmodning_uten_art12;
+module.exports.direkte_til_anmodning_begrunnelser = direkte_til_anmodning_begrunnelser;

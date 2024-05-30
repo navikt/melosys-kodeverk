@@ -1,4 +1,4 @@
-const art12_1_vesentlig_virksomhet = [
+const vesentlig_virksomhet_begrunnelser = [
   {
     kode: 'KUN_ADMIN_ANSATTE',
     term: 'Kun administrativt ansatte i Norge',
@@ -28,4 +28,4 @@ const art12_1_vesentlig_virksomhet = [
     term: 'Norsk rett gjelder ikke for kontraktene',
   }
 ];
-module.exports.art12_1_vesentlig_virksomhet = art12_1_vesentlig_virksomhet;
+module.exports.vesentlig_virksomhet_begrunnelser = vesentlig_virksomhet_begrunnelser;

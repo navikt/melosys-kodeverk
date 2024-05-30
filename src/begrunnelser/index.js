@@ -1,20 +1,18 @@
 
 const { arbeidsland } = require('./arbeidsland');
-const { art12_1_forutgaaende_medl } = require('./art12_1_forutgaaende_medl');
-const { art12_1_vesentlig_virksomhet } = require('./art12_1_vesentlig_virksomhet');
-const { art12_1_begrunnelser } = require('./art12_1_begrunnelser');
-const { art12_2_begrunnelser } = require('./art12_2_begrunnelser');
-const { art12_2_normalt_virksomhet } = require('./art12_2_normalt_virksomhet');
-const { art16_1_anmodning } = require('./art16_1_anmodning');
-const { art16_1_anmodning_engelsk } = require('./art16_1_anmodning_engelsk');
-const { art16_1_anmodning_uten_art12 } = require('./art16_1_anmodning_uten_art12');
-const { art16_1_anmodning_uten_art12_engelsk } = require('./art16_1_anmodning_uten_art12_engelsk');
-const { art16_1_avslag } = require('./art16_1_avslag');
-const { art11_4_begrunnelser } = require('./art11_4_begrunnelser');
+const { forutgaaende_medl_begrunnelser } = require('./forutgaaende_medl_begrunnelser');
+const { vesentlig_virksomhet_begrunnelser } = require('./vesentlig_virksomhet_begrunnelser');
+const { utsendt_arbeidstaker_begrunnelser } = require('./utsendt_arbeidstaker_begrunnelser');
+const { utsendt_naeringsdrivende_begrunnelser } = require('./utsendt_naeringsdrivende_begrunnelser');
+const { normalt_virksomhet_begrunnelser } = require('./normalt_virksomhet_begrunnelser');
+const { anmodning_begrunnelser } = require('./anmodning_begrunnelser');
+const { anmodning_engelsk_begrunnelser } = require('./anmodning_engelsk_begrunnelser');
+const { direkte_til_anmodning_begrunnelser } = require('./direkte_til_anmodning_begrunnelser');
+const { direkte_til_anmodning_engelsk_begrunnelser } = require('./direkte_til_anmodning_engelsk_begrunnelser');
+const { avslag_anmodning_begrunnelser } = require('./avslag_anmodning_begrunnelser');
 const { bosted } = require('./bosted');
 const { endretperiode } = require('./endretperiode');
 const { fartsomrader } = require('./fartsomrader');
-const { forutgaendemedlemskap } = require('./forutgaendemedlemskap');
 const { folketrygdloven } = require('./folketrygdloven');
 const { henleggelsesgrunner } = require('./henleggelsesgrunner');
 const { ikkeskip } = require('./ikkeskip');
@@ -30,22 +28,20 @@ const {ikkeyrkesaktivsituasjontype} = require('./ikkeyrkesaktivsituasjontype');
 
 const begrunnelser = {
   arbeidsland,
-  art12_1_begrunnelser,
-  art12_2_begrunnelser,
-  art12_1_forutgaaende_medl,
-  art12_1_vesentlig_virksomhet,
-  art12_2_normalt_virksomhet,
-  art16_1_anmodning,
-  art16_1_anmodning_engelsk,
-  art16_1_anmodning_uten_art12,
-  art16_1_anmodning_uten_art12_engelsk,
-  art16_1_avslag,
-  art11_4_begrunnelser,
+  utsendt_arbeidstaker_begrunnelser,
+  utsendt_naeringsdrivende_begrunnelser,
+  forutgaaende_medl_begrunnelser,
+  vesentlig_virksomhet_begrunnelser,
+  normalt_virksomhet_begrunnelser,
+  anmodning_begrunnelser,
+  anmodning_engelsk_begrunnelser,
+  direkte_til_anmodning_begrunnelser,
+  direkte_til_anmodning_engelsk_begrunnelser,
+  avslag_anmodning_begrunnelser,
   bosted,
   endretperiode,
   fartsomrader,
   folketrygdloven,
-  forutgaendemedlemskap,
   henleggelsesgrunner,
   ikkeskip,
   ikke_godkjent_begrunnelser,
