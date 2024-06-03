@@ -159,6 +159,10 @@ const kontroll_begrunnelser = [
     term: 'Det finnes et åpent brevutkast. Du må sende eller forkaste brevet før du avslutter behandlingen.'
   },
   {
+    kode: 'STORBRITANNIA_KONV_BRUKT_FOR_TIDLIG',
+    term: 'Konvensjonen mellom EØS/EFTA-landene og Storbritannia gjelder fra 1. januar 2024.'
+  },
+  {
     kode: 'ANNET',
     term: 'Fritekstfelt'
   }
