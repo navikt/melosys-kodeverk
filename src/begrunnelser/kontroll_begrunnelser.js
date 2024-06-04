@@ -144,7 +144,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'IKKE_KUN_EN_VIRKSOMHET',
-    term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet oppgitt for avslag eller art 16.1'
+    term: 'Ingen eller flere enn én virksomhet oppgitt for avslag eller anmodning om unntak.'
   },
   {
     kode: 'INGEN_ARBEIDSGIVERE',
