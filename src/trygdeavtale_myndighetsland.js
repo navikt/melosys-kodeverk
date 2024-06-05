@@ -40,6 +40,10 @@ const trygdeavtale_myndighetsland = [
         term: 'Italia',
     },
     {
+        kode: 'KR',
+        term: 'Korea',
+    },
+    {
         kode: 'HR',
         term: 'Kroatia',
     },
@@ -78,10 +82,6 @@ const trygdeavtale_myndighetsland = [
     {
         kode: 'US',
         term: 'USA',
-    },
-    {
-        kode: 'KR',
-        term: 'Korea',
     }
 ];
 module.exports.trygdeavtale_myndighetsland = trygdeavtale_myndighetsland;
