@@ -152,7 +152,7 @@ begrunnelser:
       term: Flaggland
     - kode: BASELAND
       term: Hjemmebaseland
-  art12_1_begrunnelser:
+  utsendt_arbeidstaker_begrunnelser:
     - kode: UTSENDELSE_OVER_24_MN
       term: Utsendelseperioden overskrider 24 måneder
     - kode: ERSTATTER_ANNEN
@@ -167,21 +167,21 @@ begrunnelser:
         land for samme foretak
     - kode: IKKE_VESENTLIG_VIRKSOMHET
       term: Foretaket har ikke vesentlig virksomhet
-  art12_2_begrunnelser:
+  utsendt_naeringsdrivende_begrunnelser:
     - kode: UTSENDELSE_OVER_24_MN
       term: Utsendelseperioden overskrider 24 måneder
     - kode: IKKE_LIGNENDE_VIRKSOMHET
       term: Ikke lignende virksomhet
     - kode: NORMALT_IKKE_DRIFT_NORGE
       term: Normalt ikke drift i Norge
-  art12_1_forutgaaende_medl:
+  forutgaaende_medl_begrunnelser:
     - kode: UNNTATT_MEDLEMSKAP
       term: Unntak i MEDL
     - kode: FOLKEREGISTRERT_IKKE_ARBEIDET_I_NORGE
       term: 'Bor, men har arbeidet utenfor Norge'
     - kode: IKKE_FOLKEREGISTRERT_ELLER_ARBEIDET_I_NORGE
       term: Hverken bor eller arbeidet i Norge
-  art12_1_vesentlig_virksomhet:
+  vesentlig_virksomhet_begrunnelser:
     - kode: KUN_ADMIN_ANSATTE
       term: Kun administrativt ansatte i Norge
     - kode: FOR_LITE_OMSETNING_NORGE
@@ -198,12 +198,12 @@ begrunnelser:
       term: Færre enn 50 % av kundekontraktene inngås i Norge
     - kode: KONTRAKTER_IKKE_NORSK_LOV
       term: Norsk rett gjelder ikke for kontraktene
-  art12_2_normalt_virksomhet:
+  normalt_virksomhet_begrunnelser:
     - kode: IKKE_FORUTGAAENDE_DRIFT
       term: Ikke tilstrekkelig forutgående drift
     - kode: IKKE_GJENOPPTA_DRIFT
       term: Kan ikke gjenoppta drift
-  art16_1_anmodning:
+  anmodning_begrunnelser:
     - kode: UTSENDELSE_MELLOM_24_MN_OG_5_AAR
       term: Utsendelseperioden er mellom 2 og 5 år
     - kode: LOENNET_UTL_ENHET_I_KONSERN
@@ -224,7 +224,7 @@ begrunnelser:
       term: 'Kortvarig oppdrag som selvstendig i utlandet, arbeidstaker i Norge'
     - kode: SAERLIG_GRUNN
       term: Fritekstfelt
-  art16_1_anmodning_engelsk:
+  anmodning_engelsk_begrunnelser:
     - kode: UTSENDELSE_MELLOM_24_MN_OG_5_AAR
       term: Ongoing contract for a period longer than 2 and shorter than 5 years.
     - kode: LOENNET_UTL_ENHET_I_KONSERN
@@ -254,7 +254,7 @@ begrunnelser:
         performing self employed activity in Norway prior to the assignment.
     - kode: SAERLIG_GRUNN
       term: Fritekstfelt
-  art16_1_avslag:
+  avslag_anmodning_begrunnelser:
     - kode: SOEKT_FOR_SENT
       term: Søkt mer enn ett år etter perioden startet
     - kode: OVER_5_AAR
@@ -265,11 +265,6 @@ begrunnelser:
       term: Ingen spesielle forhold
     - kode: SAERLIG_AVSLAGSGRUNN
       term: Særlig avslagsgrunn
-  art11_4_begrunnelser:
-    - kode: SKIPETS_FLAGGLAND
-      term: Omfattet der skipet er registrert
-    - kode: AG_KONTOR_BOSTEDSLAND
-      term: Omfattet i bostedsland ved arbeid på skip
   bosted:
     - kode: OPPHOLD_MER_ENN_12_MND
       term: Oppholdet er mer enn 12 måneder.
@@ -308,21 +303,6 @@ begrunnelser:
         term: Åpen sluttdato
       - kode: ANNET
         term: Annet
-  forutgaendemedlemskap:
-    - kode: IKKE_LOENNET_UTSEND_AG
-      term: >-
-        Mottok IKKE lønn fra utsendende arbeidsgiver opptjent i Norge
-        forutgående måned.
-    - kode: IKKE_LOENNET_NORGE
-      term: >-
-        Mottok IKKE lønn fra annen arbeidsgiver opptjent i Norge forutgående
-        måned.
-    - kode: MOTTAT_LOENN_UTL
-      term: Mottok lønn opptjent i annet land forutgående måned.
-    - kode: IKKE_FOLKEREGISTRERT_NORGE
-      term: Har ikke TPS-adresse i Norge.
-    - kode: IKKE_ANSATT_UTSEND_AG
-      term: Er IKKE registrert i Aa-registeret hos utsendende arbeidsgiver.
   henleggelsesgrunner:
     - kode: SOEKNADEN_TRUKKET
       term: Søknaden er trukket
@@ -666,11 +646,11 @@ vilkaar:
     term: null
   - kode: FO_883_2004_ART16_1
     term: null
-  - kode: ART12_1_VESENTLIG_VIRKSOMHET
+  - kode: VESENTLIG_VIRKSOMHET
     term: null
-  - kode: ART12_1_FORUTGAAENDE_MEDLEMSKAP
+  - kode: FORUTGAAENDE_MEDLEMSKAP
     term: null
-  - kode: ART12_2_NORMALT_DRIVER_VIRKSOMHET
+  - kode: NORMALT_DRIVER_VIRKSOMHET
     term: null
   - kode: FO_883_2004_ART87A
     term: null

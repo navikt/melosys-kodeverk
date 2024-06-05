@@ -1,4 +1,4 @@
-const art16_1_anmodning_uten_art12_engelsk = [
+const direkte_til_anmodning_engelsk_begrunnelser = [
   {
     kode: 'KORTVARIG_PERIODE_RETUR_NORSK_AG',
     term: 'The person will return to her/his Norwegian employer after a brief work period in your country.',
@@ -44,4 +44,4 @@ const art16_1_anmodning_uten_art12_engelsk = [
     term: null,
   },
 ];
-module.exports.art16_1_anmodning_uten_art12_engelsk = art16_1_anmodning_uten_art12_engelsk;
+module.exports.direkte_til_anmodning_engelsk_begrunnelser = direkte_til_anmodning_engelsk_begrunnelser;

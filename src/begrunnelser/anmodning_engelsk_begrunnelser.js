@@ -1,4 +1,4 @@
-const art16_1_anmodning_engelsk = [
+const anmodning_engelsk_begrunnelser = [
   {
     kode: 'UTSENDELSE_MELLOM_24_MN_OG_5_AAR',
     term: 'Posting of an anticipated duration exceeding two years, thus Art. 12 No 1 of Reg 883/04 does not apply. However, the anticipated posting period is shorter than five years.',
@@ -32,4 +32,4 @@ const art16_1_anmodning_engelsk = [
     term: 'Fritekstfelt',
   },
 ];
-module.exports.art16_1_anmodning_engelsk = art16_1_anmodning_engelsk;
+module.exports.anmodning_engelsk_begrunnelser = anmodning_engelsk_begrunnelser;

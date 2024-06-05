@@ -1,4 +1,4 @@
-const art12_2_normalt_virksomhet = [
+const normalt_virksomhet_begrunnelser = [
   {
     kode: 'IKKE_FORUTGAAENDE_DRIFT',
     term: 'Ikke tilstrekkelig forutgående drift i Norge',
@@ -8,4 +8,4 @@ const art12_2_normalt_virksomhet = [
     term: 'Kan ikke gjenoppta drift i Norge',
   },
 ];
-module.exports.art12_2_normalt_virksomhet = art12_2_normalt_virksomhet;
+module.exports.normalt_virksomhet_begrunnelser = normalt_virksomhet_begrunnelser;

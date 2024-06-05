@@ -1,4 +1,4 @@
-const art12_1_forutgaaende_medl	 = [
+const forutgaaende_medl_begrunnelser	 = [
   {
     kode: 'UNNTATT_MEDLEMSKAP',
     term: 'Registrert med unntak i MEDL rett før utsendingen',
@@ -12,4 +12,4 @@ const art12_1_forutgaaende_medl	 = [
     term: 'Verken bosatt eller arbeidet i Norge før utsendingen',
   },
 ];
-module.exports.art12_1_forutgaaende_medl = art12_1_forutgaaende_medl;
+module.exports.forutgaaende_medl_begrunnelser = forutgaaende_medl_begrunnelser;

@@ -1,4 +1,4 @@
-const art12_2_begrunnelser = [
+const utsendt_naeringsdrivende_begrunnelser = [
   {
     kode: 'UTSENDELSE_OVER_24_MN',
     term: 'Utenlandsperioden er ment å vare mer enn 24 md',
@@ -12,4 +12,4 @@ const art12_2_begrunnelser = [
     term: 'Ikke vanligvis drift i Norge',
   },
 ];
-module.exports.art12_2_begrunnelser = art12_2_begrunnelser;
+module.exports.utsendt_naeringsdrivende_begrunnelser = utsendt_naeringsdrivende_begrunnelser;
