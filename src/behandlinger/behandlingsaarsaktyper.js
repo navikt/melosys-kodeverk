@@ -22,6 +22,10 @@ const behandlingsaarsaktyper = [
   {
     kode: 'MELDING_OM_MANGLENDE_INNBETALING',
     term: 'Melding om manglende innbetaling'
+  },
+  {
+    kode: 'MELDING_FRA_SKATT',
+    term: 'Melding fra skatt'
   }
 ];
 
