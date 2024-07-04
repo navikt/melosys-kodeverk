@@ -155,6 +155,10 @@ const produserbaredokumenter = [
   {
     kode: 'FRITEKSTBREV',
     term: 'Fritekstbrev'
+  },
+  {
+    kode: 'AVSLAG_EFTA_STORBRITANNIA',
+    term: 'avslag_efta_storbritannia'
   }
 ];
 
