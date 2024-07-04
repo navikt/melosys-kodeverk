@@ -93,6 +93,10 @@ const produserbaredokumenter = [
     term: 'Innvilgelse yrkesaktiv i flere land'
   },
   {
+    kode: 'INNVILGELSE_EFTA_STORBRITANNIA',
+    term: 'Vedtak om medlemskap'
+  },
+  {
     kode: 'ORIENTERING_VIDERESENDT_SOEKNAD',
     term: 'Orienteringsbrev til bruker om videresendt søknad'
   },
@@ -155,7 +159,7 @@ const produserbaredokumenter = [
   {
     kode: 'AVSLAG_EFTA_STORBRITANNIA',
     term: 'avslag_efta_storbritannia'
-  },
+  }
 ];
 
 module.exports.produserbaredokumenter = produserbaredokumenter;
