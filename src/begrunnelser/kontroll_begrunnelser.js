@@ -165,6 +165,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'ANNET',
     term: 'Fritekstfelt'
+  },
+  {
+    kode: 'IKKE_KUN_EN_VIRKSOMHET_BREV',
+    term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet forsøkt brukt i brev'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
