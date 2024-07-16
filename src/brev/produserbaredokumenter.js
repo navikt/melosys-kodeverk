@@ -158,7 +158,7 @@ const produserbaredokumenter = [
   },
   {
     kode: 'AVSLAG_EFTA_STORBRITANNIA',
-    term: 'avslag_efta_storbritannia'
+    term: 'Avslag på søknad om medlemskap'
   }
 ];
 
