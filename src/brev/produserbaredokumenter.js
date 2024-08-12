@@ -159,6 +159,10 @@ const produserbaredokumenter = [
   {
     kode: 'AVSLAG_EFTA_STORBRITANNIA',
     term: 'Avslag på søknad om medlemskap'
+  },
+  {
+    kode: 'AARSAVREGNING_VEDTAKSBREV',
+    term: 'Vedtaksbrev om årsavregning',
   }
 ];
 
