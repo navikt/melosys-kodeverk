@@ -57,6 +57,10 @@ const produserbaredokumenter = [
     term: 'Orienteringsbrev om anmodning unntak'
   },
   {
+    kode: 'ORIENTERING_TIL_ARBEIDSGIVER_OM_VEDTAK',
+    term: 'Orientering til arbeidsgiver om vedtak'
+  },
+  {
     kode: 'MELDING_MANGLENDE_OPPLYSNINGER',
     term: 'Melding om manglende opplysninger'
   },
@@ -162,7 +166,7 @@ const produserbaredokumenter = [
   },
   {
     kode: 'AARSAVREGNING_VEDTAKSBREV',
-    term: 'Vedtaksbrev om årsavregning',
+    term: 'Vedtaksbrev om årsavregning'
   }
 ];
 
