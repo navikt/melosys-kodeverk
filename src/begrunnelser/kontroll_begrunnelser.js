@@ -169,6 +169,14 @@ const kontroll_begrunnelser = [
   {
     kode: 'IKKE_KUN_EN_VIRKSOMHET_BREV',
     term: 'Ingen eller flere enn én norsk eller utenlandsk virksomhet forsøkt brukt i brev'
+  },
+  {
+    kode: 'DIREKTE_FORUTGÅENDE_PERIODE',
+    term: 'Det finnes en sak med direkte forutgående medlemskapsperiode og fakturering. Vurder om det er riktig at denne saken skal behandles som en ny sak, eller om du heller skal gjøre en ny vurdering og forlenge den andre saken'
+  },
+  {
+    kode: 'OVERLAPPENDE_PERIODE_MED_FORSKUDDSVIS_FAKTURERUNG',
+    term: 'Det finnes allerede en sak med overlappende medlemskapsperiode og fakturering. Vurder om det er riktig at bruker skal ha to overlappende saker, eller om du heller skal gjøre en ny vurdering av den andre saken'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
