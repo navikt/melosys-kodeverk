@@ -72,7 +72,7 @@ const trygdedekninger = [
     term: 'Helsedel med syke- og foreldrepenger (§ 2-7a)'
   },
   {
-    kode: 'AVTALE_NATO_HELSEDEL',
+    kode: 'TILLEGGSAVTALE_NATO_HELSEDEL',
     term: 'Helsedel med syke- og foreldrepenger (NATO JWC)'
   },
 ];
