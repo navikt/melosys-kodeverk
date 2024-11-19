@@ -3,7 +3,7 @@ const lovvalgbestemmelser_vertslandsavtale = [
         kode: 'ARKTISK_RÅDS_SEKRETARIAT_ART16',
         term: 'Arktisk råds sekretariat - art. 16',
     }, {
-        kode: 'DET_INTERNASJONALE_ BARENTSSEKRETARIATET_ART14',
+        kode: 'DET_INTERNASJONALE_BARENTSSEKRETARIATET_ART14',
         term: 'Det internasjonale Barentssekretariatet - art. 14',
     }, {
         kode: 'DEN_NORDATLANTISKE_SJØPATTEDYRKOMMISJON_ART16',
