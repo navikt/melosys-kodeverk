@@ -5,7 +5,7 @@ const {overgangsregelbestemmelser} = require('./overgangsregelbestemmelser');
 const {lovvalgbestemmelser_konv_efta_storbritannia} = require('./lovvalgbestemmelser_konv_efta_storbritannia');
 const {tilleggsbestemmelser_konv_efta_storbritannia} = require('./tilleggsbestemmelser_konv_efta_storbritannia');
 const {trygdeavtale} = require('./trygdeavtale');
-const {lovvalgbestemmelser_vertslandsavtale} = require('./lovvalgsbestemmelser_vertslandsavtale');
+const {lovvalgbestemmelser_vertslandsavtale} = require('./lovvalgbestemmelser_vertslandsavtale');
 
 const lovvalgsbestemmelser = {
   lovvalgbestemmelser_883_2004,
