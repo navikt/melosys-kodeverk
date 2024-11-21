@@ -322,7 +322,8 @@
         "tilleggsbestemmelser_883_2004",
         "overgangsregelbestemmelser",
         "lovvalgbestemmelser_konv_efta_storbritannia",
-        "trygdeavtale"
+        "trygdeavtale",
+        "lovvalgbestemmelser_vertslandsavtale"
       ],
       "properties": {
         "lovvalgbestemmelser_883_2004": {
@@ -338,6 +339,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "lovvalgbestemmelser_konv_efta_storbritannia": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "lovvalgbestemmelser_vertslandsavtale": {
           "$ref": "#/definitions/kodeverkArray"
         },
         "tilleggsbestemmelser_konv_efta_storbritannia": {

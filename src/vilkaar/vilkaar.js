@@ -230,6 +230,22 @@ const vilkaar = [
   {
     kode: 'FTRL_2_8_FORSØRGET_FAMILIEMEDLEM',
     term: 'Er søker forsørget og oppholder seg sammen med en person som er medlem etter § 2-8 første eller andre ledd?'
+  },
+  {
+    kode: 'ARKTISK_RÅDS_SEKRETARIAT_ART16_STABSMEDLEM',
+    term: 'Er søker stabsmedlem i Arktisk råds sekretariat?'
+  },
+  {
+    kode: 'DET_INTERNASJONALE_BARENTSSEKRETARIATET_ART14_FAST_STAB',
+    term: 'Er søker del av Det internasjonale barentssekretariatets faste stab?'
+  },
+  {
+    kode: 'DEN_NORDATLANTISKE_SJØPATTEDYRKOMMISJON_ART16_TJENESTEMANN',
+    term: 'Er søker tjenestemann i Den nordatlantiske sjøpattedyrkommisjon?'
+  },
+  {
+    kode: 'TILLEGGSAVTALE_NATO_SIVILT_ANSATT',
+    term: 'Er søker sivilt ansatt i NATO Joint Warfare Centre?'
   }
 ];
 module.exports.vilkaar = vilkaar;

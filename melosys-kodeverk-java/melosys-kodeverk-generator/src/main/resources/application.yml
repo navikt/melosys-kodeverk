@@ -45,5 +45,6 @@ generator:
     - Tilleggsbestemmelser_trygdeavtale_cl
     - Lovvalgbestemmelser_konv_efta_storbritannia
     - Tilleggsbestemmelser_konv_efta_storbritannia
+    - Lovvalgbestemmelser_vertslandsavtale
   pakke-navn: no.nav.melosys.domain.kodeverk
 
