@@ -17,6 +17,7 @@ generator:
 #  kodeverk-Yaml: melosys-kodeverk-generator/src/test/resources/dist/kodemap.yml
   folketrygdenBestemmelse-enum-filer:
     - Folketrygdloven_kap2_bestemmelser
+    - Vertslandsavtale_bestemmelser
   lovvalgBestemmelse-enum-filer:
     - Lovvalgbestemmelser_883_2004
     - Lovvalgbestemmelser_987_2009

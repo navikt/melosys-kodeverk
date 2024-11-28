@@ -49,6 +49,7 @@ const { yrker } = require('./yrker');
 const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
 
 const Transform = require('./transform');
+const {vertslandsavtale_bestemmelser} = require('./vertslandsavtale_bestemmelser');
 
 const KodeTermObjects = {
   aktoersroller,
@@ -95,7 +96,8 @@ const KodeTermObjects = {
   vedtakstyper,
   vilkaar,
   yrker,
-  forvaltningsmeldingMottaker
+  forvaltningsmeldingMottaker,
+  vertslandsavtale_bestemmelser
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
