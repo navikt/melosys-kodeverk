@@ -46,5 +46,9 @@ const inntektskildetype = [
         kode: 'UFØRETRYGD',
         term: 'Uføretrygd',
     },
+    {
+        kode: 'INNTEKT_NATO_JWC',
+        term: 'Inntekt fra NATO JWC',
+    },
 ];
 module.exports.inntektskildetype = inntektskildetype;
