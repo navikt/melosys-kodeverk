@@ -91,6 +91,10 @@ const behandlingsresultattyper = [
   {
     kode: 'ANNULLERT',
     term: 'Annullert'
+  },
+  {
+    kode: 'FASTSATT_TRYGDEAVGIFT',
+    term: 'Fastsatt trygdeavgift'
   }
 ];
 module.exports.behandlingsresultattyper = behandlingsresultattyper;
