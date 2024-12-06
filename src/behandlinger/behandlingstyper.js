@@ -30,6 +30,10 @@ const behandlingstyper = [
   {
     kode: 'ÅRSAVREGNING',
     term: 'Årsavregning'
+  },
+  {
+    kode: 'SATSENDRING',
+    term: 'Satsendring'
   }
 ];
 module.exports.behandlingstyper = behandlingstyper;

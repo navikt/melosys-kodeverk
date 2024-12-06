@@ -26,6 +26,10 @@ const behandlingsaarsaktyper = [
   {
     kode: 'MELDING_FRA_SKATT',
     term: 'Melding fra skatt'
+  },
+  {
+    kode: 'ÅRLIG_SATSOPPDATERING',
+    term: 'Årlig satsoppdatering'
   }
 ];
 
