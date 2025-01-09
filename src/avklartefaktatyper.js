@@ -80,7 +80,7 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'UKJENT_SLUTTDATO',
+    kode: 'UKJENT_SLUTTDATO_MEDLEMSKAPSPERIODE',
     term: null
   }
 ];
