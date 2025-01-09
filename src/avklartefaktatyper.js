@@ -78,6 +78,10 @@ const avklartefaktatyper = [
   {
     kode: 'ARBEIDSSITUASJON',
     term: null
+  },
+  {
+    kode: 'UKJENT_SLUTTDATO_MEDLEMSKAPSPERIODE',
+    term: null
   }
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
