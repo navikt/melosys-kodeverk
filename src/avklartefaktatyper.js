@@ -82,6 +82,10 @@ const avklartefaktatyper = [
   {
     kode: 'UKJENT_SLUTTDATO_MEDLEMSKAPSPERIODE',
     term: null
+  },
+  {
+    kode: 'DELT_GRUNNLAG_AARSAVREGNING',
+    term: null
   }
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
