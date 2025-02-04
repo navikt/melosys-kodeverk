@@ -161,7 +161,7 @@ jobs:
         with:
           name: melosys-kodeverk-java
           path: .
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3
         with:
           path: ~/.m2
           key: v1-m2release-${{ hashFiles('melosys-internt-kodeverk/pom.xml') }}
