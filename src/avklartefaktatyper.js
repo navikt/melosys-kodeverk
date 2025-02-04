@@ -84,7 +84,7 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'DELT_GRUNNLAG_AARSAVREGNING',
+    kode: 'OPPLYSNINGER_FRA_AVGIFTSYSTEMET',
     term: null
   }
 ];
