@@ -84,7 +84,7 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'OPPLYSNINGER_FRA_AVGIFTSYSTEME',
+    kode: 'OPPLYSNINGER_FRA_AVGIFTSYSTEMET',
     term: null
   }
 ];
