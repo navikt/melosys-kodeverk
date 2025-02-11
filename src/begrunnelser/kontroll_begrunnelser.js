@@ -177,6 +177,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'OVERLAPPENDE_PERIODE_MED_FORSKUDDSVIS_FAKTURERUNG',
     term: 'Det finnes allerede en sak med overlappende medlemskapsperiode og beregnet avgift. Vurder om det er riktig at bruker skal ha to overlappende saker, eller om du heller skal gjøre en ny vurdering av den andre saken'
+  },
+  {
+    kode: 'MANGLENDE_FULLMEKTIG_MEDLEM_ETTER_VERTSLANDSAVTALE',
+    term: 'I følge vertslandsavtalen skal arbeidsgiver sørge for at trygdeavgift innbetales. Vurder om arbeidsgiver skal registreres som fullmektig for trygdeavgift'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
