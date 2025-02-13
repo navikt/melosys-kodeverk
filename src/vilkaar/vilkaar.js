@@ -92,6 +92,18 @@ const vilkaar = [
     term: 'Har du kommet frem til at søker ikke er omfattet av et annet lands trygdelovgivning, etter en avtale som hindrer frivillig medlemskap?'
   },
   {
+    kode: 'FTRL_2_8_PENSJON_UFØRETRYGD_FOLKETRYGDEN',
+    term: 'Mottar søker pensjon eller uføretrygd etter reglene i folketrygdloven?'
+  },
+  {
+    kode: 'FTRL_2_8_PENSJONIST_TRETTI_ÅR_TRYGDETID',
+    term: 'Har søker minst 30 års medlemskap i folketrygden etter fylte 16 år?'
+  },
+  {
+    kode: 'FTRL_2_8_PENSJONIST_TI_ÅR_TRYGDETID_FØR_SØKNADSTIDSPUNKT',
+    term: 'Har søker minst 10 års medlemskap umiddelbart før søknadstidspunktet?'
+  },
+  {
     kode: 'FTRL_2_1_BOSATT_NORGE',
     term: 'Har søker oppholdt seg eller hatt til hensikt å oppholde seg i Norge i minst 12 måneder?'
   },
