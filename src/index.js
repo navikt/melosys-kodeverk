@@ -47,10 +47,10 @@ const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
+const { betalingstype } = require('./betalingstype');
 
 const Transform = require('./transform');
 const {vertslandsavtale_bestemmelser} = require('./vertslandsavtale_bestemmelser');
-const {betalingstype} = require("./betalingstype");
 
 const KodeTermObjects = {
   aktoersroller,
@@ -99,7 +99,7 @@ const KodeTermObjects = {
   yrker,
   forvaltningsmeldingMottaker,
   vertslandsavtale_bestemmelser,
-  betalingstype
+  betalingstype,
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);

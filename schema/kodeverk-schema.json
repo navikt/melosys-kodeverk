@@ -79,8 +79,7 @@
     "vedleggstitler",
     "vilkaar",
     "yrker",
-    "forvaltningsmeldingMottaker",
-    "betalingstype"
+    "forvaltningsmeldingMottaker"
   ],
   "properties": {
     "aktoersroller": {
@@ -267,9 +266,6 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "ikkeyrkesaktivsituasjontype": {
-          "$ref": "#/definitions/kodeverkArray"
-        },
-        "betalingstype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
@@ -520,6 +516,9 @@
       "$ref": "#/definitions/kodeverkArray"
     },
     "vurderingsutfall_trygdeavgift_utenlandsk_inntekt": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "betalingstype": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "yrker": {
