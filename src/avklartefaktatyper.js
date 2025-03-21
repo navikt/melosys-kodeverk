@@ -84,7 +84,7 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'FAKTURA_I_STEDET_FOR_TREKK',
+    kode: 'BETALINGSVALG',
     term: null
   }
 ];
