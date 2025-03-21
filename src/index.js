@@ -6,6 +6,7 @@ const { aktoersroller } = require('./aktoersroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avgiftsdekning } = require('./avgiftsdekning');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
+const { betalingstype } = require("./betalingstype");
 const { avsendertyper } = require('./avsendertyper');
 const { trygdeavtale_myndighetsland } = require('./trygdeavtale_myndighetsland');
 const { begrunnelser } = require('./begrunnelser');
@@ -50,7 +51,6 @@ const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker')
 
 const Transform = require('./transform');
 const {vertslandsavtale_bestemmelser} = require('./vertslandsavtale_bestemmelser');
-const {betalingstype} = require("./betalingstype");
 
 const KodeTermObjects = {
   aktoersroller,
