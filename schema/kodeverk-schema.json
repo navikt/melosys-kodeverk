@@ -79,7 +79,8 @@
     "vedleggstitler",
     "vilkaar",
     "yrker",
-    "forvaltningsmeldingMottaker"
+    "forvaltningsmeldingMottaker",
+    "betalingstype"
   ],
   "properties": {
     "aktoersroller": {
@@ -266,6 +267,9 @@
           "$ref": "#/definitions/kodeverkArray"
         },
         "ikkeyrkesaktivsituasjontype": {
+          "$ref": "#/definitions/kodeverkArray"
+        },
+        "betalingstype": {
           "$ref": "#/definitions/kodeverkArray"
         }
       }
