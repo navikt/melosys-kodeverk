@@ -6,7 +6,6 @@ const { aktoersroller } = require('./aktoersroller');
 const { anmodningsperiodesvartyper } = require('./anmodningsperiodesvartyper');
 const { avgiftsdekning } = require('./avgiftsdekning');
 const { avklartefaktatyper } = require('./avklartefaktatyper');
-const { betalingstype } = require("./betalingstype");
 const { avsendertyper } = require('./avsendertyper');
 const { trygdeavtale_myndighetsland } = require('./trygdeavtale_myndighetsland');
 const { begrunnelser } = require('./begrunnelser');
@@ -48,6 +47,7 @@ const { vedtakstyper } = require('./vedtakstyper');
 const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
+const { betalingstype } = require('./betalingstype');
 
 const Transform = require('./transform');
 const {vertslandsavtale_bestemmelser} = require('./vertslandsavtale_bestemmelser');
@@ -99,7 +99,7 @@ const KodeTermObjects = {
   yrker,
   forvaltningsmeldingMottaker,
   vertslandsavtale_bestemmelser,
-  betalingstype
+  betalingstype,
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);

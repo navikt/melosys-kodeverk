@@ -518,6 +518,9 @@
     "vurderingsutfall_trygdeavgift_utenlandsk_inntekt": {
       "$ref": "#/definitions/kodeverkArray"
     },
+    "betalingstype": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
     "yrker": {
       "type": "object",
       "additionalProperties": false,
