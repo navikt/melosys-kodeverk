@@ -167,6 +167,14 @@ const produserbaredokumenter = [
   {
     kode: 'AARSAVREGNING_VEDTAKSBREV',
     term: 'Vedtaksbrev om årsavregning'
+  },
+  {
+    kode: 'PENSJONIST_FRIVILLIG_FTRL',
+    term: 'Vedtak om frivillig medlemskap'
+  },
+  {
+    kode: 'PENSJONIST_PLIKTIG_FTRL',
+    term: 'Vedtak om pliktig medlemskap'
   }
 ];
 
