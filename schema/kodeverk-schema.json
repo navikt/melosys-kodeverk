@@ -79,7 +79,8 @@
     "vedleggstitler",
     "vilkaar",
     "yrker",
-    "forvaltningsmeldingMottaker"
+    "forvaltningsmeldingMottaker",
+    "aarsavregningBehandlingsvalg"
   ],
   "properties": {
     "aktoersroller": {
@@ -535,6 +536,9 @@
       }
     },
     "forvaltningsmeldingMottaker": {
+      "$ref": "#/definitions/kodeverkArray"
+    },
+    "aarsavregningBehandlingsvalg": {
       "$ref": "#/definitions/kodeverkArray"
     }
   }
