@@ -80,7 +80,7 @@
     "vilkaar",
     "yrker",
     "forvaltningsmeldingMottaker",
-    "aarsavregningBehandlingsvalg"
+    "endeligAvgiftValg"
   ],
   "properties": {
     "aktoersroller": {
@@ -538,7 +538,7 @@
     "forvaltningsmeldingMottaker": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "aarsavregningBehandlingsvalg": {
+    "endeligAvgiftValg": {
       "$ref": "#/definitions/kodeverkArray"
     }
   }
