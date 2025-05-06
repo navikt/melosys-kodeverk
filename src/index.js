@@ -48,7 +48,7 @@ const { vilkaar } = require('./vilkaar');
 const { yrker } = require('./yrker');
 const { forvaltningsmeldingMottaker } = require('./forvaltningsmeldingMottaker');
 const { betalingstype } = require('./betalingstype');
-const { aarsavregningBehandlingsvalg } = require('./aarsavregningBehandlingsvalg');
+const { endeligAvgiftValg } = require('./endeligAvgiftValg');
 
 const Transform = require('./transform');
 const {vertslandsavtale_bestemmelser} = require('./vertslandsavtale_bestemmelser');
@@ -101,7 +101,7 @@ const KodeTermObjects = {
   forvaltningsmeldingMottaker,
   vertslandsavtale_bestemmelser,
   betalingstype,
-  aarsavregningBehandlingsvalg,
+  endeligAvgiftValg,
 };
 
 const Koder = Transform.kodeverk2KodeSet(KodeTermObjects);
