@@ -181,6 +181,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'MANGLENDE_FULLMEKTIG_MEDLEM_ETTER_VERTSLANDSAVTALE',
     term: 'I følge vertslandsavtalen skal arbeidsgiver sørge for at trygdeavgift innbetales. Vurder om arbeidsgiver skal registreres som fullmektig for trygdeavgift'
+  },
+  {
+    kode: 'TRYGDEAVGIFT_ENDRET',
+    term: 'Trygdeavgiften har blitt endret for et tidligere år. Dette kan kan ha forskjellige årsaker, men løsningen støtter ikke dette på det nåværende tidspunktet'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
