@@ -28,8 +28,8 @@
     "NAV"
   ],
   "author": {
-    "name": "Are Bjølseth",
-    "email": "are.bjolseth@nav.no"
+    "name": "Team Melosys",
+    "email": "team-melosys@nav.no"
   },
   "publishConfig": {
     "acccess": "public"
@@ -59,6 +59,7 @@
     "rimraf": "^5.0.5"
   },
   "overrides": {
-    "ansi-regex": "5.0.1"
+    "ansi-regex": "5.0.1",
+    "semver": "6.3.1"
   }
 }
