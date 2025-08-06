@@ -43,7 +43,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: "maven"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: melosys-kodeverk-dist
           path: melosys-kodeverk/dist
@@ -113,7 +113,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: melosys-kodeverk-lib
           path: lib
@@ -151,7 +151,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: "maven"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: melosys-kodeverk-java
           path: .
