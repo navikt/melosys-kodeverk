@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.head_commit.message != '[skip ci]'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "22.12.0"
@@ -36,7 +36,7 @@ jobs:
     needs: bygge_frontend
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -71,7 +71,7 @@ jobs:
       frontend_versjon: ${{ steps.versjoner.outputs.frontend }}
       backend_versjon: ${{ steps.versjoner.outputs.backend }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "22.12.0"
@@ -112,7 +112,7 @@ jobs:
     needs: lage_versjoner
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/download-artifact@v5
         with:
           name: melosys-kodeverk-lib
@@ -144,7 +144,7 @@ jobs:
     needs: lage_versjoner
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
