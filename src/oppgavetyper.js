@@ -30,6 +30,10 @@ const oppgavetyper = [
     {
         kode: 'VURD_MAN_INNB',
         term: 'Vurder manglende innbetaling'
+    },
+    {
+        kode: 'BEH_ARSAVREG',
+        term: 'Behandle årsavregning'
     }
 ];
 module.exports.oppgavetyper = oppgavetyper;
