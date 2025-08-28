@@ -23,6 +23,10 @@ const kontroll_begrunnelser = [
     term: 'Det finnes overlappende medlemskapsperiode i MEDL'
   },
   {
+    kode:'OVERLAPPENDE_HELSEUTGIFT_DEKKES_PERIODE',
+    term:'Det finnes overlappende periode der Norge dekker helseutgifter'
+  },
+  {
     kode: 'MOTTAR_YTELSER',
     term: 'Personen mottar ytelser'
   },
