@@ -176,7 +176,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'DIREKTE_FORUTGÅENDE_PERIODE',
-    term: 'Det finnes en sak med direkte forutgående medlemskapsperiode og beregnet avgift. Vurder om det er riktig at denne saken skal behandles som en ny sak, eller om du heller skal gjøre en ny vurdering og forlenge den andre saken'
+    term: 'Det finnes en sak med direkte forutgående periode og beregnet avgift. Vurder om det er riktig at denne saken skal behandles som en ny sak, eller om du heller skal gjøre en ny vurdering og forlenge den andre saken'
   },
   {
     kode: 'OVERLAPPENDE_PERIODE_MED_FORSKUDDSVIS_FAKTURERUNG',
