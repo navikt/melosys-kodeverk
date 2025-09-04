@@ -32,10 +32,6 @@ const produserbaredokumenter = [
     term: 'Varsel om manglende innbetaling av trygdeavgift'
   },
   {
-    kode: 'VARSELBREV_MANGLENDE_INNBETALING_EØS_PENSJONIST',
-    term: 'Varsel om manglende innbetaling av trygdeavgift'
-  },
-  {
     //   Deprecated. Slettes etter fullførelse av MELOSYS-5746
     kode: 'INNVILGELSE_FOLKETRYGDLOVEN_2_8',
     term: 'Vedtak om frivillig medlemskap'
