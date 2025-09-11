@@ -30,6 +30,10 @@ const behandlingsaarsaktyper = [
   {
     kode: 'ÅRLIG_SATSOPPDATERING',
     term: 'Årlig satsoppdatering'
+  },
+  {
+    kode: 'AUTOMATISK_OPPRETTELSE',
+    term: 'Automatisk Opprettelse'
   }
 ];
 
