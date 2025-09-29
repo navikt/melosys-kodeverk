@@ -23,6 +23,10 @@ const kontroll_begrunnelser = [
     term: 'Det finnes overlappende medlemskapsperiode i MEDL'
   },
   {
+    kode:'OVERLAPPENDE_HELSEUTGIFT_DEKKES_PERIODE',
+    term:'Det finnes overlappende periode der Norge dekker helseutgifter'
+  },
+  {
     kode: 'MOTTAR_YTELSER',
     term: 'Personen mottar ytelser'
   },
@@ -172,11 +176,11 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'DIREKTE_FORUTGÅENDE_PERIODE',
-    term: 'Det finnes en sak med direkte forutgående medlemskapsperiode og beregnet avgift. Vurder om det er riktig at denne saken skal behandles som en ny sak, eller om du heller skal gjøre en ny vurdering og forlenge den andre saken'
+    term: 'Det finnes en sak med direkte forutgående periode og beregnet avgift. Vurder om det er riktig at denne saken skal behandles som en ny sak, eller om du heller skal gjøre en ny vurdering og forlenge den andre saken'
   },
   {
     kode: 'OVERLAPPENDE_PERIODE_MED_FORSKUDDSVIS_FAKTURERUNG',
-    term: 'Det finnes allerede en sak med overlappende medlemskapsperiode og beregnet avgift. Vurder om det er riktig at bruker skal ha to overlappende saker, eller om du heller skal gjøre en ny vurdering av den andre saken'
+    term: 'Det finnes allerede en sak med overlappende periode og beregnet avgift. Vurder om det er riktig at bruker skal ha to overlappende saker, eller om du heller skal gjøre en ny vurdering av den andre saken'
   },
   {
     kode: 'MANGLENDE_FULLMEKTIG_MEDLEM_ETTER_VERTSLANDSAVTALE',
@@ -184,7 +188,7 @@ const kontroll_begrunnelser = [
   },
   {
     kode: 'TRYGDEAVGIFT_ENDRET',
-    term: 'Trygdeavgiften har blitt endret for et tidligere år. Dette kan kan ha forskjellige årsaker, men løsningen støtter ikke dette på det nåværende tidspunktet'
+    term: 'Trygdeavgiften har blitt endret for et tidligere år. Dette kan kan ha diverse årsaker, men løsningen støtter ikke dette på det nåværende tidspunktet'
   },
   {
     kode: 'TRYGDEAVGIFT_ÅRSSKIFTE',

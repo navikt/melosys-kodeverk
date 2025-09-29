@@ -41,6 +41,10 @@ const saksstatuser = [
   {
     kode: 'OPPHØRT',
     term: 'Saken har opphørt'
+  },
+  {
+    kode: 'TRYGDEAVGIFT_AVKLART',
+    term: 'Trygdeavgift er avklart'
   }
 ];
 module.exports.saksstatuser = saksstatuser;

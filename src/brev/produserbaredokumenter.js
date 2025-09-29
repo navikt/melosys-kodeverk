@@ -175,6 +175,10 @@ const produserbaredokumenter = [
   {
     kode: 'PENSJONIST_PLIKTIG_FTRL',
     term: 'Vedtak om pliktig medlemskap'
+  },
+  {
+    kode: 'TRYGDEAVGIFT_INFORMASJONSBREV',
+    term: 'Informasjon om trygdeavgift '
   }
 ];
 

@@ -1,13 +1,13 @@
 {
   "name": "@navikt/melosys-kodeverk",
-  "version": "5.15.307",
+  "version": "5.15.323",
   "description": "Dictionary of kode/term objects for use with associated melosys projects",
   "main": "./lib/index.js",
   "scripts": {
     "build:js": "babel src --out-dir lib",
     "build:yml": "node scripts/js2yml",
     "clean": "rimraf lib dist",
-    "build": "npm-run-all clean -p build:* -s semver",
+    "build": "npm run clean && npm run build:js && npm run build:yml && npm run semver",
     "eslint": "eslint src/**",
     "kodeverk": "node $NODE_DEBUG_OPTION index.js",
     "test": "mocha --reporter spec",
@@ -28,8 +28,8 @@
     "NAV"
   ],
   "author": {
-    "name": "Are Bjølseth",
-    "email": "are.bjolseth@nav.no"
+    "name": "Team Melosys",
+    "email": "team-melosys@nav.no"
   },
   "publishConfig": {
     "acccess": "public"
@@ -39,30 +39,27 @@
     "url": "https://github.com/navikt/melosys-kodeverk/issues"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=22.12.0"
   },
   "homepage": "https://github.com/navikt/melosys-kodeverk#readme",
   "devDependencies": {
-    "ajv": "^6.10.2",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.0.3",
-    "babel-plugin-add-module-exports": "^1.0.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "braces": "^3.0.3",
-    "chai": "^4.2.0",
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-utils": "^1.4.2",
-    "js-yaml": "^3.13.1",
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/plugin-transform-object-rest-spread": "^7.23.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.9",
+    "ajv": "^8.12.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
-    "mocha": "^8.3.2",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.0"
+    "mocha": "^10.3.0",
+    "rimraf": "^5.0.5"
+  },
+  "overrides": {
+    "ansi-regex": "5.0.1",
+    "semver": "6.3.1"
   }
 }
