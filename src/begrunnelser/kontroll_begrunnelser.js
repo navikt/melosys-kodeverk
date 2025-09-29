@@ -189,6 +189,10 @@ const kontroll_begrunnelser = [
   {
     kode: 'TRYGDEAVGIFT_ENDRET',
     term: 'Trygdeavgiften har blitt endret for et tidligere år. Dette kan kan ha diverse årsaker, men løsningen støtter ikke dette på det nåværende tidspunktet'
+  },
+  {
+    kode: 'TRYGDEAVGIFT_ÅRSSKIFTE',
+    term: 'På grunn av årsskifte må du oppfriske registeropplysninger og gå gjennom stegvelgeren på nytt'
   }
 ];
 module.exports.kontroll_begrunnelser = kontroll_begrunnelser;
