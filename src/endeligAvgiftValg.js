@@ -4,6 +4,10 @@ const endeligAvgiftValg = [
     term: 'Jeg skal gjøre endringer'
   },
   {
+    kode: 'OPPLYSNINGER_ENDRET_MED_PERIODE_FRA_AVGIFTSSYSTEMET',
+    term: 'Jeg skal gjøre endringer med periode fra avgiftssystemet'
+  },
+  {
     kode: 'OPPLYSNINGER_UENDRET',
     term: 'Det er ingen endringer'
   },
