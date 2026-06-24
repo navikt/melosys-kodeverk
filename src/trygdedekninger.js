@@ -9,7 +9,7 @@ const trygdedekninger = [
   },
   {
     kode: 'FULL_DEKNING_EOSFO',
-    term: null
+    term: 'Full dekning'
   },
   {
     kode: 'FTRL_2_9_FØRSTE_LEDD_A_HELSE',
@@ -74,6 +74,6 @@ const trygdedekninger = [
   {
     kode: 'TILLEGGSAVTALE_NATO_HELSEDEL',
     term: 'Helsedel med syke- og foreldrepenger (NATO JWC)'
-  },
+  }
 ];
 module.exports.trygdedekninger = trygdedekninger;
