@@ -29,6 +29,7 @@ const { fullmaktstype } = require('./fullmaktstype');
 const { ikkeyrkesaktivoppholdtype } = require('./ikkeyrkesaktivoppholdtype');
 const { ikkeyrkesaktivrelasjontype } = require('./ikkeyrkesaktivrelasjontype');
 const { arbeidssituasjontype } = require('./arbeidssituasjontype');
+const { manglendeInnbetalingVurdering } = require('./manglendeInnbetalingVurdering');
 const { medlemskapstyper } = require('./medlemskapstyper');
 const { mottaksretning } = require('./mottaksretning');
 const { oppgavetyper } = require('./oppgavetyper');
@@ -71,6 +72,7 @@ const KodeTermObjects = {
   ikkeyrkesaktivoppholdtype,
   ikkeyrkesaktivrelasjontype,
   arbeidssituasjontype,
+  manglendeInnbetalingVurdering,
   innretningstyper,
   inntektskildetype,
   innvilgelsesResultat,
