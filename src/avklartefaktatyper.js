@@ -82,6 +82,10 @@ const avklartefaktatyper = [
   {
     kode: 'UKJENT_SLUTTDATO_MEDLEMSKAPSPERIODE',
     term: null
+  },
+  {
+    kode: 'MANGLENDE_INNBETALING_VURDERING',
+    term: null
   }
 ];
 module.exports.avklartefaktatyper = avklartefaktatyper;
