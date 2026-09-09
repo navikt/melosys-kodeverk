@@ -1,8 +1,8 @@
 /**
- * Kodeverk/manglendeInnbetalingVurdering
+ * Kodeverk/manglendeInnbetalingHandlingsvalg
  * @module
  */
-const manglendeInnbetalingVurdering = [
+const manglendeInnbetalingHandlingsvalg = [
   {
     kode: 'HELE_PERIODEN_OPPHØRES',
     term: 'Hele perioden skal opphøres'
@@ -20,4 +20,4 @@ const manglendeInnbetalingVurdering = [
     term: 'Behandlingen skal avsluttes'
   }
 ];
-module.exports.manglendeInnbetalingVurdering = manglendeInnbetalingVurdering;
+module.exports.manglendeInnbetalingHandlingsvalg = manglendeInnbetalingHandlingsvalg;

@@ -462,7 +462,7 @@
     "arbeidssituasjontype": {
       "$ref": "#/definitions/kodeverkArray"
     },
-    "manglendeInnbetalingVurdering": {
+    "manglendeInnbetalingHandlingsvalg": {
       "$ref": "#/definitions/kodeverkArray"
     },
     "medlemskapstyper": {
