@@ -84,7 +84,7 @@ const avklartefaktatyper = [
     term: null
   },
   {
-    kode: 'MANGLENDE_INNBETALING_VURDERING',
+    kode: 'MANGLENDE_INNBETALING_HANDLINGSVALG',
     term: null
   }
 ];
