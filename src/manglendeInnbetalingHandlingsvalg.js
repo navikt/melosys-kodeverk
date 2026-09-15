@@ -14,10 +14,6 @@ const manglendeInnbetalingHandlingsvalg = [
   {
     kode: 'VEDTAKET_SKAL_ENDRES',
     term: 'Vedtaket skal endres'
-  },
-  {
-    kode: 'BEHANDLINGEN_SKAL_AVSLUTTES',
-    term: 'Behandlingen skal avsluttes'
   }
 ];
 module.exports.manglendeInnbetalingHandlingsvalg = manglendeInnbetalingHandlingsvalg;
