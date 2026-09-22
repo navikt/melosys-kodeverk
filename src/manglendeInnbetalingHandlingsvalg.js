@@ -1,0 +1,19 @@
+/**
+ * Kodeverk/manglendeInnbetalingHandlingsvalg
+ * @module
+ */
+const manglendeInnbetalingHandlingsvalg = [
+  {
+    kode: 'HELE_PERIODEN_OPPHØRES',
+    term: 'Hele perioden skal opphøres'
+  },
+  {
+    kode: 'DELER_AV_PERIODEN_OPPHØRES',
+    term: 'Deler av perioden skal opphøres'
+  },
+  {
+    kode: 'VEDTAKET_SKAL_ENDRES',
+    term: 'Vedtaket skal endres'
+  }
+];
+module.exports.manglendeInnbetalingHandlingsvalg = manglendeInnbetalingHandlingsvalg;
