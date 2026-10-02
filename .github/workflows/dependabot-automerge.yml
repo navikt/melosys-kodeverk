@@ -22,7 +22,7 @@ jobs:
           client-id: ${{ vars.CLIENT_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
       - name: Automerge Dependabot PRs
-        uses: navikt/automerge-dependabot@v1.5.1
+        uses: navikt/automerge-dependabot@v1.6.0
         with:
           token: ${{ steps.app-token.outputs.token }}
           blackout-periods: 'Sat,Sun,Dec 24-Jan 2'
