@@ -44,7 +44,7 @@
   "homepage": "https://github.com/navikt/melosys-kodeverk#readme",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.23.9",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.23.9",
     "@babel/plugin-transform-object-rest-spread": "^7.23.4",
     "@babel/plugin-transform-modules-commonjs": "^7.23.9",
